@@ -105,6 +105,9 @@
     <Compile Include="Telas\SistemaPrincipal.Designer.cs">
       <DependentUpon>SistemaPrincipal.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Telas\Cadastro\Cadastrar.resx">
+      <DependentUpon>Cadastrar.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Telas\Departamentos\Contabilidade.resx">
       <DependentUpon>Contabilidade.cs</DependentUpon>
     </EmbeddedResource>
