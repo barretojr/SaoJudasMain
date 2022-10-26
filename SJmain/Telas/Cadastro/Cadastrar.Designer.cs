@@ -48,7 +48,7 @@
             // 
             // btnVerificar
             // 
-            this.btnVerificar.Location = new System.Drawing.Point(267, 24);
+            this.btnVerificar.Location = new System.Drawing.Point(329, 24);
             this.btnVerificar.Name = "btnVerificar";
             this.btnVerificar.Size = new System.Drawing.Size(75, 23);
             this.btnVerificar.TabIndex = 0;
