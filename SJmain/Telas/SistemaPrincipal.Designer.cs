@@ -93,26 +93,30 @@
             // contabilidadeToolStripMenuItem
             // 
             this.contabilidadeToolStripMenuItem.Name = "contabilidadeToolStripMenuItem";
-            this.contabilidadeToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.contabilidadeToolStripMenuItem.Size = new System.Drawing.Size(148, 22);
             this.contabilidadeToolStripMenuItem.Text = "Contabilidade";
+            this.contabilidadeToolStripMenuItem.Click += new System.EventHandler(this.contabilidadeToolStripMenuItem_Click);
             // 
             // fiscalToolStripMenuItem
             // 
             this.fiscalToolStripMenuItem.Name = "fiscalToolStripMenuItem";
-            this.fiscalToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.fiscalToolStripMenuItem.Size = new System.Drawing.Size(148, 22);
             this.fiscalToolStripMenuItem.Text = "Fiscal";
+            this.fiscalToolStripMenuItem.Click += new System.EventHandler(this.fiscalToolStripMenuItem_Click);
             // 
             // logisticaToolStripMenuItem
             // 
             this.logisticaToolStripMenuItem.Name = "logisticaToolStripMenuItem";
-            this.logisticaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.logisticaToolStripMenuItem.Size = new System.Drawing.Size(148, 22);
             this.logisticaToolStripMenuItem.Text = "Logistica";
+            this.logisticaToolStripMenuItem.Click += new System.EventHandler(this.logisticaToolStripMenuItem_Click);
             // 
             // tecnologiaToolStripMenuItem
             // 
             this.tecnologiaToolStripMenuItem.Name = "tecnologiaToolStripMenuItem";
-            this.tecnologiaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.tecnologiaToolStripMenuItem.Size = new System.Drawing.Size(148, 22);
             this.tecnologiaToolStripMenuItem.Text = "Tecnologia";
+            this.tecnologiaToolStripMenuItem.Click += new System.EventHandler(this.tecnologiaToolStripMenuItem_Click);
             // 
             // opçõesToolStripMenuItem
             // 
@@ -137,18 +141,21 @@
             this.cadastrarToolStripMenuItem.Name = "cadastrarToolStripMenuItem";
             this.cadastrarToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.cadastrarToolStripMenuItem.Text = "Cadastrar";
+            this.cadastrarToolStripMenuItem.Click += new System.EventHandler(this.cadastrarToolStripMenuItem_Click);
             // 
             // alterarToolStripMenuItem
             // 
             this.alterarToolStripMenuItem.Name = "alterarToolStripMenuItem";
             this.alterarToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.alterarToolStripMenuItem.Text = "Alterar";
+            this.alterarToolStripMenuItem.Click += new System.EventHandler(this.alterarToolStripMenuItem_Click);
             // 
             // excluirToolStripMenuItem
             // 
             this.excluirToolStripMenuItem.Name = "excluirToolStripMenuItem";
             this.excluirToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.excluirToolStripMenuItem.Text = "Excluir";
+            this.excluirToolStripMenuItem.Click += new System.EventHandler(this.excluirToolStripMenuItem_Click);
             // 
             // SistemaPrincipal
             // 

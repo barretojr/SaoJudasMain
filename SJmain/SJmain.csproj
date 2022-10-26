@@ -49,6 +49,48 @@
     <Compile Include="Classes\LoginDaoComandos.cs" />
     <Compile Include="Classes\Conexao.cs" />
     <Compile Include="Modelo\Controle.cs" />
+    <Compile Include="Telas\Cadastro\Alterar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\Cadastro\Alterar.Designer.cs">
+      <DependentUpon>Alterar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\Cadastro\Cadastrar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\Cadastro\Cadastrar.Designer.cs">
+      <DependentUpon>Cadastrar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\Cadastro\Excluir.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\Cadastro\Excluir.Designer.cs">
+      <DependentUpon>Excluir.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\Departamentos\Contabilidade.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\Departamentos\Contabilidade.Designer.cs">
+      <DependentUpon>Contabilidade.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\Departamentos\Fiscal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\Departamentos\Fiscal.Designer.cs">
+      <DependentUpon>Fiscal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\Departamentos\Logistica.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\Departamentos\Logistica.Designer.cs">
+      <DependentUpon>Logistica.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\Departamentos\Tecnologia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\Departamentos\Tecnologia.Designer.cs">
+      <DependentUpon>Tecnologia.cs</DependentUpon>
+    </Compile>
     <Compile Include="Telas\Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -63,6 +105,18 @@
     <Compile Include="Telas\SistemaPrincipal.Designer.cs">
       <DependentUpon>SistemaPrincipal.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Telas\Departamentos\Contabilidade.resx">
+      <DependentUpon>Contabilidade.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\Departamentos\Fiscal.resx">
+      <DependentUpon>Fiscal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\Departamentos\Logistica.resx">
+      <DependentUpon>Logistica.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\Departamentos\Tecnologia.resx">
+      <DependentUpon>Tecnologia.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Telas\Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>

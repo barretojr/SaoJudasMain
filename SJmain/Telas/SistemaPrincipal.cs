@@ -1,4 +1,6 @@
-﻿using System;
+﻿using SJmain.Telas.Cadastro;
+using SJmain.Telas.Departamentos;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -20,6 +22,49 @@ namespace SJmain.Telas
         private void sairToolStripMenuItem_Click(object sender, EventArgs e)
         {
             System.Windows.Forms.Application.Exit();
+        }
+
+        private void contabilidadeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Contabilidade Cont = new Contabilidade();
+            Cont.Show();
+
+        }
+
+        private void logisticaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Logistica log = new Logistica();
+            log.Show();
+        }
+
+        private void fiscalToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Fiscal fis = new Fiscal();
+            fis.Show();
+        }
+
+        private void tecnologiaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Tecnologia tec = new Tecnologia();
+            tec.Show();
+        }
+
+        private void cadastrarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Cadastrar cad = new Cadastrar();
+            cad.Show();
+        }
+
+        private void alterarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Alterar alterar = new Alterar();
+            alterar.Show();
+        }
+
+        private void excluirToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Excluir excluir = new Excluir();
+            excluir.Show();
         }
     }
 }
