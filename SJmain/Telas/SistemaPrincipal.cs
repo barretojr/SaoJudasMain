@@ -33,7 +33,7 @@ namespace SJmain.Telas
 
         private void logisticaToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Logistica log = new Logistica();
+            Log log = new Log();
             log.Show();
         }
 

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SJmain.Telas.Departamentos.Logistica;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -10,16 +11,22 @@ using System.Windows.Forms;
 
 namespace SJmain.Telas.Departamentos
 {
-    public partial class Logistica : Form
+    public partial class Log : Form
     {
-        public Logistica()
+        public Log()
         {
             InitializeComponent();
         }
 
         private void sairToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            this.Close();
+
+        }
+
+        private void agendaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Agenda ag = new Agenda();
+            ag.Show();
         }
     }
 }

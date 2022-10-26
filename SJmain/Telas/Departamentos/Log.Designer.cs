@@ -1,6 +1,6 @@
 ﻿namespace SJmain.Telas.Departamentos
 {
-    partial class Logistica
+    partial class Log
     {
         /// <summary>
         /// Required designer variable.
@@ -28,31 +28,33 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.MenuLogistica = new System.Windows.Forms.MenuStrip();
-            this.sistemaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.arquivoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.abrirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.sairToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.MenuLogistica.SuspendLayout();
+            this.agendaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // MenuLogistica
+            // menuStrip1
             // 
-            this.MenuLogistica.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.sistemaToolStripMenuItem});
-            this.MenuLogistica.Location = new System.Drawing.Point(0, 0);
-            this.MenuLogistica.Name = "MenuLogistica";
-            this.MenuLogistica.Size = new System.Drawing.Size(800, 24);
-            this.MenuLogistica.TabIndex = 0;
-            this.MenuLogistica.Text = "menuStrip1";
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.arquivoToolStripMenuItem,
+            this.agendaToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(800, 24);
+            this.menuStrip1.TabIndex = 0;
+            this.menuStrip1.Text = "menuStrip1";
             // 
-            // sistemaToolStripMenuItem
+            // arquivoToolStripMenuItem
             // 
-            this.sistemaToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.arquivoToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.abrirToolStripMenuItem,
             this.sairToolStripMenuItem});
-            this.sistemaToolStripMenuItem.Name = "sistemaToolStripMenuItem";
-            this.sistemaToolStripMenuItem.Size = new System.Drawing.Size(60, 20);
-            this.sistemaToolStripMenuItem.Text = "Sistema";
+            this.arquivoToolStripMenuItem.Name = "arquivoToolStripMenuItem";
+            this.arquivoToolStripMenuItem.Size = new System.Drawing.Size(61, 20);
+            this.arquivoToolStripMenuItem.Text = "Arquivo";
             // 
             // abrirToolStripMenuItem
             // 
@@ -65,19 +67,25 @@
             this.sairToolStripMenuItem.Name = "sairToolStripMenuItem";
             this.sairToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.sairToolStripMenuItem.Text = "Sair";
-            this.sairToolStripMenuItem.Click += new System.EventHandler(this.sairToolStripMenuItem_Click);
             // 
-            // Logistica
+            // agendaToolStripMenuItem
+            // 
+            this.agendaToolStripMenuItem.Name = "agendaToolStripMenuItem";
+            this.agendaToolStripMenuItem.Size = new System.Drawing.Size(60, 20);
+            this.agendaToolStripMenuItem.Text = "Agenda";
+            this.agendaToolStripMenuItem.Click += new System.EventHandler(this.agendaToolStripMenuItem_Click);
+            // 
+            // Log
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.MenuLogistica);
-            this.MainMenuStrip = this.MenuLogistica;
-            this.Name = "Logistica";
+            this.Controls.Add(this.menuStrip1);
+            this.MainMenuStrip = this.menuStrip1;
+            this.Name = "Log";
             this.Text = "Logistica";
-            this.MenuLogistica.ResumeLayout(false);
-            this.MenuLogistica.PerformLayout();
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -85,9 +93,10 @@
 
         #endregion
 
-        private System.Windows.Forms.MenuStrip MenuLogistica;
-        private System.Windows.Forms.ToolStripMenuItem sistemaToolStripMenuItem;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem arquivoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem abrirToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem sairToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem agendaToolStripMenuItem;
     }
 }
