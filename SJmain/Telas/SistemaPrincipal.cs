@@ -64,7 +64,11 @@ namespace SJmain.Telas
                 Cadastrar cad = new Cadastrar();
                 cad.Show();
             }
-            
+            else
+            {
+                MessageBox.Show("Acesso Negado");
+            }
+
         }
 
         private void alterarToolStripMenuItem_Click(object sender, EventArgs e)
@@ -74,7 +78,11 @@ namespace SJmain.Telas
                 Alterar alterar = new Alterar();
                 alterar.Show();
             }
-            
+            else
+            {
+                MessageBox.Show("Acesso Negado");
+            }
+
         }
 
         private void departamentoPessoalToolStripMenuItem_Click(object sender, EventArgs e)
