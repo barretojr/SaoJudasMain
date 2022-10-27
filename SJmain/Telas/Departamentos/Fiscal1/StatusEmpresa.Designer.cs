@@ -28,39 +28,40 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnAtivar = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.txtEmpresa = new System.Windows.Forms.TextBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton3 = new System.Windows.Forms.RadioButton();
-            this.radioButton4 = new System.Windows.Forms.RadioButton();
-            this.radioButton5 = new System.Windows.Forms.RadioButton();
-            this.radioButton6 = new System.Windows.Forms.RadioButton();
-            this.radioButton7 = new System.Windows.Forms.RadioButton();
-            this.radioButton8 = new System.Windows.Forms.RadioButton();
-            this.radioButton9 = new System.Windows.Forms.RadioButton();
-            this.radioButton10 = new System.Windows.Forms.RadioButton();
-            this.radioButton11 = new System.Windows.Forms.RadioButton();
-            this.radioButton12 = new System.Windows.Forms.RadioButton();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.rdbDezembro = new System.Windows.Forms.RadioButton();
+            this.rdbNovembro = new System.Windows.Forms.RadioButton();
+            this.rdbOutubro = new System.Windows.Forms.RadioButton();
+            this.rdbSetembro = new System.Windows.Forms.RadioButton();
+            this.rdbAgosto = new System.Windows.Forms.RadioButton();
+            this.rdbJulho = new System.Windows.Forms.RadioButton();
+            this.rdbJunho = new System.Windows.Forms.RadioButton();
+            this.rdbMaio = new System.Windows.Forms.RadioButton();
+            this.rdbAbril = new System.Windows.Forms.RadioButton();
+            this.rdbMarco = new System.Windows.Forms.RadioButton();
+            this.rdbFevereiro = new System.Windows.Forms.RadioButton();
+            this.rdbJaneiro = new System.Windows.Forms.RadioButton();
+            this.btnSair = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
-            // button1
+            // btnAtivar
             // 
-            this.button1.Location = new System.Drawing.Point(6, 19);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(82, 68);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnAtivar.Location = new System.Drawing.Point(6, 19);
+            this.btnAtivar.Name = "btnAtivar";
+            this.btnAtivar.Size = new System.Drawing.Size(82, 68);
+            this.btnAtivar.TabIndex = 0;
+            this.btnAtivar.Text = "Ativar";
+            this.btnAtivar.UseVisualStyleBackColor = true;
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.textBox1);
-            this.groupBox1.Controls.Add(this.button1);
+            this.groupBox1.Controls.Add(this.txtEmpresa);
+            this.groupBox1.Controls.Add(this.btnAtivar);
             this.groupBox1.Location = new System.Drawing.Point(12, 12);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(333, 100);
@@ -68,20 +69,27 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Ativar Empresa";
             // 
+            // txtEmpresa
+            // 
+            this.txtEmpresa.Location = new System.Drawing.Point(95, 19);
+            this.txtEmpresa.Name = "txtEmpresa";
+            this.txtEmpresa.Size = new System.Drawing.Size(224, 20);
+            this.txtEmpresa.TabIndex = 1;
+            // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.radioButton12);
-            this.groupBox2.Controls.Add(this.radioButton11);
-            this.groupBox2.Controls.Add(this.radioButton10);
-            this.groupBox2.Controls.Add(this.radioButton9);
-            this.groupBox2.Controls.Add(this.radioButton8);
-            this.groupBox2.Controls.Add(this.radioButton7);
-            this.groupBox2.Controls.Add(this.radioButton6);
-            this.groupBox2.Controls.Add(this.radioButton5);
-            this.groupBox2.Controls.Add(this.radioButton4);
-            this.groupBox2.Controls.Add(this.radioButton3);
-            this.groupBox2.Controls.Add(this.radioButton2);
-            this.groupBox2.Controls.Add(this.radioButton1);
+            this.groupBox2.Controls.Add(this.rdbDezembro);
+            this.groupBox2.Controls.Add(this.rdbNovembro);
+            this.groupBox2.Controls.Add(this.rdbOutubro);
+            this.groupBox2.Controls.Add(this.rdbSetembro);
+            this.groupBox2.Controls.Add(this.rdbAgosto);
+            this.groupBox2.Controls.Add(this.rdbJulho);
+            this.groupBox2.Controls.Add(this.rdbJunho);
+            this.groupBox2.Controls.Add(this.rdbMaio);
+            this.groupBox2.Controls.Add(this.rdbAbril);
+            this.groupBox2.Controls.Add(this.rdbMarco);
+            this.groupBox2.Controls.Add(this.rdbFevereiro);
+            this.groupBox2.Controls.Add(this.rdbJaneiro);
             this.groupBox2.Location = new System.Drawing.Point(13, 119);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(332, 118);
@@ -89,150 +97,154 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Mês Correspondente";
             // 
-            // radioButton1
+            // rdbDezembro
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(7, 20);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(59, 17);
-            this.radioButton1.TabIndex = 0;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Janeiro";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.rdbDezembro.AutoSize = true;
+            this.rdbDezembro.Location = new System.Drawing.Point(221, 89);
+            this.rdbDezembro.Name = "rdbDezembro";
+            this.rdbDezembro.Size = new System.Drawing.Size(73, 17);
+            this.rdbDezembro.TabIndex = 11;
+            this.rdbDezembro.TabStop = true;
+            this.rdbDezembro.Text = "Dezembro";
+            this.rdbDezembro.UseVisualStyleBackColor = true;
             // 
-            // radioButton2
+            // rdbNovembro
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(7, 43);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(69, 17);
-            this.radioButton2.TabIndex = 1;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "Fevereiro";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.rdbNovembro.AutoSize = true;
+            this.rdbNovembro.Location = new System.Drawing.Point(221, 66);
+            this.rdbNovembro.Name = "rdbNovembro";
+            this.rdbNovembro.Size = new System.Drawing.Size(74, 17);
+            this.rdbNovembro.TabIndex = 10;
+            this.rdbNovembro.TabStop = true;
+            this.rdbNovembro.Text = "Novembro";
+            this.rdbNovembro.UseVisualStyleBackColor = true;
             // 
-            // radioButton3
+            // rdbOutubro
             // 
-            this.radioButton3.AutoSize = true;
-            this.radioButton3.Location = new System.Drawing.Point(7, 66);
-            this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(55, 17);
-            this.radioButton3.TabIndex = 2;
-            this.radioButton3.TabStop = true;
-            this.radioButton3.Text = "Março";
-            this.radioButton3.UseVisualStyleBackColor = true;
+            this.rdbOutubro.AutoSize = true;
+            this.rdbOutubro.Location = new System.Drawing.Point(221, 43);
+            this.rdbOutubro.Name = "rdbOutubro";
+            this.rdbOutubro.Size = new System.Drawing.Size(63, 17);
+            this.rdbOutubro.TabIndex = 9;
+            this.rdbOutubro.TabStop = true;
+            this.rdbOutubro.Text = "Outubro";
+            this.rdbOutubro.UseVisualStyleBackColor = true;
             // 
-            // radioButton4
+            // rdbSetembro
             // 
-            this.radioButton4.AutoSize = true;
-            this.radioButton4.Location = new System.Drawing.Point(7, 89);
-            this.radioButton4.Name = "radioButton4";
-            this.radioButton4.Size = new System.Drawing.Size(45, 17);
-            this.radioButton4.TabIndex = 3;
-            this.radioButton4.TabStop = true;
-            this.radioButton4.Text = "Abril";
-            this.radioButton4.UseVisualStyleBackColor = true;
+            this.rdbSetembro.AutoSize = true;
+            this.rdbSetembro.Location = new System.Drawing.Point(221, 20);
+            this.rdbSetembro.Name = "rdbSetembro";
+            this.rdbSetembro.Size = new System.Drawing.Size(70, 17);
+            this.rdbSetembro.TabIndex = 8;
+            this.rdbSetembro.TabStop = true;
+            this.rdbSetembro.Text = "Setembro";
+            this.rdbSetembro.UseVisualStyleBackColor = true;
             // 
-            // radioButton5
+            // rdbAgosto
             // 
-            this.radioButton5.AutoSize = true;
-            this.radioButton5.Location = new System.Drawing.Point(114, 20);
-            this.radioButton5.Name = "radioButton5";
-            this.radioButton5.Size = new System.Drawing.Size(48, 17);
-            this.radioButton5.TabIndex = 4;
-            this.radioButton5.TabStop = true;
-            this.radioButton5.Text = "Maio";
-            this.radioButton5.UseVisualStyleBackColor = true;
+            this.rdbAgosto.AutoSize = true;
+            this.rdbAgosto.Location = new System.Drawing.Point(114, 89);
+            this.rdbAgosto.Name = "rdbAgosto";
+            this.rdbAgosto.Size = new System.Drawing.Size(58, 17);
+            this.rdbAgosto.TabIndex = 7;
+            this.rdbAgosto.TabStop = true;
+            this.rdbAgosto.Text = "Agosto";
+            this.rdbAgosto.UseVisualStyleBackColor = true;
             // 
-            // radioButton6
+            // rdbJulho
             // 
-            this.radioButton6.AutoSize = true;
-            this.radioButton6.Location = new System.Drawing.Point(114, 43);
-            this.radioButton6.Name = "radioButton6";
-            this.radioButton6.Size = new System.Drawing.Size(54, 17);
-            this.radioButton6.TabIndex = 5;
-            this.radioButton6.TabStop = true;
-            this.radioButton6.Text = "Junho";
-            this.radioButton6.UseVisualStyleBackColor = true;
+            this.rdbJulho.AutoSize = true;
+            this.rdbJulho.Location = new System.Drawing.Point(114, 66);
+            this.rdbJulho.Name = "rdbJulho";
+            this.rdbJulho.Size = new System.Drawing.Size(50, 17);
+            this.rdbJulho.TabIndex = 6;
+            this.rdbJulho.TabStop = true;
+            this.rdbJulho.Text = "Julho";
+            this.rdbJulho.UseVisualStyleBackColor = true;
             // 
-            // radioButton7
+            // rdbJunho
             // 
-            this.radioButton7.AutoSize = true;
-            this.radioButton7.Location = new System.Drawing.Point(114, 66);
-            this.radioButton7.Name = "radioButton7";
-            this.radioButton7.Size = new System.Drawing.Size(50, 17);
-            this.radioButton7.TabIndex = 6;
-            this.radioButton7.TabStop = true;
-            this.radioButton7.Text = "Julho";
-            this.radioButton7.UseVisualStyleBackColor = true;
+            this.rdbJunho.AutoSize = true;
+            this.rdbJunho.Location = new System.Drawing.Point(114, 43);
+            this.rdbJunho.Name = "rdbJunho";
+            this.rdbJunho.Size = new System.Drawing.Size(54, 17);
+            this.rdbJunho.TabIndex = 5;
+            this.rdbJunho.TabStop = true;
+            this.rdbJunho.Text = "Junho";
+            this.rdbJunho.UseVisualStyleBackColor = true;
             // 
-            // radioButton8
+            // rdbMaio
             // 
-            this.radioButton8.AutoSize = true;
-            this.radioButton8.Location = new System.Drawing.Point(114, 89);
-            this.radioButton8.Name = "radioButton8";
-            this.radioButton8.Size = new System.Drawing.Size(58, 17);
-            this.radioButton8.TabIndex = 7;
-            this.radioButton8.TabStop = true;
-            this.radioButton8.Text = "Agosto";
-            this.radioButton8.UseVisualStyleBackColor = true;
+            this.rdbMaio.AutoSize = true;
+            this.rdbMaio.Location = new System.Drawing.Point(114, 20);
+            this.rdbMaio.Name = "rdbMaio";
+            this.rdbMaio.Size = new System.Drawing.Size(48, 17);
+            this.rdbMaio.TabIndex = 4;
+            this.rdbMaio.TabStop = true;
+            this.rdbMaio.Text = "Maio";
+            this.rdbMaio.UseVisualStyleBackColor = true;
             // 
-            // radioButton9
+            // rdbAbril
             // 
-            this.radioButton9.AutoSize = true;
-            this.radioButton9.Location = new System.Drawing.Point(221, 20);
-            this.radioButton9.Name = "radioButton9";
-            this.radioButton9.Size = new System.Drawing.Size(70, 17);
-            this.radioButton9.TabIndex = 8;
-            this.radioButton9.TabStop = true;
-            this.radioButton9.Text = "Setembro";
-            this.radioButton9.UseVisualStyleBackColor = true;
+            this.rdbAbril.AutoSize = true;
+            this.rdbAbril.Location = new System.Drawing.Point(7, 89);
+            this.rdbAbril.Name = "rdbAbril";
+            this.rdbAbril.Size = new System.Drawing.Size(45, 17);
+            this.rdbAbril.TabIndex = 3;
+            this.rdbAbril.TabStop = true;
+            this.rdbAbril.Text = "Abril";
+            this.rdbAbril.UseVisualStyleBackColor = true;
             // 
-            // radioButton10
+            // rdbMarco
             // 
-            this.radioButton10.AutoSize = true;
-            this.radioButton10.Location = new System.Drawing.Point(221, 43);
-            this.radioButton10.Name = "radioButton10";
-            this.radioButton10.Size = new System.Drawing.Size(63, 17);
-            this.radioButton10.TabIndex = 9;
-            this.radioButton10.TabStop = true;
-            this.radioButton10.Text = "Outubro";
-            this.radioButton10.UseVisualStyleBackColor = true;
+            this.rdbMarco.AutoSize = true;
+            this.rdbMarco.Location = new System.Drawing.Point(7, 66);
+            this.rdbMarco.Name = "rdbMarco";
+            this.rdbMarco.Size = new System.Drawing.Size(55, 17);
+            this.rdbMarco.TabIndex = 2;
+            this.rdbMarco.TabStop = true;
+            this.rdbMarco.Text = "Março";
+            this.rdbMarco.UseVisualStyleBackColor = true;
             // 
-            // radioButton11
+            // rdbFevereiro
             // 
-            this.radioButton11.AutoSize = true;
-            this.radioButton11.Location = new System.Drawing.Point(221, 66);
-            this.radioButton11.Name = "radioButton11";
-            this.radioButton11.Size = new System.Drawing.Size(74, 17);
-            this.radioButton11.TabIndex = 10;
-            this.radioButton11.TabStop = true;
-            this.radioButton11.Text = "Novembro";
-            this.radioButton11.UseVisualStyleBackColor = true;
+            this.rdbFevereiro.AutoSize = true;
+            this.rdbFevereiro.Location = new System.Drawing.Point(7, 43);
+            this.rdbFevereiro.Name = "rdbFevereiro";
+            this.rdbFevereiro.Size = new System.Drawing.Size(69, 17);
+            this.rdbFevereiro.TabIndex = 1;
+            this.rdbFevereiro.TabStop = true;
+            this.rdbFevereiro.Text = "Fevereiro";
+            this.rdbFevereiro.UseVisualStyleBackColor = true;
             // 
-            // radioButton12
+            // rdbJaneiro
             // 
-            this.radioButton12.AutoSize = true;
-            this.radioButton12.Location = new System.Drawing.Point(221, 89);
-            this.radioButton12.Name = "radioButton12";
-            this.radioButton12.Size = new System.Drawing.Size(73, 17);
-            this.radioButton12.TabIndex = 11;
-            this.radioButton12.TabStop = true;
-            this.radioButton12.Text = "Dezembro";
-            this.radioButton12.UseVisualStyleBackColor = true;
+            this.rdbJaneiro.AutoSize = true;
+            this.rdbJaneiro.Location = new System.Drawing.Point(7, 20);
+            this.rdbJaneiro.Name = "rdbJaneiro";
+            this.rdbJaneiro.Size = new System.Drawing.Size(59, 17);
+            this.rdbJaneiro.TabIndex = 0;
+            this.rdbJaneiro.TabStop = true;
+            this.rdbJaneiro.Text = "Janeiro";
+            this.rdbJaneiro.UseVisualStyleBackColor = true;
             // 
-            // textBox1
+            // btnSair
             // 
-            this.textBox1.Location = new System.Drawing.Point(95, 19);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(224, 20);
-            this.textBox1.TabIndex = 1;
+            this.btnSair.Location = new System.Drawing.Point(12, 415);
+            this.btnSair.Name = "btnSair";
+            this.btnSair.Size = new System.Drawing.Size(75, 23);
+            this.btnSair.TabIndex = 3;
+            this.btnSair.Text = "Sair";
+            this.btnSair.UseVisualStyleBackColor = true;
+            this.btnSair.Click += new System.EventHandler(this.btnSair_Click);
             // 
             // StatusEmpresa
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnSair);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Name = "StatusEmpresa";
@@ -247,21 +259,22 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnAtivar;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.RadioButton radioButton12;
-        private System.Windows.Forms.RadioButton radioButton11;
-        private System.Windows.Forms.RadioButton radioButton10;
-        private System.Windows.Forms.RadioButton radioButton9;
-        private System.Windows.Forms.RadioButton radioButton8;
-        private System.Windows.Forms.RadioButton radioButton7;
-        private System.Windows.Forms.RadioButton radioButton6;
-        private System.Windows.Forms.RadioButton radioButton5;
-        private System.Windows.Forms.RadioButton radioButton4;
-        private System.Windows.Forms.RadioButton radioButton3;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.RadioButton radioButton1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.RadioButton rdbDezembro;
+        private System.Windows.Forms.RadioButton rdbNovembro;
+        private System.Windows.Forms.RadioButton rdbOutubro;
+        private System.Windows.Forms.RadioButton rdbSetembro;
+        private System.Windows.Forms.RadioButton rdbAgosto;
+        private System.Windows.Forms.RadioButton rdbJulho;
+        private System.Windows.Forms.RadioButton rdbJunho;
+        private System.Windows.Forms.RadioButton rdbMaio;
+        private System.Windows.Forms.RadioButton rdbAbril;
+        private System.Windows.Forms.RadioButton rdbMarco;
+        private System.Windows.Forms.RadioButton rdbFevereiro;
+        private System.Windows.Forms.RadioButton rdbJaneiro;
+        private System.Windows.Forms.TextBox txtEmpresa;
+        private System.Windows.Forms.Button btnSair;
     }
 }

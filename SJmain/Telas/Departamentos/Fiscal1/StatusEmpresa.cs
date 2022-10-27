@@ -15,16 +15,11 @@ namespace SJmain.Telas.Departamentos.Fiscal1
         public StatusEmpresa()
         {
             InitializeComponent();
-        }
+        }        
 
-        private void radioButton1_CheckedChanged(object sender, EventArgs e)
+        private void btnSair_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
+            this.Close();
         }
     }
 }
