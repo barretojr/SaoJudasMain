@@ -25,8 +25,7 @@ namespace SJmain.Telas.Departamentos
 
         private void Verificarfisc_Click(object sender, EventArgs e)
         {
-            estaemfechamento eef = new estaemfechamento();
-            eef.Show();
+            
         }
     }
 }
