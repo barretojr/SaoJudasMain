@@ -38,6 +38,11 @@
             this.btnSalvar = new System.Windows.Forms.Button();
             this.btnSair = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.cbCoord = new System.Windows.Forms.CheckBox();
+            this.rdbTecnologia = new System.Windows.Forms.RadioButton();
+            this.rdbLogistica = new System.Windows.Forms.RadioButton();
+            this.rdbFiscal = new System.Windows.Forms.RadioButton();
+            this.rdbContabil = new System.Windows.Forms.RadioButton();
             this.label6 = new System.Windows.Forms.Label();
             this.txtUsuario = new System.Windows.Forms.TextBox();
             this.txtSenha = new System.Windows.Forms.TextBox();
@@ -45,11 +50,6 @@
             this.mskCPF = new System.Windows.Forms.MaskedTextBox();
             this.mskTelefone = new System.Windows.Forms.MaskedTextBox();
             this.txtEmail = new System.Windows.Forms.TextBox();
-            this.rdbContabil = new System.Windows.Forms.RadioButton();
-            this.rdbFiscal = new System.Windows.Forms.RadioButton();
-            this.rdbLogistica = new System.Windows.Forms.RadioButton();
-            this.rdbTecnologia = new System.Windows.Forms.RadioButton();
-            this.cbCoord = new System.Windows.Forms.CheckBox();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -61,6 +61,7 @@
             this.btnVerificar.TabIndex = 0;
             this.btnVerificar.Text = "Verificar...";
             this.btnVerificar.UseVisualStyleBackColor = true;
+            this.btnVerificar.Click += new System.EventHandler(this.btnVerificar_Click);
             // 
             // label1
             // 
@@ -148,6 +149,60 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Permissões";
             // 
+            // cbCoord
+            // 
+            this.cbCoord.AutoSize = true;
+            this.cbCoord.Location = new System.Drawing.Point(7, 115);
+            this.cbCoord.Name = "cbCoord";
+            this.cbCoord.Size = new System.Drawing.Size(90, 17);
+            this.cbCoord.TabIndex = 4;
+            this.cbCoord.Text = "Coordenação";
+            this.cbCoord.UseVisualStyleBackColor = true;
+            // 
+            // rdbTecnologia
+            // 
+            this.rdbTecnologia.AutoSize = true;
+            this.rdbTecnologia.Location = new System.Drawing.Point(7, 92);
+            this.rdbTecnologia.Name = "rdbTecnologia";
+            this.rdbTecnologia.Size = new System.Drawing.Size(78, 17);
+            this.rdbTecnologia.TabIndex = 3;
+            this.rdbTecnologia.TabStop = true;
+            this.rdbTecnologia.Text = "Tecnologia";
+            this.rdbTecnologia.UseVisualStyleBackColor = true;
+            // 
+            // rdbLogistica
+            // 
+            this.rdbLogistica.AutoSize = true;
+            this.rdbLogistica.Location = new System.Drawing.Point(7, 68);
+            this.rdbLogistica.Name = "rdbLogistica";
+            this.rdbLogistica.Size = new System.Drawing.Size(67, 17);
+            this.rdbLogistica.TabIndex = 2;
+            this.rdbLogistica.TabStop = true;
+            this.rdbLogistica.Text = "Logistica";
+            this.rdbLogistica.UseVisualStyleBackColor = true;
+            // 
+            // rdbFiscal
+            // 
+            this.rdbFiscal.AutoSize = true;
+            this.rdbFiscal.Location = new System.Drawing.Point(7, 44);
+            this.rdbFiscal.Name = "rdbFiscal";
+            this.rdbFiscal.Size = new System.Drawing.Size(52, 17);
+            this.rdbFiscal.TabIndex = 1;
+            this.rdbFiscal.TabStop = true;
+            this.rdbFiscal.Text = "Fiscal";
+            this.rdbFiscal.UseVisualStyleBackColor = true;
+            // 
+            // rdbContabil
+            // 
+            this.rdbContabil.AutoSize = true;
+            this.rdbContabil.Location = new System.Drawing.Point(7, 20);
+            this.rdbContabil.Name = "rdbContabil";
+            this.rdbContabil.Size = new System.Drawing.Size(89, 17);
+            this.rdbContabil.TabIndex = 0;
+            this.rdbContabil.TabStop = true;
+            this.rdbContabil.Text = "Contabilidade";
+            this.rdbContabil.UseVisualStyleBackColor = true;
+            // 
             // label6
             // 
             this.label6.AutoSize = true;
@@ -201,60 +256,6 @@
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(251, 20);
             this.txtEmail.TabIndex = 21;
-            // 
-            // rdbContabil
-            // 
-            this.rdbContabil.AutoSize = true;
-            this.rdbContabil.Location = new System.Drawing.Point(7, 20);
-            this.rdbContabil.Name = "rdbContabil";
-            this.rdbContabil.Size = new System.Drawing.Size(89, 17);
-            this.rdbContabil.TabIndex = 0;
-            this.rdbContabil.TabStop = true;
-            this.rdbContabil.Text = "Contabilidade";
-            this.rdbContabil.UseVisualStyleBackColor = true;
-            // 
-            // rdbFiscal
-            // 
-            this.rdbFiscal.AutoSize = true;
-            this.rdbFiscal.Location = new System.Drawing.Point(7, 44);
-            this.rdbFiscal.Name = "rdbFiscal";
-            this.rdbFiscal.Size = new System.Drawing.Size(52, 17);
-            this.rdbFiscal.TabIndex = 1;
-            this.rdbFiscal.TabStop = true;
-            this.rdbFiscal.Text = "Fiscal";
-            this.rdbFiscal.UseVisualStyleBackColor = true;
-            // 
-            // rdbLogistica
-            // 
-            this.rdbLogistica.AutoSize = true;
-            this.rdbLogistica.Location = new System.Drawing.Point(7, 68);
-            this.rdbLogistica.Name = "rdbLogistica";
-            this.rdbLogistica.Size = new System.Drawing.Size(67, 17);
-            this.rdbLogistica.TabIndex = 2;
-            this.rdbLogistica.TabStop = true;
-            this.rdbLogistica.Text = "Logistica";
-            this.rdbLogistica.UseVisualStyleBackColor = true;
-            // 
-            // rdbTecnologia
-            // 
-            this.rdbTecnologia.AutoSize = true;
-            this.rdbTecnologia.Location = new System.Drawing.Point(7, 92);
-            this.rdbTecnologia.Name = "rdbTecnologia";
-            this.rdbTecnologia.Size = new System.Drawing.Size(78, 17);
-            this.rdbTecnologia.TabIndex = 3;
-            this.rdbTecnologia.TabStop = true;
-            this.rdbTecnologia.Text = "Tecnologia";
-            this.rdbTecnologia.UseVisualStyleBackColor = true;
-            // 
-            // cbCoord
-            // 
-            this.cbCoord.AutoSize = true;
-            this.cbCoord.Location = new System.Drawing.Point(7, 115);
-            this.cbCoord.Name = "cbCoord";
-            this.cbCoord.Size = new System.Drawing.Size(90, 17);
-            this.cbCoord.TabIndex = 4;
-            this.cbCoord.Text = "Coordenação";
-            this.cbCoord.UseVisualStyleBackColor = true;
             // 
             // Cadastrar
             // 
