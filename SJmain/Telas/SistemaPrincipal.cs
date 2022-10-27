@@ -61,10 +61,6 @@ namespace SJmain.Telas
             alterar.Show();
         }
 
-        private void excluirToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Excluir excluir = new Excluir();
-            excluir.Show();
-        }
+        
     }
 }

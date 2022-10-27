@@ -46,7 +46,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Classes\LoginDaoComandos.cs" />
     <Compile Include="Classes\Conexao.cs" />
     <Compile Include="Modelo\Controle.cs" />
     <Compile Include="Telas\Cadastro\Alterar.cs">

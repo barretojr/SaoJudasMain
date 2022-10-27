@@ -33,22 +33,23 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
-            this.maskedTextBox2 = new System.Windows.Forms.MaskedTextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.btnConfirmar = new System.Windows.Forms.Button();
             this.btnSalvar = new System.Windows.Forms.Button();
             this.btnSair = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.cbTecnologia = new System.Windows.Forms.CheckBox();
-            this.cbLogistica = new System.Windows.Forms.CheckBox();
-            this.cbFiscal = new System.Windows.Forms.CheckBox();
-            this.cbContabil = new System.Windows.Forms.CheckBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.txtUsuario = new System.Windows.Forms.TextBox();
+            this.txtSenha = new System.Windows.Forms.TextBox();
+            this.txtNome = new System.Windows.Forms.TextBox();
+            this.mskCPF = new System.Windows.Forms.MaskedTextBox();
+            this.mskTelefone = new System.Windows.Forms.MaskedTextBox();
+            this.txtEmail = new System.Windows.Forms.TextBox();
+            this.rdbContabil = new System.Windows.Forms.RadioButton();
+            this.rdbFiscal = new System.Windows.Forms.RadioButton();
+            this.rdbLogistica = new System.Windows.Forms.RadioButton();
+            this.rdbTecnologia = new System.Windows.Forms.RadioButton();
+            this.cbCoord = new System.Windows.Forms.CheckBox();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -91,48 +92,11 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(173, 117);
+            this.label4.Location = new System.Drawing.Point(172, 117);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(52, 13);
             this.label4.TabIndex = 4;
             this.label4.Text = "Telefone:";
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(71, 25);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(154, 20);
-            this.textBox1.TabIndex = 5;
-            // 
-            // maskedTextBox1
-            // 
-            this.maskedTextBox1.Location = new System.Drawing.Point(71, 114);
-            this.maskedTextBox1.Mask = "999.999.999-99";
-            this.maskedTextBox1.Name = "maskedTextBox1";
-            this.maskedTextBox1.Size = new System.Drawing.Size(87, 20);
-            this.maskedTextBox1.TabIndex = 6;
-            // 
-            // maskedTextBox2
-            // 
-            this.maskedTextBox2.Location = new System.Drawing.Point(231, 114);
-            this.maskedTextBox2.Mask = "(99)99999-9999";
-            this.maskedTextBox2.Name = "maskedTextBox2";
-            this.maskedTextBox2.Size = new System.Drawing.Size(87, 20);
-            this.maskedTextBox2.TabIndex = 7;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(71, 143);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(247, 20);
-            this.textBox2.TabIndex = 8;
-            // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(71, 84);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(247, 20);
-            this.textBox3.TabIndex = 9;
             // 
             // label5
             // 
@@ -145,7 +109,7 @@
             // 
             // btnConfirmar
             // 
-            this.btnConfirmar.Location = new System.Drawing.Point(413, 180);
+            this.btnConfirmar.Location = new System.Drawing.Point(414, 180);
             this.btnConfirmar.Name = "btnConfirmar";
             this.btnConfirmar.Size = new System.Drawing.Size(75, 23);
             this.btnConfirmar.TabIndex = 11;
@@ -172,56 +136,17 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.cbTecnologia);
-            this.groupBox1.Controls.Add(this.cbLogistica);
-            this.groupBox1.Controls.Add(this.cbFiscal);
-            this.groupBox1.Controls.Add(this.cbContabil);
+            this.groupBox1.Controls.Add(this.cbCoord);
+            this.groupBox1.Controls.Add(this.rdbTecnologia);
+            this.groupBox1.Controls.Add(this.rdbLogistica);
+            this.groupBox1.Controls.Add(this.rdbFiscal);
+            this.groupBox1.Controls.Add(this.rdbContabil);
             this.groupBox1.Location = new System.Drawing.Point(336, 28);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(141, 135);
+            this.groupBox1.Size = new System.Drawing.Size(141, 138);
             this.groupBox1.TabIndex = 14;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Permissões";
-            // 
-            // cbTecnologia
-            // 
-            this.cbTecnologia.AutoSize = true;
-            this.cbTecnologia.Location = new System.Drawing.Point(18, 92);
-            this.cbTecnologia.Name = "cbTecnologia";
-            this.cbTecnologia.Size = new System.Drawing.Size(79, 17);
-            this.cbTecnologia.TabIndex = 3;
-            this.cbTecnologia.Text = "Tecnologia";
-            this.cbTecnologia.UseVisualStyleBackColor = true;
-            // 
-            // cbLogistica
-            // 
-            this.cbLogistica.AutoSize = true;
-            this.cbLogistica.Location = new System.Drawing.Point(18, 69);
-            this.cbLogistica.Name = "cbLogistica";
-            this.cbLogistica.Size = new System.Drawing.Size(70, 17);
-            this.cbLogistica.TabIndex = 2;
-            this.cbLogistica.Text = "Logística";
-            this.cbLogistica.UseVisualStyleBackColor = true;
-            // 
-            // cbFiscal
-            // 
-            this.cbFiscal.AutoSize = true;
-            this.cbFiscal.Location = new System.Drawing.Point(18, 46);
-            this.cbFiscal.Name = "cbFiscal";
-            this.cbFiscal.Size = new System.Drawing.Size(53, 17);
-            this.cbFiscal.TabIndex = 1;
-            this.cbFiscal.Text = "Fiscal";
-            this.cbFiscal.UseVisualStyleBackColor = true;
-            // 
-            // cbContabil
-            // 
-            this.cbContabil.AutoSize = true;
-            this.cbContabil.Location = new System.Drawing.Point(18, 23);
-            this.cbContabil.Name = "cbContabil";
-            this.cbContabil.Size = new System.Drawing.Size(90, 17);
-            this.cbContabil.TabIndex = 0;
-            this.cbContabil.Text = "Contabilidade";
-            this.cbContabil.UseVisualStyleBackColor = true;
             // 
             // label6
             // 
@@ -232,30 +157,122 @@
             this.label6.TabIndex = 15;
             this.label6.Text = "Senha:";
             // 
-            // textBox4
+            // txtUsuario
             // 
-            this.textBox4.Location = new System.Drawing.Point(71, 57);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(154, 20);
-            this.textBox4.TabIndex = 16;
+            this.txtUsuario.Location = new System.Drawing.Point(67, 25);
+            this.txtUsuario.Name = "txtUsuario";
+            this.txtUsuario.Size = new System.Drawing.Size(158, 20);
+            this.txtUsuario.TabIndex = 16;
+            // 
+            // txtSenha
+            // 
+            this.txtSenha.Location = new System.Drawing.Point(67, 57);
+            this.txtSenha.Name = "txtSenha";
+            this.txtSenha.PasswordChar = '*';
+            this.txtSenha.Size = new System.Drawing.Size(158, 20);
+            this.txtSenha.TabIndex = 17;
+            // 
+            // txtNome
+            // 
+            this.txtNome.Location = new System.Drawing.Point(67, 87);
+            this.txtNome.Name = "txtNome";
+            this.txtNome.Size = new System.Drawing.Size(251, 20);
+            this.txtNome.TabIndex = 18;
+            // 
+            // mskCPF
+            // 
+            this.mskCPF.Location = new System.Drawing.Point(67, 114);
+            this.mskCPF.Mask = "999.999.999-99";
+            this.mskCPF.Name = "mskCPF";
+            this.mskCPF.Size = new System.Drawing.Size(86, 20);
+            this.mskCPF.TabIndex = 19;
+            // 
+            // mskTelefone
+            // 
+            this.mskTelefone.Location = new System.Drawing.Point(230, 114);
+            this.mskTelefone.Mask = "(99)99999-9999";
+            this.mskTelefone.Name = "mskTelefone";
+            this.mskTelefone.Size = new System.Drawing.Size(88, 20);
+            this.mskTelefone.TabIndex = 20;
+            // 
+            // txtEmail
+            // 
+            this.txtEmail.Location = new System.Drawing.Point(67, 146);
+            this.txtEmail.Name = "txtEmail";
+            this.txtEmail.Size = new System.Drawing.Size(251, 20);
+            this.txtEmail.TabIndex = 21;
+            // 
+            // rdbContabil
+            // 
+            this.rdbContabil.AutoSize = true;
+            this.rdbContabil.Location = new System.Drawing.Point(7, 20);
+            this.rdbContabil.Name = "rdbContabil";
+            this.rdbContabil.Size = new System.Drawing.Size(89, 17);
+            this.rdbContabil.TabIndex = 0;
+            this.rdbContabil.TabStop = true;
+            this.rdbContabil.Text = "Contabilidade";
+            this.rdbContabil.UseVisualStyleBackColor = true;
+            // 
+            // rdbFiscal
+            // 
+            this.rdbFiscal.AutoSize = true;
+            this.rdbFiscal.Location = new System.Drawing.Point(7, 44);
+            this.rdbFiscal.Name = "rdbFiscal";
+            this.rdbFiscal.Size = new System.Drawing.Size(52, 17);
+            this.rdbFiscal.TabIndex = 1;
+            this.rdbFiscal.TabStop = true;
+            this.rdbFiscal.Text = "Fiscal";
+            this.rdbFiscal.UseVisualStyleBackColor = true;
+            // 
+            // rdbLogistica
+            // 
+            this.rdbLogistica.AutoSize = true;
+            this.rdbLogistica.Location = new System.Drawing.Point(7, 68);
+            this.rdbLogistica.Name = "rdbLogistica";
+            this.rdbLogistica.Size = new System.Drawing.Size(67, 17);
+            this.rdbLogistica.TabIndex = 2;
+            this.rdbLogistica.TabStop = true;
+            this.rdbLogistica.Text = "Logistica";
+            this.rdbLogistica.UseVisualStyleBackColor = true;
+            // 
+            // rdbTecnologia
+            // 
+            this.rdbTecnologia.AutoSize = true;
+            this.rdbTecnologia.Location = new System.Drawing.Point(7, 92);
+            this.rdbTecnologia.Name = "rdbTecnologia";
+            this.rdbTecnologia.Size = new System.Drawing.Size(78, 17);
+            this.rdbTecnologia.TabIndex = 3;
+            this.rdbTecnologia.TabStop = true;
+            this.rdbTecnologia.Text = "Tecnologia";
+            this.rdbTecnologia.UseVisualStyleBackColor = true;
+            // 
+            // cbCoord
+            // 
+            this.cbCoord.AutoSize = true;
+            this.cbCoord.Location = new System.Drawing.Point(7, 115);
+            this.cbCoord.Name = "cbCoord";
+            this.cbCoord.Size = new System.Drawing.Size(90, 17);
+            this.cbCoord.TabIndex = 4;
+            this.cbCoord.Text = "Coordenação";
+            this.cbCoord.UseVisualStyleBackColor = true;
             // 
             // Cadastrar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(501, 215);
-            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.txtEmail);
+            this.Controls.Add(this.mskTelefone);
+            this.Controls.Add(this.mskCPF);
+            this.Controls.Add(this.txtNome);
+            this.Controls.Add(this.txtSenha);
+            this.Controls.Add(this.txtUsuario);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.btnSair);
             this.Controls.Add(this.btnSalvar);
             this.Controls.Add(this.btnConfirmar);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.maskedTextBox2);
-            this.Controls.Add(this.maskedTextBox1);
-            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -280,21 +297,22 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox1;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox2;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button btnConfirmar;
         private System.Windows.Forms.Button btnSalvar;
         private System.Windows.Forms.Button btnSair;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.CheckBox cbTecnologia;
-        private System.Windows.Forms.CheckBox cbLogistica;
-        private System.Windows.Forms.CheckBox cbFiscal;
-        private System.Windows.Forms.CheckBox cbContabil;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox txtUsuario;
+        private System.Windows.Forms.TextBox txtSenha;
+        private System.Windows.Forms.TextBox txtNome;
+        private System.Windows.Forms.MaskedTextBox mskCPF;
+        private System.Windows.Forms.MaskedTextBox mskTelefone;
+        private System.Windows.Forms.TextBox txtEmail;
+        private System.Windows.Forms.RadioButton rdbTecnologia;
+        private System.Windows.Forms.RadioButton rdbLogistica;
+        private System.Windows.Forms.RadioButton rdbFiscal;
+        private System.Windows.Forms.RadioButton rdbContabil;
+        private System.Windows.Forms.CheckBox cbCoord;
     }
 }
