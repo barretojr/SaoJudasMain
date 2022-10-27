@@ -66,6 +66,10 @@ namespace SJmain.Telas.Cadastro
                 {
                     MessageBox.Show("Usuario Cadastrado Tecnologia.");
                 }
+                if(cbCoord.Checked == true)
+                {
+                    MessageBox.Show("Coordenador");
+                }
                 this.Close();
             }
             else
