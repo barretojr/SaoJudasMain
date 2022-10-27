@@ -43,10 +43,10 @@
             this.btnSalvar = new System.Windows.Forms.Button();
             this.btnSair = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.cbContabil = new System.Windows.Forms.CheckBox();
-            this.cbFiscal = new System.Windows.Forms.CheckBox();
-            this.cbLogistica = new System.Windows.Forms.CheckBox();
             this.cbTecnologia = new System.Windows.Forms.CheckBox();
+            this.cbLogistica = new System.Windows.Forms.CheckBox();
+            this.cbFiscal = new System.Windows.Forms.CheckBox();
+            this.cbContabil = new System.Windows.Forms.CheckBox();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -181,25 +181,15 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Permissões";
             // 
-            // cbContabil
+            // cbTecnologia
             // 
-            this.cbContabil.AutoSize = true;
-            this.cbContabil.Location = new System.Drawing.Point(18, 23);
-            this.cbContabil.Name = "cbContabil";
-            this.cbContabil.Size = new System.Drawing.Size(90, 17);
-            this.cbContabil.TabIndex = 0;
-            this.cbContabil.Text = "Contabilidade";
-            this.cbContabil.UseVisualStyleBackColor = true;
-            // 
-            // cbFiscal
-            // 
-            this.cbFiscal.AutoSize = true;
-            this.cbFiscal.Location = new System.Drawing.Point(18, 46);
-            this.cbFiscal.Name = "cbFiscal";
-            this.cbFiscal.Size = new System.Drawing.Size(53, 17);
-            this.cbFiscal.TabIndex = 1;
-            this.cbFiscal.Text = "Fiscal";
-            this.cbFiscal.UseVisualStyleBackColor = true;
+            this.cbTecnologia.AutoSize = true;
+            this.cbTecnologia.Location = new System.Drawing.Point(18, 92);
+            this.cbTecnologia.Name = "cbTecnologia";
+            this.cbTecnologia.Size = new System.Drawing.Size(79, 17);
+            this.cbTecnologia.TabIndex = 3;
+            this.cbTecnologia.Text = "Tecnologia";
+            this.cbTecnologia.UseVisualStyleBackColor = true;
             // 
             // cbLogistica
             // 
@@ -211,15 +201,25 @@
             this.cbLogistica.Text = "Logística";
             this.cbLogistica.UseVisualStyleBackColor = true;
             // 
-            // cbTecnologia
+            // cbFiscal
             // 
-            this.cbTecnologia.AutoSize = true;
-            this.cbTecnologia.Location = new System.Drawing.Point(18, 92);
-            this.cbTecnologia.Name = "cbTecnologia";
-            this.cbTecnologia.Size = new System.Drawing.Size(79, 17);
-            this.cbTecnologia.TabIndex = 3;
-            this.cbTecnologia.Text = "Tecnologia";
-            this.cbTecnologia.UseVisualStyleBackColor = true;
+            this.cbFiscal.AutoSize = true;
+            this.cbFiscal.Location = new System.Drawing.Point(18, 46);
+            this.cbFiscal.Name = "cbFiscal";
+            this.cbFiscal.Size = new System.Drawing.Size(53, 17);
+            this.cbFiscal.TabIndex = 1;
+            this.cbFiscal.Text = "Fiscal";
+            this.cbFiscal.UseVisualStyleBackColor = true;
+            // 
+            // cbContabil
+            // 
+            this.cbContabil.AutoSize = true;
+            this.cbContabil.Location = new System.Drawing.Point(18, 23);
+            this.cbContabil.Name = "cbContabil";
+            this.cbContabil.Size = new System.Drawing.Size(90, 17);
+            this.cbContabil.TabIndex = 0;
+            this.cbContabil.Text = "Contabilidade";
+            this.cbContabil.UseVisualStyleBackColor = true;
             // 
             // Cadastrar
             // 
@@ -241,6 +241,8 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnVerificar);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             this.Name = "Cadastrar";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Cadastrar";
