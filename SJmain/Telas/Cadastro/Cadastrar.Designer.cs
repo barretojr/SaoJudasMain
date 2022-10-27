@@ -47,14 +47,16 @@
             this.cbLogistica = new System.Windows.Forms.CheckBox();
             this.cbFiscal = new System.Windows.Forms.CheckBox();
             this.cbContabil = new System.Windows.Forms.CheckBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.textBox4 = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnVerificar
             // 
-            this.btnVerificar.Location = new System.Drawing.Point(243, 23);
+            this.btnVerificar.Location = new System.Drawing.Point(231, 28);
             this.btnVerificar.Name = "btnVerificar";
-            this.btnVerificar.Size = new System.Drawing.Size(75, 23);
+            this.btnVerificar.Size = new System.Drawing.Size(87, 50);
             this.btnVerificar.TabIndex = 0;
             this.btnVerificar.Text = "Verificar...";
             this.btnVerificar.UseVisualStyleBackColor = true;
@@ -71,7 +73,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(35, 84);
+            this.label2.Location = new System.Drawing.Point(35, 117);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(30, 13);
             this.label2.TabIndex = 2;
@@ -80,7 +82,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(27, 113);
+            this.label3.Location = new System.Drawing.Point(27, 146);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(38, 13);
             this.label3.TabIndex = 3;
@@ -89,7 +91,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(173, 84);
+            this.label4.Location = new System.Drawing.Point(173, 117);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(52, 13);
             this.label4.TabIndex = 4;
@@ -104,7 +106,7 @@
             // 
             // maskedTextBox1
             // 
-            this.maskedTextBox1.Location = new System.Drawing.Point(71, 81);
+            this.maskedTextBox1.Location = new System.Drawing.Point(71, 114);
             this.maskedTextBox1.Mask = "999.999.999-99";
             this.maskedTextBox1.Name = "maskedTextBox1";
             this.maskedTextBox1.Size = new System.Drawing.Size(87, 20);
@@ -112,7 +114,7 @@
             // 
             // maskedTextBox2
             // 
-            this.maskedTextBox2.Location = new System.Drawing.Point(231, 81);
+            this.maskedTextBox2.Location = new System.Drawing.Point(231, 114);
             this.maskedTextBox2.Mask = "(99)99999-9999";
             this.maskedTextBox2.Name = "maskedTextBox2";
             this.maskedTextBox2.Size = new System.Drawing.Size(87, 20);
@@ -120,14 +122,14 @@
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(71, 110);
+            this.textBox2.Location = new System.Drawing.Point(71, 143);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(247, 20);
             this.textBox2.TabIndex = 8;
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(71, 51);
+            this.textBox3.Location = new System.Drawing.Point(71, 84);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(247, 20);
             this.textBox3.TabIndex = 9;
@@ -135,7 +137,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(27, 54);
+            this.label5.Location = new System.Drawing.Point(27, 87);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(38, 13);
             this.label5.TabIndex = 10;
@@ -143,7 +145,7 @@
             // 
             // btnConfirmar
             // 
-            this.btnConfirmar.Location = new System.Drawing.Point(243, 146);
+            this.btnConfirmar.Location = new System.Drawing.Point(243, 179);
             this.btnConfirmar.Name = "btnConfirmar";
             this.btnConfirmar.Size = new System.Drawing.Size(75, 23);
             this.btnConfirmar.TabIndex = 11;
@@ -152,7 +154,7 @@
             // 
             // btnSalvar
             // 
-            this.btnSalvar.Location = new System.Drawing.Point(162, 146);
+            this.btnSalvar.Location = new System.Drawing.Point(162, 179);
             this.btnSalvar.Name = "btnSalvar";
             this.btnSalvar.Size = new System.Drawing.Size(75, 23);
             this.btnSalvar.TabIndex = 12;
@@ -161,7 +163,7 @@
             // 
             // btnSair
             // 
-            this.btnSair.Location = new System.Drawing.Point(22, 146);
+            this.btnSair.Location = new System.Drawing.Point(22, 179);
             this.btnSair.Name = "btnSair";
             this.btnSair.Size = new System.Drawing.Size(75, 23);
             this.btnSair.TabIndex = 13;
@@ -174,9 +176,9 @@
             this.groupBox1.Controls.Add(this.cbLogistica);
             this.groupBox1.Controls.Add(this.cbFiscal);
             this.groupBox1.Controls.Add(this.cbContabil);
-            this.groupBox1.Location = new System.Drawing.Point(348, 28);
+            this.groupBox1.Location = new System.Drawing.Point(336, 28);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(141, 141);
+            this.groupBox1.Size = new System.Drawing.Size(141, 135);
             this.groupBox1.TabIndex = 14;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Permissões";
@@ -221,11 +223,29 @@
             this.cbContabil.Text = "Contabilidade";
             this.cbContabil.UseVisualStyleBackColor = true;
             // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(24, 60);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(41, 13);
+            this.label6.TabIndex = 15;
+            this.label6.Text = "Senha:";
+            // 
+            // textBox4
+            // 
+            this.textBox4.Location = new System.Drawing.Point(71, 57);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(154, 20);
+            this.textBox4.TabIndex = 16;
+            // 
             // Cadastrar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(528, 191);
+            this.ClientSize = new System.Drawing.Size(608, 216);
+            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.label6);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.btnSair);
             this.Controls.Add(this.btnSalvar);
@@ -274,5 +294,7 @@
         private System.Windows.Forms.CheckBox cbLogistica;
         private System.Windows.Forms.CheckBox cbFiscal;
         private System.Windows.Forms.CheckBox cbContabil;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.TextBox textBox4;
     }
 }
