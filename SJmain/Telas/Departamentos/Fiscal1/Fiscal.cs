@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SJmain.Telas.Departamentos.Fiscal1;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -20,6 +21,12 @@ namespace SJmain.Telas.Departamentos
         private void sairToolStripMenuItem_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void Verificarfisc_Click(object sender, EventArgs e)
+        {
+            estaemfechamento eef = new estaemfechamento();
+            eef.Show();
         }
     }
 }
