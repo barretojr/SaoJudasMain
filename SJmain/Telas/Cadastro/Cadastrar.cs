@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -17,6 +18,65 @@ namespace SJmain.Telas.Cadastro
             InitializeComponent();
         }
 
-       
+        private void btnSalvar_Click(object sender, EventArgs e)
+        {
+            if(txtUsuario != null)
+            {                
+                if (rdbContabil.Checked == true)
+                {
+                    MessageBox.Show("Usuario Cadastrado Contabil");
+                }
+                if (rdbFiscal.Checked == true)
+                {
+                    MessageBox.Show("Usuario Cadastrado Fiscal");
+                }
+                if (rdbLogistica.Checked == true)
+                {
+                    MessageBox.Show("Usuario Cadastrado Logistica.");
+                }
+                if (rdbTecnologia.Checked == true)
+                {
+                    MessageBox.Show("Usuario Cadastrado Tecnologia.");
+                }
+            }
+            else
+            {
+                MessageBox.Show("Digite um usuário");
+            }
+            
+        }
+
+        private void btnConfirmar_Click(object sender, EventArgs e)
+        {
+            if (txtUsuario != null)
+            {
+                if (rdbContabil.Checked == true)
+                {
+                    MessageBox.Show("Usuario Cadastrado Contabil");
+                }
+                if (rdbFiscal.Checked == true)
+                {
+                    MessageBox.Show("Usuario Cadastrado Fiscal");
+                }
+                if (rdbLogistica.Checked == true)
+                {
+                    MessageBox.Show("Usuario Cadastrado Logistica.");
+                }
+                if (rdbTecnologia.Checked == true)
+                {
+                    MessageBox.Show("Usuario Cadastrado Tecnologia.");
+                }
+                this.Close();
+            }
+            else
+            {
+                MessageBox.Show("Digite um usuário");
+            }
+        }
+
+        private void btnSair_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
