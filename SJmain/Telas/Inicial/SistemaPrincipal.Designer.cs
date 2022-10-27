@@ -122,7 +122,7 @@
             this.ligaçõesToolStripMenuItem});
             this.logisticaToolStripMenuItem.Name = "logisticaToolStripMenuItem";
             this.logisticaToolStripMenuItem.Size = new System.Drawing.Size(192, 22);
-            this.logisticaToolStripMenuItem.Text = "Logistica";            
+            this.logisticaToolStripMenuItem.Text = "Logistica";
             // 
             // agendaToolStripMenuItem
             // 

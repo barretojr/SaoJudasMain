@@ -35,6 +35,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -145,6 +146,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Telas\Departamentos\Fiscal1\Fiscal.resx">
       <DependentUpon>Fiscal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\Departamentos\Log\Agenda.resx">
+      <DependentUpon>Agenda.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Telas\Departamentos\Log\itinerario.resx">
       <DependentUpon>itinerario.cs</DependentUpon>

@@ -62,7 +62,7 @@ namespace SJmain
                         Properties.Settings.Default.senha = SenhaLogin.Text;
                         Properties.Settings.Default.Save();
                     }
-                    if (LembrarSenha.Checked == false)
+                    else
                     {
                         Properties.Settings.Default.senha = "";
                         Properties.Settings.Default.Save();

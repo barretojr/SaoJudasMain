@@ -25,7 +25,7 @@ namespace SJmain.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        [global::System.Configuration.DefaultSettingValueAttribute("jonathan")]
         public string usuario {
             get {
                 return ((string)(this["usuario"]));
@@ -37,7 +37,7 @@ namespace SJmain.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        [global::System.Configuration.DefaultSettingValueAttribute("1234")]
         public string senha {
             get {
                 return ((string)(this["senha"]));

@@ -3,10 +3,10 @@
   <Profiles />
   <Settings>
     <Setting Name="usuario" Type="System.String" Scope="User">
-      <Value Profile="(Default)" />
+      <Value Profile="(Default)">jonathan</Value>
     </Setting>
     <Setting Name="senha" Type="System.String" Scope="User">
-      <Value Profile="(Default)" />
+      <Value Profile="(Default)">1234</Value>
     </Setting>
   </Settings>
 </SettingsFile>
