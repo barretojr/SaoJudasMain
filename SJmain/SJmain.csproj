@@ -61,12 +61,6 @@
     <Compile Include="Telas\Cadastro\Cadastrar.Designer.cs">
       <DependentUpon>Cadastrar.cs</DependentUpon>
     </Compile>
-    <Compile Include="Telas\Cadastro\Excluir.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Telas\Cadastro\Excluir.Designer.cs">
-      <DependentUpon>Excluir.cs</DependentUpon>
-    </Compile>
     <Compile Include="Telas\Departamentos\Contabilidade.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -110,9 +104,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Telas\Cadastro\Cadastrar.resx">
       <DependentUpon>Cadastrar.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Telas\Cadastro\Excluir.resx">
-      <DependentUpon>Excluir.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Telas\Departamentos\Contabilidade.resx">
       <DependentUpon>Contabilidade.cs</DependentUpon>
