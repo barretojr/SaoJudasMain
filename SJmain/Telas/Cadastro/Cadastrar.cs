@@ -60,11 +60,11 @@ namespace SJmain.Telas.Cadastro
                 }
                 if (rdbLogistica.Checked == true)
                 {
-                    MessageBox.Show("Usuario Cadastrado Logistica.");
+                    MessageBox.Show("Usuario Cadastrado Log.");
                 }
                 if (rdbTecnologia.Checked == true)
                 {
-                    MessageBox.Show("Usuario Cadastrado Tecnologia.");
+                    MessageBox.Show("Usuario Cadastrado Tecno.");
                 }
                 if(cbCoord.Checked == true)
                 {
