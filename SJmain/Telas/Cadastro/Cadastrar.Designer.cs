@@ -60,8 +60,7 @@
             this.btnVerificar.Size = new System.Drawing.Size(87, 50);
             this.btnVerificar.TabIndex = 0;
             this.btnVerificar.Text = "Verificar...";
-            this.btnVerificar.UseVisualStyleBackColor = true;
-            
+            this.btnVerificar.UseVisualStyleBackColor = true;            
             // 
             // label1
             // 
