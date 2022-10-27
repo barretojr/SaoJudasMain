@@ -97,5 +97,10 @@ namespace SJmain.Telas
             Societario societario = new Societario();
             societario.Show();
         }
+
+        private void ocorreuUmErroToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("eita");
+        }
     }
 }
