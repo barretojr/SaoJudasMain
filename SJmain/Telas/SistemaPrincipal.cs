@@ -45,22 +45,49 @@ namespace SJmain.Telas
 
         private void tecnologiaToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Tecnologia tec = new Tecnologia();
-            tec.Show();
+            if (Properties.Settings.Default.usuario == "jonathan")
+            {
+                Tecnologia tec = new Tecnologia();
+                tec.Show();
+            }
+            else
+            {
+                MessageBox.Show("Acesso Negado");
+            }
+            
         }
 
         private void cadastrarToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Cadastrar cad = new Cadastrar();
-            cad.Show();
+            if(Properties.Settings.Default.usuario == "jonathan")
+            {
+                Cadastrar cad = new Cadastrar();
+                cad.Show();
+            }
+            
         }
 
         private void alterarToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Alterar alterar = new Alterar();
-            alterar.Show();
+            if (Properties.Settings.Default.usuario == "jonathan")
+            {
+                Alterar alterar = new Alterar();
+                alterar.Show();
+            }
+            
         }
 
-        
+        private void departamentoPessoalToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            
+            Derpatpessoal dp = new Derpatpessoal();
+            dp.Show();
+        }
+
+        private void societárioToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Societario societario = new Societario();
+            societario.Show();
+        }
     }
 }

@@ -66,6 +66,12 @@
     <Compile Include="Telas\Departamentos\Contabilidade.Designer.cs">
       <DependentUpon>Contabilidade.cs</DependentUpon>
     </Compile>
+    <Compile Include="Telas\Departamentos\Derpatpessoal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\Departamentos\Derpatpessoal.Designer.cs">
+      <DependentUpon>Derpatpessoal.cs</DependentUpon>
+    </Compile>
     <Compile Include="Telas\Departamentos\Fiscal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -77,6 +83,12 @@
     </Compile>
     <Compile Include="Telas\Departamentos\Logistica.Designer.cs">
       <DependentUpon>Logistica.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\Departamentos\Societario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\Departamentos\Societario.Designer.cs">
+      <DependentUpon>Societario.cs</DependentUpon>
     </Compile>
     <Compile Include="Telas\Departamentos\Tecnologia.cs">
       <SubType>Form</SubType>
@@ -107,11 +119,17 @@
     <EmbeddedResource Include="Telas\Departamentos\Contabilidade.resx">
       <DependentUpon>Contabilidade.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Telas\Departamentos\Derpatpessoal.resx">
+      <DependentUpon>Derpatpessoal.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Telas\Departamentos\Fiscal.resx">
       <DependentUpon>Fiscal.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Telas\Departamentos\Logistica.resx">
       <DependentUpon>Logistica.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\Departamentos\Societario.resx">
+      <DependentUpon>Societario.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Telas\Departamentos\Tecnologia.resx">
       <DependentUpon>Tecnologia.cs</DependentUpon>

@@ -48,6 +48,33 @@ namespace SJmain
                 }
                 
             }
+            else if (UsuarioLogin.Text == "jonathan" && SenhaLogin.Text == "1234")
+            {
+                SistemaPrincipal sp = new SistemaPrincipal();
+                sp.Show();
+                this.Hide();
+                if (LembrarUsuario.Checked == true)
+                {
+                    Properties.Settings.Default.usuario = UsuarioLogin.Text;
+                    Properties.Settings.Default.Save();
+                    if (LembrarSenha.Checked == true)
+                    {
+                        Properties.Settings.Default.senha = SenhaLogin.Text;
+                        Properties.Settings.Default.Save();
+                    }
+                    if (LembrarSenha.Checked == false)
+                    {
+                        Properties.Settings.Default.senha = "";
+                        Properties.Settings.Default.Save();
+                    }
+                }
+                if (LembrarUsuario.Checked == false)
+                {
+                    Properties.Settings.Default.usuario = "";
+                    Properties.Settings.Default.Save();
+                }
+
+            }
             else
             {
                 MessageBox.Show("Usuário Incorreto");

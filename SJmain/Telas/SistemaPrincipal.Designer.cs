@@ -41,6 +41,8 @@
             this.usuárioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cadastrarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.alterarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.societárioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.departamentoPessoalToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.MenuOpcoes.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -84,7 +86,9 @@
             this.contabilidadeToolStripMenuItem,
             this.fiscalToolStripMenuItem,
             this.logisticaToolStripMenuItem,
-            this.tecnologiaToolStripMenuItem});
+            this.tecnologiaToolStripMenuItem,
+            this.societárioToolStripMenuItem,
+            this.departamentoPessoalToolStripMenuItem});
             this.departamentoToolStripMenuItem.Name = "departamentoToolStripMenuItem";
             this.departamentoToolStripMenuItem.Size = new System.Drawing.Size(95, 20);
             this.departamentoToolStripMenuItem.Text = "Departamento";
@@ -92,28 +96,28 @@
             // contabilidadeToolStripMenuItem
             // 
             this.contabilidadeToolStripMenuItem.Name = "contabilidadeToolStripMenuItem";
-            this.contabilidadeToolStripMenuItem.Size = new System.Drawing.Size(148, 22);
+            this.contabilidadeToolStripMenuItem.Size = new System.Drawing.Size(192, 22);
             this.contabilidadeToolStripMenuItem.Text = "Contabilidade";
             this.contabilidadeToolStripMenuItem.Click += new System.EventHandler(this.contabilidadeToolStripMenuItem_Click);
             // 
             // fiscalToolStripMenuItem
             // 
             this.fiscalToolStripMenuItem.Name = "fiscalToolStripMenuItem";
-            this.fiscalToolStripMenuItem.Size = new System.Drawing.Size(148, 22);
+            this.fiscalToolStripMenuItem.Size = new System.Drawing.Size(192, 22);
             this.fiscalToolStripMenuItem.Text = "Fiscal";
             this.fiscalToolStripMenuItem.Click += new System.EventHandler(this.fiscalToolStripMenuItem_Click);
             // 
             // logisticaToolStripMenuItem
             // 
             this.logisticaToolStripMenuItem.Name = "logisticaToolStripMenuItem";
-            this.logisticaToolStripMenuItem.Size = new System.Drawing.Size(148, 22);
+            this.logisticaToolStripMenuItem.Size = new System.Drawing.Size(192, 22);
             this.logisticaToolStripMenuItem.Text = "Logistica";
             this.logisticaToolStripMenuItem.Click += new System.EventHandler(this.logisticaToolStripMenuItem_Click);
             // 
             // tecnologiaToolStripMenuItem
             // 
             this.tecnologiaToolStripMenuItem.Name = "tecnologiaToolStripMenuItem";
-            this.tecnologiaToolStripMenuItem.Size = new System.Drawing.Size(148, 22);
+            this.tecnologiaToolStripMenuItem.Size = new System.Drawing.Size(192, 22);
             this.tecnologiaToolStripMenuItem.Text = "Tecnologia";
             this.tecnologiaToolStripMenuItem.Click += new System.EventHandler(this.tecnologiaToolStripMenuItem_Click);
             // 
@@ -131,22 +135,36 @@
             this.cadastrarToolStripMenuItem,
             this.alterarToolStripMenuItem});
             this.usuárioToolStripMenuItem.Name = "usuárioToolStripMenuItem";
-            this.usuárioToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.usuárioToolStripMenuItem.Size = new System.Drawing.Size(114, 22);
             this.usuárioToolStripMenuItem.Text = "Usuário";
             // 
             // cadastrarToolStripMenuItem
             // 
             this.cadastrarToolStripMenuItem.Name = "cadastrarToolStripMenuItem";
-            this.cadastrarToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.cadastrarToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
             this.cadastrarToolStripMenuItem.Text = "Cadastrar";
             this.cadastrarToolStripMenuItem.Click += new System.EventHandler(this.cadastrarToolStripMenuItem_Click);
             // 
             // alterarToolStripMenuItem
             // 
             this.alterarToolStripMenuItem.Name = "alterarToolStripMenuItem";
-            this.alterarToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.alterarToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
             this.alterarToolStripMenuItem.Text = "Alterar";
             this.alterarToolStripMenuItem.Click += new System.EventHandler(this.alterarToolStripMenuItem_Click);
+            // 
+            // societárioToolStripMenuItem
+            // 
+            this.societárioToolStripMenuItem.Name = "societárioToolStripMenuItem";
+            this.societárioToolStripMenuItem.Size = new System.Drawing.Size(192, 22);
+            this.societárioToolStripMenuItem.Text = "Societário";
+            this.societárioToolStripMenuItem.Click += new System.EventHandler(this.societárioToolStripMenuItem_Click);
+            // 
+            // departamentoPessoalToolStripMenuItem
+            // 
+            this.departamentoPessoalToolStripMenuItem.Name = "departamentoPessoalToolStripMenuItem";
+            this.departamentoPessoalToolStripMenuItem.Size = new System.Drawing.Size(192, 22);
+            this.departamentoPessoalToolStripMenuItem.Text = "Departamento Pessoal";
+            this.departamentoPessoalToolStripMenuItem.Click += new System.EventHandler(this.departamentoPessoalToolStripMenuItem_Click);
             // 
             // SistemaPrincipal
             // 
@@ -157,7 +175,7 @@
             this.IsMdiContainer = true;
             this.MainMenuStrip = this.MenuOpcoes;
             this.Name = "SistemaPrincipal";
-            this.Text = "SistemaPrincipal";
+            this.Text = "Principal";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.MenuOpcoes.ResumeLayout(false);
             this.MenuOpcoes.PerformLayout();
@@ -181,5 +199,7 @@
         private System.Windows.Forms.ToolStripMenuItem usuárioToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem cadastrarToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem alterarToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem societárioToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem departamentoPessoalToolStripMenuItem;
     }
 }
