@@ -24,19 +24,19 @@ namespace SJmain.Telas.Cadastro
             {                
                 if (rdbContabil.Checked == true)
                 {
-                    MessageBox.Show("Usuario Cadastrado Contabil");
+                    MessageBox.Show("Usuario Cadastrado Contabil","Contabil");
                 }
                 if (rdbFiscal.Checked == true)
                 {
-                    MessageBox.Show("Usuario Cadastrado Fiscal");
+                    MessageBox.Show("Usuario Cadastrado Fiscal","Fiscal");
                 }
                 if (rdbLogistica.Checked == true)
                 {
-                    MessageBox.Show("Usuario Cadastrado Logistica.");
+                    MessageBox.Show("Usuario Cadastrado Logistica.","Logistica");
                 }
                 if (rdbTecnologia.Checked == true)
                 {
-                    MessageBox.Show("Usuario Cadastrado Tecnologia.");
+                    MessageBox.Show("Usuario Cadastrado Tecnologia.","Tecnologia");
                 }
             }
             else
@@ -52,23 +52,19 @@ namespace SJmain.Telas.Cadastro
             {
                 if (rdbContabil.Checked == true)
                 {
-                    MessageBox.Show("Usuario Cadastrado Contabil");
+                    MessageBox.Show("Usuario Cadastrado Contabil", "Contabil");
                 }
                 if (rdbFiscal.Checked == true)
                 {
-                    MessageBox.Show("Usuario Cadastrado Fiscal");
+                    MessageBox.Show("Usuario Cadastrado Fiscal", "Fiscal");
                 }
                 if (rdbLogistica.Checked == true)
                 {
-                    MessageBox.Show("Usuario Cadastrado Log.");
+                    MessageBox.Show("Usuario Cadastrado Logistica.", "Logistica");
                 }
                 if (rdbTecnologia.Checked == true)
                 {
-                    MessageBox.Show("Usuario Cadastrado Tecno.");
-                }
-                if(cbCoord.Checked == true)
-                {
-                    MessageBox.Show("Coordenador");
+                    MessageBox.Show("Usuario Cadastrado Tecnologia.", "Tecnologia");
                 }
                 this.Close();
             }

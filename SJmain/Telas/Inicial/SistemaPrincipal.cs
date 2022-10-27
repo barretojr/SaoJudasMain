@@ -1,5 +1,6 @@
 ﻿using SJmain.Telas.Cadastro;
 using SJmain.Telas.Departamentos;
+using SJmain.Telas.Departamentos.Logistica;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -19,7 +20,7 @@ namespace SJmain.Telas
             InitializeComponent();
         }
 
-        private void sairToolStripMenuItem_Click(object sender, EventArgs e)
+        private void SairToolStripMenuItem_Click(object sender, EventArgs e)
         {
             System.Windows.Forms.Application.Exit();
         }
@@ -31,11 +32,7 @@ namespace SJmain.Telas
 
         }
 
-        private void logisticaToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Logistica log = new Logistica();
-            log.Show();
-        }
+        
 
         private void fiscalToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -101,6 +98,24 @@ namespace SJmain.Telas
         private void ocorreuUmErroToolStripMenuItem_Click(object sender, EventArgs e)
         {
             MessageBox.Show("eita");
+        }
+
+        private void agendaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+           Agenda ag = new Agenda();
+            ag.Show();
+        }
+
+        private void entineToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Itinerario it = new Itinerario();
+            it.Show();
+        }
+
+        private void ligaçõesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Ligacoes lig = new Ligacoes();  
+            lig.Show();
         }
     }
 }
