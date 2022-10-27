@@ -35,7 +35,6 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
-    <Reference Include="System.DirectoryServices" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -73,17 +72,17 @@
     <Compile Include="Telas\Departamentos\Derpatpessoal1\Derpatpessoal.Designer.cs">
       <DependentUpon>Derpatpessoal.cs</DependentUpon>
     </Compile>
-    <Compile Include="Telas\Departamentos\Fiscal1\estaemfechamento.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Telas\Departamentos\Fiscal1\estaemfechamento.Designer.cs">
-      <DependentUpon>estaemfechamento.cs</DependentUpon>
-    </Compile>
     <Compile Include="Telas\Departamentos\Fiscal1\Fiscal.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Telas\Departamentos\Fiscal1\Fiscal.Designer.cs">
       <DependentUpon>Fiscal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\Departamentos\Fiscal1\StatusEmpresa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\Departamentos\Fiscal1\StatusEmpresa.Designer.cs">
+      <DependentUpon>StatusEmpresa.cs</DependentUpon>
     </Compile>
     <Compile Include="Telas\Departamentos\Log\Agenda.cs">
       <SubType>Form</SubType>
@@ -141,14 +140,11 @@
     <EmbeddedResource Include="Telas\Departamentos\Derpatpessoal1\Derpatpessoal.resx">
       <DependentUpon>Derpatpessoal.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Telas\Departamentos\Fiscal1\estaemfechamento.resx">
-      <DependentUpon>estaemfechamento.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Telas\Departamentos\Fiscal1\Fiscal.resx">
       <DependentUpon>Fiscal.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Telas\Departamentos\Log\Agenda.resx">
-      <DependentUpon>Agenda.cs</DependentUpon>
+    <EmbeddedResource Include="Telas\Departamentos\Fiscal1\StatusEmpresa.resx">
+      <DependentUpon>StatusEmpresa.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Telas\Departamentos\Log\itinerario.resx">
       <DependentUpon>itinerario.cs</DependentUpon>
