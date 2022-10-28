@@ -83,6 +83,7 @@
             this.atualizarEmpresaToolStripMenuItem.Name = "atualizarEmpresaToolStripMenuItem";
             this.atualizarEmpresaToolStripMenuItem.Size = new System.Drawing.Size(219, 22);
             this.atualizarEmpresaToolStripMenuItem.Text = "Atualizar Status da Empresa";
+            this.atualizarEmpresaToolStripMenuItem.Click += new System.EventHandler(this.atualizarEmpresaToolStripMenuItem_Click);
             // 
             // Fiscal
             // 
