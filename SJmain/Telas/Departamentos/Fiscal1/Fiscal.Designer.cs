@@ -89,13 +89,14 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(802, 204);
+            this.ClientSize = new System.Drawing.Size(802, 353);
             this.Controls.Add(this.MenuFiscal);
             this.IsMdiContainer = true;
             this.MainMenuStrip = this.MenuFiscal;
             this.Name = "Fiscal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Fiscal";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.MenuFiscal.ResumeLayout(false);
             this.MenuFiscal.PerformLayout();
             this.ResumeLayout(false);
