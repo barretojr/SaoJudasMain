@@ -83,6 +83,7 @@
             this.atualizarEmpresaToolStripMenuItem.Name = "atualizarEmpresaToolStripMenuItem";
             this.atualizarEmpresaToolStripMenuItem.Size = new System.Drawing.Size(219, 22);
             this.atualizarEmpresaToolStripMenuItem.Text = "Atualizar Status da Empresa";
+            this.atualizarEmpresaToolStripMenuItem.Click += new System.EventHandler(this.atualizarEmpresaToolStripMenuItem_Click);
             // 
             // Fiscal
             // 
@@ -90,6 +91,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(802, 204);
             this.Controls.Add(this.MenuFiscal);
+            this.IsMdiContainer = true;
             this.MainMenuStrip = this.MenuFiscal;
             this.Name = "Fiscal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

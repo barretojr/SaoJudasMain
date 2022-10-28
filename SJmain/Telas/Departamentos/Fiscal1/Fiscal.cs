@@ -27,5 +27,12 @@ namespace SJmain.Telas.Departamentos
         {
             
         }
+
+        private void atualizarEmpresaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            StatusEmpresa se = new StatusEmpresa();
+            se.MdiParent = this;
+            se.Show();
+        }
     }
 }

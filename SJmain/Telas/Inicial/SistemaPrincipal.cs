@@ -36,7 +36,7 @@ namespace SJmain.Telas
 
         private void fiscalToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Fiscal fis = new Fiscal();
+            Fiscal fis = new Fiscal();            
             fis.Show();
         }
 
