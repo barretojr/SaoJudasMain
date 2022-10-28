@@ -21,5 +21,10 @@ namespace SJmain.Telas.Departamentos.Fiscal1
         {
             this.Close();
         }
+
+        private void btnConfirmar_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
