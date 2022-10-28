@@ -35,12 +35,12 @@
             this.informaçõesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.alterarStatusEmpresaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.visualizarStatusEmpresaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.balancetesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.analiticoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.sintéticoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.importarBalanceteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.analíticoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.sintéticoToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.balancetesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.analiticoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.sintéticoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.MenuContabilidade.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -101,27 +101,6 @@
             this.visualizarStatusEmpresaToolStripMenuItem.Size = new System.Drawing.Size(206, 22);
             this.visualizarStatusEmpresaToolStripMenuItem.Text = "Visualizar Status Empresa";
             // 
-            // balancetesToolStripMenuItem
-            // 
-            this.balancetesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.analiticoToolStripMenuItem,
-            this.sintéticoToolStripMenuItem});
-            this.balancetesToolStripMenuItem.Name = "balancetesToolStripMenuItem";
-            this.balancetesToolStripMenuItem.Size = new System.Drawing.Size(75, 20);
-            this.balancetesToolStripMenuItem.Text = "Balancetes";
-            // 
-            // analiticoToolStripMenuItem
-            // 
-            this.analiticoToolStripMenuItem.Name = "analiticoToolStripMenuItem";
-            this.analiticoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.analiticoToolStripMenuItem.Text = "Analítico";
-            // 
-            // sintéticoToolStripMenuItem
-            // 
-            this.sintéticoToolStripMenuItem.Name = "sintéticoToolStripMenuItem";
-            this.sintéticoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.sintéticoToolStripMenuItem.Text = "Sintético";
-            // 
             // importarBalanceteToolStripMenuItem
             // 
             this.importarBalanceteToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -136,12 +115,37 @@
             this.analíticoToolStripMenuItem.Name = "analíticoToolStripMenuItem";
             this.analíticoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.analíticoToolStripMenuItem.Text = "Analítico";
+            this.analíticoToolStripMenuItem.Click += new System.EventHandler(this.analíticoToolStripMenuItem_Click);
             // 
             // sintéticoToolStripMenuItem1
             // 
             this.sintéticoToolStripMenuItem1.Name = "sintéticoToolStripMenuItem1";
             this.sintéticoToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
             this.sintéticoToolStripMenuItem1.Text = "Sintético";
+            this.sintéticoToolStripMenuItem1.Click += new System.EventHandler(this.sintéticoToolStripMenuItem1_Click);
+            // 
+            // balancetesToolStripMenuItem
+            // 
+            this.balancetesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.analiticoToolStripMenuItem,
+            this.sintéticoToolStripMenuItem});
+            this.balancetesToolStripMenuItem.Name = "balancetesToolStripMenuItem";
+            this.balancetesToolStripMenuItem.Size = new System.Drawing.Size(75, 20);
+            this.balancetesToolStripMenuItem.Text = "Balancetes";
+            // 
+            // analiticoToolStripMenuItem
+            // 
+            this.analiticoToolStripMenuItem.Name = "analiticoToolStripMenuItem";
+            this.analiticoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.analiticoToolStripMenuItem.Text = "Analítico";
+            this.analiticoToolStripMenuItem.Click += new System.EventHandler(this.analiticoToolStripMenuItem_Click);
+            // 
+            // sintéticoToolStripMenuItem
+            // 
+            this.sintéticoToolStripMenuItem.Name = "sintéticoToolStripMenuItem";
+            this.sintéticoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.sintéticoToolStripMenuItem.Text = "Sintético";
+            this.sintéticoToolStripMenuItem.Click += new System.EventHandler(this.sintéticoToolStripMenuItem_Click);
             // 
             // Contabilidade
             // 

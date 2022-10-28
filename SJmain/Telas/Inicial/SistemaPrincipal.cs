@@ -22,13 +22,14 @@ namespace SJmain.Telas
 
         private void SairToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            System.Windows.Forms.Application.Exit();
+            Application.Exit();
         }
 
         private void contabilidadeToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Contabilidade Cont = new Contabilidade();
             Cont.Show();
+            this.Hide();
 
         }
 
@@ -38,6 +39,7 @@ namespace SJmain.Telas
         {
             Fiscal fis = new Fiscal();            
             fis.Show();
+            this.Hide();
         }
 
         private void tecnologiaToolStripMenuItem_Click(object sender, EventArgs e)
@@ -46,6 +48,7 @@ namespace SJmain.Telas
             {
                 Tecnologia tec = new Tecnologia();
                 tec.Show();
+                this.Hide();
             }
             else
             {
@@ -60,6 +63,7 @@ namespace SJmain.Telas
             {
                 Cadastrar cad = new Cadastrar();
                 cad.Show();
+                
             }
             else
             {
@@ -73,7 +77,7 @@ namespace SJmain.Telas
             if (Properties.Settings.Default.usuario == "jonathan")
             {
                 Alterar alterar = new Alterar();
-                alterar.Show();
+                alterar.Show();                
             }
             else
             {
@@ -87,17 +91,20 @@ namespace SJmain.Telas
             
             Derpatpessoal dp = new Derpatpessoal();
             dp.Show();
+            this.Hide();
         }
 
         private void societárioToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Societario societario = new Societario();
             societario.Show();
+            this.Hide();
         }
 
         private void ocorreuUmErroToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("eita");
+            DialogResult eita;
+            eita = MessageBox.Show("Eita!", "Eita!", MessageBoxButtons.AbortRetryIgnore, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2);
         }
 
         private void agendaToolStripMenuItem_Click(object sender, EventArgs e)

@@ -67,11 +67,35 @@
     <Compile Include="Telas\Cadastro\Cadastrar.Designer.cs">
       <DependentUpon>Cadastrar.cs</DependentUpon>
     </Compile>
+    <Compile Include="Telas\Departamentos\Contabilidade1\balanceteanalitico.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\Departamentos\Contabilidade1\balanceteanalitico.Designer.cs">
+      <DependentUpon>balanceteanalitico.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\Departamentos\Contabilidade1\balancetesintetico.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\Departamentos\Contabilidade1\balancetesintetico.Designer.cs">
+      <DependentUpon>balancetesintetico.cs</DependentUpon>
+    </Compile>
     <Compile Include="Telas\Departamentos\Contabilidade1\Contabilidade.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Telas\Departamentos\Contabilidade1\Contabilidade.Designer.cs">
       <DependentUpon>Contabilidade.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\Departamentos\Contabilidade1\importaranalitico.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\Departamentos\Contabilidade1\importaranalitico.Designer.cs">
+      <DependentUpon>importaranalitico.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\Departamentos\Contabilidade1\importarsintetico.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\Departamentos\Contabilidade1\importarsintetico.Designer.cs">
+      <DependentUpon>importarsintetico.cs</DependentUpon>
     </Compile>
     <Compile Include="Telas\Departamentos\Contabilidade1\StatusEmpresaContabil.cs">
       <SubType>Form</SubType>
@@ -147,8 +171,20 @@
     <EmbeddedResource Include="Telas\Cadastro\Cadastrar.resx">
       <DependentUpon>Cadastrar.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Telas\Departamentos\Contabilidade1\balanceteanalitico.resx">
+      <DependentUpon>balanceteanalitico.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\Departamentos\Contabilidade1\balancetesintetico.resx">
+      <DependentUpon>balancetesintetico.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Telas\Departamentos\Contabilidade1\Contabilidade.resx">
       <DependentUpon>Contabilidade.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\Departamentos\Contabilidade1\importaranalitico.resx">
+      <DependentUpon>importaranalitico.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\Departamentos\Contabilidade1\importarsintetico.resx">
+      <DependentUpon>importarsintetico.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Telas\Departamentos\Contabilidade1\StatusEmpresaContabil.resx">
       <DependentUpon>StatusEmpresaContabil.cs</DependentUpon>

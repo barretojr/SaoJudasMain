@@ -29,5 +29,33 @@ namespace SJmain.Telas.Departamentos
             sec.MdiParent = this;
             sec.Show();
         }
+
+        private void analíticoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            importaranalitico ia = new importaranalitico();
+            ia.MdiParent = this;
+            ia.Show();
+        }
+
+        private void sintéticoToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            importarsintetico ims = new importarsintetico();
+            ims.MdiParent = this;
+            ims.Show();
+        }
+
+        private void analiticoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            balanceteanalitico ba = new balanceteanalitico();
+            ba.MdiParent = this;
+            ba.Show();
+        }
+
+        private void sintéticoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            balancetesintetico bs = new balancetesintetico();
+            bs.MdiParent = this;
+            bs.Show();
+        }
     }
 }
