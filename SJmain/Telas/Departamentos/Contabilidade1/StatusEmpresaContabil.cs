@@ -16,5 +16,15 @@ namespace SJmain.Telas.Departamentos.Contabilidade1
         {
             InitializeComponent();
         }
+
+        private void btnSair_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void btnConfirmar_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
