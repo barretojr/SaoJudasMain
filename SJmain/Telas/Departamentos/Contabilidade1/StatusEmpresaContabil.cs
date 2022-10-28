@@ -8,18 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace SJmain.Telas.Departamentos.Fiscal1
+namespace SJmain.Telas.Departamentos.Contabilidade1
 {
-    public partial class StatusEmpresa : Form
+    public partial class StatusEmpresaContabil : Form
     {
-        public StatusEmpresa()
+        public StatusEmpresaContabil()
         {
             InitializeComponent();
-        }        
-
-        private void btnSair_Click(object sender, EventArgs e)
-        {
-            this.Close();
         }
     }
 }

@@ -91,6 +91,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(802, 204);
             this.Controls.Add(this.MenuFiscal);
+            this.IsMdiContainer = true;
             this.MainMenuStrip = this.MenuFiscal;
             this.Name = "Fiscal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

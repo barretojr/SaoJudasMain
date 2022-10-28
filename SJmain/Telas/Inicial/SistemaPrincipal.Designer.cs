@@ -127,21 +127,21 @@
             // agendaToolStripMenuItem
             // 
             this.agendaToolStripMenuItem.Name = "agendaToolStripMenuItem";
-            this.agendaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.agendaToolStripMenuItem.Size = new System.Drawing.Size(121, 22);
             this.agendaToolStripMenuItem.Text = "Agenda";
             this.agendaToolStripMenuItem.Click += new System.EventHandler(this.agendaToolStripMenuItem_Click);
             // 
             // entineToolStripMenuItem
             // 
             this.entineToolStripMenuItem.Name = "entineToolStripMenuItem";
-            this.entineToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.entineToolStripMenuItem.Size = new System.Drawing.Size(121, 22);
             this.entineToolStripMenuItem.Text = "Itinerário";
             this.entineToolStripMenuItem.Click += new System.EventHandler(this.entineToolStripMenuItem_Click);
             // 
             // ligaçõesToolStripMenuItem
             // 
             this.ligaçõesToolStripMenuItem.Name = "ligaçõesToolStripMenuItem";
-            this.ligaçõesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.ligaçõesToolStripMenuItem.Size = new System.Drawing.Size(121, 22);
             this.ligaçõesToolStripMenuItem.Text = "Ligações";
             this.ligaçõesToolStripMenuItem.Click += new System.EventHandler(this.ligaçõesToolStripMenuItem_Click);
             // 
@@ -225,11 +225,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.MenuOpcoes);
-            this.IsMdiContainer = true;
             this.MainMenuStrip = this.MenuOpcoes;
             this.Name = "SistemaPrincipal";
             this.Text = "Principal";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.MenuOpcoes.ResumeLayout(false);
             this.MenuOpcoes.PerformLayout();
             this.ResumeLayout(false);

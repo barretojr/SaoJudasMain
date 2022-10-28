@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SJmain.Telas.Departamentos.Contabilidade1;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -20,6 +21,13 @@ namespace SJmain.Telas.Departamentos
         private void sairToolStripMenuItem_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void alterarStatusEmpresaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            StatusEmpresaContabil sec = new StatusEmpresaContabil();
+            sec.MdiParent = this;
+            sec.Show();
         }
     }
 }

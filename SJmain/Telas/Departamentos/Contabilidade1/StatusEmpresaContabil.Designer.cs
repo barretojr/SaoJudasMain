@@ -1,6 +1,6 @@
-﻿namespace SJmain.Telas.Departamentos.Fiscal1
+﻿namespace SJmain.Telas.Departamentos.Contabilidade1
 {
-    partial class StatusEmpresa
+    partial class StatusEmpresaContabil
     {
         /// <summary>
         /// Required designer variable.
@@ -28,9 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnAtivar = new System.Windows.Forms.Button();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.txtEmpresa = new System.Windows.Forms.TextBox();
+            this.btnAlterar = new System.Windows.Forms.Button();
+            this.btnConfirmar = new System.Windows.Forms.Button();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.btnSair = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.rdbDezembro = new System.Windows.Forms.RadioButton();
             this.rdbNovembro = new System.Windows.Forms.RadioButton();
@@ -44,45 +45,48 @@
             this.rdbMarco = new System.Windows.Forms.RadioButton();
             this.rdbFevereiro = new System.Windows.Forms.RadioButton();
             this.rdbJaneiro = new System.Windows.Forms.RadioButton();
-            this.btnSair = new System.Windows.Forms.Button();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.rdbRecalculo = new System.Windows.Forms.RadioButton();
-            this.radioButton3 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.rdbEmFechamento = new System.Windows.Forms.RadioButton();
-            this.btnConfirmar = new System.Windows.Forms.Button();
-            this.btnAlterar = new System.Windows.Forms.Button();
-            this.groupBox1.SuspendLayout();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.txtEmpresa = new System.Windows.Forms.TextBox();
+            this.btnAtivar = new System.Windows.Forms.Button();
             this.groupBox2.SuspendLayout();
-            this.groupBox3.SuspendLayout();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // btnAtivar
+            // btnAlterar
             // 
-            this.btnAtivar.Location = new System.Drawing.Point(6, 19);
-            this.btnAtivar.Name = "btnAtivar";
-            this.btnAtivar.Size = new System.Drawing.Size(82, 68);
-            this.btnAtivar.TabIndex = 0;
-            this.btnAtivar.Text = "Ativar";
-            this.btnAtivar.UseVisualStyleBackColor = true;
+            this.btnAlterar.Location = new System.Drawing.Point(316, 243);
+            this.btnAlterar.Name = "btnAlterar";
+            this.btnAlterar.Size = new System.Drawing.Size(75, 23);
+            this.btnAlterar.TabIndex = 12;
+            this.btnAlterar.Text = "Alterar";
+            this.btnAlterar.UseVisualStyleBackColor = true;
             // 
-            // groupBox1
+            // btnConfirmar
             // 
-            this.groupBox1.Controls.Add(this.txtEmpresa);
-            this.groupBox1.Controls.Add(this.btnAtivar);
-            this.groupBox1.Location = new System.Drawing.Point(12, 12);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(333, 100);
-            this.groupBox1.TabIndex = 1;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Ativar Empresa";
+            this.btnConfirmar.Location = new System.Drawing.Point(397, 243);
+            this.btnConfirmar.Name = "btnConfirmar";
+            this.btnConfirmar.Size = new System.Drawing.Size(75, 23);
+            this.btnConfirmar.TabIndex = 11;
+            this.btnConfirmar.Text = "Confirmar";
+            this.btnConfirmar.UseVisualStyleBackColor = true;
             // 
-            // txtEmpresa
+            // groupBox3
             // 
-            this.txtEmpresa.Location = new System.Drawing.Point(95, 19);
-            this.txtEmpresa.Name = "txtEmpresa";
-            this.txtEmpresa.Size = new System.Drawing.Size(224, 20);
-            this.txtEmpresa.TabIndex = 1;
+            this.groupBox3.Location = new System.Drawing.Point(351, 12);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(121, 118);
+            this.groupBox3.TabIndex = 10;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "Status";
+            // 
+            // btnSair
+            // 
+            this.btnSair.Location = new System.Drawing.Point(12, 243);
+            this.btnSair.Name = "btnSair";
+            this.btnSair.Size = new System.Drawing.Size(75, 23);
+            this.btnSair.TabIndex = 9;
+            this.btnSair.Text = "Sair";
+            this.btnSair.UseVisualStyleBackColor = true;
             // 
             // groupBox2
             // 
@@ -101,7 +105,7 @@
             this.groupBox2.Location = new System.Drawing.Point(13, 119);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(332, 118);
-            this.groupBox2.TabIndex = 2;
+            this.groupBox2.TabIndex = 8;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Mês Correspondente";
             // 
@@ -237,96 +241,38 @@
             this.rdbJaneiro.Text = "Janeiro";
             this.rdbJaneiro.UseVisualStyleBackColor = true;
             // 
-            // btnSair
+            // groupBox1
             // 
-            this.btnSair.Location = new System.Drawing.Point(12, 243);
-            this.btnSair.Name = "btnSair";
-            this.btnSair.Size = new System.Drawing.Size(75, 23);
-            this.btnSair.TabIndex = 3;
-            this.btnSair.Text = "Sair";
-            this.btnSair.UseVisualStyleBackColor = true;
-            this.btnSair.Click += new System.EventHandler(this.btnSair_Click);
+            this.groupBox1.Controls.Add(this.txtEmpresa);
+            this.groupBox1.Controls.Add(this.btnAtivar);
+            this.groupBox1.Location = new System.Drawing.Point(12, 12);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(333, 100);
+            this.groupBox1.TabIndex = 7;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Ativar Empresa";
             // 
-            // groupBox3
+            // txtEmpresa
             // 
-            this.groupBox3.Controls.Add(this.rdbRecalculo);
-            this.groupBox3.Controls.Add(this.radioButton3);
-            this.groupBox3.Controls.Add(this.radioButton2);
-            this.groupBox3.Controls.Add(this.rdbEmFechamento);
-            this.groupBox3.Location = new System.Drawing.Point(351, 12);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(121, 118);
-            this.groupBox3.TabIndex = 4;
-            this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "Status";
+            this.txtEmpresa.Location = new System.Drawing.Point(95, 19);
+            this.txtEmpresa.Name = "txtEmpresa";
+            this.txtEmpresa.Size = new System.Drawing.Size(224, 20);
+            this.txtEmpresa.TabIndex = 1;
             // 
-            // rdbRecalculo
+            // btnAtivar
             // 
-            this.rdbRecalculo.AutoSize = true;
-            this.rdbRecalculo.Location = new System.Drawing.Point(7, 91);
-            this.rdbRecalculo.Name = "rdbRecalculo";
-            this.rdbRecalculo.Size = new System.Drawing.Size(113, 17);
-            this.rdbRecalculo.TabIndex = 3;
-            this.rdbRecalculo.TabStop = true;
-            this.rdbRecalculo.Text = "Recalculo Imposto";
-            this.rdbRecalculo.UseVisualStyleBackColor = true;
+            this.btnAtivar.Location = new System.Drawing.Point(6, 19);
+            this.btnAtivar.Name = "btnAtivar";
+            this.btnAtivar.Size = new System.Drawing.Size(82, 68);
+            this.btnAtivar.TabIndex = 0;
+            this.btnAtivar.Text = "Ativar";
+            this.btnAtivar.UseVisualStyleBackColor = true;
             // 
-            // radioButton3
-            // 
-            this.radioButton3.AutoSize = true;
-            this.radioButton3.Location = new System.Drawing.Point(7, 68);
-            this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(68, 17);
-            this.radioButton3.TabIndex = 2;
-            this.radioButton3.TabStop = true;
-            this.radioButton3.Text = "Correção";
-            this.radioButton3.UseVisualStyleBackColor = true;
-            // 
-            // radioButton2
-            // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(7, 44);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(72, 17);
-            this.radioButton2.TabIndex = 1;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "Finalizada";
-            this.radioButton2.UseVisualStyleBackColor = true;
-            // 
-            // rdbEmFechamento
-            // 
-            this.rdbEmFechamento.AutoSize = true;
-            this.rdbEmFechamento.Location = new System.Drawing.Point(7, 20);
-            this.rdbEmFechamento.Name = "rdbEmFechamento";
-            this.rdbEmFechamento.Size = new System.Drawing.Size(102, 17);
-            this.rdbEmFechamento.TabIndex = 0;
-            this.rdbEmFechamento.TabStop = true;
-            this.rdbEmFechamento.Text = "Em Fechamento";
-            this.rdbEmFechamento.UseVisualStyleBackColor = true;
-            // 
-            // btnConfirmar
-            // 
-            this.btnConfirmar.Location = new System.Drawing.Point(397, 243);
-            this.btnConfirmar.Name = "btnConfirmar";
-            this.btnConfirmar.Size = new System.Drawing.Size(75, 23);
-            this.btnConfirmar.TabIndex = 5;
-            this.btnConfirmar.Text = "Confirmar";
-            this.btnConfirmar.UseVisualStyleBackColor = true;
-            // 
-            // btnAlterar
-            // 
-            this.btnAlterar.Location = new System.Drawing.Point(316, 243);
-            this.btnAlterar.Name = "btnAlterar";
-            this.btnAlterar.Size = new System.Drawing.Size(75, 23);
-            this.btnAlterar.TabIndex = 6;
-            this.btnAlterar.Text = "Alterar";
-            this.btnAlterar.UseVisualStyleBackColor = true;
-            // 
-            // StatusEmpresa
+            // StatusEmpresaContabil
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(488, 277);
+            this.ClientSize = new System.Drawing.Size(489, 275);
             this.Controls.Add(this.btnAlterar);
             this.Controls.Add(this.btnConfirmar);
             this.Controls.Add(this.groupBox3);
@@ -334,22 +280,22 @@
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Name = "StatusEmpresa";
-            this.Text = "Alterar Status de Empresa Fiscal";
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
+            this.Name = "StatusEmpresaContabil";
+            this.Text = "Alterar Status de Empresa Contabil";
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
-            this.groupBox3.ResumeLayout(false);
-            this.groupBox3.PerformLayout();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Button btnAtivar;
-        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.Button btnAlterar;
+        private System.Windows.Forms.Button btnConfirmar;
+        private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.Button btnSair;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.RadioButton rdbDezembro;
         private System.Windows.Forms.RadioButton rdbNovembro;
@@ -363,14 +309,8 @@
         private System.Windows.Forms.RadioButton rdbMarco;
         private System.Windows.Forms.RadioButton rdbFevereiro;
         private System.Windows.Forms.RadioButton rdbJaneiro;
+        private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.TextBox txtEmpresa;
-        private System.Windows.Forms.Button btnSair;
-        private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.RadioButton radioButton3;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.RadioButton rdbEmFechamento;
-        private System.Windows.Forms.Button btnConfirmar;
-        private System.Windows.Forms.Button btnAlterar;
-        private System.Windows.Forms.RadioButton rdbRecalculo;
+        private System.Windows.Forms.Button btnAtivar;
     }
 }
