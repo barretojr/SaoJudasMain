@@ -198,6 +198,9 @@
     <EmbeddedResource Include="Telas\Departamentos\Fiscal1\StatusEmpresa.resx">
       <DependentUpon>StatusEmpresa.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Telas\Departamentos\Log\Agenda.resx">
+      <DependentUpon>Agenda.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Telas\Departamentos\Log\itinerario.resx">
       <DependentUpon>itinerario.cs</DependentUpon>
     </EmbeddedResource>
