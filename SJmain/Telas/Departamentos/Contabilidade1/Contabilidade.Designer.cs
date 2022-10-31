@@ -136,14 +136,14 @@
             // analiticoToolStripMenuItem
             // 
             this.analiticoToolStripMenuItem.Name = "analiticoToolStripMenuItem";
-            this.analiticoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.analiticoToolStripMenuItem.Size = new System.Drawing.Size(121, 22);
             this.analiticoToolStripMenuItem.Text = "Analítico";
             this.analiticoToolStripMenuItem.Click += new System.EventHandler(this.analiticoToolStripMenuItem_Click);
             // 
             // sintéticoToolStripMenuItem
             // 
             this.sintéticoToolStripMenuItem.Name = "sintéticoToolStripMenuItem";
-            this.sintéticoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.sintéticoToolStripMenuItem.Size = new System.Drawing.Size(121, 22);
             this.sintéticoToolStripMenuItem.Text = "Sintético";
             this.sintéticoToolStripMenuItem.Click += new System.EventHandler(this.sintéticoToolStripMenuItem_Click);
             // 
@@ -153,8 +153,11 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(653, 497);
             this.Controls.Add(this.MenuContabilidade);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.IsMdiContainer = true;
             this.MainMenuStrip = this.MenuContabilidade;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "Contabilidade";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Contabilidade";
