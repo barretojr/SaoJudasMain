@@ -9,6 +9,7 @@ namespace SJmain.Classes
 {
     public class Conexao
     {
-        
+        //classe para conexão com banco de dados
+
     }
 }

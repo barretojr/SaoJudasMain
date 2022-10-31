@@ -1,5 +1,4 @@
-﻿using SJmain.Classes;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -7,8 +6,9 @@ using System.Threading.Tasks;
 
 namespace SJmain.Modelo
 {
-    public class Controle
+    public class Referencia
     {
-       //classe para validação de cpf
+        //classe para fazer referencia
+
     }
 }
