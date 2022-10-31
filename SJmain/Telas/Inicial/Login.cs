@@ -53,7 +53,8 @@ namespace SJmain
             {
                 SistemaPrincipal sp = new SistemaPrincipal();
                 sp.Show();
-                this.Hide();
+                this.Hide();                
+                
                 if (LembrarUsuario.Checked == true)
                 {
                     Properties.Settings.Default.usuario = UsuarioLogin.Text;
@@ -87,7 +88,8 @@ namespace SJmain
         }
 
         private void frmLogin_Load(object sender, EventArgs e)
-        {
+        {          
+
             if (Settings.Default.usuario != null)
             UsuarioLogin.Text = Properties.Settings.Default.usuario;
             if(Settings.Default.senha != null)
@@ -95,5 +97,8 @@ namespace SJmain
             LembrarUsuario.Checked = true;
             LembrarSenha.Checked = true;
         }
+        
+         
+
     }
 }

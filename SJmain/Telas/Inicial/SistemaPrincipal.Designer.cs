@@ -227,6 +227,7 @@
             this.Controls.Add(this.MenuOpcoes);
             this.MainMenuStrip = this.MenuOpcoes;
             this.Name = "SistemaPrincipal";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Principal";
             this.MenuOpcoes.ResumeLayout(false);
             this.MenuOpcoes.PerformLayout();
