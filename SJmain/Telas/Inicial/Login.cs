@@ -47,6 +47,7 @@ namespace SJmain
                     Properties.Settings.Default.Save();
                 }
                 
+
             }
             else if (UsuarioLogin.Text == "jonathan" && SenhaLogin.Text == "1234")
             {
@@ -73,7 +74,6 @@ namespace SJmain
                     Properties.Settings.Default.usuario = "";
                     Properties.Settings.Default.Save();
                 }
-
             }
             else
             {
@@ -91,7 +91,9 @@ namespace SJmain
             if (Settings.Default.usuario != null)
             UsuarioLogin.Text = Properties.Settings.Default.usuario;
             if(Settings.Default.senha != null)
-            SenhaLogin.Text = Properties.Settings.Default.senha;   
+            SenhaLogin.Text = Properties.Settings.Default.senha;
+            LembrarUsuario.Checked = true;
+            LembrarSenha.Checked = true;
         }
     }
 }

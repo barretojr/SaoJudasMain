@@ -46,5 +46,29 @@ namespace SJmain.Properties {
                 this["senha"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string Pasta {
+            get {
+                return ((string)(this["Pasta"]));
+            }
+            set {
+                this["Pasta"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string ticket {
+            get {
+                return ((string)(this["ticket"]));
+            }
+            set {
+                this["ticket"] = value;
+            }
+        }
     }
 }

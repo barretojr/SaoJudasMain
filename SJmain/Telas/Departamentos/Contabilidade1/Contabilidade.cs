@@ -57,5 +57,6 @@ namespace SJmain.Telas.Departamentos
             bs.MdiParent = this;
             bs.Show();
         }
+        
     }
 }

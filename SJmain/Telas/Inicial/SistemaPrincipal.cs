@@ -29,7 +29,7 @@ namespace SJmain.Telas
         {
             Contabilidade Cont = new Contabilidade();
             Cont.Show();
-            this.Hide();
+            this.Close();          
 
         }
 
