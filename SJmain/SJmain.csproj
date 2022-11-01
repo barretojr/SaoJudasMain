@@ -36,6 +36,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="MySql.Data">
+      <HintPath>..\..\..\..\Downloads\mysql.data\MySql.Data.dll</HintPath>
+    </Reference>
     <Reference Include="PdfiumViewer, Version=2.13.0.0, Culture=neutral, PublicKeyToken=91e4789cfb0609e0, processorArchitecture=MSIL">
       <HintPath>..\packages\PdfiumViewer.2.13.0.0\lib\net20\PdfiumViewer.dll</HintPath>
     </Reference>
@@ -55,6 +58,7 @@
   <ItemGroup>
     <Compile Include="Classes\Conexao.cs" />
     <Compile Include="Modelo\Controle.cs" />
+    <Compile Include="Modelo\LoginDaoComandos.cs" />
     <Compile Include="Modelo\Referencia.cs" />
     <Compile Include="Telas\Cadastro\Alterar.cs">
       <SubType>Form</SubType>
@@ -85,6 +89,12 @@
     </Compile>
     <Compile Include="Telas\Departamentos\Contabilidade1\Contabilidade.Designer.cs">
       <DependentUpon>Contabilidade.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\Departamentos\Contabilidade1\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\Departamentos\Contabilidade1\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
     <Compile Include="Telas\Departamentos\Contabilidade1\importaranalitico.cs">
       <SubType>Form</SubType>
@@ -180,6 +190,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Telas\Departamentos\Contabilidade1\Contabilidade.resx">
       <DependentUpon>Contabilidade.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\Departamentos\Contabilidade1\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Telas\Departamentos\Contabilidade1\importaranalitico.resx">
       <DependentUpon>importaranalitico.cs</DependentUpon>

@@ -10,6 +10,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MySql.Data.MySqlClient;
+using SJmain.Modelo;
 
 namespace SJmain
 {
@@ -22,66 +24,18 @@ namespace SJmain
 
         private void EntrarLogin_Click(object sender, EventArgs e)
         {
-           if(UsuarioLogin.Text == "admin" && SenhaLogin.Text == "admin")
+            Controle controle = new Controle();
+            controle.acessar(UsuarioLogin.Text, SenhaLogin.Text);
+            if (controle.mensagem.Equals(""))
             {
-                SistemaPrincipal sp = new SistemaPrincipal();
-                sp.Show();
-                this.Hide();
-                if (LembrarUsuario.Checked == true)
+                if (controle.tem)
                 {
-                    Properties.Settings.Default.usuario = UsuarioLogin.Text;
-                    Properties.Settings.Default.Save();
-                    if (LembrarSenha.Checked == true)
-                    {
-                        Properties.Settings.Default.senha = SenhaLogin.Text;
-                        Properties.Settings.Default.Save();
-                    }
-                    if (LembrarSenha.Checked == false)
-                    {
-                        Properties.Settings.Default.senha = "";
-                        Properties.Settings.Default.Save();
-                    }
-                }
-                if (LembrarUsuario.Checked == false)
-                {
-                    Properties.Settings.Default.usuario = "";
-                    Properties.Settings.Default.Save();
-                }
-                
-
-            }
-            else if (UsuarioLogin.Text == "jonathan" && SenhaLogin.Text == "1234")
-            {
-                SistemaPrincipal sp = new SistemaPrincipal();
-                sp.Show();
-                this.Hide();                
-                
-                if (LembrarUsuario.Checked == true)
-                {
-                    Properties.Settings.Default.usuario = UsuarioLogin.Text;
-                    Properties.Settings.Default.Save();
-                    if (LembrarSenha.Checked == true)
-                    {
-                        Properties.Settings.Default.senha = SenhaLogin.Text;
-                        Properties.Settings.Default.Save();
-                    }
-                    else
-                    {
-                        Properties.Settings.Default.senha = "";
-                        Properties.Settings.Default.Save();
-                    }
-                }
-                if (LembrarUsuario.Checked == false)
-                {
-                    Properties.Settings.Default.usuario = "";
-                    Properties.Settings.Default.Save();
+                    SistemaPrincipal sp = new SistemaPrincipal();
+                    sp.Show();
+                    this.Hide();
                 }
             }
-            else
-            {
-                MessageBox.Show("Usuário Incorreto");
-            }
-        }
+        } 
 
         private void BotaoSair_Click(object sender, EventArgs e)
         {
@@ -89,15 +43,9 @@ namespace SJmain
         }
 
         private void frmLogin_Load(object sender, EventArgs e)
-        {          
+        {
+           
 
-            if (Settings.Default.usuario != null)
-            UsuarioLogin.Text = Properties.Settings.Default.usuario;
-            if(Settings.Default.senha != null)
-            SenhaLogin.Text = Properties.Settings.Default.senha;
-            LembrarUsuario.Checked = true;
-            LembrarSenha.Checked = true;
-            
         }
     }
 }

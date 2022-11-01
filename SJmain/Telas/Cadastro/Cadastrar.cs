@@ -78,5 +78,10 @@ namespace SJmain.Telas.Cadastro
         {
             this.Close();
         }
+
+        private void btnVerificar_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
