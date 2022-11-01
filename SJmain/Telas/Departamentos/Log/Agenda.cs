@@ -16,5 +16,7 @@ namespace SJmain.Telas.Departamentos.Logistica
         {
             InitializeComponent();
         }
+
+       
     }
 }
