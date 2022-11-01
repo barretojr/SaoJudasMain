@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SJmain.Modelo;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -19,59 +20,18 @@ namespace SJmain.Telas.Cadastro
         }
 
         private void btnSalvar_Click(object sender, EventArgs e)
-        {
-            if(txtUsuario != null)
-            {                
-                if (rdbContabil.Checked == true)
-                {
-                    MessageBox.Show("Usuario Cadastrado Contabil","Contabil");
-                }
-                if (rdbFiscal.Checked == true)
-                {
-                    MessageBox.Show("Usuario Cadastrado Fiscal","Fiscal");
-                }
-                if (rdbLogistica.Checked == true)
-                {
-                    MessageBox.Show("Usuario Cadastrado Logistica.","Logistica");
-                }
-                if (rdbTecnologia.Checked == true)
-                {
-                    MessageBox.Show("Usuario Cadastrado Tecnologia.","Tecnologia");
-                }
-            }
-            else
+        {           
+            Controle controle = new Controle();
+            string mensagem = controle.cadastrar(txtDepartamento.Text, txtUsuario.Text, txtSenha.Text, txtConfirmar.Text, mskCPF.Text,  txtEmail.Text, mskTelefone.Text);
+            if (controle.tem)
             {
-                MessageBox.Show("Digite um usuário");
+                MessageBox.Show(mensagem, "Cadastro", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
-            
         }
 
         private void btnConfirmar_Click(object sender, EventArgs e)
         {
-            if (txtUsuario != null)
-            {
-                if (rdbContabil.Checked == true)
-                {
-                    MessageBox.Show("Usuario Cadastrado Contabil", "Contabil");
-                }
-                if (rdbFiscal.Checked == true)
-                {
-                    MessageBox.Show("Usuario Cadastrado Fiscal", "Fiscal");
-                }
-                if (rdbLogistica.Checked == true)
-                {
-                    MessageBox.Show("Usuario Cadastrado Logistica.", "Logistica");
-                }
-                if (rdbTecnologia.Checked == true)
-                {
-                    MessageBox.Show("Usuario Cadastrado Tecnologia.", "Tecnologia");
-                }
-                this.Close();
-            }
-            else
-            {
-                MessageBox.Show("Digite um usuário");
-            }
+            
         }
 
         private void btnSair_Click(object sender, EventArgs e)

@@ -90,11 +90,11 @@
     <Compile Include="Telas\Departamentos\Contabilidade1\Contabilidade.Designer.cs">
       <DependentUpon>Contabilidade.cs</DependentUpon>
     </Compile>
-    <Compile Include="Telas\Departamentos\Contabilidade1\Form1.cs">
+    <Compile Include="Telas\Departamentos\Contabilidade1\BalanceteA.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Telas\Departamentos\Contabilidade1\Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Telas\Departamentos\Contabilidade1\BalanceteA.Designer.cs">
+      <DependentUpon>BalanceteA.cs</DependentUpon>
     </Compile>
     <Compile Include="Telas\Departamentos\Contabilidade1\importaranalitico.cs">
       <SubType>Form</SubType>
@@ -191,8 +191,8 @@
     <EmbeddedResource Include="Telas\Departamentos\Contabilidade1\Contabilidade.resx">
       <DependentUpon>Contabilidade.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Telas\Departamentos\Contabilidade1\Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="Telas\Departamentos\Contabilidade1\BalanceteA.resx">
+      <DependentUpon>BalanceteA.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Telas\Departamentos\Contabilidade1\importaranalitico.resx">
       <DependentUpon>importaranalitico.cs</DependentUpon>

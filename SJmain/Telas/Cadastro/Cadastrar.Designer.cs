@@ -52,6 +52,7 @@
             this.txtEmail = new System.Windows.Forms.TextBox();
             this.txtConfirmar = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
+            this.txtDepartamento = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -279,11 +280,19 @@
             this.label7.TabIndex = 23;
             this.label7.Text = "Confirmar:";
             // 
+            // txtDepartamento
+            // 
+            this.txtDepartamento.Location = new System.Drawing.Point(154, 204);
+            this.txtDepartamento.Name = "txtDepartamento";
+            this.txtDepartamento.Size = new System.Drawing.Size(100, 20);
+            this.txtDepartamento.TabIndex = 24;
+            // 
             // Cadastrar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(519, 243);
+            this.Controls.Add(this.txtDepartamento);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.txtConfirmar);
             this.Controls.Add(this.txtEmail);
@@ -341,5 +350,6 @@
         private System.Windows.Forms.CheckBox cbCoord;
         private System.Windows.Forms.TextBox txtConfirmar;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.TextBox txtDepartamento;
     }
 }
