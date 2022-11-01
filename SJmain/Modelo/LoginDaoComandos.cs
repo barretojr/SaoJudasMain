@@ -39,6 +39,11 @@ namespace SJmain.Modelo
         }
         public string cadastrar(string email, string cpf, string senha, string confSenha)
         {
+            if (senha.Equals(confSenha))
+            {
+                cmd.CommandText = "";
+                
+            }
             return mensagem;
         }
     }

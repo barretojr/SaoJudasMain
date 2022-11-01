@@ -26,20 +26,36 @@ namespace SJmain
         {
             Controle controle = new Controle();
             controle.acessar(UsuarioLogin.Text, SenhaLogin.Text);
-            if (controle.mensagem.Equals(""))
+            if (UsuarioLogin.Text != null && SenhaLogin.Text != null)
             {
-                if (controle.tem)
+                if (controle.mensagem.Equals(""))
                 {
-                    SistemaPrincipal sp = new SistemaPrincipal();
-                    sp.Show();
-                    this.Hide();
+                    if (controle.tem)
+                    {
+                        SistemaPrincipal sp = new SistemaPrincipal();
+                        sp.Show();
+                        this.Hide();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Login não encontrado", "Erro Login");
+                    }
                 }
+            }
+            else
+            {
+                MessageBox.Show("Digite um usuário e senha", "Erro");
             }
         } 
 
         private void BotaoSair_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            DialogResult desejasair;
+            desejasair = MessageBox.Show("Deseja sair ?", "Deseja Sair", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2);
+            if (desejasair == DialogResult.Yes)
+            {
+                Application.Exit();
+            }
         }
 
         private void frmLogin_Load(object sender, EventArgs e)

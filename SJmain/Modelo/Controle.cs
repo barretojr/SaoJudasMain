@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using MySql.Data.MySqlClient;
+using System.Security.Cryptography;
 
 namespace SJmain.Modelo
 {
@@ -24,6 +25,7 @@ namespace SJmain.Modelo
         }
         public string cadastrar(string email, string senha, string confsenha)
         {
+            
             return mensagem;
         }
         
