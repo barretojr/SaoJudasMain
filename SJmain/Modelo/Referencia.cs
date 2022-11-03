@@ -3,12 +3,16 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using MySql.Data.MySqlClient;
 
 namespace SJmain.Modelo
 {
     public class Referencia
     {
-        //classe para fazer referencia
+        public Referencia()
+        {
+            //contructor
+        }
 
     }
 }

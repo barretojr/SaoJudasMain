@@ -25,29 +25,19 @@ namespace SJmain
         private void EntrarLogin_Click(object sender, EventArgs e)
         {
             Controle controle = new Controle();
-            controle.acessar(UsuarioLogin.Text, SenhaLogin.Text);
-            if (UsuarioLogin.Text != null && SenhaLogin.Text != null)
+            controle.acessar(UsuarioLogin.Text, SenhaLogin.Text);            
+            if (controle.mensagem.Equals(""))
             {
-                //SistemaPrincipal sp2 = new SistemaPrincipal();
-                //sp2.Show();
-                if (controle.mensagem.Equals(""))
-                {
-                    if (controle.tem)
-                    {
-                        SistemaPrincipal sp = new SistemaPrincipal();
-                        sp.Show();
-                        this.Hide();
-                    }
-                    else
-                    {
-                        MessageBox.Show("Login não encontrado", "Erro Login");
-                    }
-                }
-            }
-            else
-            {
-                MessageBox.Show("Digite um usuário e senha", "Erro");
-            }
+               if (controle.tem == true)
+               {
+                    SistemaPrincipal sp = new SistemaPrincipal();
+                    sp.Show();
+                    this.Hide();
+               }
+               else MessageBox.Show("Login não encontrado", "Erro Login");
+               
+            }           
+            
         } 
 
         private void BotaoSair_Click(object sender, EventArgs e)

@@ -5,6 +5,7 @@ using System.Drawing.Imaging;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 using MySql.Data.MySqlClient;
 
 namespace SJmain.Classes
@@ -14,7 +15,14 @@ namespace SJmain.Classes
         SqlConnection con = new SqlConnection();
         public Conexao()
         {
-            con.ConnectionString = @"server=sjbd.mysql.uhserver.com;User Id=gruposaojudas;database=sjbd; password= SJadm@2014";            
+            try
+            {
+                con.ConnectionString = @"server=sjbd.mysql.uhserver.com;User Id=gruposaojudas;database=sjbd; password= SJadm@2014";
+            }
+            catch (SqlException ex)
+            {
+                MessageBox.Show("Ocorreu um erro ao abrir o programa!", "Erro");
+            }
         }
         public SqlConnection Conectar()
         {
