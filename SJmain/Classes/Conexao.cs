@@ -17,9 +17,9 @@ namespace SJmain.Classes
         {
             try
             {
-                con.ConnectionString = @"server=sjbd.mysql.uhserver.com;User Id=gruposaojudas;database=sjbd; password= SJadm@2014";
+                con.ConnectionString = @"server=sjbd.mysql.uhserver.com;User Id=gruposaojudas;database=sjbd; password= SJadm@2014";               
             }
-            catch (SqlException ex)
+            catch (SqlException)
             {
                 MessageBox.Show("Ocorreu um erro ao abrir o programa!", "Erro");
             }

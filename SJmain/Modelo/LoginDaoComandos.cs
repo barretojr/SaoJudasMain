@@ -34,10 +34,11 @@ namespace SJmain.Modelo
                 conec.Desconectar();
                 dr.Close();
             }
-            catch(SqlException)
+            catch (SqlException)
             {
                 this.mensagem = "Erro com Banco de Dados";                
             }
+            
             return tem;
         }
         public string cadastrar(int iddepartamento,string nomeusu, string email, string cpf, string senha, string confSenha, string telefone)
