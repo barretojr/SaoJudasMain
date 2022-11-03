@@ -14,7 +14,7 @@ namespace SJmain.Classes
         SqlConnection con = new SqlConnection();
         public Conexao()
         {
-            con.ConnectionString = @"server=sjbd.mysql.uhserver.com;User Id=gruposaojudas;database=sjbd; password= SJadm@2014";
+            con.ConnectionString = @"server=sjbd.mysql.uhserver.com;User Id=gruposaojudas;database=sjbd; password= SJadm@2014";            
         }
         public SqlConnection Conectar()
         {
@@ -24,7 +24,7 @@ namespace SJmain.Classes
             }
             return con;
         }
-        public void desconectar()
+        public void Desconectar()
         {
             if(con.State == System.Data.ConnectionState.Open)
             {

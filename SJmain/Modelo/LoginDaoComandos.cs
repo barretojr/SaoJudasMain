@@ -20,7 +20,7 @@ namespace SJmain.Modelo
 
         public bool verificarLogin(string login, string senha)
         {
-            cmd.CommandText = "SELECT * FROM `Usuario` WHERE  'nomeusuario = @login and senha = @senha;";
+            cmd.CommandText = "SELECT * FROM sjbd.Usuario WHERE nomeusuario = @login and senha = @senha;";
             cmd.Parameters.AddWithValue("@login", login);
             cmd.Parameters.AddWithValue("@senha", senha);
             try
@@ -31,7 +31,7 @@ namespace SJmain.Modelo
                 {
                     tem = true;
                 }
-                conec.desconectar();
+                conec.Desconectar();
                 dr.Close();
             }
             catch(SqlException)
@@ -40,7 +40,7 @@ namespace SJmain.Modelo
             }
             return tem;
         }
-        public string cadastrar(string iddepartamento,string nomeusu, string email, string cpf, string senha, string confSenha, string telefone)
+        public string cadastrar(int iddepartamento,string nomeusu, string email, string cpf, string senha, string confSenha, string telefone)
         {
             if (senha.Equals(confSenha))
             {
@@ -55,7 +55,7 @@ namespace SJmain.Modelo
                 {
                     cmd.Connection = conec.Conectar();
                     cmd.ExecuteNonQuery();
-                    conec.desconectar();
+                    conec.Desconectar();
                     this.mensagem = " Cadastrado com sucesso!";
                     tem = true;
                 }

@@ -28,6 +28,8 @@ namespace SJmain
             controle.acessar(UsuarioLogin.Text, SenhaLogin.Text);
             if (UsuarioLogin.Text != null && SenhaLogin.Text != null)
             {
+                //SistemaPrincipal sp2 = new SistemaPrincipal();
+                //sp2.Show();
                 if (controle.mensagem.Equals(""))
                 {
                     if (controle.tem)
@@ -58,10 +60,6 @@ namespace SJmain
             }
         }
 
-        private void frmLogin_Load(object sender, EventArgs e)
-        {
-           
-
-        }
+        
     }
 }

@@ -23,7 +23,7 @@ namespace SJmain.Modelo
             }
             return tem;
         }
-        public string cadastrar(string iddepartamento, string nomeusu, string email, string cpf, string senha, string confSenha, string telefone)
+        public string cadastrar(int iddepartamento, string nomeusu, string email, string cpf, string senha, string confSenha, string telefone)
         {
             LoginDaoComandos loginDao = new LoginDaoComandos();
             this.mensagem = loginDao.cadastrar(iddepartamento, nomeusu, email, cpf, senha, confSenha, telefone);

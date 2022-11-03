@@ -38,7 +38,6 @@
             this.btnSalvar = new System.Windows.Forms.Button();
             this.btnSair = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.cbCoord = new System.Windows.Forms.CheckBox();
             this.rdbTecnologia = new System.Windows.Forms.RadioButton();
             this.rdbLogistica = new System.Windows.Forms.RadioButton();
             this.rdbFiscal = new System.Windows.Forms.RadioButton();
@@ -52,7 +51,8 @@
             this.txtEmail = new System.Windows.Forms.TextBox();
             this.txtConfirmar = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.txtDepartamento = new System.Windows.Forms.TextBox();
+            this.rdbSocietario = new System.Windows.Forms.RadioButton();
+            this.rdbPessoal = new System.Windows.Forms.RadioButton();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -113,7 +113,7 @@
             // 
             // btnConfirmar
             // 
-            this.btnConfirmar.Location = new System.Drawing.Point(414, 201);
+            this.btnConfirmar.Location = new System.Drawing.Point(402, 204);
             this.btnConfirmar.Name = "btnConfirmar";
             this.btnConfirmar.Size = new System.Drawing.Size(75, 23);
             this.btnConfirmar.TabIndex = 11;
@@ -123,7 +123,7 @@
             // 
             // btnSalvar
             // 
-            this.btnSalvar.Location = new System.Drawing.Point(332, 201);
+            this.btnSalvar.Location = new System.Drawing.Point(320, 204);
             this.btnSalvar.Name = "btnSalvar";
             this.btnSalvar.Size = new System.Drawing.Size(75, 23);
             this.btnSalvar.TabIndex = 12;
@@ -143,7 +143,8 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.cbCoord);
+            this.groupBox1.Controls.Add(this.rdbPessoal);
+            this.groupBox1.Controls.Add(this.rdbSocietario);
             this.groupBox1.Controls.Add(this.rdbTecnologia);
             this.groupBox1.Controls.Add(this.rdbLogistica);
             this.groupBox1.Controls.Add(this.rdbFiscal);
@@ -154,16 +155,6 @@
             this.groupBox1.TabIndex = 14;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Permissões";
-            // 
-            // cbCoord
-            // 
-            this.cbCoord.AutoSize = true;
-            this.cbCoord.Location = new System.Drawing.Point(7, 115);
-            this.cbCoord.Name = "cbCoord";
-            this.cbCoord.Size = new System.Drawing.Size(90, 17);
-            this.cbCoord.TabIndex = 4;
-            this.cbCoord.Text = "Coordenação";
-            this.cbCoord.UseVisualStyleBackColor = true;
             // 
             // rdbTecnologia
             // 
@@ -280,27 +271,41 @@
             this.label7.TabIndex = 23;
             this.label7.Text = "Confirmar:";
             // 
-            // txtDepartamento
+            // rdbSocietario
             // 
-            this.txtDepartamento.Location = new System.Drawing.Point(154, 204);
-            this.txtDepartamento.Name = "txtDepartamento";
-            this.txtDepartamento.Size = new System.Drawing.Size(100, 20);
-            this.txtDepartamento.TabIndex = 24;
+            this.rdbSocietario.AutoSize = true;
+            this.rdbSocietario.Location = new System.Drawing.Point(6, 115);
+            this.rdbSocietario.Name = "rdbSocietario";
+            this.rdbSocietario.Size = new System.Drawing.Size(72, 17);
+            this.rdbSocietario.TabIndex = 4;
+            this.rdbSocietario.TabStop = true;
+            this.rdbSocietario.Text = "Societario";
+            this.rdbSocietario.UseVisualStyleBackColor = true;
+            // 
+            // rdbPessoal
+            // 
+            this.rdbPessoal.AutoSize = true;
+            this.rdbPessoal.Location = new System.Drawing.Point(7, 138);
+            this.rdbPessoal.Name = "rdbPessoal";
+            this.rdbPessoal.Size = new System.Drawing.Size(62, 17);
+            this.rdbPessoal.TabIndex = 5;
+            this.rdbPessoal.TabStop = true;
+            this.rdbPessoal.Text = "Pessoal";
+            this.rdbPessoal.UseVisualStyleBackColor = true;
             // 
             // Cadastrar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(519, 243);
-            this.Controls.Add(this.txtDepartamento);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.txtConfirmar);
+            this.ClientSize = new System.Drawing.Size(548, 276);
             this.Controls.Add(this.txtEmail);
             this.Controls.Add(this.mskTelefone);
             this.Controls.Add(this.mskCPF);
             this.Controls.Add(this.txtNome);
+            this.Controls.Add(this.txtConfirmar);
             this.Controls.Add(this.txtSenha);
             this.Controls.Add(this.txtUsuario);
+            this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.btnSair);
@@ -347,9 +352,9 @@
         private System.Windows.Forms.RadioButton rdbLogistica;
         private System.Windows.Forms.RadioButton rdbFiscal;
         private System.Windows.Forms.RadioButton rdbContabil;
-        private System.Windows.Forms.CheckBox cbCoord;
         private System.Windows.Forms.TextBox txtConfirmar;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox txtDepartamento;
+        private System.Windows.Forms.RadioButton rdbPessoal;
+        private System.Windows.Forms.RadioButton rdbSocietario;
     }
 }
