@@ -156,6 +156,12 @@
     <Compile Include="Telas\Departamentos\Societario1\Societario.Designer.cs">
       <DependentUpon>Societario.cs</DependentUpon>
     </Compile>
+    <Compile Include="Telas\Departamentos\Tecnologia1\Inventario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\Departamentos\Tecnologia1\Inventario.Designer.cs">
+      <DependentUpon>Inventario.cs</DependentUpon>
+    </Compile>
     <Compile Include="Telas\Departamentos\Tecnologia1\Tecnologia.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -220,6 +226,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Telas\Departamentos\Societario1\Societario.resx">
       <DependentUpon>Societario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\Departamentos\Tecnologia1\Inventario.resx">
+      <DependentUpon>Inventario.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Telas\Departamentos\Tecnologia1\Tecnologia.resx">
       <DependentUpon>Tecnologia.cs</DependentUpon>
