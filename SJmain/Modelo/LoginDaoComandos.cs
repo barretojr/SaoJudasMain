@@ -20,7 +20,7 @@ namespace SJmain.Modelo
 
         public bool verificarLogin(string login, string senha)
         {
-            cmd.CommandText = "SELECT * FROM sjbd.Usuario WHERE nomeusuario = @login and senha = @senha;";
+            cmd.CommandText = "SELECT * FROM sjbd.Usuario WHERE nomeusuario = @login and senha = @senha;";            
             cmd.Parameters.AddWithValue("@login", login);
             cmd.Parameters.AddWithValue("@senha", senha);
             try

@@ -6,6 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using MySql.Data.MySqlClient;
 using System.Security.Cryptography;
+using System.Windows.Forms;
 
 namespace SJmain.Modelo
 {
@@ -20,6 +21,10 @@ namespace SJmain.Modelo
             if (!loginDao.mensagem.Equals(""))
             {
                 this.mensagem = loginDao.mensagem;
+            }
+            else
+            {
+                MessageBox.Show("Erro");
             }
             return tem;
         }
