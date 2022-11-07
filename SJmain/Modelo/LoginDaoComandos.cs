@@ -14,13 +14,13 @@ namespace SJmain.Modelo
     {
         public bool tem = false;
         public string mensagem = "";
-        SqlCommand cmd = new SqlCommand();
+        SqlCommand cmd = new SqlCommand();        
         Conexao conec = new Conexao();
         SqlDataReader dr;
 
         public bool verificarLogin(string login, string senha)
         {
-            cmd.CommandText = "SELECT * FROM sjbd.Usuario WHERE nomeusuario = @login and senha = @senha;";            
+            cmd.CommandText = "SELECT * FROM sjbd.Usuario WHERE nomeusuario = @login and senha = @senha";            
             cmd.Parameters.AddWithValue("@login", login);
             cmd.Parameters.AddWithValue("@senha", senha);
             try
