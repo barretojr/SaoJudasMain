@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Data.SqlClient;
 using System.Drawing.Imaging;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -16,7 +17,8 @@ namespace SJmain.Classes
         //private MySqlConnection con;
         public Conexao()
         {
-            con.ConnectionString = "server=sjbd.mysql.uhserver.com;User Id=gruposaojudas;database=sjbd; password= SJadm@2014";
+            con.ConnectionString= "Server = 10.129.76.12; Database = sjbd; Uid = gruposaojudas; Pwd = SJadm@2014";
+            //con.ConnectionString = "server=sjbd.mysql.uhserver.com;User Id=gruposaojudas;database=sjbd; password= SJadm@2014";
             //con = new MySqlConnection("server=sjbd.mysql.uhserver.com;User Id=gruposaojudas;database=sjbd; password= SJadm@2014");
         }
         public SqlConnection Conectar()
@@ -35,8 +37,5 @@ namespace SJmain.Classes
             }
 
         }
-        
-
-
     }
 }

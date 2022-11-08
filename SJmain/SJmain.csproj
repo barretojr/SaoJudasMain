@@ -56,10 +56,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Classes\Conexao.cs" />
+    <Compile Include="Modelo\Conexao.cs" />
     <Compile Include="Modelo\Controle.cs" />
     <Compile Include="Modelo\LoginDaoComandos.cs" />
-    <Compile Include="Modelo\Referencia.cs" />
+    <Compile Include="Classes\Referencia.cs" />
     <Compile Include="Telas\Cadastro\Alterar.cs">
       <SubType>Form</SubType>
     </Compile>

@@ -29,8 +29,8 @@ namespace SJmain
             controle.acessar(UsuarioLogin.Text, SenhaLogin.Text);
             if (UsuarioLogin.Text != null)
             {
-                SistemaPrincipal sp2 = new SistemaPrincipal();
-                sp2.Show();
+                //SistemaPrincipal sp2 = new SistemaPrincipal();
+                //sp2.Show();
                 if (controle.mensagem.Equals(""))
                 {
                     if (controle.tem == true)

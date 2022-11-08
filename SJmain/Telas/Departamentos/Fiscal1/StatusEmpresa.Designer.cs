@@ -255,7 +255,7 @@
             this.groupBox3.Controls.Add(this.rdbEmFechamento);
             this.groupBox3.Location = new System.Drawing.Point(351, 12);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(121, 118);
+            this.groupBox3.Size = new System.Drawing.Size(121, 225);
             this.groupBox3.TabIndex = 4;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Status";
