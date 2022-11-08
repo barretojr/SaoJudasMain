@@ -1,12 +1,4 @@
-﻿using SJmain.Classes;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using MySql.Data.MySqlClient;
-using System.Security.Cryptography;
-using System.Windows.Forms;
+﻿using System.Windows.Forms;
 
 namespace SJmain.Modelo
 {
@@ -38,6 +30,6 @@ namespace SJmain.Modelo
             }
             return mensagem;
         }
-        
+
     }
 }

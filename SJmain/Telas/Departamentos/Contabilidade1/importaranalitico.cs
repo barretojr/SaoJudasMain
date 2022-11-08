@@ -1,13 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.ComponentModel;
-using System.Data;
-using System.Drawing;
 using System.IO;
-using System.Linq;
-using System.Security;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace SJmain.Telas.Departamentos.Contabilidade1
@@ -34,7 +27,7 @@ namespace SJmain.Telas.Departamentos.Contabilidade1
 
             if (openFileDialog1.ShowDialog() == DialogResult.OK)
             {
-                foreach(String arquivo in openFileDialog1.FileNames)
+                foreach (String arquivo in openFileDialog1.FileNames)
                 {
                     txtCaminho.Text = arquivo;
                 }

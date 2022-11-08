@@ -1,18 +1,7 @@
-﻿using SJmain.Properties;
+﻿using SJmain.Modelo;
 using SJmain.Telas;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using MySql.Data.MySqlClient;
-using SJmain.Modelo;
-using System.Data.SqlClient;
 
 namespace SJmain
 {
@@ -42,9 +31,9 @@ namespace SJmain
                     else MessageBox.Show("Login não encontrado", "Erro Login");
 
                 }
-            }        
-            
-        } 
+            }
+
+        }
 
         private void BotaoSair_Click(object sender, EventArgs e)
         {
@@ -56,6 +45,6 @@ namespace SJmain
             }
         }
 
-        
+
     }
 }

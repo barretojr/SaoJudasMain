@@ -1,12 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using SJmain.Classes;
 using System.Data.SqlClient;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using MySql.Data.MySqlClient;
-using SJmain.Classes;
 
 namespace SJmain.Modelo
 {
@@ -14,13 +8,13 @@ namespace SJmain.Modelo
     {
         public bool tem = false;
         public string mensagem = "";
-        SqlCommand cmd = new SqlCommand();        
+        SqlCommand cmd = new SqlCommand();
         Conexao conec = new Conexao();
         SqlDataReader dr;
 
         public bool verificarLogin(string login, string senha)
         {
-            cmd.CommandText = "SELECT * FROM sjbd.Usuario WHERE nomeusuario = @login and senha = @senha";            
+            cmd.CommandText = "SELECT * FROM sjbd.Usuario WHERE nomeusuario = @login and senha = @senha";
             cmd.Parameters.AddWithValue("@login", login);
             cmd.Parameters.AddWithValue("@senha", senha);
             try
@@ -36,12 +30,12 @@ namespace SJmain.Modelo
             }
             catch (SqlException)
             {
-                this.mensagem = "Erro com Banco de Dados";                
+                this.mensagem = "Erro com Banco de Dados";
             }
-            
+
             return tem;
         }
-        public string cadastrar(int iddepartamento,string nomeusu, string email, string cpf, string senha, string confSenha, string telefone)
+        public string cadastrar(int iddepartamento, string nomeusu, string email, string cpf, string senha, string confSenha, string telefone)
         {
             if (senha.Equals(confSenha))
             {
@@ -70,6 +64,6 @@ namespace SJmain.Modelo
                 MessageBox.Show("Senhas não se coincidem", "Senhas Não se Coincidem");
             }
             return mensagem;
-        }//oi
+        }
     }
 }

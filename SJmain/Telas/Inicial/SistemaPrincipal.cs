@@ -2,13 +2,6 @@
 using SJmain.Telas.Departamentos;
 using SJmain.Telas.Departamentos.Logistica;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace SJmain.Telas
@@ -29,15 +22,15 @@ namespace SJmain.Telas
         {
             Contabilidade Cont = new Contabilidade();
             Cont.Show();
-            this.Close();          
+            this.Close();
 
         }
 
-        
+
 
         private void fiscalToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Fiscal fis = new Fiscal();            
+            Fiscal fis = new Fiscal();
             fis.Show();
             this.Hide();
         }
@@ -54,16 +47,16 @@ namespace SJmain.Telas
             {
                 MessageBox.Show("Acesso Negado");
             }
-            
+
         }
 
         private void cadastrarToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            if(Properties.Settings.Default.usuario == "jonathan")
+            if (Properties.Settings.Default.usuario == "jonathan")
             {
                 Cadastrar cad = new Cadastrar();
                 cad.Show();
-                
+
             }
             else
             {
@@ -77,7 +70,7 @@ namespace SJmain.Telas
             if (Properties.Settings.Default.usuario == "jonathan")
             {
                 Alterar alterar = new Alterar();
-                alterar.Show();                
+                alterar.Show();
             }
             else
             {
@@ -88,7 +81,7 @@ namespace SJmain.Telas
 
         private void departamentoPessoalToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            
+
             Derpatpessoal dp = new Derpatpessoal();
             dp.Show();
             this.Hide();
@@ -109,7 +102,7 @@ namespace SJmain.Telas
 
         private void agendaToolStripMenuItem_Click(object sender, EventArgs e)
         {
-           Agenda ag = new Agenda();
+            Agenda ag = new Agenda();
             ag.Show();
         }
 
@@ -121,8 +114,8 @@ namespace SJmain.Telas
 
         private void ligaçõesToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Ligacoes lig = new Ligacoes();  
+            Ligacoes lig = new Ligacoes();
             lig.Show();
-        }        
+        }
     }
 }
