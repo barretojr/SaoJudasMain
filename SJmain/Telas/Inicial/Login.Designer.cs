@@ -102,6 +102,7 @@
             // EntrarLogin
             // 
             this.EntrarLogin.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.EntrarLogin.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.EntrarLogin.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.EntrarLogin.Location = new System.Drawing.Point(280, 216);
             this.EntrarLogin.Name = "EntrarLogin";
@@ -110,6 +111,7 @@
             this.EntrarLogin.Text = "Entrar";
             this.EntrarLogin.UseVisualStyleBackColor = false;
             this.EntrarLogin.Click += new System.EventHandler(this.EntrarLogin_Click);
+            this.EntrarLogin.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.EntrarLogin_KeyPress);
             // 
             // BotaoSair
             // 
@@ -137,7 +139,7 @@
             this.MaximizeBox = false;
             this.Name = "frmLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "São Judas Contabil";            
+            this.Text = "São Judas Contabil";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);

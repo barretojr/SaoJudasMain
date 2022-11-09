@@ -32,6 +32,10 @@ namespace SJmain.Modelo
             {
                 this.mensagem = "Erro com Banco de Dados";
             }
+            finally
+            {
+                MessageBox.Show("erro", "erro");                
+            }
 
             return tem;
         }
