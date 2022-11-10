@@ -6,13 +6,10 @@ namespace SJmain.Classes
 {
     public class Conexao
     {
-        SqlConnection con = new SqlConnection();      
-
-
+        SqlConnection con = new SqlConnection(); 
         public Conexao()
         {
-            con.ConnectionString = "Data Source=http://sjbd.mysql.uhserver.com/;Initial Catalog=sjbd;User Id=gruposaojudas;Password=SJadm@2014;";
-            //con.ConnectionString = "Data Source=sjbd.mysql.uhserver.com; Database = sjbd; User ID=gruposaojudas; Password=SJadm@2014;";
+            con.ConnectionString = @"Data Source=http://sjbd.mysql.uhserver.com/;Initial Catalog=sjbd;User Id=gruposaojudas;Password=SJadm@2014;Integrated Security=True;";            
         }
         public  SqlConnection Conectar()
         {
