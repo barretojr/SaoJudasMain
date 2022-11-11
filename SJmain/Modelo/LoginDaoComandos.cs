@@ -39,11 +39,11 @@ namespace SJmain.Modelo
         {
             if (senha.Equals(confSenha))
             {
-                cmd.CommandText = "INSERT INTO `Usuario`(`iddepartamento`, `nomeusuario`, `senha`, `cpfusuario`, `telefone`, `email`) VALUES (@idderp,@nome,@senha,@cpf,@tel,@email);";
+                cmd.CommandText = "INSERT INTO Usuario (iddepartamento, nome, nomeusuario, senha, cpfusuario, telefone, email) VALUES (@idderp,@nome,@senha,@email,@cpf,@tel);";
                 cmd.Parameters.AddWithValue("@idderp", iddepartamento);//1=master,2=contabil,3=fiscal,4=logistica,5=tecnologia,6=pessoal,7=societario
                 cmd.Parameters.AddWithValue("@nome", nomeusu);
                 cmd.Parameters.AddWithValue("@senha", senha);
-                cmd.Parameters.AddWithValue("email", email);
+                cmd.Parameters.AddWithValue("@email", email);
                 cmd.Parameters.AddWithValue("@cpf", cpf);
                 cmd.Parameters.AddWithValue("@tel", telefone);
                 try
