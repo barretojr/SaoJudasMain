@@ -14,7 +14,7 @@ namespace SJmain.Modelo
 
         public bool verificarLogin(string login, string senha)
         {
-            cmd.CommandText = "SELECT * FROM [dbo.Usuario] WHERE nomeusuario = @login and senha = @senha";
+            cmd.CommandText = "SELECT * FROM Usuario WHERE nomeusuario = @login and senha = @senha";
             cmd.Parameters.AddWithValue("@login", login);
             cmd.Parameters.AddWithValue("@senha", senha);
             try
