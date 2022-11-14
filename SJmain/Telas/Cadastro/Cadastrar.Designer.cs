@@ -38,6 +38,8 @@
             this.btnSalvar = new System.Windows.Forms.Button();
             this.btnSair = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.rdbPessoal = new System.Windows.Forms.RadioButton();
+            this.rdbSocietario = new System.Windows.Forms.RadioButton();
             this.rdbTecnologia = new System.Windows.Forms.RadioButton();
             this.rdbLogistica = new System.Windows.Forms.RadioButton();
             this.rdbFiscal = new System.Windows.Forms.RadioButton();
@@ -51,8 +53,6 @@
             this.txtEmail = new System.Windows.Forms.TextBox();
             this.txtConfirmar = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.rdbSocietario = new System.Windows.Forms.RadioButton();
-            this.rdbPessoal = new System.Windows.Forms.RadioButton();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -63,7 +63,7 @@
             this.btnVerificar.Size = new System.Drawing.Size(87, 50);
             this.btnVerificar.TabIndex = 0;
             this.btnVerificar.Text = "Verificar...";
-            this.btnVerificar.UseVisualStyleBackColor = true;            
+            this.btnVerificar.UseVisualStyleBackColor = true;
             // 
             // label1
             // 
@@ -155,6 +155,28 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Permissões";
             // 
+            // rdbPessoal
+            // 
+            this.rdbPessoal.AutoSize = true;
+            this.rdbPessoal.Location = new System.Drawing.Point(7, 138);
+            this.rdbPessoal.Name = "rdbPessoal";
+            this.rdbPessoal.Size = new System.Drawing.Size(62, 17);
+            this.rdbPessoal.TabIndex = 5;
+            this.rdbPessoal.TabStop = true;
+            this.rdbPessoal.Text = "Pessoal";
+            this.rdbPessoal.UseVisualStyleBackColor = true;
+            // 
+            // rdbSocietario
+            // 
+            this.rdbSocietario.AutoSize = true;
+            this.rdbSocietario.Location = new System.Drawing.Point(6, 115);
+            this.rdbSocietario.Name = "rdbSocietario";
+            this.rdbSocietario.Size = new System.Drawing.Size(72, 17);
+            this.rdbSocietario.TabIndex = 4;
+            this.rdbSocietario.TabStop = true;
+            this.rdbSocietario.Text = "Societario";
+            this.rdbSocietario.UseVisualStyleBackColor = true;
+            // 
             // rdbTecnologia
             // 
             this.rdbTecnologia.AutoSize = true;
@@ -213,7 +235,7 @@
             this.txtUsuario.Location = new System.Drawing.Point(67, 25);
             this.txtUsuario.Name = "txtUsuario";
             this.txtUsuario.Size = new System.Drawing.Size(251, 20);
-            this.txtUsuario.TabIndex = 16;
+            this.txtUsuario.TabIndex = 0;
             // 
             // txtSenha
             // 
@@ -221,14 +243,14 @@
             this.txtSenha.Name = "txtSenha";
             this.txtSenha.PasswordChar = '*';
             this.txtSenha.Size = new System.Drawing.Size(158, 20);
-            this.txtSenha.TabIndex = 17;
+            this.txtSenha.TabIndex = 1;
             // 
             // txtNome
             // 
             this.txtNome.Location = new System.Drawing.Point(67, 108);
             this.txtNome.Name = "txtNome";
             this.txtNome.Size = new System.Drawing.Size(251, 20);
-            this.txtNome.TabIndex = 18;
+            this.txtNome.TabIndex = 3;
             // 
             // mskCPF
             // 
@@ -236,7 +258,8 @@
             this.mskCPF.Mask = "999.999.999-99";
             this.mskCPF.Name = "mskCPF";
             this.mskCPF.Size = new System.Drawing.Size(86, 20);
-            this.mskCPF.TabIndex = 19;
+            this.mskCPF.TabIndex = 4;
+            this.mskCPF.TextMaskFormat = System.Windows.Forms.MaskFormat.ExcludePromptAndLiterals;
             // 
             // mskTelefone
             // 
@@ -244,14 +267,15 @@
             this.mskTelefone.Mask = "(99)99999-9999";
             this.mskTelefone.Name = "mskTelefone";
             this.mskTelefone.Size = new System.Drawing.Size(88, 20);
-            this.mskTelefone.TabIndex = 20;
+            this.mskTelefone.TabIndex = 5;
+            this.mskTelefone.TextMaskFormat = System.Windows.Forms.MaskFormat.ExcludePromptAndLiterals;
             // 
             // txtEmail
             // 
             this.txtEmail.Location = new System.Drawing.Point(67, 167);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(251, 20);
-            this.txtEmail.TabIndex = 21;
+            this.txtEmail.TabIndex = 6;
             // 
             // txtConfirmar
             // 
@@ -259,7 +283,7 @@
             this.txtConfirmar.Name = "txtConfirmar";
             this.txtConfirmar.PasswordChar = '*';
             this.txtConfirmar.Size = new System.Drawing.Size(158, 20);
-            this.txtConfirmar.TabIndex = 22;
+            this.txtConfirmar.TabIndex = 2;
             // 
             // label7
             // 
@@ -270,33 +294,11 @@
             this.label7.TabIndex = 23;
             this.label7.Text = "Confirmar:";
             // 
-            // rdbSocietario
-            // 
-            this.rdbSocietario.AutoSize = true;
-            this.rdbSocietario.Location = new System.Drawing.Point(6, 115);
-            this.rdbSocietario.Name = "rdbSocietario";
-            this.rdbSocietario.Size = new System.Drawing.Size(72, 17);
-            this.rdbSocietario.TabIndex = 4;
-            this.rdbSocietario.TabStop = true;
-            this.rdbSocietario.Text = "Societario";
-            this.rdbSocietario.UseVisualStyleBackColor = true;
-            // 
-            // rdbPessoal
-            // 
-            this.rdbPessoal.AutoSize = true;
-            this.rdbPessoal.Location = new System.Drawing.Point(7, 138);
-            this.rdbPessoal.Name = "rdbPessoal";
-            this.rdbPessoal.Size = new System.Drawing.Size(62, 17);
-            this.rdbPessoal.TabIndex = 5;
-            this.rdbPessoal.TabStop = true;
-            this.rdbPessoal.Text = "Pessoal";
-            this.rdbPessoal.UseVisualStyleBackColor = true;
-            // 
             // Cadastrar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(548, 276);
+            this.ClientSize = new System.Drawing.Size(497, 242);
             this.Controls.Add(this.txtEmail);
             this.Controls.Add(this.mskTelefone);
             this.Controls.Add(this.mskCPF);

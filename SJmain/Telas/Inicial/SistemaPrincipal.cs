@@ -37,16 +37,7 @@ namespace SJmain.Telas
 
         private void tecnologiaToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            if (Properties.Settings.Default.usuario == "jonathan")
-            {
-                Tecnologia tec = new Tecnologia();
-                tec.Show();
-                this.Hide();
-            }
-            else
-            {
-                MessageBox.Show("Acesso Negado");
-            }
+           
 
         }
 

@@ -25,7 +25,7 @@ namespace SJmain.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("jonathan")]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
         public string usuario {
             get {
                 return ((string)(this["usuario"]));
@@ -37,7 +37,7 @@ namespace SJmain.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("1234")]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
         public string senha {
             get {
                 return ((string)(this["senha"]));
@@ -68,6 +68,15 @@ namespace SJmain.Properties {
             }
             set {
                 this["ticket"] = value;
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public int departamento {
+            get {
+                return ((int)(this["departamento"]));
             }
         }
     }
