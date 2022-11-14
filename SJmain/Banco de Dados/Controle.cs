@@ -20,6 +20,20 @@ namespace SJmain.Modelo
             }
             return tem;
         }
+        public bool acessarform(string usuario, int idderpt)
+        {
+            LoginDaoComandos loginDao = new LoginDaoComandos();
+            tem = loginDao.verificarusuario(usuario, idderpt);
+            if (loginDao.mensagem.Equals(""))
+            {
+                this.mensagem = loginDao.mensagem;
+            }
+            else
+            {
+                MessageBox.Show("Erro");
+            }
+            return tem;
+        }
         public string cadastrar(int iddepartamento, string nomeusu, string email, string cpf, string senha, string confSenha, string telefone)
         {
             LoginDaoComandos loginDao = new LoginDaoComandos();

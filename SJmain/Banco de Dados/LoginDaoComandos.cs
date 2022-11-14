@@ -35,6 +35,29 @@ namespace SJmain.Modelo
 
             return tem;
         }
+        public bool verificarusuario(string usuario, int idderpt)
+        {
+            cmd.CommandText = "SELECT * FROM Usuario WHERE nomeusuario = @usuario and iddepartamento = @iddepart";
+            cmd.Parameters.AddWithValue("@usuario", usuario);
+            cmd.Parameters.AddWithValue("@iddepart", idderpt);
+            try
+            {
+                cmd.Connection = conec.Conectar();
+                dr = cmd.ExecuteReader();
+                if (dr.HasRows)
+                {
+                    tem = true;
+                }
+                conec.Desconectar();
+                dr.Close();
+            }
+            catch (SqlException)
+            {
+                this.mensagem = "erro";
+            }
+
+            return tem;
+        }
         public string cadastrar(int iddepartamento, string nomeusu, string email, string cpf, string senha, string confSenha, string telefone)
         {
             if (senha.Equals(confSenha))

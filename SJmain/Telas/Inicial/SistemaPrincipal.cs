@@ -1,4 +1,5 @@
-﻿using SJmain.Telas.Cadastro;
+﻿using SJmain.Modelo;
+using SJmain.Telas.Cadastro;
 using SJmain.Telas.Departamentos;
 using SJmain.Telas.Departamentos.Logistica;
 using System;
@@ -20,59 +21,115 @@ namespace SJmain.Telas
 
         private void contabilidadeToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Contabilidade Cont = new Contabilidade();
-            Cont.Show();
-            this.Close();
+            //1=master,2=contabil,5=tecnologia
+            int master = 1, contabil = 2, tecnologia = 5;
+            Controle controle = new Controle();
+            controle.acessarform(Properties.Settings.Default.usuario, contabil);
+            if (controle.mensagem.Equals(""))
+            {
+                if(controle.tem == true)
+                {
+                    Contabilidade conta = new Contabilidade();
+                    conta.Show();
+                }
+
+                else
+                {
+                    MessageBox.Show("Você não tem permissão para acessar", "Permissão", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+            
 
         }
 
-
-
         private void fiscalToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Fiscal fis = new Fiscal();
-            fis.Show();
-            this.Hide();
+            //1=master,3=fiscal,5=tecnologia,
+            int master = 1, fiscal = 3, tecnologia = 5;
+            Controle controle = new Controle();
+            controle.acessarform(Properties.Settings.Default.usuario, fiscal);
+            if (controle.mensagem.Equals(""))
+            {
+                if (controle.tem == true)
+                {
+                    Contabilidade conta = new Contabilidade();
+                    conta.Show();
+                }
+
+                else
+                {
+                    MessageBox.Show("Você não tem permissão para acessar", "Permissão", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
         }
 
         private void tecnologiaToolStripMenuItem_Click(object sender, EventArgs e)
         {
-           
+            //1=master,5=tecnologia,
+            int  tecnologia = 5;
+            Controle controle = new Controle();
+            controle.acessarform(Properties.Settings.Default.usuario, Tecnologia);
+            if (controle.mensagem.Equals(""))
+            {
+                if (controle.tem == true)
+                {
+                    Contabilidade conta = new Contabilidade();
+                    conta.Show();
+                }
+
+                else
+                {
+                    MessageBox.Show("Você não tem permissão para acessar", "Permissão", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
 
         }
 
         private void cadastrarToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            if (Properties.Settings.Default.usuario == "jonathan")
+            //1=master,5=tecnologia
+            int master = 1, tecnologia = 5;
+            Controle controle = new Controle();
+            controle.acessarform(Properties.Settings.Default.usuario, tecnologia);
+            if (controle.mensagem.Equals(""))
             {
-                Cadastrar cad = new Cadastrar();
-                cad.Show();
+                if (controle.tem == true)
+                {
+                    Contabilidade conta = new Contabilidade();
+                    conta.Show();
+                }
 
+                else
+                {
+                    MessageBox.Show("Você não tem permissão para acessar", "Permissão", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             }
-            else
-            {
-                MessageBox.Show("Acesso Negado");
-            }
-
         }
 
         private void alterarToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            if (Properties.Settings.Default.usuario == "jonathan")
+            //1=master,5=tecnologia,
+            int master = 1, tecnologia = 5;
+            Controle controle = new Controle();
+            controle.acessarform(Properties.Settings.Default.usuario, tecnologia);
+            if (controle.mensagem.Equals(""))
             {
-                Alterar alterar = new Alterar();
-                alterar.Show();
-            }
-            else
-            {
-                MessageBox.Show("Acesso Negado");
+                if (controle.tem == true)
+                {
+                    Contabilidade conta = new Contabilidade();
+                    conta.Show();
+                }
+
+                else
+                {
+                    MessageBox.Show("Você não tem permissão para acessar", "Permissão", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             }
 
         }
 
         private void departamentoPessoalToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
             Derpatpessoal dp = new Derpatpessoal();
             dp.Show();
             this.Hide();
@@ -93,20 +150,17 @@ namespace SJmain.Telas
 
         private void agendaToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Agenda ag = new Agenda();
-            ag.Show();
+            
         }
 
         private void entineToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Itinerario it = new Itinerario();
-            it.Show();
+            
         }
 
         private void ligaçõesToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Ligacoes lig = new Ligacoes();
-            lig.Show();
+            
         }
     }
 }

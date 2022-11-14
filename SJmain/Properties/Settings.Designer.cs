@@ -71,12 +71,14 @@ namespace SJmain.Properties {
             }
         }
         
-        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("0")]
         public int departamento {
             get {
                 return ((int)(this["departamento"]));
+            }
+            set {
+                this["departamento"] = value;
             }
         }
     }
