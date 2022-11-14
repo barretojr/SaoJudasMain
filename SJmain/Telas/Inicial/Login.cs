@@ -96,6 +96,7 @@ namespace SJmain
                 UsuarioLogin.Text = Properties.Settings.Default.usuario;
             if (Properties.Settings.Default.senha != null)
                 SenhaLogin.Text = Properties.Settings.Default.senha;
+            LembrarUsuario.Checked = true;
         }
     }
 }

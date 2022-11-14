@@ -191,13 +191,13 @@
             // 
             this.cadastrarToolStripMenuItem.Name = "cadastrarToolStripMenuItem";
             this.cadastrarToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
-            this.cadastrarToolStripMenuItem.Text = "Cadastrar";            
+            this.cadastrarToolStripMenuItem.Text = "Cadastrar";
             // 
             // alterarToolStripMenuItem
             // 
             this.alterarToolStripMenuItem.Name = "alterarToolStripMenuItem";
             this.alterarToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
-            this.alterarToolStripMenuItem.Text = "Alterar";            
+            this.alterarToolStripMenuItem.Text = "Alterar";
             // 
             // exportarInformaçõesToolStripMenuItem
             // 
@@ -247,6 +247,7 @@
             this.Name = "SistemaPrincipal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Principal";
+            this.Load += new System.EventHandler(this.SistemaPrincipal_Load);
             this.MenuOpcoes.ResumeLayout(false);
             this.MenuOpcoes.PerformLayout();
             this.Strip1.ResumeLayout(false);

@@ -89,14 +89,14 @@ namespace SJmain.Telas
         {
             Derpatpessoal dp = new Derpatpessoal();
             dp.Show();
-            this.Hide();
+            
         }
 
         private void societárioToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Societario societario = new Societario();
             societario.Show();
-            this.Hide();
+            
         }
 
         private void ocorreuUmErroToolStripMenuItem_Click(object sender, EventArgs e)
@@ -119,6 +119,11 @@ namespace SJmain.Telas
         private void ligaçõesToolStripMenuItem_Click(object sender, EventArgs e)
         {
             
+        }
+
+        private void SistemaPrincipal_Load(object sender, EventArgs e)
+        {
+            UsuarioLogado.Text = Properties.Settings.Default.usuario;
         }
     }
 }
