@@ -22,7 +22,7 @@ namespace SJmain.Telas
         private void contabilidadeToolStripMenuItem_Click(object sender, EventArgs e)
         {
             //1=master,2=contabil,5=tecnologia
-            int master = 1, contabil = 2, tecnologia = 5;
+            int  contabil = 2;
             Controle controle = new Controle();
             controle.acessarform(Properties.Settings.Default.usuario, contabil);
             if (controle.mensagem.Equals(""))
@@ -45,15 +45,15 @@ namespace SJmain.Telas
         private void fiscalToolStripMenuItem_Click(object sender, EventArgs e)
         {
             //1=master,3=fiscal,5=tecnologia,
-            int master = 1, fiscal = 3, tecnologia = 5;
+            int fiscal = 3;
             Controle controle = new Controle();
             controle.acessarform(Properties.Settings.Default.usuario, fiscal);
             if (controle.mensagem.Equals(""))
             {
                 if (controle.tem == true)
                 {
-                    Contabilidade conta = new Contabilidade();
-                    conta.Show();
+                    Fiscal fisc = new Fiscal();
+                    fisc.Show();
                 }
 
                 else
@@ -68,56 +68,13 @@ namespace SJmain.Telas
             //1=master,5=tecnologia,
             int  tecnologia = 5;
             Controle controle = new Controle();
-            controle.acessarform(Properties.Settings.Default.usuario, Tecnologia);
-            if (controle.mensagem.Equals(""))
-            {
-                if (controle.tem == true)
-                {
-                    Contabilidade conta = new Contabilidade();
-                    conta.Show();
-                }
-
-                else
-                {
-                    MessageBox.Show("Você não tem permissão para acessar", "Permissão", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
-            }
-
-        }
-
-        private void cadastrarToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            //1=master,5=tecnologia
-            int master = 1, tecnologia = 5;
-            Controle controle = new Controle();
             controle.acessarform(Properties.Settings.Default.usuario, tecnologia);
             if (controle.mensagem.Equals(""))
             {
                 if (controle.tem == true)
                 {
-                    Contabilidade conta = new Contabilidade();
-                    conta.Show();
-                }
-
-                else
-                {
-                    MessageBox.Show("Você não tem permissão para acessar", "Permissão", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
-            }
-        }
-
-        private void alterarToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            //1=master,5=tecnologia,
-            int master = 1, tecnologia = 5;
-            Controle controle = new Controle();
-            controle.acessarform(Properties.Settings.Default.usuario, tecnologia);
-            if (controle.mensagem.Equals(""))
-            {
-                if (controle.tem == true)
-                {
-                    Contabilidade conta = new Contabilidade();
-                    conta.Show();
+                    Tecnologia tec = new Tecnologia();
+                    tec.Show();
                 }
 
                 else
@@ -126,7 +83,7 @@ namespace SJmain.Telas
                 }
             }
 
-        }
+        }        
 
         private void departamentoPessoalToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -144,12 +101,13 @@ namespace SJmain.Telas
 
         private void ocorreuUmErroToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            DialogResult eita;
-            eita = MessageBox.Show("Eita!", "Eita!", MessageBoxButtons.AbortRetryIgnore, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2);
+            DialogResult Eita;
+            Eita = MessageBox.Show("Eita!", "Eita!", MessageBoxButtons.AbortRetryIgnore, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2);
         }
 
         private void agendaToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            
             
         }
 

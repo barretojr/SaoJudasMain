@@ -15,9 +15,32 @@ namespace SJmain
         private void EntrarLogin_Click(object sender, EventArgs e)
         {
             Controle controle = new Controle();
+            Properties.Settings.Default.usuario = UsuarioLogin.Text;
+
             controle.acessar(UsuarioLogin.Text, SenhaLogin.Text);
-            
-                if (controle.mensagem.Equals(""))
+
+            if (LembrarUsuario.Checked == true)
+            {
+                Properties.Settings.Default.usuario = UsuarioLogin.Text;
+                Properties.Settings.Default.Save();
+                if (LembrarSenha.Checked == true)
+                {
+                    Properties.Settings.Default.senha = SenhaLogin.Text;
+                    Properties.Settings.Default.Save();
+                }
+                if (LembrarSenha.Checked == false)
+                {
+                    Properties.Settings.Default.senha = "";
+                    Properties.Settings.Default.Save();
+                }
+            }
+            if (LembrarUsuario.Checked == false)
+            {
+                Properties.Settings.Default.usuario = "";
+                Properties.Settings.Default.Save();
+            }
+
+            if (controle.mensagem.Equals(""))
                 {
                 if (controle.tem == true)
                 {
@@ -65,6 +88,14 @@ namespace SJmain
                     }
                 }
             }
+        }
+
+        private void frmLogin_Load(object sender, EventArgs e)
+        {
+            if (Properties.Settings.Default.usuario != null)
+                UsuarioLogin.Text = Properties.Settings.Default.usuario;
+            if (Properties.Settings.Default.senha != null)
+                SenhaLogin.Text = Properties.Settings.Default.senha;
         }
     }
 }

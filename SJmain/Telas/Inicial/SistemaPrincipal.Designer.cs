@@ -191,15 +191,13 @@
             // 
             this.cadastrarToolStripMenuItem.Name = "cadastrarToolStripMenuItem";
             this.cadastrarToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
-            this.cadastrarToolStripMenuItem.Text = "Cadastrar";
-            this.cadastrarToolStripMenuItem.Click += new System.EventHandler(this.cadastrarToolStripMenuItem_Click);
+            this.cadastrarToolStripMenuItem.Text = "Cadastrar";            
             // 
             // alterarToolStripMenuItem
             // 
             this.alterarToolStripMenuItem.Name = "alterarToolStripMenuItem";
             this.alterarToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
-            this.alterarToolStripMenuItem.Text = "Alterar";
-            this.alterarToolStripMenuItem.Click += new System.EventHandler(this.alterarToolStripMenuItem_Click);
+            this.alterarToolStripMenuItem.Text = "Alterar";            
             // 
             // exportarInformaçõesToolStripMenuItem
             // 
