@@ -79,20 +79,27 @@ namespace SJmain.Telas.Cadastro
 
         private void btnConfirmar_Click(object sender, EventArgs e)
         {
-            Controle controle = new Controle();
-            #region ifradiobutton
-            int dept = 0;
-            if (rdbContabil.Checked) { dept = 2; }
-            if (rdbFiscal.Checked) { dept = 3; }
-            if (rdbLogistica.Checked) { dept = 4; }
-            if (rdbTecnologia.Checked) { dept = 5; }
-            if (rdbPessoal.Checked) { dept = 6; }
-            if (rdbSocietario.Checked) { dept = 7; }
-            #endregion
-            string mensagem = controle.cadastrar(dept, txtUsuario.Text, txtEmail.Text, mskCPF.Text, txtSenha.Text, txtConfirmar.Text, mskTelefone.Text);
-            if (controle.tem)
+            if (Validarform())
             {
-                MessageBox.Show(mensagem, "Cadastro Feito com Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                Controle controle = new Controle();
+                #region ifradiobutton
+                int dept = 0;
+                if (rdbContabil.Checked) { dept = 2; }
+                if (rdbFiscal.Checked) { dept = 3; }
+                if (rdbLogistica.Checked) { dept = 4; }
+                if (rdbTecnologia.Checked) { dept = 5; }
+                if (rdbPessoal.Checked) { dept = 6; }
+                if (rdbSocietario.Checked) { dept = 7; }
+                #endregion
+                string mensagem = controle.cadastrar(dept, txtUsuario.Text, txtEmail.Text, mskCPF.Text, txtSenha.Text, txtConfirmar.Text, mskTelefone.Text);
+                if (controle.tem)
+                {
+                    MessageBox.Show(mensagem, "Cadastro Feito com Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                else
+                {
+                    MessageBox.Show("Reveja todos os dados");
+                }
             }
             this.Close();
         }
