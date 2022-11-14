@@ -49,7 +49,10 @@
             this.exportarInformaçõesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ajudaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ocorreuUmErroToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.Strip1 = new System.Windows.Forms.StatusStrip();
+            this.UsuarioLogado = new System.Windows.Forms.ToolStripStatusLabel();
             this.MenuOpcoes.SuspendLayout();
+            this.Strip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // MenuOpcoes
@@ -219,18 +222,37 @@
             this.ocorreuUmErroToolStripMenuItem.Text = "Ocorreu um erro";
             this.ocorreuUmErroToolStripMenuItem.Click += new System.EventHandler(this.ocorreuUmErroToolStripMenuItem_Click);
             // 
+            // Strip1
+            // 
+            this.Strip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.UsuarioLogado});
+            this.Strip1.Location = new System.Drawing.Point(0, 428);
+            this.Strip1.Name = "Strip1";
+            this.Strip1.Size = new System.Drawing.Size(800, 22);
+            this.Strip1.TabIndex = 1;
+            this.Strip1.Text = "statusStrip1";
+            // 
+            // UsuarioLogado
+            // 
+            this.UsuarioLogado.Name = "UsuarioLogado";
+            this.UsuarioLogado.Size = new System.Drawing.Size(32, 17);
+            this.UsuarioLogado.Text = "teste";
+            // 
             // SistemaPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.Strip1);
             this.Controls.Add(this.MenuOpcoes);
             this.MainMenuStrip = this.MenuOpcoes;
             this.Name = "SistemaPrincipal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Principal";            
+            this.Text = "Principal";
             this.MenuOpcoes.ResumeLayout(false);
             this.MenuOpcoes.PerformLayout();
+            this.Strip1.ResumeLayout(false);
+            this.Strip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -259,5 +281,7 @@
         private System.Windows.Forms.ToolStripMenuItem ajudaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem ocorreuUmErroToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem ligaçõesToolStripMenuItem;
+        private System.Windows.Forms.StatusStrip Strip1;
+        public System.Windows.Forms.ToolStripStatusLabel UsuarioLogado;
     }
 }
