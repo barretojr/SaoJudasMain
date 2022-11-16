@@ -13,25 +13,22 @@ namespace SJmain.Telas.Departamentos.Contabilidade1
 
         private void btnProcurar_Click(object sender, EventArgs e)
         {
-            OpenFileDialog openFileDialog1 = new OpenFileDialog()
+            GetPdf();
+        }
+        private string GetPdf()
+        {
+            var openFile = new OpenFileDialog();
+            openFile.Filter = "Arquivos PDFs|*.pdf";
+            openFile.Multiselect = false;
+            if(openFile.ShowDialog() == DialogResult.OK)
             {
-                Filter = "Arquivo PDF|*.pdf",
-                Title = "Selecione o arquivo PDF"
-            };
-
-            if (openFileDialog1.ShowDialog() == DialogResult.OK)
-            {
-                foreach (String arquivo in openFileDialog1.FileNames)
-                {
-                    txtCaminho.Text = arquivo;
-                }
-                string destino = Path.Combine(Properties.Settings.Default.Pasta, ".pdf");
-
-                if (File.Exists(destino))
-                    File.Delete(destino);
-
-                File.Copy(openFileDialog1.FileName, destino);
+                return openFile.FileName;
             }
+            else
+            {
+                return "";
+            }
+            
         }
 
         private void btnSair_Click(object sender, EventArgs e)

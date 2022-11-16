@@ -45,13 +45,14 @@
             this.txtEmpresa = new System.Windows.Forms.TextBox();
             this.btnAtivar = new System.Windows.Forms.Button();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.btnProcurar = new System.Windows.Forms.Button();
-            this.txtCaminho = new System.Windows.Forms.TextBox();
-            this.pbImportarB = new System.Windows.Forms.ProgressBar();
-            this.btnImportar = new System.Windows.Forms.Button();
             this.btnExcluir = new System.Windows.Forms.Button();
+            this.btnImportar = new System.Windows.Forms.Button();
+            this.pbImportarB = new System.Windows.Forms.ProgressBar();
+            this.btnProcurar = new System.Windows.Forms.Button();
             this.btnConcluir = new System.Windows.Forms.Button();
             this.btnSair = new System.Windows.Forms.Button();
+            this.lblCaminho = new System.Windows.Forms.Label();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -212,6 +213,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.comboBox1);
             this.groupBox1.Controls.Add(this.txtEmpresa);
             this.groupBox1.Controls.Add(this.btnAtivar);
             this.groupBox1.Location = new System.Drawing.Point(12, 12);
@@ -239,10 +241,10 @@
             // 
             // groupBox3
             // 
+            this.groupBox3.Controls.Add(this.lblCaminho);
             this.groupBox3.Controls.Add(this.btnExcluir);
             this.groupBox3.Controls.Add(this.btnImportar);
             this.groupBox3.Controls.Add(this.pbImportarB);
-            this.groupBox3.Controls.Add(this.txtCaminho);
             this.groupBox3.Controls.Add(this.btnProcurar);
             this.groupBox3.Location = new System.Drawing.Point(351, 12);
             this.groupBox3.Name = "groupBox3";
@@ -251,29 +253,14 @@
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Selecionar Balancete";
             // 
-            // btnProcurar
+            // btnExcluir
             // 
-            this.btnProcurar.Location = new System.Drawing.Point(6, 19);
-            this.btnProcurar.Name = "btnProcurar";
-            this.btnProcurar.Size = new System.Drawing.Size(77, 68);
-            this.btnProcurar.TabIndex = 0;
-            this.btnProcurar.Text = "Procurar...";
-            this.btnProcurar.UseVisualStyleBackColor = true;
-            this.btnProcurar.Click += new System.EventHandler(this.btnProcurar_Click);
-            // 
-            // txtCaminho
-            // 
-            this.txtCaminho.Location = new System.Drawing.Point(90, 18);
-            this.txtCaminho.Name = "txtCaminho";
-            this.txtCaminho.Size = new System.Drawing.Size(192, 20);
-            this.txtCaminho.TabIndex = 1;
-            // 
-            // pbImportarB
-            // 
-            this.pbImportarB.Location = new System.Drawing.Point(7, 196);
-            this.pbImportarB.Name = "pbImportarB";
-            this.pbImportarB.Size = new System.Drawing.Size(275, 23);
-            this.pbImportarB.TabIndex = 2;
+            this.btnExcluir.Location = new System.Drawing.Point(6, 167);
+            this.btnExcluir.Name = "btnExcluir";
+            this.btnExcluir.Size = new System.Drawing.Size(75, 23);
+            this.btnExcluir.TabIndex = 4;
+            this.btnExcluir.Text = "Excluir";
+            this.btnExcluir.UseVisualStyleBackColor = true;
             // 
             // btnImportar
             // 
@@ -284,14 +271,22 @@
             this.btnImportar.Text = "Importar";
             this.btnImportar.UseVisualStyleBackColor = true;
             // 
-            // btnExcluir
+            // pbImportarB
             // 
-            this.btnExcluir.Location = new System.Drawing.Point(6, 167);
-            this.btnExcluir.Name = "btnExcluir";
-            this.btnExcluir.Size = new System.Drawing.Size(75, 23);
-            this.btnExcluir.TabIndex = 4;
-            this.btnExcluir.Text = "Excluir";
-            this.btnExcluir.UseVisualStyleBackColor = true;
+            this.pbImportarB.Location = new System.Drawing.Point(7, 196);
+            this.pbImportarB.Name = "pbImportarB";
+            this.pbImportarB.Size = new System.Drawing.Size(275, 23);
+            this.pbImportarB.TabIndex = 2;
+            // 
+            // btnProcurar
+            // 
+            this.btnProcurar.Location = new System.Drawing.Point(6, 19);
+            this.btnProcurar.Name = "btnProcurar";
+            this.btnProcurar.Size = new System.Drawing.Size(77, 68);
+            this.btnProcurar.TabIndex = 0;
+            this.btnProcurar.Text = "Procurar...";
+            this.btnProcurar.UseVisualStyleBackColor = true;
+            this.btnProcurar.Click += new System.EventHandler(this.btnProcurar_Click);
             // 
             // btnConcluir
             // 
@@ -312,6 +307,28 @@
             this.btnSair.UseVisualStyleBackColor = true;
             this.btnSair.Click += new System.EventHandler(this.btnSair_Click);
             // 
+            // lblCaminho
+            // 
+            this.lblCaminho.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.lblCaminho.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCaminho.Location = new System.Drawing.Point(90, 21);
+            this.lblCaminho.Name = "lblCaminho";
+            this.lblCaminho.Size = new System.Drawing.Size(192, 23);
+            this.lblCaminho.TabIndex = 5;
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "2021",
+            "2022",
+            "2023",
+            "2024"});
+            this.comboBox1.Location = new System.Drawing.Point(95, 66);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(108, 21);
+            this.comboBox1.TabIndex = 2;
+            // 
             // importarsintetico
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -330,7 +347,6 @@
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox3.ResumeLayout(false);
-            this.groupBox3.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -357,9 +373,10 @@
         private System.Windows.Forms.Button btnExcluir;
         private System.Windows.Forms.Button btnImportar;
         private System.Windows.Forms.ProgressBar pbImportarB;
-        private System.Windows.Forms.TextBox txtCaminho;
         private System.Windows.Forms.Button btnProcurar;
         private System.Windows.Forms.Button btnConcluir;
         private System.Windows.Forms.Button btnSair;
+        private System.Windows.Forms.Label lblCaminho;
+        private System.Windows.Forms.ComboBox comboBox1;
     }
 }

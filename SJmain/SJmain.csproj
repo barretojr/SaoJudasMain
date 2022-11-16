@@ -100,6 +100,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Classes\Livros.cs" />
     <Compile Include="Classes\Usuario.cs" />
     <Compile Include="Banco de Dados\Conexao.cs" />
     <Compile Include="Banco de Dados\Controle.cs" />
