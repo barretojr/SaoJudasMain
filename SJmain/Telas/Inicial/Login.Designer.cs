@@ -129,7 +129,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.MediumAquamarine;
-            this.ClientSize = new System.Drawing.Size(387, 257);
+            this.ClientSize = new System.Drawing.Size(380, 255);
             this.Controls.Add(this.BotaoSair);
             this.Controls.Add(this.EntrarLogin);
             this.Controls.Add(this.groupBox2);

@@ -34,6 +34,7 @@
             this.rdbNome = new System.Windows.Forms.RadioButton();
             this.btnPesquisar = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.gbSenha = new System.Windows.Forms.GroupBox();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -97,11 +98,21 @@
             this.dataGridView1.Size = new System.Drawing.Size(695, 103);
             this.dataGridView1.TabIndex = 2;
             // 
+            // gbSenha
+            // 
+            this.gbSenha.Location = new System.Drawing.Point(12, 204);
+            this.gbSenha.Name = "gbSenha";
+            this.gbSenha.Size = new System.Drawing.Size(314, 107);
+            this.gbSenha.TabIndex = 3;
+            this.gbSenha.TabStop = false;
+            this.gbSenha.Text = "Alterar Senha";
+            // 
             // Alterar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(717, 450);
+            this.Controls.Add(this.gbSenha);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.btnPesquisar);
             this.Controls.Add(this.groupBox1);
@@ -123,5 +134,6 @@
         private System.Windows.Forms.RadioButton rdbNome;
         private System.Windows.Forms.Button btnPesquisar;
         private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.GroupBox gbSenha;
     }
 }

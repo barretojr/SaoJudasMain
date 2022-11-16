@@ -45,7 +45,7 @@
             this.usuarioToolStripMenuItem});
             this.MenuTecnologia.Location = new System.Drawing.Point(0, 0);
             this.MenuTecnologia.Name = "MenuTecnologia";
-            this.MenuTecnologia.Size = new System.Drawing.Size(800, 24);
+            this.MenuTecnologia.Size = new System.Drawing.Size(778, 24);
             this.MenuTecnologia.TabIndex = 0;
             this.MenuTecnologia.Text = "menuStrip1";
             // 
@@ -83,14 +83,14 @@
             // cadastrarToolStripMenuItem
             // 
             this.cadastrarToolStripMenuItem.Name = "cadastrarToolStripMenuItem";
-            this.cadastrarToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.cadastrarToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
             this.cadastrarToolStripMenuItem.Text = "Cadastrar";
             this.cadastrarToolStripMenuItem.Click += new System.EventHandler(this.cadastrarToolStripMenuItem_Click);
             // 
             // alterarToolStripMenuItem
             // 
             this.alterarToolStripMenuItem.Name = "alterarToolStripMenuItem";
-            this.alterarToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.alterarToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
             this.alterarToolStripMenuItem.Text = "Alterar";
             this.alterarToolStripMenuItem.Click += new System.EventHandler(this.alterarToolStripMenuItem_Click);
             // 
@@ -98,7 +98,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(778, 450);
             this.Controls.Add(this.MenuTecnologia);
             this.IsMdiContainer = true;
             this.MainMenuStrip = this.MenuTecnologia;

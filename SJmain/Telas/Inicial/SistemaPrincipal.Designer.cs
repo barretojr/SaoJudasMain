@@ -36,16 +36,10 @@
             this.contabilidadeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.fiscalToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.logisticaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.agendaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.entineToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.ligaçõesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tecnologiaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.societárioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.departamentoPessoalToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.opçõesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.usuárioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.cadastrarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.alterarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exportarInformaçõesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ajudaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ocorreuUmErroToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -119,34 +113,10 @@
             // 
             // logisticaToolStripMenuItem
             // 
-            this.logisticaToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.agendaToolStripMenuItem,
-            this.entineToolStripMenuItem,
-            this.ligaçõesToolStripMenuItem});
             this.logisticaToolStripMenuItem.Name = "logisticaToolStripMenuItem";
             this.logisticaToolStripMenuItem.Size = new System.Drawing.Size(192, 22);
             this.logisticaToolStripMenuItem.Text = "Logistica";
-            // 
-            // agendaToolStripMenuItem
-            // 
-            this.agendaToolStripMenuItem.Name = "agendaToolStripMenuItem";
-            this.agendaToolStripMenuItem.Size = new System.Drawing.Size(121, 22);
-            this.agendaToolStripMenuItem.Text = "Agenda";
-            this.agendaToolStripMenuItem.Click += new System.EventHandler(this.agendaToolStripMenuItem_Click);
-            // 
-            // entineToolStripMenuItem
-            // 
-            this.entineToolStripMenuItem.Name = "entineToolStripMenuItem";
-            this.entineToolStripMenuItem.Size = new System.Drawing.Size(121, 22);
-            this.entineToolStripMenuItem.Text = "Itinerário";
-            this.entineToolStripMenuItem.Click += new System.EventHandler(this.entineToolStripMenuItem_Click);
-            // 
-            // ligaçõesToolStripMenuItem
-            // 
-            this.ligaçõesToolStripMenuItem.Name = "ligaçõesToolStripMenuItem";
-            this.ligaçõesToolStripMenuItem.Size = new System.Drawing.Size(121, 22);
-            this.ligaçõesToolStripMenuItem.Text = "Ligações";
-            this.ligaçõesToolStripMenuItem.Click += new System.EventHandler(this.ligaçõesToolStripMenuItem_Click);
+            this.logisticaToolStripMenuItem.Click += new System.EventHandler(this.logisticaToolStripMenuItem_Click);
             // 
             // tecnologiaToolStripMenuItem
             // 
@@ -172,32 +142,10 @@
             // opçõesToolStripMenuItem
             // 
             this.opçõesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.usuárioToolStripMenuItem,
             this.exportarInformaçõesToolStripMenuItem});
             this.opçõesToolStripMenuItem.Name = "opçõesToolStripMenuItem";
             this.opçõesToolStripMenuItem.Size = new System.Drawing.Size(59, 20);
             this.opçõesToolStripMenuItem.Text = "Opções";
-            // 
-            // usuárioToolStripMenuItem
-            // 
-            this.usuárioToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.cadastrarToolStripMenuItem,
-            this.alterarToolStripMenuItem});
-            this.usuárioToolStripMenuItem.Name = "usuárioToolStripMenuItem";
-            this.usuárioToolStripMenuItem.Size = new System.Drawing.Size(187, 22);
-            this.usuárioToolStripMenuItem.Text = "Usuário";
-            // 
-            // cadastrarToolStripMenuItem
-            // 
-            this.cadastrarToolStripMenuItem.Name = "cadastrarToolStripMenuItem";
-            this.cadastrarToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
-            this.cadastrarToolStripMenuItem.Text = "Cadastrar";
-            // 
-            // alterarToolStripMenuItem
-            // 
-            this.alterarToolStripMenuItem.Name = "alterarToolStripMenuItem";
-            this.alterarToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
-            this.alterarToolStripMenuItem.Text = "Alterar";
             // 
             // exportarInformaçõesToolStripMenuItem
             // 
@@ -269,17 +217,11 @@
         private System.Windows.Forms.ToolStripMenuItem logisticaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem tecnologiaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem opçõesToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem usuárioToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem cadastrarToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem alterarToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem societárioToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem departamentoPessoalToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem agendaToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem entineToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem exportarInformaçõesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem ajudaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem ocorreuUmErroToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem ligaçõesToolStripMenuItem;
         private System.Windows.Forms.StatusStrip Strip1;
         public System.Windows.Forms.ToolStripStatusLabel UsuarioLogado;
     }

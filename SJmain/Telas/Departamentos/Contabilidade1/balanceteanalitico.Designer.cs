@@ -42,10 +42,12 @@
             this.rdbFevereiro = new System.Windows.Forms.RadioButton();
             this.rdbJaneiro = new System.Windows.Forms.RadioButton();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.txtEmpresa = new System.Windows.Forms.TextBox();
-            this.btnAtivar = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.txtEmpresa = new System.Windows.Forms.TextBox();
+            this.btnAtivar = new System.Windows.Forms.Button();
+            this.btnSair = new System.Windows.Forms.Button();
+            this.btnBuscar = new System.Windows.Forms.Button();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -216,22 +218,6 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Ativar Empresa";
             // 
-            // txtEmpresa
-            // 
-            this.txtEmpresa.Location = new System.Drawing.Point(94, 19);
-            this.txtEmpresa.Name = "txtEmpresa";
-            this.txtEmpresa.Size = new System.Drawing.Size(224, 20);
-            this.txtEmpresa.TabIndex = 1;
-            // 
-            // btnAtivar
-            // 
-            this.btnAtivar.Location = new System.Drawing.Point(6, 19);
-            this.btnAtivar.Name = "btnAtivar";
-            this.btnAtivar.Size = new System.Drawing.Size(82, 68);
-            this.btnAtivar.TabIndex = 0;
-            this.btnAtivar.Text = "Ativar";
-            this.btnAtivar.UseVisualStyleBackColor = true;
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -254,11 +240,47 @@
             this.comboBox1.Size = new System.Drawing.Size(224, 21);
             this.comboBox1.TabIndex = 21;
             // 
+            // txtEmpresa
+            // 
+            this.txtEmpresa.Location = new System.Drawing.Point(94, 19);
+            this.txtEmpresa.Name = "txtEmpresa";
+            this.txtEmpresa.Size = new System.Drawing.Size(224, 20);
+            this.txtEmpresa.TabIndex = 1;
+            // 
+            // btnAtivar
+            // 
+            this.btnAtivar.Location = new System.Drawing.Point(6, 19);
+            this.btnAtivar.Name = "btnAtivar";
+            this.btnAtivar.Size = new System.Drawing.Size(82, 68);
+            this.btnAtivar.TabIndex = 0;
+            this.btnAtivar.Text = "Ativar";
+            this.btnAtivar.UseVisualStyleBackColor = true;
+            // 
+            // btnSair
+            // 
+            this.btnSair.Location = new System.Drawing.Point(12, 243);
+            this.btnSair.Name = "btnSair";
+            this.btnSair.Size = new System.Drawing.Size(75, 23);
+            this.btnSair.TabIndex = 11;
+            this.btnSair.Text = "Sair";
+            this.btnSair.UseVisualStyleBackColor = true;
+            // 
+            // btnBuscar
+            // 
+            this.btnBuscar.Location = new System.Drawing.Point(270, 243);
+            this.btnBuscar.Name = "btnBuscar";
+            this.btnBuscar.Size = new System.Drawing.Size(75, 23);
+            this.btnBuscar.TabIndex = 12;
+            this.btnBuscar.Text = "Buscar";
+            this.btnBuscar.UseVisualStyleBackColor = true;
+            // 
             // balanceteanalitico
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(470, 290);
+            this.ClientSize = new System.Drawing.Size(358, 275);
+            this.Controls.Add(this.btnBuscar);
+            this.Controls.Add(this.btnSair);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Name = "balanceteanalitico";
@@ -291,5 +313,7 @@
         private System.Windows.Forms.Button btnAtivar;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Button btnSair;
+        private System.Windows.Forms.Button btnBuscar;
     }
 }

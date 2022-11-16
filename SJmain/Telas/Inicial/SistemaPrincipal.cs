@@ -1,6 +1,7 @@
 ﻿using SJmain.Modelo;
 using SJmain.Telas.Cadastro;
 using SJmain.Telas.Departamentos;
+using SJmain.Telas.Departamentos.Log;
 using SJmain.Telas.Departamentos.Logistica;
 using System;
 using System.Windows.Forms;
@@ -22,9 +23,9 @@ namespace SJmain.Telas
         private void contabilidadeToolStripMenuItem_Click(object sender, EventArgs e)
         {
             //1=master,2=contabil,5=tecnologia
-            int  contabil = 5;
+            int depart = 5;
             Controle controle = new Controle();
-            controle.acessarform(Properties.Settings.Default.usuario, contabil);
+            controle.acessarform(Properties.Settings.Default.usuario, depart);
             if (controle.mensagem.Equals(""))
             {
                 if(controle.tem == true)
@@ -45,9 +46,9 @@ namespace SJmain.Telas
         private void fiscalToolStripMenuItem_Click(object sender, EventArgs e)
         {
             //1=master,3=fiscal,5=tecnologia,
-            int fiscal = 3;
+            int depart = 5;
             Controle controle = new Controle();
-            controle.acessarform(Properties.Settings.Default.usuario, fiscal);
+            controle.acessarform(Properties.Settings.Default.usuario, depart);
             if (controle.mensagem.Equals(""))
             {
                 if (controle.tem == true)
@@ -66,9 +67,9 @@ namespace SJmain.Telas
         private void tecnologiaToolStripMenuItem_Click(object sender, EventArgs e)
         {
             //1=master,5=tecnologia,
-            int  tecnologia = 5;
+            int  depart = 5;
             Controle controle = new Controle();
-            controle.acessarform(Properties.Settings.Default.usuario, tecnologia);
+            controle.acessarform(Properties.Settings.Default.usuario, depart);
             if (controle.mensagem.Equals(""))
             {
                 if (controle.tem == true)
@@ -87,15 +88,45 @@ namespace SJmain.Telas
 
         private void departamentoPessoalToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Derpatpessoal dp = new Derpatpessoal();
-            dp.Show();
+            int depart = 5;
+            Controle controle = new Controle();
+            controle.acessarform(Properties.Settings.Default.usuario, depart);
+            if (controle.mensagem.Equals(""))
+            {
+                if (controle.tem == true)
+                {
+                    Derpatpessoal dp = new Derpatpessoal();
+                    dp.Show();
+                }
+
+                else
+                {
+                    MessageBox.Show("Você não tem permissão para acessar", "Permissão", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+            
             
         }
 
         private void societárioToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Societario societario = new Societario();
-            societario.Show();
+            int depart = 5;
+            Controle controle = new Controle();
+            controle.acessarform(Properties.Settings.Default.usuario, depart);
+            if (controle.mensagem.Equals(""))
+            {
+                if (controle.tem == true)
+                {
+                    Societario societario = new Societario();
+                    societario.Show();
+                }
+
+                else
+                {
+                    MessageBox.Show("Você não tem permissão para acessar", "Permissão", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+            
             
         }
 
@@ -105,25 +136,32 @@ namespace SJmain.Telas
             Eita = MessageBox.Show("Eita!", "Eita!", MessageBoxButtons.AbortRetryIgnore, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2);
         }
 
-        private void agendaToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            
-            
-        }
-
-        private void entineToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void ligaçõesToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            
-        }
+        
 
         private void SistemaPrincipal_Load(object sender, EventArgs e)
         {
             UsuarioLogado.Text = Properties.Settings.Default.usuario;
+        }
+
+        private void logisticaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            //4=  logistica
+            int depart = 5;
+            Controle controle = new Controle();
+            controle.acessarform(Properties.Settings.Default.usuario, depart);
+            if (controle.mensagem.Equals(""))
+            {
+                if (controle.tem == true)
+                {
+                    Logistica log = new Logistica();
+                    log.Show();
+                }
+
+                else
+                {
+                    MessageBox.Show("Você não tem permissão para acessar", "Permissão", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
         }
     }
 }

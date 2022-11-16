@@ -45,13 +45,14 @@
             this.txtEmpresa = new System.Windows.Forms.TextBox();
             this.btnAtivar = new System.Windows.Forms.Button();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.lblCaminho = new System.Windows.Forms.Label();
             this.btnExcluir = new System.Windows.Forms.Button();
             this.btnImportar = new System.Windows.Forms.Button();
             this.pbImportarB = new System.Windows.Forms.ProgressBar();
             this.btnProcurar = new System.Windows.Forms.Button();
             this.btnConcluir = new System.Windows.Forms.Button();
             this.btnSair = new System.Windows.Forms.Button();
-            this.lblCaminho = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -213,6 +214,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.comboBox1);
             this.groupBox1.Controls.Add(this.txtEmpresa);
             this.groupBox1.Controls.Add(this.btnAtivar);
@@ -252,6 +254,15 @@
             this.groupBox3.TabIndex = 11;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Selecionar Balancete";
+            // 
+            // lblCaminho
+            // 
+            this.lblCaminho.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.lblCaminho.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCaminho.Location = new System.Drawing.Point(90, 21);
+            this.lblCaminho.Name = "lblCaminho";
+            this.lblCaminho.Size = new System.Drawing.Size(192, 23);
+            this.lblCaminho.TabIndex = 5;
             // 
             // btnExcluir
             // 
@@ -307,14 +318,14 @@
             this.btnSair.UseVisualStyleBackColor = true;
             this.btnSair.Click += new System.EventHandler(this.btnSair_Click);
             // 
-            // lblCaminho
+            // label1
             // 
-            this.lblCaminho.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lblCaminho.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCaminho.Location = new System.Drawing.Point(90, 21);
-            this.lblCaminho.Name = "lblCaminho";
-            this.lblCaminho.Size = new System.Drawing.Size(192, 23);
-            this.lblCaminho.TabIndex = 5;
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(94, 47);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(29, 13);
+            this.label1.TabIndex = 22;
+            this.label1.Text = "Ano ";
             // 
             // comboBox1
             // 
@@ -326,8 +337,8 @@
             "2024"});
             this.comboBox1.Location = new System.Drawing.Point(95, 66);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(108, 21);
-            this.comboBox1.TabIndex = 2;
+            this.comboBox1.Size = new System.Drawing.Size(224, 21);
+            this.comboBox1.TabIndex = 21;
             // 
             // importarsintetico
             // 
@@ -377,6 +388,7 @@
         private System.Windows.Forms.Button btnConcluir;
         private System.Windows.Forms.Button btnSair;
         private System.Windows.Forms.Label lblCaminho;
+        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ComboBox comboBox1;
     }
 }

@@ -50,10 +50,10 @@
             this.rdbFevereiro = new System.Windows.Forms.RadioButton();
             this.rdbJaneiro = new System.Windows.Forms.RadioButton();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.txtEmpresa = new System.Windows.Forms.TextBox();
             this.btnAtivar = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
             this.groupBox3.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -300,6 +300,15 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Ativar Empresa";
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(94, 47);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(29, 13);
+            this.label1.TabIndex = 20;
+            this.label1.Text = "Ano ";
+            // 
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
@@ -328,15 +337,6 @@
             this.btnAtivar.TabIndex = 0;
             this.btnAtivar.Text = "Ativar";
             this.btnAtivar.UseVisualStyleBackColor = true;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(94, 47);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(29, 13);
-            this.label1.TabIndex = 20;
-            this.label1.Text = "Ano ";
             // 
             // importaranalitico
             // 
