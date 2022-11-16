@@ -22,7 +22,7 @@ namespace SJmain.Telas
         private void contabilidadeToolStripMenuItem_Click(object sender, EventArgs e)
         {
             //1=master,2=contabil,5=tecnologia
-            int  contabil = 2;
+            int  contabil = 5;
             Controle controle = new Controle();
             controle.acessarform(Properties.Settings.Default.usuario, contabil);
             if (controle.mensagem.Equals(""))

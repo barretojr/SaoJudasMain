@@ -113,14 +113,14 @@
             // analíticoToolStripMenuItem
             // 
             this.analíticoToolStripMenuItem.Name = "analíticoToolStripMenuItem";
-            this.analíticoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.analíticoToolStripMenuItem.Size = new System.Drawing.Size(121, 22);
             this.analíticoToolStripMenuItem.Text = "Analítico";
             this.analíticoToolStripMenuItem.Click += new System.EventHandler(this.analíticoToolStripMenuItem_Click);
             // 
             // sintéticoToolStripMenuItem1
             // 
             this.sintéticoToolStripMenuItem1.Name = "sintéticoToolStripMenuItem1";
-            this.sintéticoToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.sintéticoToolStripMenuItem1.Size = new System.Drawing.Size(121, 22);
             this.sintéticoToolStripMenuItem1.Text = "Sintético";
             this.sintéticoToolStripMenuItem1.Click += new System.EventHandler(this.sintéticoToolStripMenuItem1_Click);
             // 
@@ -153,7 +153,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(653, 497);
             this.Controls.Add(this.MenuContabilidade);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.IsMdiContainer = true;
             this.MainMenuStrip = this.MenuContabilidade;
             this.MaximizeBox = false;
