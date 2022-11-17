@@ -181,8 +181,7 @@
             // UsuarioLogado
             // 
             this.UsuarioLogado.Name = "UsuarioLogado";
-            this.UsuarioLogado.Size = new System.Drawing.Size(32, 17);
-            this.UsuarioLogado.Text = "teste";
+            this.UsuarioLogado.Size = new System.Drawing.Size(0, 17);
             // 
             // SistemaPrincipal
             // 

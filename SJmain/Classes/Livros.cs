@@ -12,8 +12,7 @@ namespace SJmain.Classes
     {
         Conexao conec = new Conexao();
         SqlCommand cmd = new SqlCommand();
-        SqlDataReader dr;
-        
+        SqlDataReader dr;        
         
         public int Id { get; set; }
         public string Titulo { get; set; }
@@ -39,7 +38,7 @@ namespace SJmain.Classes
             var sql = "INSERT INTO Livros (titulo, pdf) VALUES ('@titulo', @pdf)";
             cmd.Connection = conec.Conectar();
             cmd.Parameters.AddWithValue("@titulo", livro.Titulo);
-            cmd.Parameters.AddWithValue("@pdf", pdf.Length).Value = pdf;
+            cmd.Parameters.AddWithValue("@pdf",pdf.Length).Value = pdf;
             cmd.ExecuteNonQuery();
         }
         private byte[] GetPdf(string caminhopdf)

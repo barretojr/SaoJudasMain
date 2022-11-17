@@ -81,5 +81,40 @@ namespace SJmain.Properties {
                 this["departamento"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        public int patrimonio {
+            get {
+                return ((int)(this["patrimonio"]));
+            }
+            set {
+                this["patrimonio"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string modelo {
+            get {
+                return ((string)(this["modelo"]));
+            }
+            set {
+                this["modelo"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string Colaborador {
+            get {
+                return ((string)(this["Colaborador"]));
+            }
+            set {
+                this["Colaborador"] = value;
+            }
+        }
     }
 }

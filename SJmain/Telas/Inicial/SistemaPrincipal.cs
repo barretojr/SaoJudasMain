@@ -153,7 +153,7 @@ namespace SJmain.Telas
             {
                 if (controle.tem == true)
                 {
-                    Logistica log = new Logistica();
+                    Logist log = new Logist();
                     log.Show();
                 }
 
