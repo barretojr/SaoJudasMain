@@ -1,4 +1,5 @@
 ﻿using SJmain.Telas.Cadastro;
+using SJmain.Telas.Departamentos.Tecnologia1;
 using System;
 using System.Windows.Forms;
 
@@ -28,6 +29,13 @@ namespace SJmain.Telas.Departamentos
             Alterar alterar = new Alterar();
             alterar.MdiParent = this;
             alterar.Show();
+        }
+
+        private void inventárioToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Inventario invent = new Inventario();
+            invent.MdiParent = this;
+            invent.Show();
         }
     }
 }

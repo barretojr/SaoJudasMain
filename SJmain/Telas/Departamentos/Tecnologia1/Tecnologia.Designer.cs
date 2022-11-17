@@ -35,6 +35,7 @@
             this.usuarioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cadastrarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.alterarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.inventárioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.MenuTecnologia.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -42,7 +43,8 @@
             // 
             this.MenuTecnologia.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.sistemaToolStripMenuItem,
-            this.usuarioToolStripMenuItem});
+            this.usuarioToolStripMenuItem,
+            this.inventárioToolStripMenuItem});
             this.MenuTecnologia.Location = new System.Drawing.Point(0, 0);
             this.MenuTecnologia.Name = "MenuTecnologia";
             this.MenuTecnologia.Size = new System.Drawing.Size(778, 24);
@@ -83,16 +85,23 @@
             // cadastrarToolStripMenuItem
             // 
             this.cadastrarToolStripMenuItem.Name = "cadastrarToolStripMenuItem";
-            this.cadastrarToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
+            this.cadastrarToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.cadastrarToolStripMenuItem.Text = "Cadastrar";
             this.cadastrarToolStripMenuItem.Click += new System.EventHandler(this.cadastrarToolStripMenuItem_Click);
             // 
             // alterarToolStripMenuItem
             // 
             this.alterarToolStripMenuItem.Name = "alterarToolStripMenuItem";
-            this.alterarToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
+            this.alterarToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.alterarToolStripMenuItem.Text = "Alterar";
             this.alterarToolStripMenuItem.Click += new System.EventHandler(this.alterarToolStripMenuItem_Click);
+            // 
+            // inventárioToolStripMenuItem
+            // 
+            this.inventárioToolStripMenuItem.Name = "inventárioToolStripMenuItem";
+            this.inventárioToolStripMenuItem.Size = new System.Drawing.Size(72, 20);
+            this.inventárioToolStripMenuItem.Text = "Inventário";
+            this.inventárioToolStripMenuItem.Click += new System.EventHandler(this.inventárioToolStripMenuItem_Click);
             // 
             // Tecnologia
             // 
@@ -121,5 +130,6 @@
         private System.Windows.Forms.ToolStripMenuItem usuarioToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem cadastrarToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem alterarToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem inventárioToolStripMenuItem;
     }
 }
