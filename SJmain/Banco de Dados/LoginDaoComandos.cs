@@ -1,4 +1,5 @@
-﻿using SJmain.Classes;
+﻿using Org.BouncyCastle.Crypto.Tls;
+using SJmain.Classes;
 using System.Data.SqlClient;
 using System.Windows.Forms;
 
@@ -53,22 +54,23 @@ namespace SJmain.Modelo
             }
             catch (SqlException)
             {
+               
                 this.mensagem = "erro";
             }
 
             return tem;
         }
-        public string cadastrar(int iddepartamento, string nomeusu, string email, string cpf, string senha, string confSenha, string telefone)
+        public string cadastrar(int idderp, string nomeusu, string email, string cpf, string senha, string confSenha, string telefone)
         {
             if (senha.Equals(confSenha))
             {
-                cmd.CommandText = "INSERT INTO Usuario (iddepartamento, nome, nomeusuario, senha, cpfusuario, telefone, email) VALUES (@idderp,@nome,@senha,@email,@cpf,@tel);";
-                cmd.Parameters.AddWithValue("@idderp", iddepartamento);//1=master,2=contabil,3=fiscal,4=logistica,5=tecnologia,6=pessoal,7=societario
-                cmd.Parameters.AddWithValue("@nome", nomeusu);
-                cmd.Parameters.AddWithValue("@senha", senha);
-                cmd.Parameters.AddWithValue("@email", email);
-                cmd.Parameters.AddWithValue("@cpf", cpf);
-                cmd.Parameters.AddWithValue("@tel", telefone);
+                cmd.CommandText = "INSERT INTO Usuario (iddepartamento, nome, nomeusuario, senha, cpfusuario, telefone, email) VALUES ('"+idderp+","+nomeusu+","+senha+","+email+","+cpf+","+telefone+"');";
+                //cmd.Parameters.AddWithValue("@idderp", iddepartamento);//1=master,2=contabil,3=fiscal,4=logistica,5=tecnologia,6=pessoal,7=societario
+                //cmd.Parameters.AddWithValue("@nome", nomeusu);
+                //cmd.Parameters.AddWithValue("@senha", senha);
+                //cmd.Parameters.AddWithValue("@email", email);
+                //cmd.Parameters.AddWithValue("@cpf", cpf);
+                //cmd.Parameters.AddWithValue("@tel", telefone);
                 try
                 {
                     cmd.Connection = conec.Conectar();

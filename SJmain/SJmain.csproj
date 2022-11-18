@@ -75,7 +75,9 @@
     <Reference Include="PdfiumViewer, Version=2.13.0.0, Culture=neutral, PublicKeyToken=91e4789cfb0609e0, processorArchitecture=MSIL">
       <HintPath>..\packages\PdfiumViewer.2.13.0.0\lib\net20\PdfiumViewer.dll</HintPath>
     </Reference>
-    <Reference Include="System" />
+    <Reference Include="System">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.dll</HintPath>
+    </Reference>
     <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>..\packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
     </Reference>
@@ -121,11 +123,11 @@
     <Compile Include="Banco de Dados\Controle.cs" />
     <Compile Include="Banco de Dados\LoginDaoComandos.cs" />
     <Compile Include="Classes\Referencia.cs" />
-    <Compile Include="Telas\Departamentos\Log\Logistica.cs">
+    <Compile Include="Telas\Departamentos\LogisticaRecepcao\Logist.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Telas\Departamentos\Log\Logistica.Designer.cs">
-      <DependentUpon>Logistica.cs</DependentUpon>
+    <Compile Include="Telas\Departamentos\LogisticaRecepcao\Logist.Designer.cs">
+      <DependentUpon>Logist.cs</DependentUpon>
     </Compile>
     <Compile Include="Telas\Departamentos\Tecnologia1\Alterar.cs">
       <SubType>Form</SubType>
@@ -193,22 +195,22 @@
     <Compile Include="Telas\Departamentos\Fiscal1\StatusEmpresa.Designer.cs">
       <DependentUpon>StatusEmpresa.cs</DependentUpon>
     </Compile>
-    <Compile Include="Telas\Departamentos\Log\Agenda.cs">
+    <Compile Include="Telas\Departamentos\LogisticaRecepcao\Agenda.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Telas\Departamentos\Log\Agenda.Designer.cs">
+    <Compile Include="Telas\Departamentos\LogisticaRecepcao\Agenda.Designer.cs">
       <DependentUpon>Agenda.cs</DependentUpon>
     </Compile>
-    <Compile Include="Telas\Departamentos\Log\itinerario.cs">
+    <Compile Include="Telas\Departamentos\LogisticaRecepcao\itinerario.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Telas\Departamentos\Log\itinerario.Designer.cs">
+    <Compile Include="Telas\Departamentos\LogisticaRecepcao\itinerario.Designer.cs">
       <DependentUpon>itinerario.cs</DependentUpon>
     </Compile>
-    <Compile Include="Telas\Departamentos\Log\Ligacoes.cs">
+    <Compile Include="Telas\Departamentos\LogisticaRecepcao\Ligacoes.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Telas\Departamentos\Log\Ligacoes.Designer.cs">
+    <Compile Include="Telas\Departamentos\LogisticaRecepcao\Ligacoes.Designer.cs">
       <DependentUpon>Ligacoes.cs</DependentUpon>
     </Compile>
     <Compile Include="Telas\Departamentos\Societario1\Societario.cs">
@@ -216,6 +218,12 @@
     </Compile>
     <Compile Include="Telas\Departamentos\Societario1\Societario.Designer.cs">
       <DependentUpon>Societario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\Departamentos\Tecnologia1\CadastrarPatrics.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\Departamentos\Tecnologia1\CadastrarPatrics.Designer.cs">
+      <DependentUpon>CadastrarPatrics.cs</DependentUpon>
     </Compile>
     <Compile Include="Telas\Departamentos\Tecnologia1\Inventario.cs">
       <SubType>Form</SubType>
@@ -243,11 +251,11 @@
     <Compile Include="Telas\Inicial\SistemaPrincipal.Designer.cs">
       <DependentUpon>SistemaPrincipal.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Telas\Departamentos\Log\Ligacoes.resx">
+    <EmbeddedResource Include="Telas\Departamentos\LogisticaRecepcao\Ligacoes.resx">
       <DependentUpon>Ligacoes.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Telas\Departamentos\Log\Logistica.resx">
-      <DependentUpon>Logistica.cs</DependentUpon>
+    <EmbeddedResource Include="Telas\Departamentos\LogisticaRecepcao\Logist.resx">
+      <DependentUpon>Logist.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Telas\Departamentos\Tecnologia1\Alterar.resx">
       <DependentUpon>Alterar.cs</DependentUpon>
@@ -282,14 +290,17 @@
     <EmbeddedResource Include="Telas\Departamentos\Fiscal1\StatusEmpresa.resx">
       <DependentUpon>StatusEmpresa.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Telas\Departamentos\Log\Agenda.resx">
+    <EmbeddedResource Include="Telas\Departamentos\LogisticaRecepcao\Agenda.resx">
       <DependentUpon>Agenda.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Telas\Departamentos\Log\itinerario.resx">
+    <EmbeddedResource Include="Telas\Departamentos\LogisticaRecepcao\itinerario.resx">
       <DependentUpon>itinerario.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Telas\Departamentos\Societario1\Societario.resx">
       <DependentUpon>Societario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\Departamentos\Tecnologia1\CadastrarPatrics.resx">
+      <DependentUpon>CadastrarPatrics.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Telas\Departamentos\Tecnologia1\Inventario.resx">
       <DependentUpon>Inventario.cs</DependentUpon>

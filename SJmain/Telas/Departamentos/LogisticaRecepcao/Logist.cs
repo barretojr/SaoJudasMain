@@ -11,9 +11,9 @@ using System.Windows.Forms;
 
 namespace SJmain.Telas.Departamentos.Log
 {
-    public partial class Logistica : Form
+    public partial class Logist : Form
     {
-        public Logistica()
+        public Logist()
         {
             InitializeComponent();
         }

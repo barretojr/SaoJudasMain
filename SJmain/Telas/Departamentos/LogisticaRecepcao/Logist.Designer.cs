@@ -1,6 +1,6 @@
 ﻿namespace SJmain.Telas.Departamentos.Log
 {
-    partial class Logistica
+    partial class Logist
     {
         /// <summary>
         /// Required designer variable.
