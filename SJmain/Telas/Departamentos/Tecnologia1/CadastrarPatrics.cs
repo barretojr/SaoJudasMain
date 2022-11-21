@@ -1,10 +1,15 @@
-﻿using System;
+﻿using SJmain.Classes;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
+using System.Net.NetworkInformation;
+using System.Reflection;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -25,6 +30,44 @@ namespace SJmain.Telas.Departamentos.Tecnologia1
         private void CadastrarPatrics_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnCadastrar_Click(object sender, EventArgs e)
+        {
+            Conexao con= new Conexao();
+            SqlCommand cmd = new SqlCommand();
+            tss1.Text = "Aguardando Entradas...";
+            statusStrip1.Refresh();
+
+            try
+            {
+                tss1.Text = "Salvando o Equipamento...";
+                statusStrip1.Refresh();
+                cmd.Connection = con.Conectar();
+                cmd.CommandText = "INSERT INTO Inventario (idpatrimonio, unidade, descricao, modelo, localizacao, valorestim, monitor, patrimonitor, vlrmonitor, processador, memoriaram) " +
+                "VALUES (@numpatri,@unidade,@descri,@model,@local,@valorestim,@monitor, @patrimonit, @vlrmonit, @process, @ram);";
+                cmd.Parameters.AddWithValue("@numpatri", txtPatri.Text);
+                cmd.Parameters.AddWithValue("@unidade", cbUnidade.Text);
+                cmd.Parameters.AddWithValue("@descri", txtDescricao.Text);
+                cmd.Parameters.AddWithValue("@model", txtModelo.Text);
+                cmd.Parameters.AddWithValue("@local", txtLocal.Text);
+                cmd.Parameters.AddWithValue("@valorestim", mskValorEsti.Text);
+                cmd.Parameters.AddWithValue("@monitor", txtMonitor.Text);
+                cmd.Parameters.AddWithValue("@patrimonit", txtPatriMon.Text);
+                cmd.Parameters.AddWithValue("@vlrmonit", mskValorMon.Text);
+                cmd.Parameters.AddWithValue("@process", txtProcessador.Text);
+                cmd.Parameters.AddWithValue("@ram", txtMemoria.Text);
+                cmd.ExecuteNonQuery();
+
+                con.Desconectar();
+            }
+            catch (SqlException)
+            {
+                tss1.Text = "Falha";
+                statusStrip1.Refresh();
+                MessageBox.Show("Algum dado está invalido", "Reveja os dados");
+            }
+            tss1.Text = " Pronto.";
         }
     }
 }

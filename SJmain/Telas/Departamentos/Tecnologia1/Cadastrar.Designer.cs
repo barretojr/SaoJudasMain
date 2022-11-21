@@ -254,8 +254,8 @@
             // 
             // mskCPF
             // 
+            this.mskCPF.CutCopyMaskFormat = System.Windows.Forms.MaskFormat.ExcludePromptAndLiterals;
             this.mskCPF.Location = new System.Drawing.Point(67, 135);
-            this.mskCPF.Mask = "999.999.999-99";
             this.mskCPF.Name = "mskCPF";
             this.mskCPF.Size = new System.Drawing.Size(86, 20);
             this.mskCPF.TabIndex = 4;
@@ -263,8 +263,8 @@
             // 
             // mskTelefone
             // 
+            this.mskTelefone.CutCopyMaskFormat = System.Windows.Forms.MaskFormat.ExcludePromptAndLiterals;
             this.mskTelefone.Location = new System.Drawing.Point(230, 135);
-            this.mskTelefone.Mask = "(99)99999-9999";
             this.mskTelefone.Name = "mskTelefone";
             this.mskTelefone.Size = new System.Drawing.Size(88, 20);
             this.mskTelefone.TabIndex = 5;
@@ -323,6 +323,7 @@
             this.Name = "Cadastrar";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Cadastrar";
+            this.Load += new System.EventHandler(this.Cadastrar_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);

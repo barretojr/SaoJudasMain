@@ -123,6 +123,7 @@
     <Compile Include="Banco de Dados\Senha.cs" />
     <Compile Include="Classes\cadagenda.cs" />
     <Compile Include="Classes\Livros.cs" />
+    <Compile Include="Classes\Patrimonio.cs" />
     <Compile Include="Classes\Usuario.cs" />
     <Compile Include="Banco de Dados\Conexao.cs" />
     <Compile Include="Banco de Dados\Controle.cs" />

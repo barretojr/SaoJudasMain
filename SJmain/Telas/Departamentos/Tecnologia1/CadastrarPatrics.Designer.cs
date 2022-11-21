@@ -53,6 +53,9 @@
             this.mskValorMon = new System.Windows.Forms.MaskedTextBox();
             this.btnCadastrar = new System.Windows.Forms.Button();
             this.btnSalvar = new System.Windows.Forms.Button();
+            this.statusStrip1 = new System.Windows.Forms.StatusStrip();
+            this.tss1 = new System.Windows.Forms.ToolStripStatusLabel();
+            this.statusStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnSair
@@ -95,6 +98,7 @@
             // txtPatri
             // 
             this.txtPatri.Location = new System.Drawing.Point(15, 25);
+            this.txtPatri.MaxLength = 6;
             this.txtPatri.Name = "txtPatri";
             this.txtPatri.Size = new System.Drawing.Size(121, 20);
             this.txtPatri.TabIndex = 4;
@@ -174,24 +178,28 @@
             // txtDescricao
             // 
             this.txtDescricao.Location = new System.Drawing.Point(15, 156);
+            this.txtDescricao.MaxLength = 50;
             this.txtDescricao.Name = "txtDescricao";
             this.txtDescricao.Size = new System.Drawing.Size(156, 20);
-            this.txtDescricao.TabIndex = 14;
+            this.txtDescricao.TabIndex = 15;
             // 
             // cbUnidade
             // 
+            this.cbUnidade.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbUnidade.FormattingEnabled = true;
             this.cbUnidade.Items.AddRange(new object[] {
             "Piancó",
             "Orfanato"});
             this.cbUnidade.Location = new System.Drawing.Point(15, 90);
+            this.cbUnidade.MaxLength = 10;
             this.cbUnidade.Name = "cbUnidade";
             this.cbUnidade.Size = new System.Drawing.Size(156, 21);
-            this.cbUnidade.TabIndex = 15;
+            this.cbUnidade.TabIndex = 14;
             // 
             // txtModelo
             // 
             this.txtModelo.Location = new System.Drawing.Point(15, 219);
+            this.txtModelo.MaxLength = 50;
             this.txtModelo.Name = "txtModelo";
             this.txtModelo.Size = new System.Drawing.Size(156, 20);
             this.txtModelo.TabIndex = 16;
@@ -199,6 +207,7 @@
             // txtLocal
             // 
             this.txtLocal.Location = new System.Drawing.Point(196, 25);
+            this.txtLocal.MaxLength = 15;
             this.txtLocal.Name = "txtLocal";
             this.txtLocal.Size = new System.Drawing.Size(112, 20);
             this.txtLocal.TabIndex = 17;
@@ -220,6 +229,7 @@
             // txtMonitor
             // 
             this.txtMonitor.Location = new System.Drawing.Point(336, 25);
+            this.txtMonitor.MaxLength = 50;
             this.txtMonitor.Name = "txtMonitor";
             this.txtMonitor.Size = new System.Drawing.Size(143, 20);
             this.txtMonitor.TabIndex = 21;
@@ -227,6 +237,7 @@
             // txtPatriMon
             // 
             this.txtPatriMon.Location = new System.Drawing.Point(336, 91);
+            this.txtPatriMon.MaxLength = 6;
             this.txtPatriMon.Name = "txtPatriMon";
             this.txtPatriMon.Size = new System.Drawing.Size(143, 20);
             this.txtPatriMon.TabIndex = 22;
@@ -235,7 +246,7 @@
             // 
             this.mskValorEsti.CutCopyMaskFormat = System.Windows.Forms.MaskFormat.ExcludePromptAndLiterals;
             this.mskValorEsti.Location = new System.Drawing.Point(196, 91);
-            this.mskValorEsti.Mask = "$000000,00";
+            this.mskValorEsti.Mask = "9999999";
             this.mskValorEsti.Name = "mskValorEsti";
             this.mskValorEsti.Size = new System.Drawing.Size(112, 20);
             this.mskValorEsti.TabIndex = 18;
@@ -244,7 +255,7 @@
             // 
             this.mskValorMon.CutCopyMaskFormat = System.Windows.Forms.MaskFormat.ExcludePromptAndLiterals;
             this.mskValorMon.Location = new System.Drawing.Point(336, 156);
-            this.mskValorMon.Mask = "$000000,00";
+            this.mskValorMon.Mask = "9999999";
             this.mskValorMon.Name = "mskValorMon";
             this.mskValorMon.Size = new System.Drawing.Size(112, 20);
             this.mskValorMon.TabIndex = 23;
@@ -257,6 +268,7 @@
             this.btnCadastrar.TabIndex = 24;
             this.btnCadastrar.Text = "Cadastrar";
             this.btnCadastrar.UseVisualStyleBackColor = true;
+            this.btnCadastrar.Click += new System.EventHandler(this.btnCadastrar_Click);
             // 
             // btnSalvar
             // 
@@ -267,11 +279,28 @@
             this.btnSalvar.Text = "Salvar";
             this.btnSalvar.UseVisualStyleBackColor = true;
             // 
+            // statusStrip1
+            // 
+            this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.tss1});
+            this.statusStrip1.Location = new System.Drawing.Point(0, 287);
+            this.statusStrip1.Name = "statusStrip1";
+            this.statusStrip1.Size = new System.Drawing.Size(496, 22);
+            this.statusStrip1.TabIndex = 26;
+            this.statusStrip1.Text = "statusStrip1";
+            // 
+            // tss1
+            // 
+            this.tss1.Name = "tss1";
+            this.tss1.Size = new System.Drawing.Size(130, 17);
+            this.tss1.Text = "Aguardando Entradas...";
+            // 
             // CadastrarPatrics
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(496, 285);
+            this.ClientSize = new System.Drawing.Size(496, 309);
+            this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.btnSalvar);
             this.Controls.Add(this.btnCadastrar);
             this.Controls.Add(this.mskValorMon);
@@ -302,6 +331,8 @@
             this.Name = "CadastrarPatrics";
             this.Text = "Cadastrar Inventario";
             this.Load += new System.EventHandler(this.CadastrarPatrics_Load);
+            this.statusStrip1.ResumeLayout(false);
+            this.statusStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -334,5 +365,7 @@
         private System.Windows.Forms.MaskedTextBox mskValorMon;
         private System.Windows.Forms.Button btnCadastrar;
         private System.Windows.Forms.Button btnSalvar;
+        private System.Windows.Forms.StatusStrip statusStrip1;
+        private System.Windows.Forms.ToolStripStatusLabel tss1;
     }
 }

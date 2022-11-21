@@ -109,5 +109,9 @@ namespace SJmain.Telas.Cadastro
             this.Close();
         }
 
+        private void Cadastrar_Load(object sender, EventArgs e)
+        {
+            rdbContabil.Checked = true;
+        }
     }
 }
