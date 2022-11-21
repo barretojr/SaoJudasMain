@@ -246,7 +246,7 @@
             this.mskValorMon.Location = new System.Drawing.Point(336, 156);
             this.mskValorMon.Mask = "$000000,00";
             this.mskValorMon.Name = "mskValorMon";
-            this.mskValorMon.Size = new System.Drawing.Size(83, 20);
+            this.mskValorMon.Size = new System.Drawing.Size(112, 20);
             this.mskValorMon.TabIndex = 23;
             // 
             // btnCadastrar
