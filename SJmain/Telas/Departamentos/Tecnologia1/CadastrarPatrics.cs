@@ -21,5 +21,10 @@ namespace SJmain.Telas.Departamentos.Tecnologia1
         {
             this.Close();
         }
+
+        private void CadastrarPatrics_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

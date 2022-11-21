@@ -21,5 +21,10 @@ namespace SJmain.Telas.Departamentos.Tecnologia1
         {
             rdbPatrimonio.Checked = true;
         }
+
+        private void btnBuscar_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

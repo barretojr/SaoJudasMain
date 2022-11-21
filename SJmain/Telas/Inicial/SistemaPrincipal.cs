@@ -134,6 +134,10 @@ namespace SJmain.Telas
         {
             DialogResult Eita;
             Eita = MessageBox.Show("Eita!", "Eita!", MessageBoxButtons.AbortRetryIgnore, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2);
+            while (Eita == DialogResult.Retry)
+            {
+                Eita = MessageBox.Show("Eita!", "Eita!", MessageBoxButtons.AbortRetryIgnore, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2);
+            }
         }
 
         

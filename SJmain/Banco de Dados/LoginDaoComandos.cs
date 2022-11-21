@@ -1,6 +1,8 @@
 ﻿using Org.BouncyCastle.Crypto.Tls;
 using SJmain.Classes;
 using System.Data.SqlClient;
+using System.Security.Cryptography;
+using System.Security.Policy;
 using System.Windows.Forms;
 
 namespace SJmain.Modelo
@@ -13,8 +15,10 @@ namespace SJmain.Modelo
         Conexao conec = new Conexao();
         SqlDataReader dr;
 
+
         public bool verificarLogin(string login, string senha)
         {
+            
             cmd.CommandText = "SELECT * FROM Usuario WHERE nomeusuario = @login and senha = @senha";
             cmd.Parameters.AddWithValue("@login", login);
             cmd.Parameters.AddWithValue("@senha", senha);
@@ -53,8 +57,7 @@ namespace SJmain.Modelo
                 dr.Close();
             }
             catch (SqlException)
-            {
-               
+            {               
                 this.mensagem = "erro";
             }
 
@@ -62,15 +65,17 @@ namespace SJmain.Modelo
         }
         public string cadastrar(int idderp, string nomeusu, string email, string cpf, string senha, string confSenha, string telefone)
         {
+            
+            tem = false;
             if (senha.Equals(confSenha))
             {
-                cmd.CommandText = "INSERT INTO Usuario (iddepartamento, nome, nomeusuario, senha, cpfusuario, telefone, email) VALUES ('"+idderp+","+nomeusu+","+senha+","+email+","+cpf+","+telefone+"');";
-                //cmd.Parameters.AddWithValue("@idderp", iddepartamento);//1=master,2=contabil,3=fiscal,4=logistica,5=tecnologia,6=pessoal,7=societario
-                //cmd.Parameters.AddWithValue("@nome", nomeusu);
-                //cmd.Parameters.AddWithValue("@senha", senha);
-                //cmd.Parameters.AddWithValue("@email", email);
-                //cmd.Parameters.AddWithValue("@cpf", cpf);
-                //cmd.Parameters.AddWithValue("@tel", telefone);
+                cmd.CommandText = "INSERT INTO Usuario ([iddepartamento], [nome], [nomeusuario], [senha], [cpfusuario], [telefone], [email]) VALUES (@idderp, @nome, @senha, @email, @cpf, @tel);";
+                cmd.Parameters.AddWithValue("@idderp", idderp);//1=master,2=contabil,3=fiscal,4=logistica,5=tecnologia,6=pessoal,7=societario
+                cmd.Parameters.AddWithValue("@nome", nomeusu);
+                cmd.Parameters.AddWithValue("@senha", senha);
+                cmd.Parameters.AddWithValue("@email", email);
+                cmd.Parameters.AddWithValue("@cpf", cpf);
+                cmd.Parameters.AddWithValue("@tel", telefone);
                 try
                 {
                     cmd.Connection = conec.Conectar();

@@ -28,35 +28,16 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.sistemaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.Buscar = new System.Windows.Forms.GroupBox();
+            this.rdbMarca = new System.Windows.Forms.RadioButton();
+            this.rdbColaborador = new System.Windows.Forms.RadioButton();
+            this.rdbPatrimonio = new System.Windows.Forms.RadioButton();
             this.txtBuscar = new System.Windows.Forms.TextBox();
             this.btnBuscar = new System.Windows.Forms.Button();
-            this.rdbPatrimonio = new System.Windows.Forms.RadioButton();
-            this.rdbColaborador = new System.Windows.Forms.RadioButton();
-            this.rdbMarca = new System.Windows.Forms.RadioButton();
             this.label1 = new System.Windows.Forms.Label();
             this.lblPatrimonio = new System.Windows.Forms.Label();
-            this.menuStrip1.SuspendLayout();
             this.Buscar.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // menuStrip1
-            // 
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.sistemaToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(800, 24);
-            this.menuStrip1.TabIndex = 0;
-            this.menuStrip1.Text = "menuStrip1";
-            // 
-            // sistemaToolStripMenuItem
-            // 
-            this.sistemaToolStripMenuItem.Name = "sistemaToolStripMenuItem";
-            this.sistemaToolStripMenuItem.Size = new System.Drawing.Size(60, 20);
-            this.sistemaToolStripMenuItem.Text = "Sistema";
             // 
             // Buscar
             // 
@@ -71,6 +52,39 @@
             this.Buscar.TabIndex = 1;
             this.Buscar.TabStop = false;
             this.Buscar.Text = "Buscar";
+            // 
+            // rdbMarca
+            // 
+            this.rdbMarca.AutoSize = true;
+            this.rdbMarca.Location = new System.Drawing.Point(111, 46);
+            this.rdbMarca.Name = "rdbMarca";
+            this.rdbMarca.Size = new System.Drawing.Size(55, 17);
+            this.rdbMarca.TabIndex = 4;
+            this.rdbMarca.TabStop = true;
+            this.rdbMarca.Text = "Marca";
+            this.rdbMarca.UseVisualStyleBackColor = true;
+            // 
+            // rdbColaborador
+            // 
+            this.rdbColaborador.AutoSize = true;
+            this.rdbColaborador.Location = new System.Drawing.Point(6, 70);
+            this.rdbColaborador.Name = "rdbColaborador";
+            this.rdbColaborador.Size = new System.Drawing.Size(82, 17);
+            this.rdbColaborador.TabIndex = 3;
+            this.rdbColaborador.TabStop = true;
+            this.rdbColaborador.Text = "Colaborador";
+            this.rdbColaborador.UseVisualStyleBackColor = true;
+            // 
+            // rdbPatrimonio
+            // 
+            this.rdbPatrimonio.AutoSize = true;
+            this.rdbPatrimonio.Location = new System.Drawing.Point(7, 46);
+            this.rdbPatrimonio.Name = "rdbPatrimonio";
+            this.rdbPatrimonio.Size = new System.Drawing.Size(74, 17);
+            this.rdbPatrimonio.TabIndex = 2;
+            this.rdbPatrimonio.TabStop = true;
+            this.rdbPatrimonio.Text = "Patrimônio";
+            this.rdbPatrimonio.UseVisualStyleBackColor = true;
             // 
             // txtBuscar
             // 
@@ -87,39 +101,7 @@
             this.btnBuscar.TabIndex = 0;
             this.btnBuscar.Text = "Buscar...";
             this.btnBuscar.UseVisualStyleBackColor = true;
-            // 
-            // rdbPatrimonio
-            // 
-            this.rdbPatrimonio.AutoSize = true;
-            this.rdbPatrimonio.Location = new System.Drawing.Point(7, 46);
-            this.rdbPatrimonio.Name = "rdbPatrimonio";
-            this.rdbPatrimonio.Size = new System.Drawing.Size(74, 17);
-            this.rdbPatrimonio.TabIndex = 2;
-            this.rdbPatrimonio.TabStop = true;
-            this.rdbPatrimonio.Text = "Patrimônio";
-            this.rdbPatrimonio.UseVisualStyleBackColor = true;
-            // 
-            // rdbColaborador
-            // 
-            this.rdbColaborador.AutoSize = true;
-            this.rdbColaborador.Location = new System.Drawing.Point(6, 70);
-            this.rdbColaborador.Name = "rdbColaborador";
-            this.rdbColaborador.Size = new System.Drawing.Size(82, 17);
-            this.rdbColaborador.TabIndex = 3;
-            this.rdbColaborador.TabStop = true;
-            this.rdbColaborador.Text = "Colaborador";
-            this.rdbColaborador.UseVisualStyleBackColor = true;
-            // 
-            // rdbMarca
-            // 
-            this.rdbMarca.AutoSize = true;
-            this.rdbMarca.Location = new System.Drawing.Point(111, 46);
-            this.rdbMarca.Name = "rdbMarca";
-            this.rdbMarca.Size = new System.Drawing.Size(55, 17);
-            this.rdbMarca.TabIndex = 4;
-            this.rdbMarca.TabStop = true;
-            this.rdbMarca.Text = "Marca";
-            this.rdbMarca.UseVisualStyleBackColor = true;
+            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
             // 
             // label1
             // 
@@ -147,13 +129,9 @@
             this.Controls.Add(this.lblPatrimonio);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.Buscar);
-            this.Controls.Add(this.menuStrip1);
-            this.MainMenuStrip = this.menuStrip1;
             this.Name = "Inventario";
             this.Text = "Inventario";
             this.Load += new System.EventHandler(this.Inventario_Load);
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
             this.Buscar.ResumeLayout(false);
             this.Buscar.PerformLayout();
             this.ResumeLayout(false);
@@ -162,9 +140,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem sistemaToolStripMenuItem;
         private System.Windows.Forms.GroupBox Buscar;
         private System.Windows.Forms.TextBox txtBuscar;
         private System.Windows.Forms.Button btnBuscar;
