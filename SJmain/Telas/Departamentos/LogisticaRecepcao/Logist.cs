@@ -38,5 +38,10 @@ namespace SJmain.Telas.Departamentos.Log
             lig.MdiParent = this;
             lig.Show();
         }
+
+        private void ajudaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

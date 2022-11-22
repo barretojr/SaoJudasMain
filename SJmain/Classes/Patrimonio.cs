@@ -30,11 +30,7 @@ namespace SJmain.Classes
                 if (dr.HasRows)
                 {
                     tem = true;
-                }
-                else
-                {
-                    
-                }
+                }               
                 conec.Desconectar();
                 dr.Close();
             }

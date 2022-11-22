@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using CryptSharp;
+using Google.Protobuf.WellKnownTypes;
 
 namespace SJmain.Banco_de_Dados
 {
@@ -16,6 +17,14 @@ namespace SJmain.Banco_de_Dados
         public static bool Compara(string senha, string hash)
         {
             return Crypter.CheckPassword(hash, senha);
+        }
+        public static void Confere(string senha, string hash)
+        {
+            senha = Crypter.MD5.Crypt(hash);
+        }
+        public static void Certifica(string senha, string hash)
+        {
+            hash = Crypter.MD5.Crypt(hash, senha);
         }
         
         

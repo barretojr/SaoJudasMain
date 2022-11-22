@@ -167,5 +167,10 @@ namespace SJmain.Telas
                 }
             }
         }
+
+        private void sairToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

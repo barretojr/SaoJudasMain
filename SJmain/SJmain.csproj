@@ -129,6 +129,7 @@
     <Compile Include="Banco de Dados\Controle.cs" />
     <Compile Include="Banco de Dados\LoginDaoComandos.cs" />
     <Compile Include="Classes\Referencia.cs" />
+    <Compile Include="Criptograf\Crypto.cs" />
     <Compile Include="Telas\Departamentos\LogisticaRecepcao\Logist.cs">
       <SubType>Form</SubType>
     </Compile>
