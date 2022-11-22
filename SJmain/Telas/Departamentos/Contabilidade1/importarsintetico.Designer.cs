@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(importarsintetico));
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.rdbDezembro = new System.Windows.Forms.RadioButton();
             this.rdbNovembro = new System.Windows.Forms.RadioButton();
@@ -42,6 +43,8 @@
             this.rdbFevereiro = new System.Windows.Forms.RadioButton();
             this.rdbJaneiro = new System.Windows.Forms.RadioButton();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.txtEmpresa = new System.Windows.Forms.TextBox();
             this.btnAtivar = new System.Windows.Forms.Button();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
@@ -52,8 +55,6 @@
             this.btnProcurar = new System.Windows.Forms.Button();
             this.btnConcluir = new System.Windows.Forms.Button();
             this.btnSair = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -225,6 +226,28 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Ativar Empresa";
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(94, 47);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(29, 13);
+            this.label1.TabIndex = 22;
+            this.label1.Text = "Ano ";
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "2021",
+            "2022",
+            "2023",
+            "2024"});
+            this.comboBox1.Location = new System.Drawing.Point(95, 66);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(224, 21);
+            this.comboBox1.TabIndex = 21;
+            // 
             // txtEmpresa
             // 
             this.txtEmpresa.Location = new System.Drawing.Point(95, 19);
@@ -318,28 +341,6 @@
             this.btnSair.UseVisualStyleBackColor = true;
             this.btnSair.Click += new System.EventHandler(this.btnSair_Click);
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(94, 47);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(29, 13);
-            this.label1.TabIndex = 22;
-            this.label1.Text = "Ano ";
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
-            "2021",
-            "2022",
-            "2023",
-            "2024"});
-            this.comboBox1.Location = new System.Drawing.Point(95, 66);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(224, 21);
-            this.comboBox1.TabIndex = 21;
-            // 
             // importarsintetico
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -351,6 +352,7 @@
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "importarsintetico";
             this.Text = "Importar Balancete Sintético";
             this.groupBox2.ResumeLayout(false);

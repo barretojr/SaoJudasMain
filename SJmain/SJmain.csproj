@@ -121,12 +121,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Banco de Dados\Senha.cs" />
-    <Compile Include="Classes\Livros.cs" />
-    <Compile Include="Classes\Patrimonio.cs" />
+    <Compile Include="Classess\Livros.cs" />
+    <Compile Include="Classess\Patrimonio.cs" />
     <Compile Include="Banco de Dados\Conexao.cs" />
     <Compile Include="Banco de Dados\Controle.cs" />
     <Compile Include="Banco de Dados\LoginDaoComandos.cs" />
-    <Compile Include="Classes\Referencia.cs" />
+    <Compile Include="Classess\Referencia.cs" />
     <Compile Include="Criptograf\Crypto.cs" />
     <Compile Include="Telas\Departamentos\LogisticaRecepcao\Logist.cs">
       <SubType>Form</SubType>
@@ -324,6 +324,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="Telas\Inicial\SistemaPrincipal.resx">
       <DependentUpon>SistemaPrincipal.cs</DependentUpon>
@@ -346,6 +347,8 @@
     <Content Include="SJBD.mdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="Telas\Inicial\icone.ico" />
+    <Content Include="Telas\Inicial\wallpaper.png" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">

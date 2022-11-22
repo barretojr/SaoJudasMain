@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(StatusEmpresaContabil));
             this.btnAlterar = new System.Windows.Forms.Button();
             this.btnConfirmar = new System.Windows.Forms.Button();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
@@ -46,10 +47,10 @@
             this.rdbFevereiro = new System.Windows.Forms.RadioButton();
             this.rdbJaneiro = new System.Windows.Forms.RadioButton();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.txtEmpresa = new System.Windows.Forms.TextBox();
-            this.btnAtivar = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.txtEmpresa = new System.Windows.Forms.TextBox();
+            this.btnAtivar = new System.Windows.Forms.Button();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -258,22 +259,6 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Ativar Empresa";
             // 
-            // txtEmpresa
-            // 
-            this.txtEmpresa.Location = new System.Drawing.Point(95, 19);
-            this.txtEmpresa.Name = "txtEmpresa";
-            this.txtEmpresa.Size = new System.Drawing.Size(224, 20);
-            this.txtEmpresa.TabIndex = 1;
-            // 
-            // btnAtivar
-            // 
-            this.btnAtivar.Location = new System.Drawing.Point(6, 19);
-            this.btnAtivar.Name = "btnAtivar";
-            this.btnAtivar.Size = new System.Drawing.Size(82, 68);
-            this.btnAtivar.TabIndex = 0;
-            this.btnAtivar.Text = "Ativar";
-            this.btnAtivar.UseVisualStyleBackColor = true;
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -296,6 +281,22 @@
             this.comboBox1.Size = new System.Drawing.Size(224, 21);
             this.comboBox1.TabIndex = 21;
             // 
+            // txtEmpresa
+            // 
+            this.txtEmpresa.Location = new System.Drawing.Point(95, 19);
+            this.txtEmpresa.Name = "txtEmpresa";
+            this.txtEmpresa.Size = new System.Drawing.Size(224, 20);
+            this.txtEmpresa.TabIndex = 1;
+            // 
+            // btnAtivar
+            // 
+            this.btnAtivar.Location = new System.Drawing.Point(6, 19);
+            this.btnAtivar.Name = "btnAtivar";
+            this.btnAtivar.Size = new System.Drawing.Size(82, 68);
+            this.btnAtivar.TabIndex = 0;
+            this.btnAtivar.Text = "Ativar";
+            this.btnAtivar.UseVisualStyleBackColor = true;
+            // 
             // StatusEmpresaContabil
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -308,6 +309,7 @@
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "StatusEmpresaContabil";
             this.Text = "Alterar Status de Empresa Contabil";
             this.groupBox2.ResumeLayout(false);

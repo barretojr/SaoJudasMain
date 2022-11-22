@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Inventario));
             this.Buscar = new System.Windows.Forms.GroupBox();
             this.rdbMarca = new System.Windows.Forms.RadioButton();
             this.rdbPatrimonio = new System.Windows.Forms.RadioButton();
@@ -128,6 +129,7 @@
             this.Controls.Add(this.button2);
             this.Controls.Add(this.btnSair);
             this.Controls.Add(this.Buscar);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Inventario";
             this.Text = "Inventario";
             this.Load += new System.EventHandler(this.Inventario_Load);

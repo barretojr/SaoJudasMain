@@ -43,5 +43,10 @@ namespace SJmain.Telas.Departamentos.Log
         {
 
         }
+
+        private void sairToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

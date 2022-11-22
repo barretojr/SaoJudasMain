@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(balancetesintetico));
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.rdbDezembro = new System.Windows.Forms.RadioButton();
             this.rdbNovembro = new System.Windows.Forms.RadioButton();
@@ -283,6 +284,7 @@
             this.Controls.Add(this.btnSair);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "balancetesintetico";
             this.Text = "Visualisar Balancete Sintético";
             this.groupBox2.ResumeLayout(false);
