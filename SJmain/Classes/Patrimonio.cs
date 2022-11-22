@@ -40,10 +40,6 @@ namespace SJmain.Classes
             }
             return tem;
         }
-        public void salvarpatri(string numpatri, string unidade, string descricao, string modelo, string local, string valorestim, string monitor, string patrimonit, string vlrmonit, string processador, string memoria)
-        {
-            
-
-        }
+        
     }
 }
