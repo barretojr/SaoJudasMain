@@ -250,20 +250,23 @@
             // agendaToolStripMenuItem
             // 
             this.agendaToolStripMenuItem.Name = "agendaToolStripMenuItem";
-            this.agendaToolStripMenuItem.Size = new System.Drawing.Size(121, 22);
+            this.agendaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.agendaToolStripMenuItem.Text = "Agenda";
+            this.agendaToolStripMenuItem.Click += new System.EventHandler(this.agendaToolStripMenuItem_Click_1);
             // 
             // itinerarioToolStripMenuItem
             // 
             this.itinerarioToolStripMenuItem.Name = "itinerarioToolStripMenuItem";
-            this.itinerarioToolStripMenuItem.Size = new System.Drawing.Size(121, 22);
+            this.itinerarioToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.itinerarioToolStripMenuItem.Text = "Itinerario";
+            this.itinerarioToolStripMenuItem.Click += new System.EventHandler(this.itinerarioToolStripMenuItem_Click_1);
             // 
             // ligaçõesToolStripMenuItem
             // 
             this.ligaçõesToolStripMenuItem.Name = "ligaçõesToolStripMenuItem";
-            this.ligaçõesToolStripMenuItem.Size = new System.Drawing.Size(121, 22);
+            this.ligaçõesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.ligaçõesToolStripMenuItem.Text = "Ligações";
+            this.ligaçõesToolStripMenuItem.Click += new System.EventHandler(this.ligaçõesToolStripMenuItem_Click_1);
             // 
             // ajudaToolStripMenuItem
             // 

@@ -62,7 +62,7 @@
             this.btnVerificar.Location = new System.Drawing.Point(231, 52);
             this.btnVerificar.Name = "btnVerificar";
             this.btnVerificar.Size = new System.Drawing.Size(87, 50);
-            this.btnVerificar.TabIndex = 0;
+            this.btnVerificar.TabIndex = 10;
             this.btnVerificar.Text = "Verificar...";
             this.btnVerificar.UseVisualStyleBackColor = true;
             // 

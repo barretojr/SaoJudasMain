@@ -1,4 +1,5 @@
 ﻿using SJmain.Telas.Departamentos.Logistica;
+using SJmain.Telas.Departamentos;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -48,5 +49,27 @@ namespace SJmain.Telas.Departamentos.Log
         {
             this.Close();
         }
+
+        private void ligaçõesToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
+            Ligacoes lig = new Ligacoes();
+            lig.MdiParent = this;
+            lig.Show();
+        }
+
+        private void itinerarioToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
+            Itinerario iti = new Itinerario();
+            iti.MdiParent = this;
+            iti.Show();
+        }
+
+        private void agendaToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
+            Agenda ag = new Agenda();   
+            ag.MdiParent = this;
+            ag.Show();
+        }
+        
     }
 }

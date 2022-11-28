@@ -37,9 +37,6 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.txtDescricao = new System.Windows.Forms.TextBox();
@@ -48,10 +45,7 @@
             this.txtLocal = new System.Windows.Forms.TextBox();
             this.txtProcessador = new System.Windows.Forms.TextBox();
             this.txtMemoria = new System.Windows.Forms.TextBox();
-            this.txtMonitor = new System.Windows.Forms.TextBox();
-            this.txtPatriMon = new System.Windows.Forms.TextBox();
             this.mskValorEsti = new System.Windows.Forms.MaskedTextBox();
-            this.mskValorMon = new System.Windows.Forms.MaskedTextBox();
             this.btnCadastrar = new System.Windows.Forms.Button();
             this.btnSalvar = new System.Windows.Forms.Button();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
@@ -102,7 +96,7 @@
             this.txtPatri.MaxLength = 6;
             this.txtPatri.Name = "txtPatri";
             this.txtPatri.Size = new System.Drawing.Size(121, 20);
-            this.txtPatri.TabIndex = 4;
+            this.txtPatri.TabIndex = 0;
             // 
             // label4
             // 
@@ -131,33 +125,6 @@
             this.label6.TabIndex = 7;
             this.label6.Text = "Valor Estimado";
             // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(333, 9);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(42, 13);
-            this.label7.TabIndex = 8;
-            this.label7.Text = "Monitor";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(333, 74);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(94, 13);
-            this.label8.TabIndex = 9;
-            this.label8.Text = "Patrimônio Monitor";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(333, 138);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(69, 13);
-            this.label9.TabIndex = 10;
-            this.label9.Text = "Valor Monitor";
-            // 
             // label10
             // 
             this.label10.AutoSize = true;
@@ -182,7 +149,7 @@
             this.txtDescricao.MaxLength = 50;
             this.txtDescricao.Name = "txtDescricao";
             this.txtDescricao.Size = new System.Drawing.Size(156, 20);
-            this.txtDescricao.TabIndex = 15;
+            this.txtDescricao.TabIndex = 2;
             // 
             // cbUnidade
             // 
@@ -195,7 +162,7 @@
             this.cbUnidade.MaxLength = 10;
             this.cbUnidade.Name = "cbUnidade";
             this.cbUnidade.Size = new System.Drawing.Size(156, 21);
-            this.cbUnidade.TabIndex = 14;
+            this.cbUnidade.TabIndex = 1;
             // 
             // txtModelo
             // 
@@ -203,7 +170,7 @@
             this.txtModelo.MaxLength = 50;
             this.txtModelo.Name = "txtModelo";
             this.txtModelo.Size = new System.Drawing.Size(156, 20);
-            this.txtModelo.TabIndex = 16;
+            this.txtModelo.TabIndex = 3;
             // 
             // txtLocal
             // 
@@ -211,37 +178,21 @@
             this.txtLocal.MaxLength = 15;
             this.txtLocal.Name = "txtLocal";
             this.txtLocal.Size = new System.Drawing.Size(112, 20);
-            this.txtLocal.TabIndex = 17;
+            this.txtLocal.TabIndex = 4;
             // 
             // txtProcessador
             // 
             this.txtProcessador.Location = new System.Drawing.Point(196, 156);
             this.txtProcessador.Name = "txtProcessador";
             this.txtProcessador.Size = new System.Drawing.Size(112, 20);
-            this.txtProcessador.TabIndex = 19;
+            this.txtProcessador.TabIndex = 6;
             // 
             // txtMemoria
             // 
             this.txtMemoria.Location = new System.Drawing.Point(196, 219);
             this.txtMemoria.Name = "txtMemoria";
             this.txtMemoria.Size = new System.Drawing.Size(112, 20);
-            this.txtMemoria.TabIndex = 20;
-            // 
-            // txtMonitor
-            // 
-            this.txtMonitor.Location = new System.Drawing.Point(336, 25);
-            this.txtMonitor.MaxLength = 50;
-            this.txtMonitor.Name = "txtMonitor";
-            this.txtMonitor.Size = new System.Drawing.Size(143, 20);
-            this.txtMonitor.TabIndex = 21;
-            // 
-            // txtPatriMon
-            // 
-            this.txtPatriMon.Location = new System.Drawing.Point(336, 91);
-            this.txtPatriMon.MaxLength = 6;
-            this.txtPatriMon.Name = "txtPatriMon";
-            this.txtPatriMon.Size = new System.Drawing.Size(143, 20);
-            this.txtPatriMon.TabIndex = 22;
+            this.txtMemoria.TabIndex = 7;
             // 
             // mskValorEsti
             // 
@@ -250,20 +201,11 @@
             this.mskValorEsti.Mask = "9999999";
             this.mskValorEsti.Name = "mskValorEsti";
             this.mskValorEsti.Size = new System.Drawing.Size(112, 20);
-            this.mskValorEsti.TabIndex = 18;
-            // 
-            // mskValorMon
-            // 
-            this.mskValorMon.CutCopyMaskFormat = System.Windows.Forms.MaskFormat.ExcludePromptAndLiterals;
-            this.mskValorMon.Location = new System.Drawing.Point(336, 156);
-            this.mskValorMon.Mask = "9999999";
-            this.mskValorMon.Name = "mskValorMon";
-            this.mskValorMon.Size = new System.Drawing.Size(112, 20);
-            this.mskValorMon.TabIndex = 23;
+            this.mskValorEsti.TabIndex = 5;
             // 
             // btnCadastrar
             // 
-            this.btnCadastrar.Location = new System.Drawing.Point(323, 250);
+            this.btnCadastrar.Location = new System.Drawing.Point(140, 250);
             this.btnCadastrar.Name = "btnCadastrar";
             this.btnCadastrar.Size = new System.Drawing.Size(75, 23);
             this.btnCadastrar.TabIndex = 24;
@@ -273,7 +215,7 @@
             // 
             // btnSalvar
             // 
-            this.btnSalvar.Location = new System.Drawing.Point(404, 250);
+            this.btnSalvar.Location = new System.Drawing.Point(233, 250);
             this.btnSalvar.Name = "btnSalvar";
             this.btnSalvar.Size = new System.Drawing.Size(75, 23);
             this.btnSalvar.TabIndex = 25;
@@ -286,28 +228,25 @@
             this.tss1});
             this.statusStrip1.Location = new System.Drawing.Point(0, 287);
             this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(496, 22);
+            this.statusStrip1.Size = new System.Drawing.Size(335, 22);
             this.statusStrip1.TabIndex = 26;
             this.statusStrip1.Text = "statusStrip1";
             // 
             // tss1
             // 
             this.tss1.Name = "tss1";
-            this.tss1.Size = new System.Drawing.Size(130, 17);
-            this.tss1.Text = "Aguardando Entradas...";
+            this.tss1.Size = new System.Drawing.Size(16, 17);
+            this.tss1.Text = "...";
             // 
             // CadastrarPatrics
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(496, 309);
+            this.ClientSize = new System.Drawing.Size(335, 309);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.btnSalvar);
             this.Controls.Add(this.btnCadastrar);
-            this.Controls.Add(this.mskValorMon);
             this.Controls.Add(this.mskValorEsti);
-            this.Controls.Add(this.txtPatriMon);
-            this.Controls.Add(this.txtMonitor);
             this.Controls.Add(this.txtMemoria);
             this.Controls.Add(this.txtProcessador);
             this.Controls.Add(this.txtLocal);
@@ -316,9 +255,6 @@
             this.Controls.Add(this.txtDescricao);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.label10);
-            this.Controls.Add(this.label9);
-            this.Controls.Add(this.label8);
-            this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
@@ -350,9 +286,6 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.TextBox txtDescricao;
@@ -361,10 +294,7 @@
         private System.Windows.Forms.TextBox txtLocal;
         private System.Windows.Forms.TextBox txtProcessador;
         private System.Windows.Forms.TextBox txtMemoria;
-        private System.Windows.Forms.TextBox txtMonitor;
-        private System.Windows.Forms.TextBox txtPatriMon;
         private System.Windows.Forms.MaskedTextBox mskValorEsti;
-        private System.Windows.Forms.MaskedTextBox mskValorMon;
         private System.Windows.Forms.Button btnCadastrar;
         private System.Windows.Forms.Button btnSalvar;
         private System.Windows.Forms.StatusStrip statusStrip1;

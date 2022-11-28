@@ -35,7 +35,7 @@ namespace SJmain.Classes
         public void Salvar(Livros livro, string caminhopdf)
         {
             byte[] pdf = GetPdf(caminhopdf);
-            var sql = "INSERT INTO Livros (titulo, pdf) VALUES ('@titulo', @pdf)";
+            cmd.CommandText = "INSERT INTO Livros (titulo, pdf) VALUES ('@titulo', @pdf)";
             cmd.Connection = conec.Conectar();
             cmd.Parameters.AddWithValue("@titulo", livro.Titulo);
             cmd.Parameters.AddWithValue("@pdf",pdf.Length).Value = pdf;

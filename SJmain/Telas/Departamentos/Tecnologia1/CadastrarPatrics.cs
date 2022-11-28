@@ -44,17 +44,14 @@ namespace SJmain.Telas.Departamentos.Tecnologia1
                 tss1.Text = "Salvando o Equipamento...";
                 statusStrip1.Refresh();
                 cmd.Connection = con.Conectar();
-                cmd.CommandText = "INSERT INTO Inventario (idpatrimonio, unidade, descricao, modelo, localizacao, valorestim, monitor, patrimonitor, vlrmonitor, processador, memoriaram) " +
-                "VALUES (@numpatri,@unidade,@descri,@model,@local,@valorestim,@monitor, @patrimonit, @vlrmonit, @process, @ram);";
+                cmd.CommandText = "INSERT INTO Inventario (idpatrimonio, unidade, descricao, modelo, localizacao, valorestim, processador, memoriaram) " +
+                "VALUES (@numpatri,@unidade,@descri,@model,@local,@valorestim, @process, @ram);";
                 cmd.Parameters.AddWithValue("@numpatri", txtPatri.Text);
                 cmd.Parameters.AddWithValue("@unidade", cbUnidade.Text);
                 cmd.Parameters.AddWithValue("@descri", txtDescricao.Text);
                 cmd.Parameters.AddWithValue("@model", txtModelo.Text);
                 cmd.Parameters.AddWithValue("@local", txtLocal.Text);
-                cmd.Parameters.AddWithValue("@valorestim", mskValorEsti.Text);
-                cmd.Parameters.AddWithValue("@monitor", txtMonitor.Text);
-                cmd.Parameters.AddWithValue("@patrimonit", txtPatriMon.Text);
-                cmd.Parameters.AddWithValue("@vlrmonit", mskValorMon.Text);
+                cmd.Parameters.AddWithValue("@valorestim", mskValorEsti.Text);                
                 cmd.Parameters.AddWithValue("@process", txtProcessador.Text);
                 cmd.Parameters.AddWithValue("@ram", txtMemoria.Text);
                 cmd.ExecuteNonQuery();

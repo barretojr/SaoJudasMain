@@ -190,26 +190,26 @@
             // desfazerToolStripMenuItem
             // 
             this.desfazerToolStripMenuItem.Name = "desfazerToolStripMenuItem";
-            this.desfazerToolStripMenuItem.Size = new System.Drawing.Size(158, 22);
+            this.desfazerToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.desfazerToolStripMenuItem.Text = "&Desfazer";
             // 
             // refazerToolStripMenuItem
             // 
             this.refazerToolStripMenuItem.Name = "refazerToolStripMenuItem";
-            this.refazerToolStripMenuItem.Size = new System.Drawing.Size(158, 22);
+            this.refazerToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.refazerToolStripMenuItem.Text = "&Refazer";
             // 
             // toolStripSeparator3
             // 
             this.toolStripSeparator3.Name = "toolStripSeparator3";
-            this.toolStripSeparator3.Size = new System.Drawing.Size(155, 6);
+            this.toolStripSeparator3.Size = new System.Drawing.Size(177, 6);
             // 
             // recortarToolStripMenuItem
             // 
             this.recortarToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("recortarToolStripMenuItem.Image")));
             this.recortarToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.recortarToolStripMenuItem.Name = "recortarToolStripMenuItem";
-            this.recortarToolStripMenuItem.Size = new System.Drawing.Size(158, 22);
+            this.recortarToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.recortarToolStripMenuItem.Text = "Recor&tar";
             // 
             // copiarToolStripMenuItem
@@ -217,7 +217,7 @@
             this.copiarToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("copiarToolStripMenuItem.Image")));
             this.copiarToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.copiarToolStripMenuItem.Name = "copiarToolStripMenuItem";
-            this.copiarToolStripMenuItem.Size = new System.Drawing.Size(158, 22);
+            this.copiarToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.copiarToolStripMenuItem.Text = "&Copiar";
             // 
             // colarToolStripMenuItem
@@ -225,18 +225,18 @@
             this.colarToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("colarToolStripMenuItem.Image")));
             this.colarToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.colarToolStripMenuItem.Name = "colarToolStripMenuItem";
-            this.colarToolStripMenuItem.Size = new System.Drawing.Size(158, 22);
+            this.colarToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.colarToolStripMenuItem.Text = "C&olar";
             // 
             // toolStripSeparator4
             // 
             this.toolStripSeparator4.Name = "toolStripSeparator4";
-            this.toolStripSeparator4.Size = new System.Drawing.Size(155, 6);
+            this.toolStripSeparator4.Size = new System.Drawing.Size(177, 6);
             // 
             // selecionarTudoToolStripMenuItem
             // 
             this.selecionarTudoToolStripMenuItem.Name = "selecionarTudoToolStripMenuItem";
-            this.selecionarTudoToolStripMenuItem.Size = new System.Drawing.Size(158, 22);
+            this.selecionarTudoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.selecionarTudoToolStripMenuItem.Text = "Selecionar &Tudo";
             // 
             // departamentoToolStripMenuItem
@@ -254,6 +254,7 @@
             // 
             // contabilidadeToolStripMenuItem
             // 
+            this.contabilidadeToolStripMenuItem.Image = global::SJmain.Properties.Resources.wallpaper;
             this.contabilidadeToolStripMenuItem.Name = "contabilidadeToolStripMenuItem";
             this.contabilidadeToolStripMenuItem.Size = new System.Drawing.Size(192, 22);
             this.contabilidadeToolStripMenuItem.Text = "Contabilidade";
@@ -319,7 +320,7 @@
             // ocorreuUmErroToolStripMenuItem
             // 
             this.ocorreuUmErroToolStripMenuItem.Name = "ocorreuUmErroToolStripMenuItem";
-            this.ocorreuUmErroToolStripMenuItem.Size = new System.Drawing.Size(162, 22);
+            this.ocorreuUmErroToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.ocorreuUmErroToolStripMenuItem.Text = "Ocorreu um erro";
             this.ocorreuUmErroToolStripMenuItem.Click += new System.EventHandler(this.ocorreuUmErroToolStripMenuItem_Click);
             // 
@@ -335,13 +336,13 @@
             // personalizarToolStripMenuItem
             // 
             this.personalizarToolStripMenuItem.Name = "personalizarToolStripMenuItem";
-            this.personalizarToolStripMenuItem.Size = new System.Drawing.Size(137, 22);
+            this.personalizarToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.personalizarToolStripMenuItem.Text = "&Personalizar";
             // 
             // opçõesToolStripMenuItem1
             // 
             this.opçõesToolStripMenuItem1.Name = "opçõesToolStripMenuItem1";
-            this.opçõesToolStripMenuItem1.Size = new System.Drawing.Size(137, 22);
+            this.opçõesToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
             this.opçõesToolStripMenuItem1.Text = "&Opções";
             // 
             // Strip1
@@ -380,7 +381,6 @@
             this.Controls.Add(this.Strip1);
             this.Controls.Add(this.MenuOpcoes);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.MainMenuStrip = this.MenuOpcoes;
             this.Name = "SistemaPrincipal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

@@ -37,5 +37,10 @@ namespace SJmain.Telas.Departamentos
             invent.MdiParent = this;
             invent.Show();
         }
+
+        private void outroStripToolStripMenuItem_Click(object sender, EventArgs e)
+        {             
+
+        }
     }
 }
