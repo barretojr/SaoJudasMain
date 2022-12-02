@@ -38,7 +38,6 @@ namespace SJmain.Telas.Departamentos.Tecnologia1
                         dataGridView1.DataSource = dt;  
                     }
                 }
-
             }
             else
             {
@@ -49,10 +48,7 @@ namespace SJmain.Telas.Departamentos.Tecnologia1
                     CadastrarPatrics cp = new CadastrarPatrics();
                     cp.Show();
                 }
-            }
-
-            
-             
+            }            
         }
 
         private void btnSair_Click(object sender, EventArgs e)

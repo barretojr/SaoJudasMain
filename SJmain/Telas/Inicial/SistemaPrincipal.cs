@@ -34,10 +34,7 @@ namespace SJmain.Telas
                     conta.Show();
                 }
 
-                else
-                {
-                    MessageBox.Show("Você não tem permissão para acessar", "Permissão", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
+                else  MessageBox.Show("Você não tem permissão para acessar", "Permissão", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             
 
@@ -57,10 +54,7 @@ namespace SJmain.Telas
                     fisc.Show();
                 }
 
-                else
-                {
-                    MessageBox.Show("Você não tem permissão para acessar", "Permissão", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
+                else  MessageBox.Show("Você não tem permissão para acessar", "Permissão", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -78,10 +72,7 @@ namespace SJmain.Telas
                     tec.Show();
                 }
 
-                else
-                {
-                    MessageBox.Show("Você não tem permissão para acessar", "Permissão", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
+                else   MessageBox.Show("Você não tem permissão para acessar", "Permissão", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
         }        
@@ -99,10 +90,7 @@ namespace SJmain.Telas
                     dp.Show();
                 }
 
-                else
-                {
-                    MessageBox.Show("Você não tem permissão para acessar", "Permissão", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
+                else   MessageBox.Show("Você não tem permissão para acessar", "Permissão", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             
             
@@ -121,10 +109,7 @@ namespace SJmain.Telas
                     societario.Show();
                 }
 
-                else
-                {
-                    MessageBox.Show("Você não tem permissão para acessar", "Permissão", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
+                else   MessageBox.Show("Você não tem permissão para acessar", "Permissão", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             
             
@@ -161,10 +146,7 @@ namespace SJmain.Telas
                     log.Show();
                 }
 
-                else
-                {
-                    MessageBox.Show("Você não tem permissão para acessar", "Permissão", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
+                else  MessageBox.Show("Você não tem permissão para acessar", "Permissão", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 

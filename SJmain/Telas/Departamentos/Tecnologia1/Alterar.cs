@@ -35,5 +35,41 @@ namespace SJmain.Telas.Cadastro
                 }
             }
         }
+
+        private void Alterar_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnSair_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void btnSalvar_Click(object sender, EventArgs e)
+        {
+            DialogResult desejasalvar;
+            desejasalvar = MessageBox.Show("Deseja salvar as alterações?", "Deseja Salvar?", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2);
+            if (desejasalvar == DialogResult.Yes)
+            {
+
+            }
+            else if ( desejasalvar == DialogResult.No)
+            {
+                this.Close();
+            }
+        }
+
+        private void btnVerificar_Click(object sender, EventArgs e)
+        {
+            if (txtSenha.Equals(txtConfSenha))
+            {
+                
+            }
+            else
+            {
+                MessageBox.Show("Senhas não coincidem");
+            }
+        }
     }
 }

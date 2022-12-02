@@ -48,7 +48,7 @@ namespace SJmain
                     sp.Show();
                     this.Hide();
                 }
-                else { MessageBox.Show("Login não encontrado", "Erro Login"); }
+                else  MessageBox.Show("Login não encontrado", "Erro Login"); 
 
                 }
             
@@ -59,10 +59,8 @@ namespace SJmain
         {
             DialogResult desejasair;
             desejasair = MessageBox.Show("Deseja sair ?", "Deseja Sair", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2);
-            if (desejasair == DialogResult.Yes)
-            {
-                Application.Exit();
-            }
+            if (desejasair == DialogResult.Yes) Application.Exit(); 
+
         }
 
         private void EntrarLogin_KeyPress(object sender, KeyPressEventArgs e)
@@ -72,9 +70,7 @@ namespace SJmain
                 Controle controle = new Controle();
                 controle.acessar(UsuarioLogin.Text, SenhaLogin.Text);
                 if (UsuarioLogin.Text != null)
-                {
-                    //SistemaPrincipal sp2 = new SistemaPrincipal();
-                    //sp2.Show();
+                {                    
                     if (controle.mensagem.Equals(""))
                     {
                         if (controle.tem == true)
@@ -84,7 +80,6 @@ namespace SJmain
                             this.Hide();
                         }
                         else MessageBox.Show("Login não encontrado", "Erro Login");
-
                     }
                 }
             }

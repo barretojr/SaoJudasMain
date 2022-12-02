@@ -42,5 +42,10 @@ namespace SJmain.Telas.Departamentos
         {             
 
         }
+
+        private void Tecnologia_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
