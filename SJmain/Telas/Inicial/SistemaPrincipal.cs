@@ -42,7 +42,7 @@ namespace SJmain.Telas
 
         private void fiscalToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            //1=master,3=fiscal,5=tecnologia,
+            //1 = master, 3 = fiscal, 5 = tecnologia,
             int depart = 5;
             Controle controle = new Controle();
             controle.acessarform(Properties.Settings.Default.usuario, depart);
@@ -60,7 +60,7 @@ namespace SJmain.Telas
 
         private void tecnologiaToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            //1=master,5=tecnologia,
+            //1 = master,5 = tecnologia,
             int  depart = 5;
             Controle controle = new Controle();
             controle.acessarform(Properties.Settings.Default.usuario, depart);
@@ -134,7 +134,7 @@ namespace SJmain.Telas
 
         private void logisticaToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            //4=  logistica
+            //4 = logistica
             int depart = 5;
             Controle controle = new Controle();
             controle.acessarform(Properties.Settings.Default.usuario, depart);

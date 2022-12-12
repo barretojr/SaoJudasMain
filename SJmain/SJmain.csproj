@@ -230,6 +230,12 @@
     <Compile Include="Telas\Departamentos\Tecnologia1\CadastrarPatrics.Designer.cs">
       <DependentUpon>CadastrarPatrics.cs</DependentUpon>
     </Compile>
+    <Compile Include="Telas\Departamentos\Tecnologia1\CadastroEmpresa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\Departamentos\Tecnologia1\CadastroEmpresa.Designer.cs">
+      <DependentUpon>CadastroEmpresa.cs</DependentUpon>
+    </Compile>
     <Compile Include="Telas\Departamentos\Tecnologia1\Inventario.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -241,6 +247,12 @@
     </Compile>
     <Compile Include="Telas\Departamentos\Tecnologia1\Tecnologia.Designer.cs">
       <DependentUpon>Tecnologia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\Departamentos\Tecnologia1\VerificarEmpresa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\Departamentos\Tecnologia1\VerificarEmpresa.Designer.cs">
+      <DependentUpon>VerificarEmpresa.cs</DependentUpon>
     </Compile>
     <Compile Include="Telas\Inicial\Login.cs">
       <SubType>Form</SubType>
@@ -307,11 +319,17 @@
     <EmbeddedResource Include="Telas\Departamentos\Tecnologia1\CadastrarPatrics.resx">
       <DependentUpon>CadastrarPatrics.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Telas\Departamentos\Tecnologia1\CadastroEmpresa.resx">
+      <DependentUpon>CadastroEmpresa.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Telas\Departamentos\Tecnologia1\Inventario.resx">
       <DependentUpon>Inventario.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Telas\Departamentos\Tecnologia1\Tecnologia.resx">
       <DependentUpon>Tecnologia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\Departamentos\Tecnologia1\VerificarEmpresa.resx">
+      <DependentUpon>VerificarEmpresa.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Telas\Inicial\Login.resx">
       <DependentUpon>Login.cs</DependentUpon>

@@ -47,5 +47,12 @@ namespace SJmain.Telas.Departamentos
         {
 
         }
+
+        private void cadastrarToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            VerificarEmpresa ve = new VerificarEmpresa();
+            ve.MdiParent = this;
+            ve.Show();
+        }
     }
 }

@@ -45,7 +45,7 @@
             // 
             this.groupBox1.Controls.Add(this.LembrarUsuario);
             this.groupBox1.Controls.Add(this.UsuarioLogin);
-            this.groupBox1.Location = new System.Drawing.Point(32, 32);
+            this.groupBox1.Location = new System.Drawing.Point(34, 34);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(323, 81);
             this.groupBox1.TabIndex = 0;
@@ -69,12 +69,13 @@
             this.UsuarioLogin.Name = "UsuarioLogin";
             this.UsuarioLogin.Size = new System.Drawing.Size(311, 20);
             this.UsuarioLogin.TabIndex = 0;
+            this.UsuarioLogin.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.LembrarSenha);
             this.groupBox2.Controls.Add(this.SenhaLogin);
-            this.groupBox2.Location = new System.Drawing.Point(32, 119);
+            this.groupBox2.Location = new System.Drawing.Point(34, 121);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(323, 69);
             this.groupBox2.TabIndex = 1;
@@ -99,13 +100,15 @@
             this.SenhaLogin.PasswordChar = '*';
             this.SenhaLogin.Size = new System.Drawing.Size(311, 20);
             this.SenhaLogin.TabIndex = 0;
+            this.SenhaLogin.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.SenhaLogin.UseSystemPasswordChar = true;
             // 
             // EntrarLogin
             // 
             this.EntrarLogin.BackColor = System.Drawing.SystemColors.ControlLight;
             this.EntrarLogin.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.EntrarLogin.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.EntrarLogin.Location = new System.Drawing.Point(280, 216);
+            this.EntrarLogin.Location = new System.Drawing.Point(282, 210);
             this.EntrarLogin.Name = "EntrarLogin";
             this.EntrarLogin.Size = new System.Drawing.Size(75, 23);
             this.EntrarLogin.TabIndex = 2;
@@ -117,7 +120,7 @@
             // BotaoSair
             // 
             this.BotaoSair.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.BotaoSair.Location = new System.Drawing.Point(32, 216);
+            this.BotaoSair.Location = new System.Drawing.Point(34, 210);
             this.BotaoSair.Name = "BotaoSair";
             this.BotaoSair.Size = new System.Drawing.Size(75, 23);
             this.BotaoSair.TabIndex = 3;
@@ -130,15 +133,16 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.MediumAquamarine;
-            this.ClientSize = new System.Drawing.Size(380, 255);
+            this.ClientSize = new System.Drawing.Size(391, 258);
             this.Controls.Add(this.BotaoSair);
             this.Controls.Add(this.EntrarLogin);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.ForeColor = System.Drawing.Color.Black;
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "frmLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "São Judas Contabil";
