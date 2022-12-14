@@ -28,9 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(VerificarEmpresa));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.btnPesquisar = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.btnPesquisar = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -45,15 +46,6 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Pesquisa";
             // 
-            // btnPesquisar
-            // 
-            this.btnPesquisar.Location = new System.Drawing.Point(288, 19);
-            this.btnPesquisar.Name = "btnPesquisar";
-            this.btnPesquisar.Size = new System.Drawing.Size(75, 65);
-            this.btnPesquisar.TabIndex = 0;
-            this.btnPesquisar.Text = "button1";
-            this.btnPesquisar.UseVisualStyleBackColor = true;
-            // 
             // textBox1
             // 
             this.textBox1.Location = new System.Drawing.Point(7, 19);
@@ -61,12 +53,22 @@
             this.textBox1.Size = new System.Drawing.Size(275, 20);
             this.textBox1.TabIndex = 1;
             // 
+            // btnPesquisar
+            // 
+            this.btnPesquisar.Location = new System.Drawing.Point(288, 19);
+            this.btnPesquisar.Name = "btnPesquisar";
+            this.btnPesquisar.Size = new System.Drawing.Size(75, 65);
+            this.btnPesquisar.TabIndex = 0;
+            this.btnPesquisar.Text = "Pesquisar...";
+            this.btnPesquisar.UseVisualStyleBackColor = true;
+            // 
             // VerificarEmpresa
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(394, 344);
+            this.ClientSize = new System.Drawing.Size(388, 329);
             this.Controls.Add(this.groupBox1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "VerificarEmpresa";
             this.Text = "VerificarEmpresa";
             this.groupBox1.ResumeLayout(false);
