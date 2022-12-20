@@ -121,7 +121,7 @@
             // 
             // btnSalvar
             // 
-            this.btnSalvar.Location = new System.Drawing.Point(632, 415);
+            this.btnSalvar.Location = new System.Drawing.Point(326, 415);
             this.btnSalvar.Name = "btnSalvar";
             this.btnSalvar.Size = new System.Drawing.Size(75, 23);
             this.btnSalvar.TabIndex = 1;
@@ -130,7 +130,7 @@
             // 
             // btnConfirmar
             // 
-            this.btnConfirmar.Location = new System.Drawing.Point(713, 415);
+            this.btnConfirmar.Location = new System.Drawing.Point(407, 415);
             this.btnConfirmar.Name = "btnConfirmar";
             this.btnConfirmar.Size = new System.Drawing.Size(75, 23);
             this.btnConfirmar.TabIndex = 2;
@@ -151,7 +151,7 @@
             // 
             this.groupBox2.Location = new System.Drawing.Point(12, 192);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(318, 180);
+            this.groupBox2.Size = new System.Drawing.Size(318, 217);
             this.groupBox2.TabIndex = 4;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Responsáveis";
@@ -160,7 +160,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(561, 450);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.btnSair);
             this.Controls.Add(this.btnConfirmar);
