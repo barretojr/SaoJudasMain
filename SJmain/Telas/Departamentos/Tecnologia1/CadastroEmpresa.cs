@@ -15,9 +15,14 @@ namespace SJmain.Telas.Departamentos.Tecnologia1
         public CadastroEmpresa()
         {
             InitializeComponent();
+        }        
+
+        private void btnSair_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
 
-        private void groupBox1_Enter(object sender, EventArgs e)
+        private void CadastroEmpresa_Load(object sender, EventArgs e)
         {
 
         }
