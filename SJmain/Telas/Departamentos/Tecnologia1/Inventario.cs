@@ -30,13 +30,17 @@ namespace SJmain.Telas.Departamentos.Tecnologia1
             pm.VerificaPatri(txtBuscar.Text);
             if (pm.tem == true)
             {
-                using(SqlDataAdapter da = new SqlDataAdapter())
+                try
                 {
-                    using(DataTable dt = new DataTable())
-                    {
-                        da.Fill(dt);
-                        dataGridView1.DataSource = dt;  
-                    }
+                    SqlDataAdapter da = new SqlDataAdapter();
+                    DataTable dt = new DataTable();
+
+                    da.Fill(dt);
+                    dataGridView1.DataSource = dt;
+                }
+                catch
+                {
+                    dataGridView1= null;
                 }
             }
             else

@@ -110,7 +110,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(193, 9);
+            this.label5.Location = new System.Drawing.Point(223, 9);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(64, 13);
             this.label5.TabIndex = 6;
@@ -119,7 +119,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(193, 74);
+            this.label6.Location = new System.Drawing.Point(223, 74);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(77, 13);
             this.label6.TabIndex = 7;
@@ -128,7 +128,7 @@
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(193, 140);
+            this.label10.Location = new System.Drawing.Point(223, 140);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(66, 13);
             this.label10.TabIndex = 11;
@@ -137,7 +137,7 @@
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(193, 203);
+            this.label11.Location = new System.Drawing.Point(223, 203);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(47, 13);
             this.label11.TabIndex = 12;
@@ -174,7 +174,7 @@
             // 
             // txtLocal
             // 
-            this.txtLocal.Location = new System.Drawing.Point(196, 25);
+            this.txtLocal.Location = new System.Drawing.Point(226, 25);
             this.txtLocal.MaxLength = 15;
             this.txtLocal.Name = "txtLocal";
             this.txtLocal.Size = new System.Drawing.Size(112, 20);
@@ -182,14 +182,14 @@
             // 
             // txtProcessador
             // 
-            this.txtProcessador.Location = new System.Drawing.Point(196, 156);
+            this.txtProcessador.Location = new System.Drawing.Point(226, 156);
             this.txtProcessador.Name = "txtProcessador";
             this.txtProcessador.Size = new System.Drawing.Size(112, 20);
             this.txtProcessador.TabIndex = 6;
             // 
             // txtMemoria
             // 
-            this.txtMemoria.Location = new System.Drawing.Point(196, 219);
+            this.txtMemoria.Location = new System.Drawing.Point(226, 219);
             this.txtMemoria.Name = "txtMemoria";
             this.txtMemoria.Size = new System.Drawing.Size(112, 20);
             this.txtMemoria.TabIndex = 7;
@@ -197,7 +197,7 @@
             // mskValorEsti
             // 
             this.mskValorEsti.CutCopyMaskFormat = System.Windows.Forms.MaskFormat.ExcludePromptAndLiterals;
-            this.mskValorEsti.Location = new System.Drawing.Point(196, 91);
+            this.mskValorEsti.Location = new System.Drawing.Point(226, 91);
             this.mskValorEsti.Mask = "9999999";
             this.mskValorEsti.Name = "mskValorEsti";
             this.mskValorEsti.Size = new System.Drawing.Size(112, 20);
@@ -205,7 +205,7 @@
             // 
             // btnCadastrar
             // 
-            this.btnCadastrar.Location = new System.Drawing.Point(140, 250);
+            this.btnCadastrar.Location = new System.Drawing.Point(170, 250);
             this.btnCadastrar.Name = "btnCadastrar";
             this.btnCadastrar.Size = new System.Drawing.Size(75, 23);
             this.btnCadastrar.TabIndex = 24;
@@ -215,12 +215,13 @@
             // 
             // btnSalvar
             // 
-            this.btnSalvar.Location = new System.Drawing.Point(233, 250);
+            this.btnSalvar.Location = new System.Drawing.Point(263, 250);
             this.btnSalvar.Name = "btnSalvar";
             this.btnSalvar.Size = new System.Drawing.Size(75, 23);
             this.btnSalvar.TabIndex = 25;
             this.btnSalvar.Text = "Salvar";
             this.btnSalvar.UseVisualStyleBackColor = true;
+            this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click);
             // 
             // statusStrip1
             // 
@@ -228,7 +229,7 @@
             this.tss1});
             this.statusStrip1.Location = new System.Drawing.Point(0, 287);
             this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(335, 22);
+            this.statusStrip1.Size = new System.Drawing.Size(353, 22);
             this.statusStrip1.TabIndex = 26;
             this.statusStrip1.Text = "statusStrip1";
             // 
@@ -242,7 +243,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(335, 309);
+            this.ClientSize = new System.Drawing.Size(353, 309);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.btnSalvar);
             this.Controls.Add(this.btnCadastrar);
