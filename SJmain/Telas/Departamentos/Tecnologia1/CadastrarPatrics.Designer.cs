@@ -50,15 +50,17 @@
             this.btnSalvar = new System.Windows.Forms.Button();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.tss1 = new System.Windows.Forms.ToolStripStatusLabel();
+            this.txtUsuario = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
             this.statusStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnSair
             // 
-            this.btnSair.Location = new System.Drawing.Point(12, 250);
+            this.btnSair.Location = new System.Drawing.Point(12, 322);
             this.btnSair.Name = "btnSair";
             this.btnSair.Size = new System.Drawing.Size(75, 23);
-            this.btnSair.TabIndex = 0;
+            this.btnSair.TabIndex = 20;
             this.btnSair.Text = "Sair";
             this.btnSair.UseVisualStyleBackColor = true;
             this.btnSair.Click += new System.EventHandler(this.btnSair_Click);
@@ -205,20 +207,20 @@
             // 
             // btnCadastrar
             // 
-            this.btnCadastrar.Location = new System.Drawing.Point(170, 250);
+            this.btnCadastrar.Location = new System.Drawing.Point(170, 322);
             this.btnCadastrar.Name = "btnCadastrar";
             this.btnCadastrar.Size = new System.Drawing.Size(75, 23);
-            this.btnCadastrar.TabIndex = 24;
+            this.btnCadastrar.TabIndex = 18;
             this.btnCadastrar.Text = "Cadastrar";
             this.btnCadastrar.UseVisualStyleBackColor = true;
             this.btnCadastrar.Click += new System.EventHandler(this.btnCadastrar_Click);
             // 
             // btnSalvar
             // 
-            this.btnSalvar.Location = new System.Drawing.Point(263, 250);
+            this.btnSalvar.Location = new System.Drawing.Point(263, 322);
             this.btnSalvar.Name = "btnSalvar";
             this.btnSalvar.Size = new System.Drawing.Size(75, 23);
-            this.btnSalvar.TabIndex = 25;
+            this.btnSalvar.TabIndex = 17;
             this.btnSalvar.Text = "Salvar";
             this.btnSalvar.UseVisualStyleBackColor = true;
             this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click);
@@ -227,9 +229,9 @@
             // 
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.tss1});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 287);
+            this.statusStrip1.Location = new System.Drawing.Point(0, 348);
             this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(353, 22);
+            this.statusStrip1.Size = new System.Drawing.Size(358, 22);
             this.statusStrip1.TabIndex = 26;
             this.statusStrip1.Text = "statusStrip1";
             // 
@@ -239,11 +241,29 @@
             this.tss1.Size = new System.Drawing.Size(16, 17);
             this.tss1.Text = "...";
             // 
+            // txtUsuario
+            // 
+            this.txtUsuario.Location = new System.Drawing.Point(15, 284);
+            this.txtUsuario.Name = "txtUsuario";
+            this.txtUsuario.Size = new System.Drawing.Size(112, 20);
+            this.txtUsuario.TabIndex = 8;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(13, 268);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(43, 13);
+            this.label7.TabIndex = 27;
+            this.label7.Text = "Usuário";
+            // 
             // CadastrarPatrics
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(353, 309);
+            this.ClientSize = new System.Drawing.Size(358, 370);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.txtUsuario);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.btnSalvar);
             this.Controls.Add(this.btnCadastrar);
@@ -300,5 +320,7 @@
         private System.Windows.Forms.Button btnSalvar;
         private System.Windows.Forms.StatusStrip statusStrip1;
         private System.Windows.Forms.ToolStripStatusLabel tss1;
+        private System.Windows.Forms.TextBox txtUsuario;
+        private System.Windows.Forms.Label label7;
     }
 }

@@ -44,8 +44,8 @@ namespace SJmain.Telas.Departamentos.Tecnologia1
                 tss1.Text = "Salvando o Equipamento...";
                 statusStrip1.Refresh();
                 cmd.Connection = con.Conectar();
-                cmd.CommandText = "INSERT INTO Inventario (idpatrimonio, unidade, descricao, modelo, localizacao, valorestim, processador, memoriaram) " +
-                "VALUES (@numpatri,@unidade,@descri,@model,@local,@valorestim, @process, @ram);";
+                cmd.CommandText = "INSERT INTO Inventario (idpatrimonio, unidade, descricao, modelo, localizacao, valorestim, processador, memoriaram, usuario) " +
+                "VALUES (@numpatri,@unidade,@descri,@model,@local,@valorestim, @process, @ram, @usuario);";
                 cmd.Parameters.AddWithValue("@numpatri", txtPatri.Text);
                 cmd.Parameters.AddWithValue("@unidade", cbUnidade.Text);
                 cmd.Parameters.AddWithValue("@descri", txtDescricao.Text);
@@ -54,6 +54,7 @@ namespace SJmain.Telas.Departamentos.Tecnologia1
                 cmd.Parameters.AddWithValue("@valorestim", mskValorEsti.Text);                
                 cmd.Parameters.AddWithValue("@process", txtProcessador.Text);
                 cmd.Parameters.AddWithValue("@ram", txtMemoria.Text);
+                cmd.Parameters.AddWithValue("@usuario", txtUsuario.Text);
                 cmd.ExecuteNonQuery();
 
                 con.Desconectar();
@@ -79,8 +80,8 @@ namespace SJmain.Telas.Departamentos.Tecnologia1
                 tss1.Text = "Salvando o Equipamento...";
                 statusStrip1.Refresh();
                 cmd.Connection = con.Conectar();
-                cmd.CommandText = "INSERT INTO Inventario (idpatrimonio, unidade, descricao, modelo, localizacao, valorestim, processador, memoriaram) " +
-                "VALUES (@numpatri,@unidade,@descri,@model,@local,@valorestim, @process, @ram);";
+                cmd.CommandText = "INSERT INTO Inventario (idpatrimonio, unidade, descricao, modelo, localizacao, valorestim, processador, memoriaram, usuario) " +
+                "VALUES (@numpatri,@unidade,@descri,@model,@local,@valorestim, @process, @ram, @usuario);";
                 cmd.Parameters.AddWithValue("@numpatri", txtPatri.Text);
                 cmd.Parameters.AddWithValue("@unidade", cbUnidade.Text);
                 cmd.Parameters.AddWithValue("@descri", txtDescricao.Text);
@@ -89,8 +90,8 @@ namespace SJmain.Telas.Departamentos.Tecnologia1
                 cmd.Parameters.AddWithValue("@valorestim", mskValorEsti.Text);
                 cmd.Parameters.AddWithValue("@process", txtProcessador.Text);
                 cmd.Parameters.AddWithValue("@ram", txtMemoria.Text);
+                cmd.Parameters.AddWithValue("@usuario", txtUsuario.Text);
                 cmd.ExecuteNonQuery();
-
                 con.Desconectar();
             }
             catch (SqlException)
