@@ -65,7 +65,16 @@ namespace SJmain.Telas.Departamentos.Tecnologia1
                 statusStrip1.Refresh();
                 MessageBox.Show("Algum dado está invalido", "Reveja os dados");
             }
-            tss1.Text = " Pronto.";
+            tss1.Text = "Pronto.";
+            #region limpatexto
+            txtDescricao.Text = "";
+            txtLocal.Text = "";
+            txtMemoria.Text = "";
+            txtModelo.Text = "";
+            txtPatri.Text = "";
+            txtProcessador.Text = "";
+            txtUsuario.Text = "";
+            #endregion
         }
 
         private void btnSalvar_Click(object sender, EventArgs e)
@@ -100,7 +109,16 @@ namespace SJmain.Telas.Departamentos.Tecnologia1
                 statusStrip1.Refresh();
                 MessageBox.Show("Algum dado está invalido", "Reveja os dados");
             }
-            tss1.Text = " Pronto.";
+            tss1.Text = "Pronto.";
+            #region limpatexto
+            txtDescricao.Text = "";
+            txtLocal.Text = "";
+            txtMemoria.Text = "";
+            txtModelo.Text = "";
+            txtPatri.Text = "";
+            txtProcessador.Text = "";
+            txtUsuario.Text = "";
+            #endregion
             this.Close();
 
         }
