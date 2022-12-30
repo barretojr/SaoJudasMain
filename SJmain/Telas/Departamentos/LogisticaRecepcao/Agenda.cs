@@ -35,8 +35,6 @@ namespace SJmain.Telas.Departamentos.Logistica
             {
                 MessageBox.Show("Error");
             }
-
-
         }
        
 
