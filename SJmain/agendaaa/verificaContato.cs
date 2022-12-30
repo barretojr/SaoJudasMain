@@ -18,7 +18,6 @@ namespace SJmain.agendaaa
         SqlDataReader dtReader;
         public bool verificaCt(string contato)
         {           
-
             cmd.CommandText = "SELECT * FROM Agenda WHERE contato = @contato";
             cmd.Parameters.AddWithValue("@contato", contato);
 

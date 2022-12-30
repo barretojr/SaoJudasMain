@@ -30,7 +30,8 @@ namespace SJmain.Telas.Departamentos.Logistica
                 DataTable dt = new DataTable();
                 da.Fill(dt);
                 dataGridView1.DataSource = dt;
-            } catch
+            } 
+            catch
             {
                 MessageBox.Show("Error");
             }
