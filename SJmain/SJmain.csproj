@@ -120,6 +120,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="agendaaa\verificaContato.cs" />
     <Compile Include="Banco de Dados\Senha.cs" />
     <Compile Include="Classess\Livros.cs" />
     <Compile Include="Classess\Patrimonio.cs" />
@@ -371,9 +372,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="SJBD.mdf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
     <Content Include="Telas\Inicial\icone.ico" />
     <Content Include="Telas\Inicial\wallpaper.png" />
   </ItemGroup>
