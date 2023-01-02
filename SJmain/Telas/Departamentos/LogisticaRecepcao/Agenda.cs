@@ -1,16 +1,7 @@
 ﻿using SJmain.Classes;
+using SJmain.Classess;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Data.SqlClient;
-using System.Drawing;
-using System.Linq;
-using System.Net.NetworkInformation;
-using System.Reflection;
-using System.Text;
-using System.Threading;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace SJmain.Telas.Departamentos.Logistica
@@ -23,28 +14,39 @@ namespace SJmain.Telas.Departamentos.Logistica
         }
         private void btnSalvar_Click_1(object sender, EventArgs e)
         {
+            AgendaClass AC = new AgendaClass();
+            AC.VerificaContato(txtContato.Text);
+
             Conexao connect = new Conexao();
             SqlCommand cmd = new SqlCommand();
 
-            try
+
+            if (AC.tem == true)
             {
-                cmd.Connection = connect.Conectar();
-                cmd.CommandText = "INSERT INTO Agenda (nome, email, endereco, contato)" + "" +
-                    "VALUES(@nome, @email, @endereco, @contato)";
-                cmd.Parameters.AddWithValue("@nome", txtNome.Text);
-                cmd.Parameters.AddWithValue("@email", txtEmail.Text);
-                cmd.Parameters.AddWithValue("@endereco", txtEndereco.Text);
-                cmd.Parameters.AddWithValue("@contato", txtContato.Text);
-
-                cmd.ExecuteNonQuery();
-
-                MessageBox.Show("Contato salvo");
-
-                connect.Desconectar();
+                MessageBox.Show("Contato já registrado", "Erro");
             }
-            catch (SqlException)
+            else
             {
-                MessageBox.Show("Alguma coisa deu errado. Tente novamente");
+                try
+                {
+                    cmd.Connection = connect.Conectar();
+                    cmd.CommandText = "INSERT INTO Agenda (nome, email, endereco, contato)" + "" +
+                        "VALUES(@nome, @email, @endereco, @contato)";
+                    cmd.Parameters.AddWithValue("@nome", txtNome.Text);
+                    cmd.Parameters.AddWithValue("@email", txtEmail.Text);
+                    cmd.Parameters.AddWithValue("@endereco", txtEndereco.Text);
+                    cmd.Parameters.AddWithValue("@contato", txtContato.Text);
+
+                    cmd.ExecuteNonQuery();
+
+                    MessageBox.Show("Contato salvo");
+
+                    connect.Desconectar();
+                }
+                catch (SqlException)
+                {
+                    MessageBox.Show("Alguma coisa deu errado. Tente novamente");
+                }
             }
         }
 
@@ -56,6 +58,6 @@ namespace SJmain.Telas.Departamentos.Logistica
             txtContato.Text = String.Empty;
         }
 
-        
+
     }
 }
