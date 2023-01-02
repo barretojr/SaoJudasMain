@@ -48,7 +48,6 @@ namespace SJmain.Telas.Departamentos.Logistica
                 }
             }
         }
-
         private void btnLimpar_Click(object sender, EventArgs e)
         {
             txtNome.Text = String.Empty;
