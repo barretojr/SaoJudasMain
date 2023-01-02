@@ -1,8 +1,5 @@
-﻿using Org.BouncyCastle.Crypto.Tls;
-using SJmain.Classes;
+﻿using SJmain.Classes;
 using System.Data.SqlClient;
-using System.Security.Cryptography;
-using System.Security.Policy;
 using System.Windows.Forms;
 
 namespace SJmain.Modelo
@@ -18,7 +15,7 @@ namespace SJmain.Modelo
 
         public bool verificarLogin(string login, string senha)
         {
-            
+
             cmd.CommandText = "SELECT * FROM Usuario WHERE nomeusuario = @login and senha = @senha";
             cmd.Parameters.AddWithValue("@login", login);
             cmd.Parameters.AddWithValue("@senha", senha);
@@ -36,7 +33,7 @@ namespace SJmain.Modelo
             catch (SqlException)
             {
                 this.mensagem = "erro";
-            }            
+            }
 
             return tem;
         }
@@ -57,7 +54,7 @@ namespace SJmain.Modelo
                 dr.Close();
             }
             catch (SqlException)
-            {               
+            {
                 this.mensagem = "erro";
             }
 
@@ -65,7 +62,7 @@ namespace SJmain.Modelo
         }
         public string cadastrar(int idderp, string nomeusu, string email, string cpf, string senha, string confSenha, string telefone)
         {
-            
+
             tem = false;
             if (senha.Equals(confSenha))
             {
@@ -95,6 +92,6 @@ namespace SJmain.Modelo
             }
             return mensagem;
         }
-        
+
     }
 }

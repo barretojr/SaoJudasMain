@@ -1,16 +1,6 @@
 ﻿using SJmain.Classes;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Data.SqlClient;
-using System.Drawing;
-using System.Linq;
-using System.Net.NetworkInformation;
-using System.Reflection;
-using System.Text;
-using System.Threading;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace SJmain.Telas.Departamentos.Tecnologia1
@@ -34,7 +24,7 @@ namespace SJmain.Telas.Departamentos.Tecnologia1
 
         private void btnCadastrar_Click(object sender, EventArgs e)
         {
-            Conexao con= new Conexao();
+            Conexao con = new Conexao();
             SqlCommand cmd = new SqlCommand();
             tss1.Text = "Aguardando Entradas...";
             statusStrip1.Refresh();
@@ -51,7 +41,7 @@ namespace SJmain.Telas.Departamentos.Tecnologia1
                 cmd.Parameters.AddWithValue("@descri", txtDescricao.Text);
                 cmd.Parameters.AddWithValue("@model", txtModelo.Text);
                 cmd.Parameters.AddWithValue("@local", txtLocal.Text);
-                cmd.Parameters.AddWithValue("@valorestim", mskValorEsti.Text);                
+                cmd.Parameters.AddWithValue("@valorestim", mskValorEsti.Text);
                 cmd.Parameters.AddWithValue("@process", txtProcessador.Text);
                 cmd.Parameters.AddWithValue("@ram", txtMemoria.Text);
                 cmd.Parameters.AddWithValue("@usuario", txtUsuario.Text);

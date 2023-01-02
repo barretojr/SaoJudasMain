@@ -1,8 +1,6 @@
 ﻿using SJmain.Modelo;
-using SJmain.Telas.Cadastro;
 using SJmain.Telas.Departamentos;
 using SJmain.Telas.Departamentos.Log;
-using SJmain.Telas.Departamentos.Logistica;
 using System;
 using System.Windows.Forms;
 
@@ -28,15 +26,15 @@ namespace SJmain.Telas
             controle.acessarform(Properties.Settings.Default.usuario, depart);
             if (controle.mensagem.Equals(""))
             {
-                if(controle.tem == true)
+                if (controle.tem == true)
                 {
                     Contabilidade conta = new Contabilidade();
                     conta.Show();
                 }
 
-                else  MessageBox.Show("Você não tem permissão para acessar", "Permissão", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                else MessageBox.Show("Você não tem permissão para acessar", "Permissão", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-            
+
 
         }
 
@@ -54,14 +52,14 @@ namespace SJmain.Telas
                     fisc.Show();
                 }
 
-                else  MessageBox.Show("Você não tem permissão para acessar", "Permissão", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                else MessageBox.Show("Você não tem permissão para acessar", "Permissão", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
         private void tecnologiaToolStripMenuItem_Click(object sender, EventArgs e)
         {
             //1 = master,5 = tecnologia,
-            int  depart = 5;
+            int depart = 5;
             Controle controle = new Controle();
             controle.acessarform(Properties.Settings.Default.usuario, depart);
             if (controle.mensagem.Equals(""))
@@ -72,10 +70,10 @@ namespace SJmain.Telas
                     tec.Show();
                 }
 
-                else   MessageBox.Show("Você não tem permissão para acessar", "Permissão", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                else MessageBox.Show("Você não tem permissão para acessar", "Permissão", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
-        }        
+        }
 
         private void departamentoPessoalToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -90,10 +88,10 @@ namespace SJmain.Telas
                     dp.Show();
                 }
 
-                else   MessageBox.Show("Você não tem permissão para acessar", "Permissão", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                else MessageBox.Show("Você não tem permissão para acessar", "Permissão", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-            
-            
+
+
         }
 
         private void societárioToolStripMenuItem_Click(object sender, EventArgs e)
@@ -109,10 +107,10 @@ namespace SJmain.Telas
                     societario.Show();
                 }
 
-                else   MessageBox.Show("Você não tem permissão para acessar", "Permissão", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                else MessageBox.Show("Você não tem permissão para acessar", "Permissão", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-            
-            
+
+
         }
 
         private void ocorreuUmErroToolStripMenuItem_Click(object sender, EventArgs e)
@@ -125,7 +123,7 @@ namespace SJmain.Telas
             }
         }
 
-        
+
 
         private void SistemaPrincipal_Load(object sender, EventArgs e)
         {
@@ -146,7 +144,7 @@ namespace SJmain.Telas
                     log.Show();
                 }
 
-                else  MessageBox.Show("Você não tem permissão para acessar", "Permissão", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                else MessageBox.Show("Você não tem permissão para acessar", "Permissão", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 

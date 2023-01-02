@@ -1,6 +1,4 @@
 ﻿using System;
-using System.ComponentModel;
-using System.IO;
 using System.Windows.Forms;
 
 namespace SJmain.Telas.Departamentos.Contabilidade1
@@ -11,12 +9,12 @@ namespace SJmain.Telas.Departamentos.Contabilidade1
         {
             InitializeComponent();
         }
-        
+
 
         private void btnProcurar_Click(object sender, EventArgs e)
         {
             GetPdf();
-             
+
         }
         private string GetPdf()
         {

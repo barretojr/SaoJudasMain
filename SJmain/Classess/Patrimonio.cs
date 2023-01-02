@@ -1,11 +1,4 @@
-﻿using SJmain.Telas.Cadastro;
-using SJmain.Telas.Departamentos.Tecnologia1;
-using System;
-using System.Collections.Generic;
-using System.Data.SqlClient;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Data.SqlClient;
 using System.Windows.Forms;
 
 namespace SJmain.Classes
@@ -18,11 +11,11 @@ namespace SJmain.Classes
         Conexao conec = new Conexao();
         SqlDataReader dr;
 
-        public bool VerificaPatri (string numpatri)
+        public bool VerificaPatri(string numpatri)
         {
-            
+
             cmd.CommandText = "SELECT * FROM Inventario WHERE idpatrimonio = @numpatri";
-            cmd.Parameters.AddWithValue("@numpatri", numpatri);            
+            cmd.Parameters.AddWithValue("@numpatri", numpatri);
             try
             {
                 cmd.Connection = conec.Conectar();
@@ -30,7 +23,7 @@ namespace SJmain.Classes
                 if (dr.HasRows)
                 {
                     tem = true;
-                }               
+                }
                 conec.Desconectar();
                 dr.Close();
             }
@@ -40,6 +33,6 @@ namespace SJmain.Classes
             }
             return tem;
         }
-        
+
     }
 }

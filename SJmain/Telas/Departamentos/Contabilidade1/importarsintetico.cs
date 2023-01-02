@@ -1,5 +1,4 @@
 ﻿using System;
-using System.IO;
 using System.Windows.Forms;
 
 namespace SJmain.Telas.Departamentos.Contabilidade1
@@ -20,7 +19,7 @@ namespace SJmain.Telas.Departamentos.Contabilidade1
             var openFile = new OpenFileDialog();
             openFile.Filter = "Arquivos PDFs|*.pdf";
             openFile.Multiselect = false;
-            if(openFile.ShowDialog() == DialogResult.OK)
+            if (openFile.ShowDialog() == DialogResult.OK)
             {
                 return openFile.FileName;
             }
@@ -28,7 +27,7 @@ namespace SJmain.Telas.Departamentos.Contabilidade1
             {
                 return "";
             }
-            
+
         }
 
         private void btnSair_Click(object sender, EventArgs e)

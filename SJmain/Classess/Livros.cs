@@ -1,10 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Data.SqlClient;
+﻿using System.Data.SqlClient;
 using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace SJmain.Classes
 {
@@ -12,8 +7,8 @@ namespace SJmain.Classes
     {
         Conexao conec = new Conexao();
         SqlCommand cmd = new SqlCommand();
-        SqlDataReader dr;        
-        
+        SqlDataReader dr;
+
         public int Id { get; set; }
         public string Titulo { get; set; }
         public byte[] Pdf { get; set; }
@@ -38,7 +33,7 @@ namespace SJmain.Classes
             cmd.CommandText = "INSERT INTO Livros (titulo, pdf) VALUES ('@titulo', @pdf)";
             cmd.Connection = conec.Conectar();
             cmd.Parameters.AddWithValue("@titulo", livro.Titulo);
-            cmd.Parameters.AddWithValue("@pdf",pdf.Length).Value = pdf;
+            cmd.Parameters.AddWithValue("@pdf", pdf.Length).Value = pdf;
             cmd.ExecuteNonQuery();
         }
         private byte[] GetPdf(string caminhopdf)

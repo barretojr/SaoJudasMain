@@ -12,7 +12,7 @@ namespace SJmain.Telas.Cadastro
         }
         private bool Validarform()
         {
-            if(txtUsuario.Text == "")
+            if (txtUsuario.Text == "")
             {
                 MessageBox.Show("Informe o Nome de Usuario");
                 txtUsuario.Focus();
@@ -53,7 +53,7 @@ namespace SJmain.Telas.Cadastro
 
         private void btnSalvar_Click(object sender, EventArgs e)
         {
-            if (Validarform()) 
+            if (Validarform())
             {
                 Controle controle = new Controle();
                 #region ifradiobutton

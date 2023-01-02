@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using CryptSharp;
-using Google.Protobuf.WellKnownTypes;
+﻿using CryptSharp;
 
 namespace SJmain.Banco_de_Dados
 {
@@ -26,7 +20,7 @@ namespace SJmain.Banco_de_Dados
         {
             hash = Crypter.MD5.Crypt(hash, senha);
         }
-        
-        
+
+
     }
 }

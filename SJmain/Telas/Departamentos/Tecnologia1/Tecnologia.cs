@@ -39,7 +39,7 @@ namespace SJmain.Telas.Departamentos
         }
 
         private void outroStripToolStripMenuItem_Click(object sender, EventArgs e)
-        {             
+        {
 
         }
 

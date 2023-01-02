@@ -54,7 +54,7 @@ namespace SJmain.Telas.Cadastro
             {
 
             }
-            else if ( desejasalvar == DialogResult.No)
+            else if (desejasalvar == DialogResult.No)
             {
                 this.Close();
             }
@@ -64,7 +64,7 @@ namespace SJmain.Telas.Cadastro
         {
             if (txtSenha.Equals(txtConfSenha))
             {
-                
+
             }
             else
             {

@@ -1,7 +1,5 @@
-﻿using SJmain.Telas.Departamentos.Log;
-using SJmain.Telas.Departamentos;
+﻿using System;
 using System.Windows.Forms;
-using System;
 
 namespace SJmain.Telas.Departamentos.Logistica
 {
@@ -10,7 +8,7 @@ namespace SJmain.Telas.Departamentos.Logistica
         public Ligacoes()
         {
             InitializeComponent();
-        }        
+        }
 
         private void btnSair_Click(object sender, System.EventArgs e)
         {
@@ -21,7 +19,7 @@ namespace SJmain.Telas.Departamentos.Logistica
         {
             mskHora.Text = DateTime.Now.ToShortTimeString();
             this.Refresh();
-            
+
         }
 
         private void Ligacoes_Load(object sender, EventArgs e)
@@ -32,11 +30,11 @@ namespace SJmain.Telas.Departamentos.Logistica
             dtpData.Text = Data;
         }
 
-        private void timer1_Tick(object sender, EventArgs e) 
+        private void timer1_Tick(object sender, EventArgs e)
         {
             string Data;
             Data = DateTime.Now.ToString();
             lblData.Text = Data;
-        }        
+        }
     }
 }
