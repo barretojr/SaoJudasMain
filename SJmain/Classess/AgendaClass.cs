@@ -1,20 +1,20 @@
-﻿using System.Data.SqlClient;
+﻿using SJmain.Classes;
+using System.Data.SqlClient;
 using System.Windows.Forms;
 
-namespace SJmain.Classes
+namespace SJmain.Classess
 {
-    public class Patrimonio
+    public class AgendaClass
     {
         public bool tem = false;
-        public string mensagem;
         SqlCommand cmd = new SqlCommand();
         Conexao conec = new Conexao();
         SqlDataReader dr;
 
-        public bool VerificaPatri(string numpatri)
+        public bool VerificaContato(string contato)
         {
-            cmd.CommandText = "SELECT * FROM Inventario WHERE idpatrimonio = @numpatri";
-            cmd.Parameters.AddWithValue("@numpatri", numpatri);
+            cmd.CommandText = "SELECT * FROM Agenda WHERE contato = @contato";
+            cmd.Parameters.AddWithValue("@contato", contato);
             try
             {
                 cmd.Connection = conec.Conectar();
@@ -32,6 +32,5 @@ namespace SJmain.Classes
             }
             return tem;
         }
-
     }
 }
