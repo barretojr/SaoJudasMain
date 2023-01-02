@@ -37,7 +37,6 @@ namespace SJmain.agendaaa
             {
                 MessageBox.Show("Error!");
             }
-
             return tem;
         }
     }

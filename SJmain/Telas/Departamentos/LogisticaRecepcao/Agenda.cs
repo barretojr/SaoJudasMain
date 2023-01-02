@@ -36,7 +36,6 @@ namespace SJmain.Telas.Departamentos.Logistica
                 MessageBox.Show("Error");
             }
         }
-       
 
         private void btnSalvar_Click(object sender, System.EventArgs e)
         {
