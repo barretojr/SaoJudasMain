@@ -371,9 +371,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="SJBD.mdf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
     <Content Include="Telas\Inicial\icone.ico" />
     <Content Include="Telas\Inicial\wallpaper.png" />
   </ItemGroup>
