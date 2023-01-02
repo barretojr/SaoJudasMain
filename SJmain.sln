@@ -5,6 +5,8 @@ VisualStudioVersion = 17.3.32929.385
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SJmain", "SJmain\SJmain.csproj", "{DA269C17-CD04-4842-8CE9-D5F4FF5EEA1A}"
 EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "InstaladorSJ", "Instalador\InstaladorSJ\InstaladorSJ.vdproj", "{8118363E-9C8A-474B-98DB-D86F19B5C3A3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,8 @@ Global
 		{DA269C17-CD04-4842-8CE9-D5F4FF5EEA1A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DA269C17-CD04-4842-8CE9-D5F4FF5EEA1A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DA269C17-CD04-4842-8CE9-D5F4FF5EEA1A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8118363E-9C8A-474B-98DB-D86F19B5C3A3}.Debug|Any CPU.ActiveCfg = Debug
+		{8118363E-9C8A-474B-98DB-D86F19B5C3A3}.Release|Any CPU.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
