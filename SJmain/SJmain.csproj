@@ -378,9 +378,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="icone.ico" />
-    <Content Include="SJBD.mdf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
     <Content Include="Telas\Inicial\icone.ico" />
     <Content Include="Telas\Inicial\wallpaper.png" />
   </ItemGroup>
