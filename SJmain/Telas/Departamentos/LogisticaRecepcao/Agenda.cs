@@ -56,7 +56,7 @@ namespace SJmain.Telas.Departamentos.Logistica
                     try
                     {
                         cmd.Connection = connect.Conectar();
-                        cmd.CommandText = "INSERT INTO Agenda (nome, email, endereco, contato)" + "" +
+                        cmd.CommandText = "INSERT INTO Agenda (nome, email, endereco, contato) " +
                             "VALUES(@nome, @email, @endereco, @contato)";
                         cmd.Parameters.AddWithValue("@nome", txtNome.Text);
                         cmd.Parameters.AddWithValue("@email", txtEmail.Text);
