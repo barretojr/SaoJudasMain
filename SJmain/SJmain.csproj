@@ -122,7 +122,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Banco de Dados\Senha.cs" />
+    <Compile Include="Banco de Dados\Hash.cs" />
     <Compile Include="Classess\AgendaClass.cs" />
     <Compile Include="Classess\Verifica.cs" />
     <Compile Include="Classess\Livros.cs" />

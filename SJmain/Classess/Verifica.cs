@@ -41,5 +41,16 @@ namespace SJmain.Classess
             
             return tem;
         }
+        public bool VerificaUsuario (string usuario)
+        {
+            cmd.Connection=conec.Conectar();
+            cmd.Parameters.AddWithValue("@user", usuario);
+
+            if (dr.HasRows)
+            {
+                tem = true;
+            }
+            return tem;
+        }
     }
 }
