@@ -1,7 +1,5 @@
 ﻿using SJmain.Classes;
 using System.Data.SqlClient;
-using System.Security.Cryptography;
-using System.Security.Policy;
 using System.Windows.Forms;
 
 namespace SJmain.Modelo
@@ -64,7 +62,7 @@ namespace SJmain.Modelo
         }
         public string cadastrar(int idderp, string nomeusu, string email, string cpf, string senha, string confSenha, string telefone)
         {
-            
+
 
             tem = false;
             if (senha.Equals(confSenha))

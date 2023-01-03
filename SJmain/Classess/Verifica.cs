@@ -1,10 +1,5 @@
 ﻿using SJmain.Classes;
-using System;
-using System.Collections.Generic;
 using System.Data.SqlClient;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace SJmain.Classess
 {
@@ -28,7 +23,7 @@ namespace SJmain.Classess
 
             return tem;
         }
-        public bool VerificaModelo (string modelo)
+        public bool VerificaModelo(string modelo)
         {
             cmd.Connection = conec.Conectar();
             cmd.Parameters.AddWithValue("@mode", modelo);
@@ -37,13 +32,13 @@ namespace SJmain.Classess
             {
                 tem = true;
             }
-            
-            
+
+
             return tem;
         }
-        public bool VerificaUsuario (string usuario)
+        public bool VerificaUsuario(string usuario)
         {
-            cmd.Connection=conec.Conectar();
+            cmd.Connection = conec.Conectar();
             cmd.Parameters.AddWithValue("@user", usuario);
 
             if (dr.HasRows)

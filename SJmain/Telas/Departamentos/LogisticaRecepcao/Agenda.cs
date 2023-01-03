@@ -1,7 +1,6 @@
 ﻿using SJmain.Classes;
 using SJmain.Classess;
 using System;
-using System.ComponentModel;
 using System.Data;
 using System.Data.SqlClient;
 using System.Windows.Forms;
@@ -23,7 +22,7 @@ namespace SJmain.Telas.Departamentos.Logistica
             Conexao connection = new Conexao();
             SqlCommand cmd = new SqlCommand(strSQL);
             cmd.Connection = connection.Conectar();
-            
+
             try
             {
                 SqlDataAdapter dataAdapter = new SqlDataAdapter(cmd);
@@ -107,8 +106,8 @@ namespace SJmain.Telas.Departamentos.Logistica
 
         private void btnAlterar_Click(object sender, EventArgs e)
         {
-           
-           if(txtNome.Text != "" && txtContato.Text != "" && txtEmail.Text != "" && txtEndereco.Text != "")
+
+            if (txtNome.Text != "" && txtContato.Text != "" && txtEmail.Text != "" && txtEndereco.Text != "")
             {
                 try
                 {
@@ -130,22 +129,23 @@ namespace SJmain.Telas.Departamentos.Logistica
                     LimparRegistro();
 
                     contatosGridView.Refresh();
-                    
-                } catch(Exception error)
+
+                }
+                catch (Exception error)
                 {
                     MessageBox.Show(error.Message);
                 }
             }
-           else
+            else
             {
                 MessageBox.Show("Por favor, selecione um registro para alterar.");
             }
-   
+
         }
 
         private void btnDeletar_Click(object sender, EventArgs e)
         {
-            if(RecordID != 0)
+            if (RecordID != 0)
             {
                 cmd.Connection = connect.Conectar();
                 cmd.CommandText = "DELETE Agenda WHERE idcontato = @id";
@@ -157,7 +157,8 @@ namespace SJmain.Telas.Departamentos.Logistica
                 ListarContatos();
                 LimparRegistro();
                 cmd.Parameters.Clear();
-            } else
+            }
+            else
             {
                 MessageBox.Show("Selecione um contato para deletar");
             }
