@@ -124,6 +124,7 @@
   <ItemGroup>
     <Compile Include="Banco de Dados\Senha.cs" />
     <Compile Include="Classess\AgendaClass.cs" />
+    <Compile Include="Classess\Verifica.cs" />
     <Compile Include="Classess\Livros.cs" />
     <Compile Include="Classess\Patrimonio.cs" />
     <Compile Include="Banco de Dados\Conexao.cs" />

@@ -72,7 +72,7 @@
             this.ajudaToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(800, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(1139, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -250,21 +250,21 @@
             // agendaToolStripMenuItem
             // 
             this.agendaToolStripMenuItem.Name = "agendaToolStripMenuItem";
-            this.agendaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.agendaToolStripMenuItem.Size = new System.Drawing.Size(121, 22);
             this.agendaToolStripMenuItem.Text = "Agenda";
             this.agendaToolStripMenuItem.Click += new System.EventHandler(this.agendaToolStripMenuItem_Click_1);
             // 
             // itinerarioToolStripMenuItem
             // 
             this.itinerarioToolStripMenuItem.Name = "itinerarioToolStripMenuItem";
-            this.itinerarioToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.itinerarioToolStripMenuItem.Size = new System.Drawing.Size(121, 22);
             this.itinerarioToolStripMenuItem.Text = "Itinerario";
             this.itinerarioToolStripMenuItem.Click += new System.EventHandler(this.itinerarioToolStripMenuItem_Click_1);
             // 
             // ligaçõesToolStripMenuItem
             // 
             this.ligaçõesToolStripMenuItem.Name = "ligaçõesToolStripMenuItem";
-            this.ligaçõesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.ligaçõesToolStripMenuItem.Size = new System.Drawing.Size(121, 22);
             this.ligaçõesToolStripMenuItem.Text = "Ligações";
             this.ligaçõesToolStripMenuItem.Click += new System.EventHandler(this.ligaçõesToolStripMenuItem_Click_1);
             // 
@@ -313,7 +313,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1139, 602);
             this.Controls.Add(this.menuStrip1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.IsMdiContainer = true;
