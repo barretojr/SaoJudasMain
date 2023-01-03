@@ -47,25 +47,32 @@ namespace SJmain.Telas.Departamentos.Logistica
             }
             else
             {
-                try
+                if (txtNome.Text == "" || txtEmail.Text == "" || txtContato.Text == "" || txtEndereco.Text == "")
                 {
-                    cmd.Connection = connect.Conectar();
-                    cmd.CommandText = "INSERT INTO Agenda (nome, email, endereco, contato)" + "" +
-                        "VALUES(@nome, @email, @endereco, @contato)";
-                    cmd.Parameters.AddWithValue("@nome", txtNome.Text);
-                    cmd.Parameters.AddWithValue("@email", txtEmail.Text);
-                    cmd.Parameters.AddWithValue("@endereco", txtEndereco.Text);
-                    cmd.Parameters.AddWithValue("@contato", txtContato.Text);
-
-                    cmd.ExecuteNonQuery();
-
-                    MessageBox.Show("Contato salvo");
-
-                    connect.Desconectar();
+                    MessageBox.Show("Não deixe nenhum campo em branco.");
                 }
-                catch (SqlException)
+                else
                 {
-                    MessageBox.Show("Alguma coisa deu errado. Tente novamente");
+                    try
+                    {
+                        cmd.Connection = connect.Conectar();
+                        cmd.CommandText = "INSERT INTO Agenda (nome, email, endereco, contato)" + "" +
+                            "VALUES(@nome, @email, @endereco, @contato)";
+                        cmd.Parameters.AddWithValue("@nome", txtNome.Text);
+                        cmd.Parameters.AddWithValue("@email", txtEmail.Text);
+                        cmd.Parameters.AddWithValue("@endereco", txtEndereco.Text);
+                        cmd.Parameters.AddWithValue("@contato", txtContato.Text);
+
+                        cmd.ExecuteNonQuery();
+
+                        MessageBox.Show("Contato salvo");
+
+                        connect.Desconectar();
+                    }
+                    catch (SqlException)
+                    {
+                        MessageBox.Show("Alguma coisa deu errado. Tente novamente");
+                    }
                 }
             }
         }
@@ -80,6 +87,8 @@ namespace SJmain.Telas.Departamentos.Logistica
             txtEmail.Text = String.Empty;
             txtEndereco.Text = String.Empty;
             txtContato.Text = String.Empty;
+
+            contatosGridView.Refresh();
         }
 
         private void Agenda_Load(object sender, EventArgs e)
@@ -90,7 +99,6 @@ namespace SJmain.Telas.Departamentos.Logistica
         private void contatosGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             RecordID = Convert.ToInt32(contatosGridView.Rows[e.RowIndex].Cells[0].Value.ToString());
-            txtId.Text = contatosGridView.Rows[e.RowIndex].Cells[0].Value.ToString();
             txtNome.Text = contatosGridView.Rows[e.RowIndex].Cells[1].Value.ToString();
             txtContato.Text = contatosGridView.Rows[e.RowIndex].Cells[4].Value.ToString();
             txtEmail.Text = contatosGridView.Rows[e.RowIndex].Cells[2].Value.ToString();
@@ -106,7 +114,7 @@ namespace SJmain.Telas.Departamentos.Logistica
                 {
                     cmd.Connection = connect.Conectar();
                     cmd.CommandText = "UPDATE Agenda SET nome=@nome, email=@email, endereco=@endereco, contato=@contato WHERE idcontato=@id";
-                    cmd.Parameters.AddWithValue("@id", txtId.Text);
+                    cmd.Parameters.AddWithValue("@id", RecordID);
                     cmd.Parameters.AddWithValue("@nome", txtNome.Text);
                     cmd.Parameters.AddWithValue("@contato", txtContato.Text);
                     cmd.Parameters.AddWithValue("@email", txtEmail.Text);
@@ -114,22 +122,45 @@ namespace SJmain.Telas.Departamentos.Logistica
                     cmd.ExecuteNonQuery();
 
                     MessageBox.Show("Registro atualizado com sucesso.");
+                    cmd.Parameters.Clear();
 
                     connect.Desconectar();
 
                     ListarContatos();
                     LimparRegistro();
+
+                    contatosGridView.Refresh();
+                    
                 } catch(Exception error)
                 {
                     MessageBox.Show(error.Message);
                 }
-                
             }
            else
             {
                 MessageBox.Show("Por favor, selecione um registro para alterar.");
             }
    
+        }
+
+        private void btnDeletar_Click(object sender, EventArgs e)
+        {
+            if(RecordID != 0)
+            {
+                cmd.Connection = connect.Conectar();
+                cmd.CommandText = "DELETE Agenda WHERE idcontato = @id";
+                cmd.Parameters.AddWithValue("@id", RecordID);
+                cmd.ExecuteNonQuery();
+                connect.Desconectar();
+
+                MessageBox.Show("Contato deletado com sucesso.");
+                ListarContatos();
+                LimparRegistro();
+                cmd.Parameters.Clear();
+            } else
+            {
+                MessageBox.Show("Selecione um contato para deletar");
+            }
         }
     }
 }
