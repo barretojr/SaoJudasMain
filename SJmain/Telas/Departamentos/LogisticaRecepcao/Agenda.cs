@@ -90,27 +90,27 @@ namespace SJmain.Telas.Departamentos.Logistica
         private void contatosGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             RecordID = Convert.ToInt32(contatosGridView.Rows[e.RowIndex].Cells[0].Value.ToString());
+            txtId.Text = contatosGridView.Rows[e.RowIndex].Cells[0].Value.ToString();
             txtNome.Text = contatosGridView.Rows[e.RowIndex].Cells[1].Value.ToString();
-            txtContato.Text = contatosGridView.Rows[e.RowIndex].Cells[2].Value.ToString();
-            txtEmail.Text = contatosGridView.Rows[e.RowIndex].Cells[3].Value.ToString();
-            txtEndereco.Text = contatosGridView.Rows[e.RowIndex].Cells[4].Value.ToString();
+            txtContato.Text = contatosGridView.Rows[e.RowIndex].Cells[4].Value.ToString();
+            txtEmail.Text = contatosGridView.Rows[e.RowIndex].Cells[2].Value.ToString();
+            txtEndereco.Text = contatosGridView.Rows[e.RowIndex].Cells[3].Value.ToString();
         }
 
         private void btnAlterar_Click(object sender, EventArgs e)
         {
+           
            if(txtNome.Text != "" && txtContato.Text != "" && txtEmail.Text != "" && txtEndereco.Text != "")
             {
                 try
                 {
                     cmd.Connection = connect.Conectar();
-
-                    cmd = new SqlCommand("UPDATE Agenda SET nome=@nome, email=@email, endereco=@endereco, contato=@contato WHERE idcontato=@id", connect.Conectar());
-                    cmd.Parameters.AddWithValue("@id", RecordID);
+                    cmd.CommandText = "UPDATE Agenda SET nome=@nome, email=@email, endereco=@endereco, contato=@contato WHERE idcontato=@id";
+                    cmd.Parameters.AddWithValue("@id", txtId.Text);
                     cmd.Parameters.AddWithValue("@nome", txtNome.Text);
                     cmd.Parameters.AddWithValue("@contato", txtContato.Text);
                     cmd.Parameters.AddWithValue("@email", txtEmail.Text);
                     cmd.Parameters.AddWithValue("@endereco", txtEndereco.Text);
-
                     cmd.ExecuteNonQuery();
 
                     MessageBox.Show("Registro atualizado com sucesso.");

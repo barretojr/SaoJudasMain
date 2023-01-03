@@ -46,6 +46,8 @@
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
             this.btnAlterar = new System.Windows.Forms.Button();
+            this.txtId = new System.Windows.Forms.TextBox();
+            this.idcontato = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.contatosGridView)).BeginInit();
             this.statusStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -200,11 +202,32 @@
             this.btnAlterar.UseVisualStyleBackColor = true;
             this.btnAlterar.Click += new System.EventHandler(this.btnAlterar_Click);
             // 
+            // txtId
+            // 
+            this.txtId.Location = new System.Drawing.Point(120, 25);
+            this.txtId.Name = "txtId";
+            this.txtId.ReadOnly = true;
+            this.txtId.Size = new System.Drawing.Size(100, 20);
+            this.txtId.TabIndex = 18;
+            this.txtId.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // idcontato
+            // 
+            this.idcontato.AutoSize = true;
+            this.idcontato.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.idcontato.Location = new System.Drawing.Point(78, 27);
+            this.idcontato.Name = "idcontato";
+            this.idcontato.Size = new System.Drawing.Size(36, 18);
+            this.idcontato.TabIndex = 19;
+            this.idcontato.Text = "ID :";
+            // 
             // Agenda
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.idcontato);
+            this.Controls.Add(this.txtId);
             this.Controls.Add(this.btnAlterar);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.contatosGridView);
@@ -252,5 +275,7 @@
         private System.Windows.Forms.StatusStrip statusStrip1;
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel1;
         private System.Windows.Forms.Button btnAlterar;
+        private System.Windows.Forms.TextBox txtId;
+        private System.Windows.Forms.Label idcontato;
     }
 }
