@@ -42,10 +42,11 @@
             this.btnLimpar = new System.Windows.Forms.Button();
             this.txtPesquisar = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.tss1 = new System.Windows.Forms.DataGridView();
+            this.contatosGridView = new System.Windows.Forms.DataGridView();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
-            ((System.ComponentModel.ISupportInitialize)(this.tss1)).BeginInit();
+            this.btnAlterar = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.contatosGridView)).BeginInit();
             this.statusStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -164,13 +165,14 @@
             this.label6.TabIndex = 14;
             this.label6.Text = "Pesquisar :";
             // 
-            // tss1
+            // contatosGridView
             // 
-            this.tss1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.tss1.Location = new System.Drawing.Point(354, 81);
-            this.tss1.Name = "tss1";
-            this.tss1.Size = new System.Drawing.Size(434, 206);
-            this.tss1.TabIndex = 15;
+            this.contatosGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.contatosGridView.Location = new System.Drawing.Point(354, 81);
+            this.contatosGridView.Name = "contatosGridView";
+            this.contatosGridView.Size = new System.Drawing.Size(434, 206);
+            this.contatosGridView.TabIndex = 15;
+            this.contatosGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.contatosGridView_CellContentClick);
             // 
             // statusStrip1
             // 
@@ -188,13 +190,24 @@
             this.toolStripStatusLabel1.Size = new System.Drawing.Size(16, 17);
             this.toolStripStatusLabel1.Text = "...";
             // 
+            // btnAlterar
+            // 
+            this.btnAlterar.Location = new System.Drawing.Point(28, 223);
+            this.btnAlterar.Name = "btnAlterar";
+            this.btnAlterar.Size = new System.Drawing.Size(70, 23);
+            this.btnAlterar.TabIndex = 17;
+            this.btnAlterar.Text = "Alterar";
+            this.btnAlterar.UseVisualStyleBackColor = true;
+            this.btnAlterar.Click += new System.EventHandler(this.btnAlterar_Click);
+            // 
             // Agenda
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnAlterar);
             this.Controls.Add(this.statusStrip1);
-            this.Controls.Add(this.tss1);
+            this.Controls.Add(this.contatosGridView);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.txtPesquisar);
             this.Controls.Add(this.btnLimpar);
@@ -211,7 +224,8 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Agenda";
             this.Text = "Agenda";
-            ((System.ComponentModel.ISupportInitialize)(this.tss1)).EndInit();
+            this.Load += new System.EventHandler(this.Agenda_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.contatosGridView)).EndInit();
             this.statusStrip1.ResumeLayout(false);
             this.statusStrip1.PerformLayout();
             this.ResumeLayout(false);
@@ -234,8 +248,9 @@
         private System.Windows.Forms.Button btnLimpar;
         private System.Windows.Forms.TextBox txtPesquisar;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.DataGridView tss1;
+        private System.Windows.Forms.DataGridView contatosGridView;
         private System.Windows.Forms.StatusStrip statusStrip1;
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel1;
+        private System.Windows.Forms.Button btnAlterar;
     }
 }
