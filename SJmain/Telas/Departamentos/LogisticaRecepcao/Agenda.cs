@@ -105,7 +105,7 @@ namespace SJmain.Telas.Departamentos.Logistica
                     cmd.Connection = connect.Conectar();
 
                     cmd = new SqlCommand("UPDATE Agenda SET nome=@nome, email=@email, endereco=@endereco, contato=@contato WHERE idcontato=@id", connect.Conectar());
-                    cmd.Parameters.AddWithValue("@id", (RecordID);
+                    cmd.Parameters.AddWithValue("@id", RecordID);
                     cmd.Parameters.AddWithValue("@nome", txtNome.Text);
                     cmd.Parameters.AddWithValue("@contato", txtContato.Text);
                     cmd.Parameters.AddWithValue("@email", txtEmail.Text);
