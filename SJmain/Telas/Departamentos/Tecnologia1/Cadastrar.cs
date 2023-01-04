@@ -1,5 +1,7 @@
-﻿using SJmain.Modelo;
+﻿using SJmain.Classes;
+using SJmain.Modelo;
 using System;
+using System.Data.SqlClient;
 using System.Windows.Forms;
 
 namespace SJmain.Telas.Cadastro
@@ -10,6 +12,10 @@ namespace SJmain.Telas.Cadastro
         {
             InitializeComponent();
         }
+        Conexao con = new Conexao();
+        SqlCommand cmd = new SqlCommand();
+        SqlDataReader dr;
+
         private bool Validarform()
         {
             if (txtUsuario.Text == "")
@@ -112,6 +118,26 @@ namespace SJmain.Telas.Cadastro
         private void Cadastrar_Load(object sender, EventArgs e)
         {
             rdbContabil.Checked = true;
+        }
+        
+
+        private void btnAlt_Click(object sender, EventArgs e)
+        {
+            #region ifradiobutton
+            int dept = 0;
+            if (rbContabil.Checked) { dept = 2; }
+            if (rbFisc.Checked) { dept = 3; }
+            if (rbLog.Checked) { dept = 4; }
+            if (rbTec.Checked) { dept = 5; }
+            if (rbPess.Checked) { dept = 6; }
+            if (rbSocio.Checked) { dept = 7; }
+            #endregion
+
+
+        }
+        private void AlterarCad (string cad)
+        {
+
         }
     }
 }
