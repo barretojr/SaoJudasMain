@@ -14,37 +14,37 @@ namespace SJmain.Telas.Cadastro
         {
             if (txtUsuario.Text == "")
             {
-                MessageBox.Show("Informe o Nome de Usuario");
+                epUsuario.SetError(txtUsuario, "Informe um Usuário");
                 txtUsuario.Focus();
                 return false;
             }
             else if (txtSenha.Text == "")
             {
-                MessageBox.Show("Informe a Senha do Usuario");
+                epSenha.SetError(txtSenha, "Informe a Senha do Usuario");
                 txtSenha.Focus();
                 return false;
             }
             else if (txtConfirmar.Text == "")
             {
-                MessageBox.Show("Confirme a Senha do Usuario");
+                epConfSenha.SetError(txtConfirmar, "Confirme a Senha do Usuario");
                 txtConfirmar.Focus();
                 return false;
             }
             else if (txtNome.Text == "")
             {
-                MessageBox.Show("Informe o Nome");
+                epNome.SetError(txtNome, "Informe o Nome");
                 txtNome.Focus();
                 return false;
             }
             else if (mskCPF.Text == "")
             {
-                MessageBox.Show("Informe o CPF do Usuario");
+                epCPF.SetError(mskCPF, "Informe o CPF do Usuario");
                 txtSenha.Focus();
                 return false;
             }
             else if (txtEmail.Text == "")
             {
-                MessageBox.Show("Informe o Email do Usuario");
+                epEmail.SetError(txtEmail, "Informe o Email do Usuario");
                 txtEmail.Focus();
                 return false;
             }

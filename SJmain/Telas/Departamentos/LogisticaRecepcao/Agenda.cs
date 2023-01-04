@@ -180,7 +180,7 @@ namespace SJmain.Telas.Departamentos.Logistica
         {
             ListarContatos();
             contatosGridView.Refresh();
-            
+
         }
     }
 }

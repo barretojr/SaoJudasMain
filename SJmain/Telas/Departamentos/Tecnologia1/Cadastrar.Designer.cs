@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Cadastrar));
             this.btnVerificar = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
@@ -54,7 +55,19 @@
             this.txtEmail = new System.Windows.Forms.TextBox();
             this.txtConfirmar = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
+            this.epUsuario = new System.Windows.Forms.ErrorProvider(this.components);
+            this.epSenha = new System.Windows.Forms.ErrorProvider(this.components);
+            this.epConfSenha = new System.Windows.Forms.ErrorProvider(this.components);
+            this.epNome = new System.Windows.Forms.ErrorProvider(this.components);
+            this.epCPF = new System.Windows.Forms.ErrorProvider(this.components);
+            this.epEmail = new System.Windows.Forms.ErrorProvider(this.components);
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.epUsuario)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.epSenha)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.epConfSenha)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.epNome)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.epCPF)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.epEmail)).BeginInit();
             this.SuspendLayout();
             // 
             // btnVerificar
@@ -113,7 +126,7 @@
             // 
             // btnConfirmar
             // 
-            this.btnConfirmar.Location = new System.Drawing.Point(402, 204);
+            this.btnConfirmar.Location = new System.Drawing.Point(404, 204);
             this.btnConfirmar.Name = "btnConfirmar";
             this.btnConfirmar.Size = new System.Drawing.Size(75, 23);
             this.btnConfirmar.TabIndex = 11;
@@ -123,7 +136,7 @@
             // 
             // btnSalvar
             // 
-            this.btnSalvar.Location = new System.Drawing.Point(320, 204);
+            this.btnSalvar.Location = new System.Drawing.Point(322, 204);
             this.btnSalvar.Name = "btnSalvar";
             this.btnSalvar.Size = new System.Drawing.Size(75, 23);
             this.btnSalvar.TabIndex = 12;
@@ -149,7 +162,7 @@
             this.groupBox1.Controls.Add(this.rdbLogistica);
             this.groupBox1.Controls.Add(this.rdbFiscal);
             this.groupBox1.Controls.Add(this.rdbContabil);
-            this.groupBox1.Location = new System.Drawing.Point(336, 28);
+            this.groupBox1.Location = new System.Drawing.Point(338, 28);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(141, 159);
             this.groupBox1.TabIndex = 14;
@@ -243,7 +256,7 @@
             this.txtSenha.Location = new System.Drawing.Point(67, 51);
             this.txtSenha.Name = "txtSenha";
             this.txtSenha.PasswordChar = '*';
-            this.txtSenha.Size = new System.Drawing.Size(158, 20);
+            this.txtSenha.Size = new System.Drawing.Size(144, 20);
             this.txtSenha.TabIndex = 1;
             // 
             // txtNome
@@ -283,7 +296,7 @@
             this.txtConfirmar.Location = new System.Drawing.Point(67, 77);
             this.txtConfirmar.Name = "txtConfirmar";
             this.txtConfirmar.PasswordChar = '*';
-            this.txtConfirmar.Size = new System.Drawing.Size(158, 20);
+            this.txtConfirmar.Size = new System.Drawing.Size(144, 20);
             this.txtConfirmar.TabIndex = 2;
             // 
             // label7
@@ -295,11 +308,35 @@
             this.label7.TabIndex = 23;
             this.label7.Text = "Confirmar:";
             // 
+            // epUsuario
+            // 
+            this.epUsuario.ContainerControl = this;
+            // 
+            // epSenha
+            // 
+            this.epSenha.ContainerControl = this;
+            // 
+            // epConfSenha
+            // 
+            this.epConfSenha.ContainerControl = this;
+            // 
+            // epNome
+            // 
+            this.epNome.ContainerControl = this;
+            // 
+            // epCPF
+            // 
+            this.epCPF.ContainerControl = this;
+            // 
+            // epEmail
+            // 
+            this.epEmail.ContainerControl = this;
+            // 
             // Cadastrar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(486, 238);
+            this.ClientSize = new System.Drawing.Size(498, 241);
             this.Controls.Add(this.txtEmail);
             this.Controls.Add(this.mskTelefone);
             this.Controls.Add(this.mskCPF);
@@ -328,6 +365,12 @@
             this.Load += new System.EventHandler(this.Cadastrar_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.epUsuario)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.epSenha)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.epConfSenha)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.epNome)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.epCPF)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.epEmail)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -360,5 +403,11 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.RadioButton rdbPessoal;
         private System.Windows.Forms.RadioButton rdbSocietario;
+        private System.Windows.Forms.ErrorProvider epUsuario;
+        private System.Windows.Forms.ErrorProvider epSenha;
+        private System.Windows.Forms.ErrorProvider epConfSenha;
+        private System.Windows.Forms.ErrorProvider epNome;
+        private System.Windows.Forms.ErrorProvider epCPF;
+        private System.Windows.Forms.ErrorProvider epEmail;
     }
 }

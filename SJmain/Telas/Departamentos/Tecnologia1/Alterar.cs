@@ -5,6 +5,7 @@ namespace SJmain.Telas.Cadastro
 {
     public partial class Alterar : Form
     {
+
         public Alterar()
         {
             InitializeComponent();
@@ -73,6 +74,11 @@ namespace SJmain.Telas.Cadastro
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void btnAlt_Click(object sender, EventArgs e)
         {
 
         }

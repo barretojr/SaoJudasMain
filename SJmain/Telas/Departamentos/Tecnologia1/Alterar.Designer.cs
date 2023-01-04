@@ -49,9 +49,10 @@
             this.rdbLogistica = new System.Windows.Forms.RadioButton();
             this.rdbFiscal = new System.Windows.Forms.RadioButton();
             this.rdbContabil = new System.Windows.Forms.RadioButton();
-            this.btnSalvar = new System.Windows.Forms.Button();
-            this.btnAlterar = new System.Windows.Forms.Button();
             this.btnSair = new System.Windows.Forms.Button();
+            this.btnConfirmar = new System.Windows.Forms.Button();
+            this.btnAlt = new System.Windows.Forms.Button();
+            this.btnExcluir = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.gbSenha.SuspendLayout();
@@ -267,28 +268,9 @@
             this.rdbContabil.Text = "Contabilidade";
             this.rdbContabil.UseVisualStyleBackColor = true;
             // 
-            // btnSalvar
-            // 
-            this.btnSalvar.Location = new System.Drawing.Point(423, 415);
-            this.btnSalvar.Name = "btnSalvar";
-            this.btnSalvar.Size = new System.Drawing.Size(75, 23);
-            this.btnSalvar.TabIndex = 5;
-            this.btnSalvar.Text = "Salvar";
-            this.btnSalvar.UseVisualStyleBackColor = true;
-            this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click);
-            // 
-            // btnAlterar
-            // 
-            this.btnAlterar.Location = new System.Drawing.Point(342, 415);
-            this.btnAlterar.Name = "btnAlterar";
-            this.btnAlterar.Size = new System.Drawing.Size(75, 23);
-            this.btnAlterar.TabIndex = 6;
-            this.btnAlterar.Text = "Alterar";
-            this.btnAlterar.UseVisualStyleBackColor = true;
-            // 
             // btnSair
             // 
-            this.btnSair.Location = new System.Drawing.Point(12, 415);
+            this.btnSair.Location = new System.Drawing.Point(12, 342);
             this.btnSair.Name = "btnSair";
             this.btnSair.Size = new System.Drawing.Size(75, 23);
             this.btnSair.TabIndex = 7;
@@ -296,19 +278,51 @@
             this.btnSair.UseVisualStyleBackColor = true;
             this.btnSair.Click += new System.EventHandler(this.btnSair_Click);
             // 
+            // btnConfirmar
+            // 
+            this.btnConfirmar.Location = new System.Drawing.Point(730, 342);
+            this.btnConfirmar.Name = "btnConfirmar";
+            this.btnConfirmar.Size = new System.Drawing.Size(75, 23);
+            this.btnConfirmar.TabIndex = 8;
+            this.btnConfirmar.Text = "Confirmar";
+            this.btnConfirmar.UseVisualStyleBackColor = true;
+            // 
+            // btnAlt
+            // 
+            this.btnAlt.Location = new System.Drawing.Point(649, 342);
+            this.btnAlt.Name = "btnAlt";
+            this.btnAlt.Size = new System.Drawing.Size(75, 23);
+            this.btnAlt.TabIndex = 9;
+            this.btnAlt.Text = "Alterar";
+            this.btnAlt.UseVisualStyleBackColor = true;
+            this.btnAlt.Click += new System.EventHandler(this.btnAlt_Click);
+            // 
+            // btnExcluir
+            // 
+            this.btnExcluir.Location = new System.Drawing.Point(568, 342);
+            this.btnExcluir.Name = "btnExcluir";
+            this.btnExcluir.Size = new System.Drawing.Size(75, 23);
+            this.btnExcluir.TabIndex = 10;
+            this.btnExcluir.Text = "Excluir";
+            this.btnExcluir.UseVisualStyleBackColor = true;
+            // 
             // Alterar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(513, 450);
+            this.ClientSize = new System.Drawing.Size(814, 373);
+            this.Controls.Add(this.btnExcluir);
+            this.Controls.Add(this.btnAlt);
+            this.Controls.Add(this.btnConfirmar);
             this.Controls.Add(this.btnSair);
-            this.Controls.Add(this.btnAlterar);
-            this.Controls.Add(this.btnSalvar);
             this.Controls.Add(this.gbDepart);
             this.Controls.Add(this.gbSenha);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.groupBox1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "Alterar";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Alterar";
@@ -346,8 +360,9 @@
         private System.Windows.Forms.RadioButton rdbFiscal;
         private System.Windows.Forms.RadioButton rdbContabil;
         private System.Windows.Forms.CheckBox ckbCoord;
-        private System.Windows.Forms.Button btnSalvar;
-        private System.Windows.Forms.Button btnAlterar;
         private System.Windows.Forms.Button btnSair;
+        private System.Windows.Forms.Button btnConfirmar;
+        private System.Windows.Forms.Button btnAlt;
+        private System.Windows.Forms.Button btnExcluir;
     }
 }

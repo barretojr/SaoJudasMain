@@ -1,7 +1,6 @@
 ﻿using SJmain.Modelo;
 using SJmain.Telas.Departamentos;
 using SJmain.Telas.Departamentos.Log;
-using SJmain.Telas.Departamentos.Logistica;
 using System;
 using System.Linq;
 using System.Windows.Forms;
@@ -42,8 +41,8 @@ namespace SJmain.Telas
                     else MessageBox.Show("Você não tem permissão para acessar", "Permissão", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
-            
-            
+
+
 
 
         }
@@ -55,7 +54,7 @@ namespace SJmain.Telas
                 Application.OpenForms.OfType<Fiscal>().First().Focus();
             }
             else
-            {                
+            {
                 int depart = 5;
                 Controle controle = new Controle();
                 controle.acessarform(Properties.Settings.Default.usuario, depart);

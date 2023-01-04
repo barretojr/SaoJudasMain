@@ -1,6 +1,7 @@
 ﻿using SJmain.Modelo;
 using SJmain.Telas;
 using System;
+using System.Linq;
 using System.Windows.Forms;
 
 namespace SJmain
@@ -92,6 +93,22 @@ namespace SJmain
             if (Properties.Settings.Default.senha != null)
                 SenhaLogin.Text = Properties.Settings.Default.senha;
             LembrarUsuario.Checked = true;
+        }
+        private void testOpen()
+        {
+            if (Application.OpenForms.OfType<SistemaPrincipal>().Count() < 0)
+            {
+                Application.OpenForms.OfType<SistemaPrincipal>().First().Focus();
+            }
+            else
+            {
+                //Application.OpenForms.OfType<frmLogin>().First().Close();
+            }
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            testOpen();
         }
     }
 }
