@@ -43,12 +43,14 @@ namespace SJmain.Telas.Departamentos.Logistica
             if (AC.tem == true)
             {
                 MessageBox.Show("Contato já cadastrado", "Erro");
+                tss1.Text = "Contato ja cadastrado";
             }
             else
             {
                 if (txtNome.Text == "" || txtEmail.Text == "" || txtContato.Text == "" || txtEndereco.Text == "")
                 {
                     MessageBox.Show("Não deixe nenhum campo em branco.");
+                    tss1.Text = "Campo em Branco";
                 }
                 else
                 {
@@ -61,11 +63,13 @@ namespace SJmain.Telas.Departamentos.Logistica
                         cmd.Parameters.AddWithValue("@email", txtEmail.Text);
                         cmd.Parameters.AddWithValue("@endereco", txtEndereco.Text);
                         cmd.Parameters.AddWithValue("@contato", txtContato.Text);
+                        tss1.Text = " Cadastrado com sucesso";
 
                         cmd.ExecuteNonQuery();
 
                         MessageBox.Show("Contato salvo");
-
+                        ListarContatos();
+                        contatosGridView.Refresh();
                         connect.Desconectar();
                     }
                     catch (SqlException)
@@ -78,6 +82,8 @@ namespace SJmain.Telas.Departamentos.Logistica
         private void btnLimpar_Click(object sender, EventArgs e)
         {
             LimparRegistro();
+            cmd.Parameters.Clear();
+            tss1.Text = "Parametros Limpos";
         }
 
         private void LimparRegistro()
@@ -86,13 +92,14 @@ namespace SJmain.Telas.Departamentos.Logistica
             txtEmail.Text = String.Empty;
             txtEndereco.Text = String.Empty;
             txtContato.Text = String.Empty;
-
+            ListarContatos();
             contatosGridView.Refresh();
         }
 
         private void Agenda_Load(object sender, EventArgs e)
         {
             ListarContatos();
+            tss1.Text = "Pronto...";
         }
 
         private void contatosGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -126,9 +133,12 @@ namespace SJmain.Telas.Departamentos.Logistica
                     connect.Desconectar();
 
                     ListarContatos();
+                    contatosGridView.Refresh();
                     LimparRegistro();
 
                     contatosGridView.Refresh();
+                    tss1.Text = "Contato atualizado";
+
 
                 }
                 catch (Exception error)
@@ -155,13 +165,22 @@ namespace SJmain.Telas.Departamentos.Logistica
 
                 MessageBox.Show("Contato deletado com sucesso.");
                 ListarContatos();
+                contatosGridView.Refresh();
                 LimparRegistro();
                 cmd.Parameters.Clear();
+                tss1.Text = "Contato deletado";
             }
             else
             {
                 MessageBox.Show("Selecione um contato para deletar");
             }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            ListarContatos();
+            contatosGridView.Refresh();
+            
         }
     }
 }

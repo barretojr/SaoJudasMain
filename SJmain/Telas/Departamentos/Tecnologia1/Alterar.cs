@@ -71,5 +71,10 @@ namespace SJmain.Telas.Cadastro
                 MessageBox.Show("Senhas não coincidem");
             }
         }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

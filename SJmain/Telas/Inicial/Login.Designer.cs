@@ -90,6 +90,7 @@
             this.LembrarSenha.Name = "LembrarSenha";
             this.LembrarSenha.Size = new System.Drawing.Size(98, 17);
             this.LembrarSenha.TabIndex = 1;
+            this.LembrarSenha.TabStop = false;
             this.LembrarSenha.Text = "Lembrar Senha";
             this.LembrarSenha.UseVisualStyleBackColor = true;
             // 
@@ -124,6 +125,7 @@
             this.BotaoSair.Name = "BotaoSair";
             this.BotaoSair.Size = new System.Drawing.Size(75, 23);
             this.BotaoSair.TabIndex = 3;
+            this.BotaoSair.TabStop = false;
             this.BotaoSair.Text = "Sair";
             this.BotaoSair.UseVisualStyleBackColor = true;
             this.BotaoSair.Click += new System.EventHandler(this.BotaoSair_Click);

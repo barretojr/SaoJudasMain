@@ -1,5 +1,6 @@
 ﻿using SJmain.Telas.Departamentos.Logistica;
 using System;
+using System.Linq;
 using System.Windows.Forms;
 
 namespace SJmain.Telas.Departamentos.Log
@@ -10,27 +11,7 @@ namespace SJmain.Telas.Departamentos.Log
         {
             InitializeComponent();
         }
-
-        private void agendaToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Agenda ag = new Agenda();
-            ag.MdiParent = this;
-            ag.Show();
-        }
-
-        private void itinerarioToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Itinerario iti = new Itinerario();
-            iti.MdiParent = this;
-            iti.Show();
-        }
-
-        private void ligaçõesToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Ligacoes lig = new Ligacoes();
-            lig.MdiParent = this;
-            lig.Show();
-        }
+        
 
         private void ajudaToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -44,23 +25,46 @@ namespace SJmain.Telas.Departamentos.Log
 
         private void ligaçõesToolStripMenuItem_Click_1(object sender, EventArgs e)
         {
-            Ligacoes lig = new Ligacoes();
-            lig.MdiParent = this;
-            lig.Show();
+            if (Application.OpenForms.OfType<Ligacoes>().Count() > 0)
+            {
+                Application.OpenForms.OfType<Itinerario>().First().Focus();
+            }
+            else
+            {
+                Ligacoes lig = new Ligacoes();
+                lig.MdiParent = this;
+                lig.Show();
+            }
         }
 
         private void itinerarioToolStripMenuItem_Click_1(object sender, EventArgs e)
         {
-            Itinerario iti = new Itinerario();
-            iti.MdiParent = this;
-            iti.Show();
+            if (Application.OpenForms.OfType<Itinerario>().Count() > 0)
+            {
+                Application.OpenForms.OfType<Itinerario>().First().Focus();
+            }
+            else
+            {
+                Itinerario iti = new Itinerario();
+                iti.MdiParent = this;
+                iti.Show();
+            }
+            
         }
 
         private void agendaToolStripMenuItem_Click_1(object sender, EventArgs e)
         {
-            Agenda ag = new Agenda();
-            ag.MdiParent = this;
-            ag.Show();
+            if (Application.OpenForms.OfType<Agenda>().Count() > 0)
+            {
+                Application.OpenForms.OfType<Agenda>().First().Focus();
+            }
+            else
+            {
+                Agenda ag = new Agenda();
+                ag.MdiParent = this;
+                ag.Show();
+            }
+            
         }
 
     }

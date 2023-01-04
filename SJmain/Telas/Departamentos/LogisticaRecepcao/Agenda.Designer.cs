@@ -44,8 +44,9 @@
             this.label6 = new System.Windows.Forms.Label();
             this.contatosGridView = new System.Windows.Forms.DataGridView();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
-            this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
+            this.tss1 = new System.Windows.Forms.ToolStripStatusLabel();
             this.btnAlterar = new System.Windows.Forms.Button();
+            this.btnAtualizar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.contatosGridView)).BeginInit();
             this.statusStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -54,7 +55,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(49, 51);
+            this.label1.Location = new System.Drawing.Point(29, 21);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(65, 18);
             this.label1.TabIndex = 0;
@@ -64,7 +65,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(33, 81);
+            this.label3.Location = new System.Drawing.Point(13, 51);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(81, 18);
             this.label3.TabIndex = 2;
@@ -74,7 +75,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(48, 110);
+            this.label4.Location = new System.Drawing.Point(28, 80);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(66, 18);
             this.label4.TabIndex = 3;
@@ -84,7 +85,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(25, 137);
+            this.label5.Location = new System.Drawing.Point(5, 107);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(89, 18);
             this.label5.TabIndex = 4;
@@ -92,28 +93,33 @@
             // 
             // txtNome
             // 
-            this.txtNome.Location = new System.Drawing.Point(120, 51);
+            this.txtNome.Location = new System.Drawing.Point(100, 21);
+            this.txtNome.MaxLength = 100;
             this.txtNome.Name = "txtNome";
             this.txtNome.Size = new System.Drawing.Size(212, 20);
             this.txtNome.TabIndex = 5;
             // 
             // txtContato
             // 
-            this.txtContato.Location = new System.Drawing.Point(120, 82);
+            this.txtContato.AllowDrop = true;
+            this.txtContato.Location = new System.Drawing.Point(100, 52);
+            this.txtContato.MaxLength = 11;
             this.txtContato.Name = "txtContato";
             this.txtContato.Size = new System.Drawing.Size(213, 20);
             this.txtContato.TabIndex = 7;
             // 
             // txtEmail
             // 
-            this.txtEmail.Location = new System.Drawing.Point(120, 111);
+            this.txtEmail.Location = new System.Drawing.Point(100, 81);
+            this.txtEmail.MaxLength = 100;
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(213, 20);
             this.txtEmail.TabIndex = 8;
             // 
             // txtEndereco
             // 
-            this.txtEndereco.Location = new System.Drawing.Point(120, 137);
+            this.txtEndereco.Location = new System.Drawing.Point(100, 107);
+            this.txtEndereco.MaxLength = 100;
             this.txtEndereco.Multiline = true;
             this.txtEndereco.Name = "txtEndereco";
             this.txtEndereco.Size = new System.Drawing.Size(213, 80);
@@ -121,7 +127,7 @@
             // 
             // btnSalvar
             // 
-            this.btnSalvar.Location = new System.Drawing.Point(110, 223);
+            this.btnSalvar.Location = new System.Drawing.Point(90, 193);
             this.btnSalvar.Name = "btnSalvar";
             this.btnSalvar.Size = new System.Drawing.Size(70, 23);
             this.btnSalvar.TabIndex = 10;
@@ -131,7 +137,7 @@
             // 
             // btnDeletar
             // 
-            this.btnDeletar.Location = new System.Drawing.Point(186, 223);
+            this.btnDeletar.Location = new System.Drawing.Point(166, 193);
             this.btnDeletar.Name = "btnDeletar";
             this.btnDeletar.Size = new System.Drawing.Size(70, 23);
             this.btnDeletar.TabIndex = 11;
@@ -141,7 +147,7 @@
             // 
             // btnLimpar
             // 
-            this.btnLimpar.Location = new System.Drawing.Point(263, 223);
+            this.btnLimpar.Location = new System.Drawing.Point(243, 193);
             this.btnLimpar.Name = "btnLimpar";
             this.btnLimpar.Size = new System.Drawing.Size(70, 23);
             this.btnLimpar.TabIndex = 12;
@@ -151,7 +157,7 @@
             // 
             // txtPesquisar
             // 
-            this.txtPesquisar.Location = new System.Drawing.Point(493, 52);
+            this.txtPesquisar.Location = new System.Drawing.Point(434, 22);
             this.txtPesquisar.Name = "txtPesquisar";
             this.txtPesquisar.Size = new System.Drawing.Size(212, 20);
             this.txtPesquisar.TabIndex = 13;
@@ -160,7 +166,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(397, 51);
+            this.label6.Location = new System.Drawing.Point(338, 21);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(90, 18);
             this.label6.TabIndex = 14;
@@ -169,7 +175,7 @@
             // contatosGridView
             // 
             this.contatosGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.contatosGridView.Location = new System.Drawing.Point(354, 81);
+            this.contatosGridView.Location = new System.Drawing.Point(334, 51);
             this.contatosGridView.Name = "contatosGridView";
             this.contatosGridView.Size = new System.Drawing.Size(434, 206);
             this.contatosGridView.TabIndex = 15;
@@ -178,22 +184,22 @@
             // statusStrip1
             // 
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripStatusLabel1});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 428);
+            this.tss1});
+            this.statusStrip1.Location = new System.Drawing.Point(0, 298);
             this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(800, 22);
+            this.statusStrip1.Size = new System.Drawing.Size(782, 22);
             this.statusStrip1.TabIndex = 16;
             this.statusStrip1.Text = "statusStrip1";
             // 
-            // toolStripStatusLabel1
+            // tss1
             // 
-            this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
-            this.toolStripStatusLabel1.Size = new System.Drawing.Size(16, 17);
-            this.toolStripStatusLabel1.Text = "...";
+            this.tss1.Name = "tss1";
+            this.tss1.Size = new System.Drawing.Size(16, 17);
+            this.tss1.Text = "...";
             // 
             // btnAlterar
             // 
-            this.btnAlterar.Location = new System.Drawing.Point(28, 223);
+            this.btnAlterar.Location = new System.Drawing.Point(8, 193);
             this.btnAlterar.Name = "btnAlterar";
             this.btnAlterar.Size = new System.Drawing.Size(70, 23);
             this.btnAlterar.TabIndex = 17;
@@ -201,11 +207,22 @@
             this.btnAlterar.UseVisualStyleBackColor = true;
             this.btnAlterar.Click += new System.EventHandler(this.btnAlterar_Click);
             // 
+            // btnAtualizar
+            // 
+            this.btnAtualizar.Location = new System.Drawing.Point(334, 263);
+            this.btnAtualizar.Name = "btnAtualizar";
+            this.btnAtualizar.Size = new System.Drawing.Size(75, 23);
+            this.btnAtualizar.TabIndex = 18;
+            this.btnAtualizar.Text = "Atualizar";
+            this.btnAtualizar.UseVisualStyleBackColor = true;
+            this.btnAtualizar.Click += new System.EventHandler(this.button1_Click);
+            // 
             // Agenda
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(782, 320);
+            this.Controls.Add(this.btnAtualizar);
             this.Controls.Add(this.btnAlterar);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.contatosGridView);
@@ -222,7 +239,10 @@
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "Agenda";
             this.Text = "Agenda";
             this.Load += new System.EventHandler(this.Agenda_Load);
@@ -251,7 +271,8 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.DataGridView contatosGridView;
         private System.Windows.Forms.StatusStrip statusStrip1;
-        private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel1;
+        private System.Windows.Forms.ToolStripStatusLabel tss1;
         private System.Windows.Forms.Button btnAlterar;
+        private System.Windows.Forms.Button btnAtualizar;
     }
 }
