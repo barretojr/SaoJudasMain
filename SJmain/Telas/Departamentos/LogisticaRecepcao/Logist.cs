@@ -11,7 +11,7 @@ namespace SJmain.Telas.Departamentos.Log
         {
             InitializeComponent();
         }
-        
+
 
         private void ajudaToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -49,7 +49,7 @@ namespace SJmain.Telas.Departamentos.Log
                 iti.MdiParent = this;
                 iti.Show();
             }
-            
+
         }
 
         private void agendaToolStripMenuItem_Click_1(object sender, EventArgs e)
@@ -64,7 +64,7 @@ namespace SJmain.Telas.Departamentos.Log
                 ag.MdiParent = this;
                 ag.Show();
             }
-            
+
         }
 
     }

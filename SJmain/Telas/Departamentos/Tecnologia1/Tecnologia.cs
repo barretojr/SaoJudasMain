@@ -1,6 +1,7 @@
 ﻿using SJmain.Telas.Cadastro;
 using SJmain.Telas.Departamentos.Tecnologia1;
 using System;
+using System.Linq;
 using System.Windows.Forms;
 
 namespace SJmain.Telas.Departamentos
@@ -19,23 +20,35 @@ namespace SJmain.Telas.Departamentos
 
         private void cadastrarToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Cadastrar cad = new Cadastrar();
-            cad.MdiParent = this;
-            cad.Show();
+            if (Application.OpenForms.OfType<Cadastrar>().Count() > 0)
+            {
+                Application.OpenForms.OfType<Cadastrar>().First().Focus();
+            }
+            else 
+            {
+                Cadastrar cad = new Cadastrar();
+                cad.MdiParent = this;
+                cad.Show(); 
+            }
         }
 
         private void alterarToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Alterar alterar = new Alterar();
-            alterar.MdiParent = this;
-            alterar.Show();
+            
         }
 
         private void inventárioToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Inventario invent = new Inventario();
-            invent.MdiParent = this;
-            invent.Show();
+            if (Application.OpenForms.OfType<Inventario>().Count() > 0)
+            {
+                Application.OpenForms.OfType<Inventario>().First().Focus();
+            }
+            else
+            {
+                Inventario invent = new Inventario();
+                invent.MdiParent = this;
+                invent.Show();
+            }
         }
 
         private void outroStripToolStripMenuItem_Click(object sender, EventArgs e)
@@ -50,9 +63,16 @@ namespace SJmain.Telas.Departamentos
 
         private void cadastrarToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-            VerificarEmpresa ve = new VerificarEmpresa();
-            ve.MdiParent = this;
-            ve.Show();
+            if (Application.OpenForms.OfType<VerificarEmpresa>().Count() > 0)
+            {
+                Application.OpenForms.OfType<VerificarEmpresa>().First().Focus();
+            }
+            else
+            {
+                VerificarEmpresa ve = new VerificarEmpresa();
+                ve.MdiParent = this;
+                ve.Show();
+            }
         }
     }
 }
