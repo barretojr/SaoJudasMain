@@ -1,6 +1,7 @@
 ﻿using SJmain.Classes;
 using SJmain.Modelo;
 using System;
+using System.Data;
 using System.Data.SqlClient;
 using System.Windows.Forms;
 
@@ -14,7 +15,8 @@ namespace SJmain.Telas.Cadastro
         }
         Conexao con = new Conexao();
         SqlCommand cmd = new SqlCommand();
-        SqlDataReader dr;
+        SqlDataReader dr;        
+        DataTable dt = new DataTable();
 
         private bool Validarform()
         {
@@ -139,5 +141,59 @@ namespace SJmain.Telas.Cadastro
         {
 
         }
+
+        private void btnPesquisar_Click(object sender, EventArgs e)
+        {
+            if(rdbNome.Checked == true)
+            {
+                try
+                {
+                    cmd.Connection = con.Conectar();
+                    cmd.CommandText = "SELECT * FROM Usuario WHERE nomeusuario = @pesquisa;";
+                    cmd.Parameters.AddWithValue("@pesquisa", txtPesquisa.Text);
+                    cmd.ExecuteNonQuery();
+                    SqlDataAdapter da = new SqlDataAdapter(cmd);
+                    da.Fill(dt);
+                    dgvAlterar.DataSource = dt;
+                    dgvAlterar.Refresh();
+                }
+                catch
+                {
+                    epPesquisa.SetError(txtPesquisa, "Usuário não existe ou foi digitado errado");
+                }
+
+            }
+            if(rdbCPF.Checked== true)
+            {
+                try
+                {
+                    cmd.Connection = con.Conectar();
+                    cmd.CommandText = "SELECT * FROM Usuario WHERE cpfusuario = @pesquisa;";
+                    cmd.Parameters.AddWithValue("@pesquisa", txtPesquisa.Text);
+                    cmd.ExecuteNonQuery();
+                    SqlDataAdapter da = new SqlDataAdapter(cmd);
+                    da.Fill(dt);
+                    dgvAlterar.DataSource = dt;
+                    dgvAlterar.Refresh();
+                }
+                catch
+                {
+                    epPesquisa.SetError(txtPesquisa, "CPF não existe ou foi digitado errado");
+                }
+            }
+           
+        }
+
+        private void btnLimpar_Click(object sender, EventArgs e)
+        {
+            cmd.Parameters.Clear();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        
     }
 }

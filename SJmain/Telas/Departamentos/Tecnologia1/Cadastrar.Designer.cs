@@ -37,7 +37,14 @@
             this.epCPF = new System.Windows.Forms.ErrorProvider(this.components);
             this.epEmail = new System.Windows.Forms.ErrorProvider(this.components);
             this.tpExcluir = new System.Windows.Forms.TabPage();
+            this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.radioButton7 = new System.Windows.Forms.RadioButton();
+            this.radioButton8 = new System.Windows.Forms.RadioButton();
+            this.button4 = new System.Windows.Forms.Button();
             this.tpAlterar = new System.Windows.Forms.TabPage();
+            this.btnLimpar = new System.Windows.Forms.Button();
             this.btnAlt = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
@@ -55,7 +62,7 @@
             this.txtConfSenhaAlterar = new System.Windows.Forms.TextBox();
             this.txtSenhaAlterar = new System.Windows.Forms.TextBox();
             this.btnVerif = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dgvAlterar = new System.Windows.Forms.DataGridView();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.txtPesquisa = new System.Windows.Forms.TextBox();
             this.rdbCPF = new System.Windows.Forms.RadioButton();
@@ -88,12 +95,7 @@
             this.rdbFiscal = new System.Windows.Forms.RadioButton();
             this.rdbContabil = new System.Windows.Forms.RadioButton();
             this.tabControl1 = new System.Windows.Forms.TabControl();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.radioButton7 = new System.Windows.Forms.RadioButton();
-            this.radioButton8 = new System.Windows.Forms.RadioButton();
-            this.button4 = new System.Windows.Forms.Button();
+            this.epPesquisa = new System.Windows.Forms.ErrorProvider(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.epUsuario)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.epSenha)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.epConfSenha)).BeginInit();
@@ -101,16 +103,17 @@
             ((System.ComponentModel.ISupportInitialize)(this.epCPF)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.epEmail)).BeginInit();
             this.tpExcluir.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
+            this.groupBox3.SuspendLayout();
             this.tpAlterar.SuspendLayout();
             this.gbDepart.SuspendLayout();
             this.gbSenha.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvAlterar)).BeginInit();
             this.groupBox2.SuspendLayout();
             this.tpCadastrar.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.tabControl1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
-            this.groupBox3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.epPesquisa)).BeginInit();
             this.SuspendLayout();
             // 
             // epUsuario
@@ -149,14 +152,74 @@
             this.tpExcluir.Text = "Excluir";
             this.tpExcluir.UseVisualStyleBackColor = true;
             // 
+            // dataGridView2
+            // 
+            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView2.Location = new System.Drawing.Point(6, 87);
+            this.dataGridView2.Name = "dataGridView2";
+            this.dataGridView2.Size = new System.Drawing.Size(486, 85);
+            this.dataGridView2.TabIndex = 14;
+            // 
+            // groupBox3
+            // 
+            this.groupBox3.Controls.Add(this.textBox2);
+            this.groupBox3.Controls.Add(this.radioButton7);
+            this.groupBox3.Controls.Add(this.radioButton8);
+            this.groupBox3.Controls.Add(this.button4);
+            this.groupBox3.Location = new System.Drawing.Point(6, 6);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(486, 75);
+            this.groupBox3.TabIndex = 13;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "Pesquisar Usuário";
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(6, 19);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(302, 20);
+            this.textBox2.TabIndex = 2;
+            // 
+            // radioButton7
+            // 
+            this.radioButton7.AutoSize = true;
+            this.radioButton7.Location = new System.Drawing.Point(155, 46);
+            this.radioButton7.Name = "radioButton7";
+            this.radioButton7.Size = new System.Drawing.Size(45, 17);
+            this.radioButton7.TabIndex = 1;
+            this.radioButton7.TabStop = true;
+            this.radioButton7.Text = "CPF";
+            this.radioButton7.UseVisualStyleBackColor = true;
+            // 
+            // radioButton8
+            // 
+            this.radioButton8.AutoSize = true;
+            this.radioButton8.Location = new System.Drawing.Point(6, 46);
+            this.radioButton8.Name = "radioButton8";
+            this.radioButton8.Size = new System.Drawing.Size(107, 17);
+            this.radioButton8.TabIndex = 0;
+            this.radioButton8.TabStop = true;
+            this.radioButton8.Text = "Nome de Usuário";
+            this.radioButton8.UseVisualStyleBackColor = true;
+            // 
+            // button4
+            // 
+            this.button4.Location = new System.Drawing.Point(344, 12);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(115, 57);
+            this.button4.TabIndex = 1;
+            this.button4.Text = "Pesquisar...";
+            this.button4.UseVisualStyleBackColor = true;
+            // 
             // tpAlterar
             // 
+            this.tpAlterar.Controls.Add(this.btnLimpar);
             this.tpAlterar.Controls.Add(this.btnAlt);
             this.tpAlterar.Controls.Add(this.button1);
             this.tpAlterar.Controls.Add(this.button2);
             this.tpAlterar.Controls.Add(this.gbDepart);
             this.tpAlterar.Controls.Add(this.gbSenha);
-            this.tpAlterar.Controls.Add(this.dataGridView1);
+            this.tpAlterar.Controls.Add(this.dgvAlterar);
             this.tpAlterar.Controls.Add(this.groupBox2);
             this.tpAlterar.Location = new System.Drawing.Point(4, 22);
             this.tpAlterar.Name = "tpAlterar";
@@ -165,6 +228,16 @@
             this.tpAlterar.TabIndex = 1;
             this.tpAlterar.Text = "Alterar";
             this.tpAlterar.UseVisualStyleBackColor = true;
+            // 
+            // btnLimpar
+            // 
+            this.btnLimpar.Location = new System.Drawing.Point(249, 336);
+            this.btnLimpar.Name = "btnLimpar";
+            this.btnLimpar.Size = new System.Drawing.Size(75, 23);
+            this.btnLimpar.TabIndex = 18;
+            this.btnLimpar.Text = "Limpar";
+            this.btnLimpar.UseVisualStyleBackColor = true;
+            this.btnLimpar.Click += new System.EventHandler(this.btnLimpar_Click);
             // 
             // btnAlt
             // 
@@ -193,6 +266,7 @@
             this.button2.TabIndex = 15;
             this.button2.Text = "Sair";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // gbDepart
             // 
@@ -341,13 +415,13 @@
             this.btnVerif.Text = "Verificar...";
             this.btnVerif.UseVisualStyleBackColor = true;
             // 
-            // dataGridView1
+            // dgvAlterar
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(6, 105);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(486, 103);
-            this.dataGridView1.TabIndex = 12;
+            this.dgvAlterar.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvAlterar.Location = new System.Drawing.Point(6, 105);
+            this.dgvAlterar.Name = "dgvAlterar";
+            this.dgvAlterar.Size = new System.Drawing.Size(486, 103);
+            this.dgvAlterar.TabIndex = 12;
             // 
             // groupBox2
             // 
@@ -399,6 +473,7 @@
             this.btnPesquisar.TabIndex = 1;
             this.btnPesquisar.Text = "Pesquisar...";
             this.btnPesquisar.UseVisualStyleBackColor = true;
+            this.btnPesquisar.Click += new System.EventHandler(this.btnPesquisar_Click);
             // 
             // tpCadastrar
             // 
@@ -678,64 +753,9 @@
             this.tabControl1.Size = new System.Drawing.Size(507, 391);
             this.tabControl1.TabIndex = 24;
             // 
-            // dataGridView2
+            // epPesquisa
             // 
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Location = new System.Drawing.Point(6, 87);
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.Size = new System.Drawing.Size(486, 85);
-            this.dataGridView2.TabIndex = 14;
-            // 
-            // groupBox3
-            // 
-            this.groupBox3.Controls.Add(this.textBox2);
-            this.groupBox3.Controls.Add(this.radioButton7);
-            this.groupBox3.Controls.Add(this.radioButton8);
-            this.groupBox3.Controls.Add(this.button4);
-            this.groupBox3.Location = new System.Drawing.Point(6, 6);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(486, 75);
-            this.groupBox3.TabIndex = 13;
-            this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "Pesquisar Usuário";
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(6, 19);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(302, 20);
-            this.textBox2.TabIndex = 2;
-            // 
-            // radioButton7
-            // 
-            this.radioButton7.AutoSize = true;
-            this.radioButton7.Location = new System.Drawing.Point(155, 46);
-            this.radioButton7.Name = "radioButton7";
-            this.radioButton7.Size = new System.Drawing.Size(45, 17);
-            this.radioButton7.TabIndex = 1;
-            this.radioButton7.TabStop = true;
-            this.radioButton7.Text = "CPF";
-            this.radioButton7.UseVisualStyleBackColor = true;
-            // 
-            // radioButton8
-            // 
-            this.radioButton8.AutoSize = true;
-            this.radioButton8.Location = new System.Drawing.Point(6, 46);
-            this.radioButton8.Name = "radioButton8";
-            this.radioButton8.Size = new System.Drawing.Size(107, 17);
-            this.radioButton8.TabIndex = 0;
-            this.radioButton8.TabStop = true;
-            this.radioButton8.Text = "Nome de Usuário";
-            this.radioButton8.UseVisualStyleBackColor = true;
-            // 
-            // button4
-            // 
-            this.button4.Location = new System.Drawing.Point(344, 12);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(115, 57);
-            this.button4.TabIndex = 1;
-            this.button4.Text = "Pesquisar...";
-            this.button4.UseVisualStyleBackColor = true;
+            this.epPesquisa.ContainerControl = this;
             // 
             // Cadastrar
             // 
@@ -757,12 +777,15 @@
             ((System.ComponentModel.ISupportInitialize)(this.epCPF)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.epEmail)).EndInit();
             this.tpExcluir.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
+            this.groupBox3.ResumeLayout(false);
+            this.groupBox3.PerformLayout();
             this.tpAlterar.ResumeLayout(false);
             this.gbDepart.ResumeLayout(false);
             this.gbDepart.PerformLayout();
             this.gbSenha.ResumeLayout(false);
             this.gbSenha.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvAlterar)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.tpCadastrar.ResumeLayout(false);
@@ -770,9 +793,7 @@
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.tabControl1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
-            this.groupBox3.ResumeLayout(false);
-            this.groupBox3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.epPesquisa)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -829,7 +850,7 @@
         private System.Windows.Forms.TextBox txtConfSenhaAlterar;
         private System.Windows.Forms.TextBox txtSenhaAlterar;
         private System.Windows.Forms.Button btnVerif;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dgvAlterar;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.TextBox txtPesquisa;
         private System.Windows.Forms.RadioButton rdbCPF;
@@ -842,5 +863,7 @@
         private System.Windows.Forms.RadioButton radioButton7;
         private System.Windows.Forms.RadioButton radioButton8;
         private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button btnLimpar;
+        private System.Windows.Forms.ErrorProvider epPesquisa;
     }
 }
