@@ -90,7 +90,6 @@
             // 
             // gbEmpresa
             // 
-            this.gbEmpresa.Controls.Add(this.btnAlterar);
             this.gbEmpresa.Controls.Add(this.gbSituacao);
             this.gbEmpresa.Controls.Add(this.lbCNPJ);
             this.gbEmpresa.Controls.Add(this.textBox2);
@@ -139,12 +138,13 @@
             // 
             // gbSituacao
             // 
+            this.gbSituacao.Controls.Add(this.btnAlterar);
             this.gbSituacao.Controls.Add(this.rbDesativ);
             this.gbSituacao.Controls.Add(this.rbInativa);
             this.gbSituacao.Controls.Add(this.rbAtiva);
             this.gbSituacao.Location = new System.Drawing.Point(7, 125);
             this.gbSituacao.Name = "gbSituacao";
-            this.gbSituacao.Size = new System.Drawing.Size(253, 45);
+            this.gbSituacao.Size = new System.Drawing.Size(339, 45);
             this.gbSituacao.TabIndex = 4;
             this.gbSituacao.TabStop = false;
             this.gbSituacao.Text = "Situação";
@@ -184,7 +184,7 @@
             // 
             // btnAlterar
             // 
-            this.btnAlterar.Location = new System.Drawing.Point(340, 207);
+            this.btnAlterar.Location = new System.Drawing.Point(252, 15);
             this.btnAlterar.Name = "btnAlterar";
             this.btnAlterar.Size = new System.Drawing.Size(75, 22);
             this.btnAlterar.TabIndex = 5;
@@ -204,7 +204,7 @@
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "VerificarEmpresa";
-            this.Text = "VerificarEmpresa";
+            this.Text = "Verificar Empresa";
             this.Load += new System.EventHandler(this.VerificarEmpresa_Load);
             this.groupBox1.ResumeLayout(false);
             this.gbEmpresa.ResumeLayout(false);

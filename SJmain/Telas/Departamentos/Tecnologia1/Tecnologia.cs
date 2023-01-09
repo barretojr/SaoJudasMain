@@ -28,14 +28,11 @@ namespace SJmain.Telas.Departamentos
             {
                 Cadastrar cad = new Cadastrar();
                 cad.MdiParent = this;
-                cad.Show(); 
+                cad.ShowDialog(); 
             }
         }
 
-        private void alterarToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            
-        }
+       
 
         private void inventárioToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -47,7 +44,7 @@ namespace SJmain.Telas.Departamentos
             {
                 Inventario invent = new Inventario();
                 invent.MdiParent = this;
-                invent.Show();
+                invent.ShowDialog();
             }
         }
 
@@ -61,7 +58,9 @@ namespace SJmain.Telas.Departamentos
 
         }
 
-        private void cadastrarToolStripMenuItem1_Click(object sender, EventArgs e)
+        
+
+        private void buscarToolStripMenuItem_Click(object sender, EventArgs e)
         {
             if (Application.OpenForms.OfType<VerificarEmpresa>().Count() > 0)
             {
@@ -71,7 +70,36 @@ namespace SJmain.Telas.Departamentos
             {
                 VerificarEmpresa ve = new VerificarEmpresa();
                 ve.MdiParent = this;
-                ve.Show();
+                ve.ShowDialog();
+            }
+
+        }
+
+        private void cadastrarToolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            if(Application.OpenForms.OfType<CadastrarPatrics>().Count() > 0)
+            {
+                Application.OpenForms.OfType<CadastrarPatrics>().First().Focus();
+            }
+            else
+            {
+                CadastrarPatrics cp = new CadastrarPatrics();
+                cp.MdiParent = this;
+                cp.ShowDialog();
+            }
+        }
+
+        private void alterarToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
+            if (Application.OpenForms.OfType<AlterarInvent>().Count() > 0)
+            {
+                Application.OpenForms.OfType<AlterarInvent>().First().Focus();
+            }
+            else
+            {
+                AlterarInvent ai = new AlterarInvent();
+                ai.MdiParent = this;
+                ai.ShowDialog();
             }
         }
     }

@@ -138,6 +138,12 @@
     <Compile Include="Telas\Departamentos\LogisticaRecepcao\Logist.Designer.cs">
       <DependentUpon>Logist.cs</DependentUpon>
     </Compile>
+    <Compile Include="Telas\Departamentos\Tecnologia1\AlterarInvent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\Departamentos\Tecnologia1\AlterarInvent.Designer.cs">
+      <DependentUpon>AlterarInvent.cs</DependentUpon>
+    </Compile>
     <Compile Include="Telas\Departamentos\Tecnologia1\Cadastrar.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -277,6 +283,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Telas\Departamentos\LogisticaRecepcao\Logist.resx">
       <DependentUpon>Logist.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\Departamentos\Tecnologia1\AlterarInvent.resx">
+      <DependentUpon>AlterarInvent.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Telas\Departamentos\Tecnologia1\Cadastrar.resx">
       <DependentUpon>Cadastrar.cs</DependentUpon>

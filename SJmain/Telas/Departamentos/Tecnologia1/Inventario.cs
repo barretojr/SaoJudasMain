@@ -66,5 +66,10 @@ namespace SJmain.Telas.Departamentos.Tecnologia1
         {
             this.Close();
         }
+
+        private void btnAlterar_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

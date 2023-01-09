@@ -48,7 +48,7 @@ namespace SJmain.Telas.Departamentos.Tecnologia1
 
         private void VerificarEmpresa_Load(object sender, EventArgs e)
         {
-            CarregarEmpresas();
+            CarregarEmpresas();            
         }
 
         private void SelecionarEmpresa()

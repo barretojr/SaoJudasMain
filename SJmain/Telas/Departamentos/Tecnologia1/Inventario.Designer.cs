@@ -36,6 +36,7 @@
             this.btnBuscar = new System.Windows.Forms.Button();
             this.btnSair = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.btnAlterar = new System.Windows.Forms.Button();
             this.Buscar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -110,11 +111,22 @@
             this.dataGridView1.Size = new System.Drawing.Size(417, 240);
             this.dataGridView1.TabIndex = 35;
             // 
+            // btnAlterar
+            // 
+            this.btnAlterar.Location = new System.Drawing.Point(354, 395);
+            this.btnAlterar.Name = "btnAlterar";
+            this.btnAlterar.Size = new System.Drawing.Size(75, 23);
+            this.btnAlterar.TabIndex = 36;
+            this.btnAlterar.Text = "Alterar";
+            this.btnAlterar.UseVisualStyleBackColor = true;
+            this.btnAlterar.Click += new System.EventHandler(this.btnAlterar_Click);
+            // 
             // Inventario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(442, 427);
+            this.Controls.Add(this.btnAlterar);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.btnSair);
             this.Controls.Add(this.Buscar);
@@ -137,5 +149,6 @@
         private System.Windows.Forms.RadioButton rdbPatrimonio;
         private System.Windows.Forms.Button btnSair;
         private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Button btnAlterar;
     }
 }
