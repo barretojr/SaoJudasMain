@@ -56,8 +56,8 @@ namespace SJmain.Telas.Departamentos.Tecnologia1
                 CadPatrimon = MessageBox.Show("Deseja cadastrar equipamento?", "Deseja Cadastrar", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2);
                 if (CadPatrimon != DialogResult.No)
                 {
-                    CadastrarPatrics cp = new CadastrarPatrics();
-                    cp.Show();
+                    AlterarInvent ai = new AlterarInvent();
+                    ai.Show();
                 }
             }
         }

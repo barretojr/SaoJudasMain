@@ -1,14 +1,7 @@
 ﻿using SJmain.Classes;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
 using System.Data.SqlClient;
-using System.Drawing;
-using System.Linq;
-using System.Runtime.Remoting.Contexts;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace SJmain.Telas.Departamentos.Tecnologia1
@@ -22,8 +15,8 @@ namespace SJmain.Telas.Departamentos.Tecnologia1
         SqlCommand cmd = new SqlCommand();
         Conexao con = new Conexao();
         int RecordID = 0;
-        
-        private void ListarUsuarios (string sqlstr = "SELECT * FROM Inventario")
+
+        private void ListarUsuarios(string sqlstr = "SELECT * FROM Inventario")
         {
             cmd.Connection = con.Conectar();
             cmd.CommandText = sqlstr;
@@ -86,7 +79,7 @@ namespace SJmain.Telas.Departamentos.Tecnologia1
             try
             {
                 cmd.Connection = con.Conectar();
-                cmd.CommandText = "UPDATE Inverario SET unidade=@unidade, descricao=@desc, modelo=@model, localizacao=@local, valorestim=@valor, processador=@proce, memoriaram=@ram, usuario=@user WHERE idpatrimonio=@id";
+                cmd.CommandText = "UPDATE Inventario SET unidade=@unidade, descricao=@desc, modelo=@model, localizacao=@local, valorestim=@valor, processador=@proce, memoriaram=@ram, usuario=@user WHERE idpatrimonio=@id";
                 cmd.Parameters.AddWithValue("@id", txtPatri.Text);
                 cmd.Parameters.AddWithValue("@unidade", cbUnidade.Text);
                 cmd.Parameters.AddWithValue("@desc", txtDescricao.Text);
@@ -114,15 +107,49 @@ namespace SJmain.Telas.Departamentos.Tecnologia1
         {
             if (txtPatri != null)
             {
-                cmd.Connection = con.Conectar();
-                cmd.CommandText = "DELETE Agenda WHERE idcontato = @id";
-                cmd.Parameters.AddWithValue("@id", txtPatri);
-                cmd.ExecuteNonQuery();
-                con.Desconectar();
+                try
+                {
+                    cmd.Connection = con.Conectar();
+                    cmd.CommandText = "DELETE FROM Inventario WHERE idpatrimonio = @id";
+                    cmd.Parameters.AddWithValue("@id", txtPatri);
+                    cmd.ExecuteNonQuery();
+                    con.Desconectar();
+                }
+                catch (Exception error)
+                {
+                    MessageBox.Show(error.Message);
+                }
             }
             else
             {
                 epPatri.SetError(txtPatri, "Digite um patrimonio a ser excluido");
+                txtPatri.Focus();
+            }
+        }
+
+        private void btnCadastrar_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                cmd.Connection = con.Conectar();
+                cmd.CommandText = "INSERT INTO Inventario (idpatrimonio, unidade, descricao, modelo, localizacao, valorestim, processador, memoriaram, usuario) " +
+                "VALUES (@numpatri,@unidade,@descri,@model,@local,@valorestim, @process, @ram, @usuario);";
+                cmd.Parameters.AddWithValue("@numpatri", txtPatri.Text);
+                cmd.Parameters.AddWithValue("@unidade", cbUnidade.Text);
+                cmd.Parameters.AddWithValue("@descri", txtDescricao.Text);
+                cmd.Parameters.AddWithValue("@model", txtModelo.Text);
+                cmd.Parameters.AddWithValue("@local", txtLocal.Text);
+                cmd.Parameters.AddWithValue("@valorestim", mskValorEsti.Text);
+                cmd.Parameters.AddWithValue("@process", txtProcessador.Text);
+                cmd.Parameters.AddWithValue("@ram", txtMemoria.Text);
+                cmd.Parameters.AddWithValue("@usuario", txtUsuario.Text);
+                cmd.ExecuteNonQuery();
+
+                con.Desconectar();
+            }
+            catch (SqlException)
+            {
+                MessageBox.Show("Algum dado está invalido", "Reveja os dados");
             }
         }
     }

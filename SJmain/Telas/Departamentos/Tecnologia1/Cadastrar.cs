@@ -15,7 +15,7 @@ namespace SJmain.Telas.Cadastro
         }
         Conexao con = new Conexao();
         SqlCommand cmd = new SqlCommand();
-        SqlDataReader dr;        
+        SqlDataReader dr;
         DataTable dt = new DataTable();
 
         private bool Validarform()
@@ -121,7 +121,7 @@ namespace SJmain.Telas.Cadastro
         {
             rdbContabil.Checked = true;
         }
-        
+
 
         private void btnAlt_Click(object sender, EventArgs e)
         {
@@ -137,14 +137,14 @@ namespace SJmain.Telas.Cadastro
 
 
         }
-        private void AlterarCad (string cad)
+        private void AlterarCad(string cad)
         {
 
         }
 
         private void btnPesquisar_Click(object sender, EventArgs e)
         {
-            if(rdbNome.Checked == true)
+            if (rdbNome.Checked == true)
             {
                 try
                 {
@@ -163,7 +163,7 @@ namespace SJmain.Telas.Cadastro
                 }
 
             }
-            if(rdbCPF.Checked== true)
+            if (rdbCPF.Checked == true)
             {
                 try
                 {
@@ -181,7 +181,7 @@ namespace SJmain.Telas.Cadastro
                     epPesquisa.SetError(txtPesquisa, "CPF não existe ou foi digitado errado");
                 }
             }
-           
+
         }
 
         private void btnLimpar_Click(object sender, EventArgs e)
@@ -194,6 +194,6 @@ namespace SJmain.Telas.Cadastro
             this.Close();
         }
 
-        
+
     }
 }

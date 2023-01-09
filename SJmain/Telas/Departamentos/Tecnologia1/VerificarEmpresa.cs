@@ -17,7 +17,7 @@ namespace SJmain.Telas.Departamentos.Tecnologia1
         Conexao con = new Conexao();
         DataTable dt = new DataTable();
         SqlDataAdapter da = new SqlDataAdapter();
-        SqlDataReader dr ;
+        SqlDataReader dr;
 
         #endregion
 
@@ -32,27 +32,27 @@ namespace SJmain.Telas.Departamentos.Tecnologia1
             this.Close();
         }
         private void CarregarEmpresas()
-        {           
+        {
             cmd.Connection = con.Conectar();
-            cmd.CommandText = "SELECT nomeempresa FROM Empresa";            
+            cmd.CommandText = "SELECT nomeempresa FROM Empresa";
             dr = cmd.ExecuteReader();
             dt.Load(dr);
             cmbEmpresas.DisplayMember = "nomeempresa";
             cmbEmpresas.DataSource = dt;
         }
-        
+
         private void btnPesquisar_Click(object sender, EventArgs e)
-        {   
-            
+        {
+
         }
 
         private void VerificarEmpresa_Load(object sender, EventArgs e)
         {
-            CarregarEmpresas();            
+            CarregarEmpresas();
         }
 
         private void SelecionarEmpresa()
-        {            
+        {
 
         }
 

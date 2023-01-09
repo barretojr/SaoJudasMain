@@ -228,12 +228,6 @@
     <Compile Include="Telas\Departamentos\Societario1\Societario.Designer.cs">
       <DependentUpon>Societario.cs</DependentUpon>
     </Compile>
-    <Compile Include="Telas\Departamentos\Tecnologia1\CadastrarPatrics.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Telas\Departamentos\Tecnologia1\CadastrarPatrics.Designer.cs">
-      <DependentUpon>CadastrarPatrics.cs</DependentUpon>
-    </Compile>
     <Compile Include="Telas\Departamentos\Tecnologia1\CadastroEmpresa.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -319,9 +313,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Telas\Departamentos\Societario1\Societario.resx">
       <DependentUpon>Societario.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Telas\Departamentos\Tecnologia1\CadastrarPatrics.resx">
-      <DependentUpon>CadastrarPatrics.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Telas\Departamentos\Tecnologia1\CadastroEmpresa.resx">
       <DependentUpon>CadastroEmpresa.cs</DependentUpon>

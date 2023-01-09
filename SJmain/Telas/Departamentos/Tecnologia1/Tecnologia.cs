@@ -24,15 +24,15 @@ namespace SJmain.Telas.Departamentos
             {
                 Application.OpenForms.OfType<Cadastrar>().First().Focus();
             }
-            else 
+            else
             {
                 Cadastrar cad = new Cadastrar();
                 cad.MdiParent = this;
-                cad.Show(); 
+                cad.Show();
             }
-        }  
+        }
 
-        
+
 
         private void outroStripToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -44,7 +44,7 @@ namespace SJmain.Telas.Departamentos
 
         }
 
-        
+
 
         private void buscarToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -63,7 +63,7 @@ namespace SJmain.Telas.Departamentos
 
         private void cadastrarToolStripMenuItem2_Click(object sender, EventArgs e)
         {
-            if(Application.OpenForms.OfType<CadastrarPatrics>().Count() > 0)
+            if (Application.OpenForms.OfType<CadastrarPatrics>().Count() > 0)
             {
                 Application.OpenForms.OfType<CadastrarPatrics>().First().Focus();
             }

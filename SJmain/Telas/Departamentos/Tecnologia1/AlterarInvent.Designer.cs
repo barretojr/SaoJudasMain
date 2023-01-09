@@ -57,6 +57,7 @@
             this.epDataGrid = new System.Windows.Forms.ErrorProvider(this.components);
             this.btnLimpar = new System.Windows.Forms.Button();
             this.epPatri = new System.Windows.Forms.ErrorProvider(this.components);
+            this.btnCadastrar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvInvent)).BeginInit();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.epDataGrid)).BeginInit();
@@ -241,6 +242,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.btnCadastrar);
             this.groupBox1.Controls.Add(this.btnLimpar);
             this.groupBox1.Controls.Add(this.btnAlterar);
             this.groupBox1.Controls.Add(this.btnExcluir);
@@ -281,7 +283,7 @@
             // 
             // btnExcluir
             // 
-            this.btnExcluir.Location = new System.Drawing.Point(90, 207);
+            this.btnExcluir.Location = new System.Drawing.Point(87, 207);
             this.btnExcluir.Name = "btnExcluir";
             this.btnExcluir.Size = new System.Drawing.Size(75, 23);
             this.btnExcluir.TabIndex = 47;
@@ -291,7 +293,7 @@
             // 
             // btnAlterar
             // 
-            this.btnAlterar.Location = new System.Drawing.Point(435, 207);
+            this.btnAlterar.Location = new System.Drawing.Point(368, 207);
             this.btnAlterar.Name = "btnAlterar";
             this.btnAlterar.Size = new System.Drawing.Size(75, 23);
             this.btnAlterar.TabIndex = 48;
@@ -305,7 +307,7 @@
             // 
             // btnLimpar
             // 
-            this.btnLimpar.Location = new System.Drawing.Point(354, 207);
+            this.btnLimpar.Location = new System.Drawing.Point(287, 207);
             this.btnLimpar.Name = "btnLimpar";
             this.btnLimpar.Size = new System.Drawing.Size(75, 23);
             this.btnLimpar.TabIndex = 49;
@@ -316,6 +318,16 @@
             // epPatri
             // 
             this.epPatri.ContainerControl = this;
+            // 
+            // btnCadastrar
+            // 
+            this.btnCadastrar.Location = new System.Drawing.Point(449, 207);
+            this.btnCadastrar.Name = "btnCadastrar";
+            this.btnCadastrar.Size = new System.Drawing.Size(75, 23);
+            this.btnCadastrar.TabIndex = 50;
+            this.btnCadastrar.Text = "Cadastrar";
+            this.btnCadastrar.UseVisualStyleBackColor = true;
+            this.btnCadastrar.Click += new System.EventHandler(this.btnCadastrar_Click);
             // 
             // AlterarInvent
             // 
@@ -370,5 +382,6 @@
         private System.Windows.Forms.ErrorProvider epDataGrid;
         private System.Windows.Forms.Button btnLimpar;
         private System.Windows.Forms.ErrorProvider epPatri;
+        private System.Windows.Forms.Button btnCadastrar;
     }
 }
