@@ -64,7 +64,7 @@ namespace SJmain.Telas.Cadastro
             if (Validarform())
             {
                 Controle controle = new Controle();
-                #region ifradiobutton
+                #region Departamento
                 int dept = 0;
                 if (rdbContabil.Checked) { dept = 2; }
                 if (rdbFiscal.Checked) { dept = 3; }
@@ -90,7 +90,7 @@ namespace SJmain.Telas.Cadastro
             if (Validarform())
             {
                 Controle controle = new Controle();
-                #region ifradiobutton
+                #region depart
                 int dept = 0;
                 if (rdbContabil.Checked) { dept = 2; }
                 if (rdbFiscal.Checked) { dept = 3; }

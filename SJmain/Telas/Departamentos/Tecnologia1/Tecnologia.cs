@@ -28,25 +28,11 @@ namespace SJmain.Telas.Departamentos
             {
                 Cadastrar cad = new Cadastrar();
                 cad.MdiParent = this;
-                cad.ShowDialog(); 
+                cad.Show(); 
             }
-        }
+        }  
 
-       
-
-        private void inventárioToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            if (Application.OpenForms.OfType<Inventario>().Count() > 0)
-            {
-                Application.OpenForms.OfType<Inventario>().First().Focus();
-            }
-            else
-            {
-                Inventario invent = new Inventario();
-                invent.MdiParent = this;
-                invent.ShowDialog();
-            }
-        }
+        
 
         private void outroStripToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -70,7 +56,7 @@ namespace SJmain.Telas.Departamentos
             {
                 VerificarEmpresa ve = new VerificarEmpresa();
                 ve.MdiParent = this;
-                ve.ShowDialog();
+                ve.Show();
             }
 
         }
@@ -85,7 +71,7 @@ namespace SJmain.Telas.Departamentos
             {
                 CadastrarPatrics cp = new CadastrarPatrics();
                 cp.MdiParent = this;
-                cp.ShowDialog();
+                cp.Show();
             }
         }
 
@@ -99,7 +85,7 @@ namespace SJmain.Telas.Departamentos
             {
                 AlterarInvent ai = new AlterarInvent();
                 ai.MdiParent = this;
-                ai.ShowDialog();
+                ai.Show();
             }
         }
     }

@@ -166,6 +166,9 @@
             this.Controls.Add(this.btnConfirmar);
             this.Controls.Add(this.btnSalvar);
             this.Controls.Add(this.groupBox1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "CadastroEmpresa";
             this.Text = "CadastroEmpresa";
             this.Load += new System.EventHandler(this.CadastroEmpresa_Load);
