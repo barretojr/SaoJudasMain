@@ -60,20 +60,7 @@ namespace SJmain.Telas.Departamentos
             }
 
         }
-
-        private void cadastrarToolStripMenuItem2_Click(object sender, EventArgs e)
-        {
-            if (Application.OpenForms.OfType<CadastrarPatrics>().Count() > 0)
-            {
-                Application.OpenForms.OfType<CadastrarPatrics>().First().Focus();
-            }
-            else
-            {
-                CadastrarPatrics cp = new CadastrarPatrics();
-                cp.MdiParent = this;
-                cp.Show();
-            }
-        }
+        
 
         private void alterarToolStripMenuItem_Click_1(object sender, EventArgs e)
         {
