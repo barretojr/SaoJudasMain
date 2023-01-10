@@ -51,17 +51,31 @@
             this.dgvInvent = new System.Windows.Forms.DataGridView();
             this.btnAtualizar = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.btnCancelar = new System.Windows.Forms.Button();
-            this.btnExcluir = new System.Windows.Forms.Button();
-            this.btnAlterar = new System.Windows.Forms.Button();
-            this.epDataGrid = new System.Windows.Forms.ErrorProvider(this.components);
-            this.btnLimpar = new System.Windows.Forms.Button();
-            this.epPatri = new System.Windows.Forms.ErrorProvider(this.components);
             this.btnCadastrar = new System.Windows.Forms.Button();
+            this.btnLimpar = new System.Windows.Forms.Button();
+            this.btnAlterar = new System.Windows.Forms.Button();
+            this.btnExcluir = new System.Windows.Forms.Button();
+            this.btnCancelar = new System.Windows.Forms.Button();
+            this.epDataGrid = new System.Windows.Forms.ErrorProvider(this.components);
+            this.epPatri = new System.Windows.Forms.ErrorProvider(this.components);
+            this.sJBDDataSet = new SJmain.SJBDDataSet();
+            this.inventarioBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.inventarioTableAdapter = new SJmain.SJBDDataSetTableAdapters.InventarioTableAdapter();
+            this.idpatrimonioDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.unidadeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.descricaoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.modeloDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.localizacaoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.valorestimDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.processadorDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.memoriaramDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.usuarioDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgvInvent)).BeginInit();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.epDataGrid)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.epPatri)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sJBDDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.inventarioBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // label7
@@ -223,9 +237,24 @@
             // 
             // dgvInvent
             // 
+            this.dgvInvent.AllowUserToAddRows = false;
+            this.dgvInvent.AllowUserToDeleteRows = false;
+            this.dgvInvent.AutoGenerateColumns = false;
             this.dgvInvent.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvInvent.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.idpatrimonioDataGridViewTextBoxColumn,
+            this.unidadeDataGridViewTextBoxColumn,
+            this.descricaoDataGridViewTextBoxColumn,
+            this.modeloDataGridViewTextBoxColumn,
+            this.localizacaoDataGridViewTextBoxColumn,
+            this.valorestimDataGridViewTextBoxColumn,
+            this.processadorDataGridViewTextBoxColumn,
+            this.memoriaramDataGridViewTextBoxColumn,
+            this.usuarioDataGridViewTextBoxColumn});
+            this.dgvInvent.DataSource = this.inventarioBindingSource;
             this.dgvInvent.Location = new System.Drawing.Point(14, 12);
             this.dgvInvent.Name = "dgvInvent";
+            this.dgvInvent.ReadOnly = true;
             this.dgvInvent.Size = new System.Drawing.Size(530, 185);
             this.dgvInvent.TabIndex = 46;
             this.dgvInvent.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
@@ -272,38 +301,15 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Dados";
             // 
-            // btnCancelar
+            // btnCadastrar
             // 
-            this.btnCancelar.Location = new System.Drawing.Point(6, 207);
-            this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(75, 23);
-            this.btnCancelar.TabIndex = 46;
-            this.btnCancelar.Text = "Cancelar";
-            this.btnCancelar.UseVisualStyleBackColor = true;
-            // 
-            // btnExcluir
-            // 
-            this.btnExcluir.Location = new System.Drawing.Point(87, 207);
-            this.btnExcluir.Name = "btnExcluir";
-            this.btnExcluir.Size = new System.Drawing.Size(75, 23);
-            this.btnExcluir.TabIndex = 47;
-            this.btnExcluir.Text = "Excluir";
-            this.btnExcluir.UseVisualStyleBackColor = true;
-            this.btnExcluir.Click += new System.EventHandler(this.btnExcluir_Click);
-            // 
-            // btnAlterar
-            // 
-            this.btnAlterar.Location = new System.Drawing.Point(368, 207);
-            this.btnAlterar.Name = "btnAlterar";
-            this.btnAlterar.Size = new System.Drawing.Size(75, 23);
-            this.btnAlterar.TabIndex = 48;
-            this.btnAlterar.Text = "Alterar";
-            this.btnAlterar.UseVisualStyleBackColor = true;
-            this.btnAlterar.Click += new System.EventHandler(this.btnAlterar_Click);
-            // 
-            // epDataGrid
-            // 
-            this.epDataGrid.ContainerControl = this;
+            this.btnCadastrar.Location = new System.Drawing.Point(449, 207);
+            this.btnCadastrar.Name = "btnCadastrar";
+            this.btnCadastrar.Size = new System.Drawing.Size(75, 23);
+            this.btnCadastrar.TabIndex = 50;
+            this.btnCadastrar.Text = "Cadastrar";
+            this.btnCadastrar.UseVisualStyleBackColor = true;
+            this.btnCadastrar.Click += new System.EventHandler(this.btnCadastrar_Click);
             // 
             // btnLimpar
             // 
@@ -315,19 +321,119 @@
             this.btnLimpar.UseVisualStyleBackColor = true;
             this.btnLimpar.Click += new System.EventHandler(this.btnLimpar_Click);
             // 
+            // btnAlterar
+            // 
+            this.btnAlterar.Location = new System.Drawing.Point(368, 207);
+            this.btnAlterar.Name = "btnAlterar";
+            this.btnAlterar.Size = new System.Drawing.Size(75, 23);
+            this.btnAlterar.TabIndex = 48;
+            this.btnAlterar.Text = "Alterar";
+            this.btnAlterar.UseVisualStyleBackColor = true;
+            this.btnAlterar.Click += new System.EventHandler(this.btnAlterar_Click);
+            // 
+            // btnExcluir
+            // 
+            this.btnExcluir.Location = new System.Drawing.Point(87, 207);
+            this.btnExcluir.Name = "btnExcluir";
+            this.btnExcluir.Size = new System.Drawing.Size(75, 23);
+            this.btnExcluir.TabIndex = 47;
+            this.btnExcluir.Text = "Excluir";
+            this.btnExcluir.UseVisualStyleBackColor = true;
+            this.btnExcluir.Click += new System.EventHandler(this.btnExcluir_Click);
+            // 
+            // btnCancelar
+            // 
+            this.btnCancelar.Location = new System.Drawing.Point(6, 207);
+            this.btnCancelar.Name = "btnCancelar";
+            this.btnCancelar.Size = new System.Drawing.Size(75, 23);
+            this.btnCancelar.TabIndex = 46;
+            this.btnCancelar.Text = "Cancelar";
+            this.btnCancelar.UseVisualStyleBackColor = true;
+            // 
+            // epDataGrid
+            // 
+            this.epDataGrid.ContainerControl = this;
+            // 
             // epPatri
             // 
             this.epPatri.ContainerControl = this;
             // 
-            // btnCadastrar
+            // sJBDDataSet
             // 
-            this.btnCadastrar.Location = new System.Drawing.Point(449, 207);
-            this.btnCadastrar.Name = "btnCadastrar";
-            this.btnCadastrar.Size = new System.Drawing.Size(75, 23);
-            this.btnCadastrar.TabIndex = 50;
-            this.btnCadastrar.Text = "Cadastrar";
-            this.btnCadastrar.UseVisualStyleBackColor = true;
-            this.btnCadastrar.Click += new System.EventHandler(this.btnCadastrar_Click);
+            this.sJBDDataSet.DataSetName = "SJBDDataSet";
+            this.sJBDDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // inventarioBindingSource
+            // 
+            this.inventarioBindingSource.DataMember = "Inventario";
+            this.inventarioBindingSource.DataSource = this.sJBDDataSet;
+            // 
+            // inventarioTableAdapter
+            // 
+            this.inventarioTableAdapter.ClearBeforeFill = true;
+            // 
+            // idpatrimonioDataGridViewTextBoxColumn
+            // 
+            this.idpatrimonioDataGridViewTextBoxColumn.DataPropertyName = "idpatrimonio";
+            this.idpatrimonioDataGridViewTextBoxColumn.HeaderText = "Patrimonio";
+            this.idpatrimonioDataGridViewTextBoxColumn.Name = "idpatrimonioDataGridViewTextBoxColumn";
+            this.idpatrimonioDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // unidadeDataGridViewTextBoxColumn
+            // 
+            this.unidadeDataGridViewTextBoxColumn.DataPropertyName = "unidade";
+            this.unidadeDataGridViewTextBoxColumn.HeaderText = "Unidade";
+            this.unidadeDataGridViewTextBoxColumn.Name = "unidadeDataGridViewTextBoxColumn";
+            this.unidadeDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // descricaoDataGridViewTextBoxColumn
+            // 
+            this.descricaoDataGridViewTextBoxColumn.DataPropertyName = "descricao";
+            this.descricaoDataGridViewTextBoxColumn.HeaderText = "Descrição";
+            this.descricaoDataGridViewTextBoxColumn.Name = "descricaoDataGridViewTextBoxColumn";
+            this.descricaoDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // modeloDataGridViewTextBoxColumn
+            // 
+            this.modeloDataGridViewTextBoxColumn.DataPropertyName = "modelo";
+            this.modeloDataGridViewTextBoxColumn.HeaderText = "Marca/Modelo";
+            this.modeloDataGridViewTextBoxColumn.Name = "modeloDataGridViewTextBoxColumn";
+            this.modeloDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // localizacaoDataGridViewTextBoxColumn
+            // 
+            this.localizacaoDataGridViewTextBoxColumn.DataPropertyName = "localizacao";
+            this.localizacaoDataGridViewTextBoxColumn.HeaderText = "Departamento/Local";
+            this.localizacaoDataGridViewTextBoxColumn.Name = "localizacaoDataGridViewTextBoxColumn";
+            this.localizacaoDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // valorestimDataGridViewTextBoxColumn
+            // 
+            this.valorestimDataGridViewTextBoxColumn.DataPropertyName = "valorestim";
+            this.valorestimDataGridViewTextBoxColumn.HeaderText = "Valor Estimado";
+            this.valorestimDataGridViewTextBoxColumn.Name = "valorestimDataGridViewTextBoxColumn";
+            this.valorestimDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // processadorDataGridViewTextBoxColumn
+            // 
+            this.processadorDataGridViewTextBoxColumn.DataPropertyName = "processador";
+            this.processadorDataGridViewTextBoxColumn.HeaderText = "Processador";
+            this.processadorDataGridViewTextBoxColumn.Name = "processadorDataGridViewTextBoxColumn";
+            this.processadorDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // memoriaramDataGridViewTextBoxColumn
+            // 
+            this.memoriaramDataGridViewTextBoxColumn.DataPropertyName = "memoriaram";
+            this.memoriaramDataGridViewTextBoxColumn.HeaderText = "Memória RAM";
+            this.memoriaramDataGridViewTextBoxColumn.Name = "memoriaramDataGridViewTextBoxColumn";
+            this.memoriaramDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // usuarioDataGridViewTextBoxColumn
+            // 
+            this.usuarioDataGridViewTextBoxColumn.DataPropertyName = "usuario";
+            this.usuarioDataGridViewTextBoxColumn.HeaderText = "Usuário";
+            this.usuarioDataGridViewTextBoxColumn.Name = "usuarioDataGridViewTextBoxColumn";
+            this.usuarioDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // AlterarInvent
             // 
@@ -349,6 +455,8 @@
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.epDataGrid)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.epPatri)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sJBDDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.inventarioBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -383,5 +491,17 @@
         private System.Windows.Forms.Button btnLimpar;
         private System.Windows.Forms.ErrorProvider epPatri;
         private System.Windows.Forms.Button btnCadastrar;
+        private SJBDDataSet sJBDDataSet;
+        private System.Windows.Forms.BindingSource inventarioBindingSource;
+        private SJBDDataSetTableAdapters.InventarioTableAdapter inventarioTableAdapter;
+        private System.Windows.Forms.DataGridViewTextBoxColumn idpatrimonioDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn unidadeDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn descricaoDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn modeloDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn localizacaoDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn valorestimDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn processadorDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn memoriaramDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn usuarioDataGridViewTextBoxColumn;
     }
 }

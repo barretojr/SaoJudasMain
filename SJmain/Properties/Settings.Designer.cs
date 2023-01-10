@@ -116,5 +116,16 @@ namespace SJmain.Properties {
                 this["Colaborador"] = value;
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=DKP-CPD\\SQLEXPRESS;Initial Catalog=SJBD;User ID=sa;Password=Alemanha1" +
+            "982")]
+        public string SJBDConnectionString {
+            get {
+                return ((string)(this["SJBDConnectionString"]));
+            }
+        }
     }
 }

@@ -132,6 +132,21 @@
     <Compile Include="Banco de Dados\LoginDaoComandos.cs" />
     <Compile Include="Classess\Referencia.cs" />
     <Compile Include="Criptograf\Crypto.cs" />
+    <Compile Include="SJBDDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SJBDDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SJBDDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SJBDDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SJBDDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SJBDDataSet2.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Telas\Departamentos\LogisticaRecepcao\Logist.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -352,6 +367,39 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="SJBDDataSet.xsc">
+      <DependentUpon>SJBDDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="SJBDDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SJBDDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SJBDDataSet.xss">
+      <DependentUpon>SJBDDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="SJBDDataSet1.xsc">
+      <DependentUpon>SJBDDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="SJBDDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SJBDDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SJBDDataSet1.xss">
+      <DependentUpon>SJBDDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="SJBDDataSet2.xsc">
+      <DependentUpon>SJBDDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="SJBDDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SJBDDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SJBDDataSet2.xss">
+      <DependentUpon>SJBDDataSet2.xsd</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

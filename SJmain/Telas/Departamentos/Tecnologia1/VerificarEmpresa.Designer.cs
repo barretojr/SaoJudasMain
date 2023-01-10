@@ -34,15 +34,15 @@
             this.btnPesquisar = new System.Windows.Forms.Button();
             this.btnSair = new System.Windows.Forms.Button();
             this.gbEmpresa = new System.Windows.Forms.GroupBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.lbNome = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.lbCNPJ = new System.Windows.Forms.Label();
             this.gbSituacao = new System.Windows.Forms.GroupBox();
-            this.rbAtiva = new System.Windows.Forms.RadioButton();
-            this.rbInativa = new System.Windows.Forms.RadioButton();
-            this.rbDesativ = new System.Windows.Forms.RadioButton();
             this.btnAlterar = new System.Windows.Forms.Button();
+            this.rbDesativ = new System.Windows.Forms.RadioButton();
+            this.rbInativa = new System.Windows.Forms.RadioButton();
+            this.rbAtiva = new System.Windows.Forms.RadioButton();
+            this.lbCNPJ = new System.Windows.Forms.Label();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.lbNome = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             this.gbEmpresa.SuspendLayout();
             this.gbSituacao.SuspendLayout();
@@ -64,7 +64,7 @@
             this.cmbEmpresas.FormattingEnabled = true;
             this.cmbEmpresas.Location = new System.Drawing.Point(7, 19);
             this.cmbEmpresas.Name = "cmbEmpresas";
-            this.cmbEmpresas.Size = new System.Drawing.Size(327, 21);
+            this.cmbEmpresas.Size = new System.Drawing.Size(320, 21);
             this.cmbEmpresas.TabIndex = 2;
             this.cmbEmpresas.SelectedIndexChanged += new System.EventHandler(this.cmbEmpresas_SelectedIndexChanged);
             // 
@@ -102,40 +102,6 @@
             this.gbEmpresa.TabStop = false;
             this.gbEmpresa.Text = "Empresa";
             // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(7, 37);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(408, 20);
-            this.textBox1.TabIndex = 0;
-            // 
-            // lbNome
-            // 
-            this.lbNome.AutoSize = true;
-            this.lbNome.Location = new System.Drawing.Point(7, 18);
-            this.lbNome.Name = "lbNome";
-            this.lbNome.Size = new System.Drawing.Size(70, 13);
-            this.lbNome.TabIndex = 1;
-            this.lbNome.Text = "Razão Social";
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(7, 89);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.ReadOnly = true;
-            this.textBox2.Size = new System.Drawing.Size(187, 20);
-            this.textBox2.TabIndex = 2;
-            // 
-            // lbCNPJ
-            // 
-            this.lbCNPJ.AutoSize = true;
-            this.lbCNPJ.Location = new System.Drawing.Point(4, 73);
-            this.lbCNPJ.Name = "lbCNPJ";
-            this.lbCNPJ.Size = new System.Drawing.Size(34, 13);
-            this.lbCNPJ.TabIndex = 3;
-            this.lbCNPJ.Text = "CNPJ";
-            // 
             // gbSituacao
             // 
             this.gbSituacao.Controls.Add(this.btnAlterar);
@@ -149,27 +115,14 @@
             this.gbSituacao.TabStop = false;
             this.gbSituacao.Text = "Situação";
             // 
-            // rbAtiva
+            // btnAlterar
             // 
-            this.rbAtiva.AutoSize = true;
-            this.rbAtiva.Location = new System.Drawing.Point(7, 18);
-            this.rbAtiva.Name = "rbAtiva";
-            this.rbAtiva.Size = new System.Drawing.Size(49, 17);
-            this.rbAtiva.TabIndex = 0;
-            this.rbAtiva.TabStop = true;
-            this.rbAtiva.Text = "Ativa";
-            this.rbAtiva.UseVisualStyleBackColor = true;
-            // 
-            // rbInativa
-            // 
-            this.rbInativa.AutoSize = true;
-            this.rbInativa.Location = new System.Drawing.Point(77, 18);
-            this.rbInativa.Name = "rbInativa";
-            this.rbInativa.Size = new System.Drawing.Size(57, 17);
-            this.rbInativa.TabIndex = 1;
-            this.rbInativa.TabStop = true;
-            this.rbInativa.Text = "Inativa";
-            this.rbInativa.UseVisualStyleBackColor = true;
+            this.btnAlterar.Location = new System.Drawing.Point(252, 15);
+            this.btnAlterar.Name = "btnAlterar";
+            this.btnAlterar.Size = new System.Drawing.Size(75, 22);
+            this.btnAlterar.TabIndex = 5;
+            this.btnAlterar.Text = "Alterar";
+            this.btnAlterar.UseVisualStyleBackColor = true;
             // 
             // rbDesativ
             // 
@@ -182,14 +135,61 @@
             this.rbDesativ.Text = "Desativada";
             this.rbDesativ.UseVisualStyleBackColor = true;
             // 
-            // btnAlterar
+            // rbInativa
             // 
-            this.btnAlterar.Location = new System.Drawing.Point(252, 15);
-            this.btnAlterar.Name = "btnAlterar";
-            this.btnAlterar.Size = new System.Drawing.Size(75, 22);
-            this.btnAlterar.TabIndex = 5;
-            this.btnAlterar.Text = "Alterar";
-            this.btnAlterar.UseVisualStyleBackColor = true;
+            this.rbInativa.AutoSize = true;
+            this.rbInativa.Location = new System.Drawing.Point(77, 18);
+            this.rbInativa.Name = "rbInativa";
+            this.rbInativa.Size = new System.Drawing.Size(57, 17);
+            this.rbInativa.TabIndex = 1;
+            this.rbInativa.TabStop = true;
+            this.rbInativa.Text = "Inativa";
+            this.rbInativa.UseVisualStyleBackColor = true;
+            // 
+            // rbAtiva
+            // 
+            this.rbAtiva.AutoSize = true;
+            this.rbAtiva.Location = new System.Drawing.Point(7, 18);
+            this.rbAtiva.Name = "rbAtiva";
+            this.rbAtiva.Size = new System.Drawing.Size(49, 17);
+            this.rbAtiva.TabIndex = 0;
+            this.rbAtiva.TabStop = true;
+            this.rbAtiva.Text = "Ativa";
+            this.rbAtiva.UseVisualStyleBackColor = true;
+            // 
+            // lbCNPJ
+            // 
+            this.lbCNPJ.AutoSize = true;
+            this.lbCNPJ.Location = new System.Drawing.Point(4, 73);
+            this.lbCNPJ.Name = "lbCNPJ";
+            this.lbCNPJ.Size = new System.Drawing.Size(34, 13);
+            this.lbCNPJ.TabIndex = 3;
+            this.lbCNPJ.Text = "CNPJ";
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(7, 89);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.ReadOnly = true;
+            this.textBox2.Size = new System.Drawing.Size(187, 20);
+            this.textBox2.TabIndex = 2;
+            // 
+            // lbNome
+            // 
+            this.lbNome.AutoSize = true;
+            this.lbNome.Location = new System.Drawing.Point(7, 18);
+            this.lbNome.Name = "lbNome";
+            this.lbNome.Size = new System.Drawing.Size(70, 13);
+            this.lbNome.TabIndex = 1;
+            this.lbNome.Text = "Razão Social";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(7, 37);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.ReadOnly = true;
+            this.textBox1.Size = new System.Drawing.Size(408, 20);
+            this.textBox1.TabIndex = 0;
             // 
             // VerificarEmpresa
             // 

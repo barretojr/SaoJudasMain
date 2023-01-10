@@ -119,6 +119,8 @@ namespace SJmain.Telas.Cadastro
 
         private void Cadastrar_Load(object sender, EventArgs e)
         {
+            // TODO: esta linha de código carrega dados na tabela 'sJBDDataSet1.Usuario'. Você pode movê-la ou removê-la conforme necessário.
+            this.usuarioTableAdapter.Fill(this.sJBDDataSet1.Usuario);
             rdbContabil.Checked = true;
         }
 

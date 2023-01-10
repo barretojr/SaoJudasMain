@@ -98,6 +98,8 @@ namespace SJmain.Telas.Departamentos.Logistica
 
         private void Agenda_Load(object sender, EventArgs e)
         {
+            // TODO: esta linha de código carrega dados na tabela 'sJBDDataSet2.Agenda'. Você pode movê-la ou removê-la conforme necessário.
+            this.agendaTableAdapter.Fill(this.sJBDDataSet2.Agenda);
             ListarContatos();
             tss1.Text = "Pronto...";
         }

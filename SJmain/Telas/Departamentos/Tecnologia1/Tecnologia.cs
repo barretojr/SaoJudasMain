@@ -32,37 +32,12 @@ namespace SJmain.Telas.Departamentos
             }
         }
 
-
-
-        private void outroStripToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void Tecnologia_Load(object sender, EventArgs e)
         {
 
         }
 
-
-
-        private void buscarToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            if (Application.OpenForms.OfType<VerificarEmpresa>().Count() > 0)
-            {
-                Application.OpenForms.OfType<VerificarEmpresa>().First().Focus();
-            }
-            else
-            {
-                VerificarEmpresa ve = new VerificarEmpresa();
-                ve.MdiParent = this;
-                ve.Show();
-            }
-
-        }
-        
-
-        private void alterarToolStripMenuItem_Click_1(object sender, EventArgs e)
+        private void inventárioToolStripMenuItem_Click(object sender, EventArgs e)
         {
             if (Application.OpenForms.OfType<AlterarInvent>().Count() > 0)
             {
@@ -74,6 +49,7 @@ namespace SJmain.Telas.Departamentos
                 ai.MdiParent = this;
                 ai.Show();
             }
+
         }
     }
 }

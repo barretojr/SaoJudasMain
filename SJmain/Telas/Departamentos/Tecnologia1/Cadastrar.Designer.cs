@@ -96,6 +96,14 @@
             this.rdbContabil = new System.Windows.Forms.RadioButton();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.epPesquisa = new System.Windows.Forms.ErrorProvider(this.components);
+            this.sJBDDataSet1 = new SJmain.SJBDDataSet1();
+            this.usuarioBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.usuarioTableAdapter = new SJmain.SJBDDataSet1TableAdapters.UsuarioTableAdapter();
+            this.nomeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nomeusuarioDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cpfusuarioDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.telefoneDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.emailDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.epUsuario)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.epSenha)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.epConfSenha)).BeginInit();
@@ -114,6 +122,8 @@
             this.groupBox1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.epPesquisa)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sJBDDataSet1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.usuarioBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // epUsuario
@@ -417,7 +427,15 @@
             // 
             // dgvAlterar
             // 
+            this.dgvAlterar.AutoGenerateColumns = false;
             this.dgvAlterar.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvAlterar.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.nomeDataGridViewTextBoxColumn,
+            this.nomeusuarioDataGridViewTextBoxColumn,
+            this.cpfusuarioDataGridViewTextBoxColumn,
+            this.telefoneDataGridViewTextBoxColumn,
+            this.emailDataGridViewTextBoxColumn});
+            this.dgvAlterar.DataSource = this.usuarioBindingSource;
             this.dgvAlterar.Location = new System.Drawing.Point(6, 105);
             this.dgvAlterar.Name = "dgvAlterar";
             this.dgvAlterar.Size = new System.Drawing.Size(486, 103);
@@ -757,6 +775,50 @@
             // 
             this.epPesquisa.ContainerControl = this;
             // 
+            // sJBDDataSet1
+            // 
+            this.sJBDDataSet1.DataSetName = "SJBDDataSet1";
+            this.sJBDDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // usuarioBindingSource
+            // 
+            this.usuarioBindingSource.DataMember = "Usuario";
+            this.usuarioBindingSource.DataSource = this.sJBDDataSet1;
+            // 
+            // usuarioTableAdapter
+            // 
+            this.usuarioTableAdapter.ClearBeforeFill = true;
+            // 
+            // nomeDataGridViewTextBoxColumn
+            // 
+            this.nomeDataGridViewTextBoxColumn.DataPropertyName = "nome";
+            this.nomeDataGridViewTextBoxColumn.HeaderText = "Nome";
+            this.nomeDataGridViewTextBoxColumn.Name = "nomeDataGridViewTextBoxColumn";
+            // 
+            // nomeusuarioDataGridViewTextBoxColumn
+            // 
+            this.nomeusuarioDataGridViewTextBoxColumn.DataPropertyName = "nomeusuario";
+            this.nomeusuarioDataGridViewTextBoxColumn.HeaderText = "Usuário";
+            this.nomeusuarioDataGridViewTextBoxColumn.Name = "nomeusuarioDataGridViewTextBoxColumn";
+            // 
+            // cpfusuarioDataGridViewTextBoxColumn
+            // 
+            this.cpfusuarioDataGridViewTextBoxColumn.DataPropertyName = "cpfusuario";
+            this.cpfusuarioDataGridViewTextBoxColumn.HeaderText = "CPF";
+            this.cpfusuarioDataGridViewTextBoxColumn.Name = "cpfusuarioDataGridViewTextBoxColumn";
+            // 
+            // telefoneDataGridViewTextBoxColumn
+            // 
+            this.telefoneDataGridViewTextBoxColumn.DataPropertyName = "telefone";
+            this.telefoneDataGridViewTextBoxColumn.HeaderText = "Telefone";
+            this.telefoneDataGridViewTextBoxColumn.Name = "telefoneDataGridViewTextBoxColumn";
+            // 
+            // emailDataGridViewTextBoxColumn
+            // 
+            this.emailDataGridViewTextBoxColumn.DataPropertyName = "email";
+            this.emailDataGridViewTextBoxColumn.HeaderText = "Email";
+            this.emailDataGridViewTextBoxColumn.Name = "emailDataGridViewTextBoxColumn";
+            // 
             // Cadastrar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -794,6 +856,8 @@
             this.groupBox1.PerformLayout();
             this.tabControl1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.epPesquisa)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sJBDDataSet1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.usuarioBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -865,5 +929,13 @@
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button btnLimpar;
         private System.Windows.Forms.ErrorProvider epPesquisa;
+        private SJBDDataSet1 sJBDDataSet1;
+        private System.Windows.Forms.BindingSource usuarioBindingSource;
+        private SJBDDataSet1TableAdapters.UsuarioTableAdapter usuarioTableAdapter;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nomeDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nomeusuarioDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn cpfusuarioDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn telefoneDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn emailDataGridViewTextBoxColumn;
     }
 }

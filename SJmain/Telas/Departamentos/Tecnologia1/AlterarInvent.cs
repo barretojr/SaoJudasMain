@@ -51,6 +51,8 @@ namespace SJmain.Telas.Departamentos.Tecnologia1
 
         private void AlterarInvent_Load(object sender, EventArgs e)
         {
+            // TODO: esta linha de código carrega dados na tabela 'sJBDDataSet.Inventario'. Você pode movê-la ou removê-la conforme necessário.
+            this.inventarioTableAdapter.Fill(this.sJBDDataSet.Inventario);
             ListarUsuarios();
         }
 
@@ -74,8 +76,11 @@ namespace SJmain.Telas.Departamentos.Tecnologia1
             dgvInvent.Refresh();
         }
 
+
         private void btnAlterar_Click(object sender, EventArgs e)
         {
+            string patri = txtPatri.Text;
+
             try
             {
                 cmd.Connection = con.Conectar();
@@ -90,6 +95,7 @@ namespace SJmain.Telas.Departamentos.Tecnologia1
                 cmd.Parameters.AddWithValue("@ram", txtMemoria.Text);
                 cmd.Parameters.AddWithValue("@user", txtUsuario.Text);
                 cmd.ExecuteNonQuery();
+                MessageBox.Show($"Dados do Patrimonio {patri} alterado com sucesso!");
                 LimparParametros();
             }
             catch (Exception error)

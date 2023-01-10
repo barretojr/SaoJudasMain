@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Agenda));
             this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -47,8 +48,17 @@
             this.tss1 = new System.Windows.Forms.ToolStripStatusLabel();
             this.btnAlterar = new System.Windows.Forms.Button();
             this.btnAtualizar = new System.Windows.Forms.Button();
+            this.sJBDDataSet2 = new SJmain.SJBDDataSet2();
+            this.agendaBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.agendaTableAdapter = new SJmain.SJBDDataSet2TableAdapters.AgendaTableAdapter();
+            this.nomeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.emailDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.enderecoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.contatoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.contatosGridView)).BeginInit();
             this.statusStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.sJBDDataSet2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.agendaBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -174,9 +184,19 @@
             // 
             // contatosGridView
             // 
+            this.contatosGridView.AllowUserToAddRows = false;
+            this.contatosGridView.AllowUserToDeleteRows = false;
+            this.contatosGridView.AutoGenerateColumns = false;
             this.contatosGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.contatosGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.nomeDataGridViewTextBoxColumn,
+            this.emailDataGridViewTextBoxColumn,
+            this.enderecoDataGridViewTextBoxColumn,
+            this.contatoDataGridViewTextBoxColumn});
+            this.contatosGridView.DataSource = this.agendaBindingSource;
             this.contatosGridView.Location = new System.Drawing.Point(334, 51);
             this.contatosGridView.Name = "contatosGridView";
+            this.contatosGridView.ReadOnly = true;
             this.contatosGridView.Size = new System.Drawing.Size(434, 206);
             this.contatosGridView.TabIndex = 15;
             this.contatosGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.contatosGridView_CellContentClick);
@@ -217,6 +237,48 @@
             this.btnAtualizar.UseVisualStyleBackColor = true;
             this.btnAtualizar.Click += new System.EventHandler(this.button1_Click);
             // 
+            // sJBDDataSet2
+            // 
+            this.sJBDDataSet2.DataSetName = "SJBDDataSet2";
+            this.sJBDDataSet2.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // agendaBindingSource
+            // 
+            this.agendaBindingSource.DataMember = "Agenda";
+            this.agendaBindingSource.DataSource = this.sJBDDataSet2;
+            // 
+            // agendaTableAdapter
+            // 
+            this.agendaTableAdapter.ClearBeforeFill = true;
+            // 
+            // nomeDataGridViewTextBoxColumn
+            // 
+            this.nomeDataGridViewTextBoxColumn.DataPropertyName = "nome";
+            this.nomeDataGridViewTextBoxColumn.HeaderText = "Nome";
+            this.nomeDataGridViewTextBoxColumn.Name = "nomeDataGridViewTextBoxColumn";
+            this.nomeDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // emailDataGridViewTextBoxColumn
+            // 
+            this.emailDataGridViewTextBoxColumn.DataPropertyName = "email";
+            this.emailDataGridViewTextBoxColumn.HeaderText = "E-mail";
+            this.emailDataGridViewTextBoxColumn.Name = "emailDataGridViewTextBoxColumn";
+            this.emailDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // enderecoDataGridViewTextBoxColumn
+            // 
+            this.enderecoDataGridViewTextBoxColumn.DataPropertyName = "endereco";
+            this.enderecoDataGridViewTextBoxColumn.HeaderText = "Endereço";
+            this.enderecoDataGridViewTextBoxColumn.Name = "enderecoDataGridViewTextBoxColumn";
+            this.enderecoDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // contatoDataGridViewTextBoxColumn
+            // 
+            this.contatoDataGridViewTextBoxColumn.DataPropertyName = "contato";
+            this.contatoDataGridViewTextBoxColumn.HeaderText = "Contato";
+            this.contatoDataGridViewTextBoxColumn.Name = "contatoDataGridViewTextBoxColumn";
+            this.contatoDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
             // Agenda
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -249,6 +311,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.contatosGridView)).EndInit();
             this.statusStrip1.ResumeLayout(false);
             this.statusStrip1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.sJBDDataSet2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.agendaBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -274,5 +338,12 @@
         private System.Windows.Forms.ToolStripStatusLabel tss1;
         private System.Windows.Forms.Button btnAlterar;
         private System.Windows.Forms.Button btnAtualizar;
+        private SJBDDataSet2 sJBDDataSet2;
+        private System.Windows.Forms.BindingSource agendaBindingSource;
+        private SJBDDataSet2TableAdapters.AgendaTableAdapter agendaTableAdapter;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nomeDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn emailDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn enderecoDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn contatoDataGridViewTextBoxColumn;
     }
 }
